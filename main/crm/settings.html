@@ -1,0 +1,979 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/header.css">
+    <link rel="stylesheet" href="../assets/css/crm/crm.css">
+    <link rel="stylesheet" href="../assets/css/bootstrap/bootstrap.css">   
+    <link rel="stylesheet" href="/assets/js/chosen/chosen.min.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+
+    <!-- Text Editor -->
+    <script src="../assets/js/tinymce/tinymce.min.js"></script>
+
+    <title>Settings</title>
+</head>
+<body class="body">
+
+    <!-- Header -->
+    
+    <header class="header">
+        <div class="header-container">
+            <div class="left-col d-flex align-items-center justify-content-center">
+                <img src="../assets/images/logo.png" alt="" class="logo">
+            </div>
+            <div class="crm-navItems w-100 border-bottom d-flex align-items-center justify-content-between w-100 px-4">
+                <ul class="crmNavList list-unstyled align-items-center bg-white flex-wrap p-2 p-md-0 m-0">
+                    <li class="h-100 d-flex align-items-center me-2">
+                        <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5.65088 15.5715C5.8731 15.5715 6.06755 15.4882 6.23421 15.3215C6.40088 15.1548 6.48421 14.9604 6.48421 14.7382C6.48421 14.516 6.40088 14.3215 6.23421 14.1548C6.06755 13.9882 5.8731 13.9048 5.65088 13.9048C5.42866 13.9048 5.23421 13.9882 5.06755 14.1548C4.90088 14.3215 4.81755 14.516 4.81755 14.7382C4.81755 14.9604 4.90088 15.1548 5.06755 15.3215C5.23421 15.4882 5.42866 15.5715 5.65088 15.5715ZM5.65088 11.016C5.8731 11.016 6.06755 10.9326 6.23421 10.766C6.40088 10.5993 6.48421 10.4048 6.48421 10.1826C6.48421 9.9604 6.40088 9.76595 6.23421 9.59929C6.06755 9.43262 5.8731 9.34928 5.65088 9.34928C5.42866 9.34928 5.23421 9.43262 5.06755 9.59929C4.90088 9.76595 4.81755 9.9604 4.81755 10.1826C4.81755 10.4048 4.90088 10.5993 5.06755 10.766C5.23421 10.9326 5.42866 11.016 5.65088 11.016ZM5.65088 6.46039C5.8731 6.46039 6.06755 6.37706 6.23421 6.2104C6.40088 6.04373 6.48421 5.84928 6.48421 5.62706C6.48421 5.40484 6.40088 5.2104 6.23421 5.04373C6.06755 4.87706 5.8731 4.79373 5.65088 4.79373C5.42866 4.79373 5.23421 4.87706 5.06755 5.04373C4.90088 5.2104 4.81755 5.40484 4.81755 5.62706C4.81755 5.84928 4.90088 6.04373 5.06755 6.2104C5.23421 6.37706 5.42866 6.46039 5.65088 6.46039ZM9.31755 15.5715H16.0953V13.9048H9.31755V15.5715ZM9.31755 11.016H16.0953V9.34928H9.31755V11.016ZM9.31755 6.46039H16.0953V4.79373H9.31755V6.46039ZM2.31755 20.1826C1.8731 20.1826 1.48421 20.016 1.15088 19.6826C0.817546 19.3493 0.650879 18.9604 0.650879 18.516V1.84928C0.650879 1.40484 0.817546 1.01595 1.15088 0.682617C1.48421 0.349284 1.8731 0.182617 2.31755 0.182617H18.9842C19.4287 0.182617 19.8175 0.349284 20.1509 0.682617C20.4842 1.01595 20.6509 1.40484 20.6509 1.84928V18.516C20.6509 18.9604 20.4842 19.3493 20.1509 19.6826C19.8175 20.016 19.4287 20.1826 18.9842 20.1826H2.31755ZM2.31755 18.516H18.9842V1.84928H2.31755V18.516Z" fill="#1D9CD3"/>
+                        </svg>    
+                    </li>
+                    <li class="h-100 d-flex align-items-center"><a href="/crm/dashboard.html" class="body-normal reg black80 h-100 d-flex align-items-center mx-2">Dashboards</a></li>
+                    <li class="h-100 d-flex align-items-center"><a href="/crm/deal-list.html" class="body-normal reg black80 h-100 d-flex align-items-center mx-2 active">Deals</a></li>
+                    <li class="h-100 d-flex align-items-center"><a href="/crm/action.html" class="body-normal reg black80 h-100 d-flex align-items-center mx-2">Action</a></li>
+                    <li class="h-100 d-flex align-items-center"><a href="/crm/contact.html" class="body-normal reg black80 h-100 d-flex align-items-center mx-2">Contact</a></li>
+                    <li class="h-100 d-flex align-items-center"><a href="/crm/tasks.html" class="body-normal reg black80 h-100 d-flex align-items-center mx-2">Tasks</a></li>
+                    <li class="h-100 d-flex align-items-center"><a href="/crm/product.html" class="body-normal reg black80 h-100 d-flex align-items-center mx-2">Product</a></li>
+                    <li class="h-100 d-flex align-items-center"><a href="/crm/goal-list.html" class="body-normal reg black80 h-100 d-flex align-items-center mx-2">Goals</a></li>
+                    <li class="h-100 d-flex align-items-center"><a href="/crm/progress.html" class="body-normal reg black80 h-100 d-flex align-items-center mx-2">Progress</a></li>
+                    
+                    <li class="h-100 d-flex align-items-center"><a href="/crm/reports.html" class="body-normal reg black80 h-100 d-flex align-items-center mx-2">Reports</a></li>
+                </ul>
+                <div class="d-flex align-items-center ms-auto">
+                    <button id="crmHamBurger" class="mx-3 p-0 border-0 bg-transparent align-items-center justify-content-center flex-column">
+                        <div class="bar one"></div>
+                        <div class="bar two"></div>
+                        <div class="bar three"></div>
+                    </button>
+                    <div id="headerSearchIcon" class="dropdown more-option-toggle text-end">
+                        <button id="dropdownMenuClickableInside" class="border-0 bg-transparent p-0" type="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+                            <svg width="21" height="21" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M14.0259 12.8475L17.5951 16.4158L16.4159 17.595L12.8476 14.0258C11.5199 15.0902 9.86842 15.6691 8.16675 15.6667C4.02675 15.6667 0.666748 12.3067 0.666748 8.16667C0.666748 4.02667 4.02675 0.666672 8.16675 0.666672C12.3067 0.666672 15.6667 4.02667 15.6667 8.16667C15.6692 9.86834 15.0903 11.5198 14.0259 12.8475ZM12.3542 12.2292C13.4118 11.1416 14.0025 9.6837 14.0001 8.16667C14.0001 4.94334 11.3892 2.33334 8.16675 2.33334C4.94341 2.33334 2.33341 4.94334 2.33341 8.16667C2.33341 11.3892 4.94341 14 8.16675 14C9.68377 14.0024 11.1417 13.4118 12.2292 12.3542L12.3542 12.2292Z" fill="#646364"/>
+                            </svg>
+                        </button>
+                        <div class="dropdown-menu p-2 border-0" aria-labelledby="dropdownMenuClickableInside">
+                            <div id="headerSearch" class="search-input-box px-2">
+                                <img src="../assets/images/search-icon.svg" alt="">
+                                <input type="text" class="search-input py-1 h-auto" placeholder="Search">
+                            </div>
+                        </div>
+                    </div>
+                    <a href="/crm/settings.html">    
+                        <button class="border-0 bg-transparent p-0 mx-3">
+                            <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9.84118 15.3889H11.3967L11.6745 13.8889C12.0449 13.7778 12.3597 13.6389 12.619 13.4722C12.8782 13.3056 13.119 13.1111 13.3412 12.8889L15.0634 13.4167L15.7856 11.9167L14.4801 11.0833C14.5541 10.6944 14.5912 10.3333 14.5912 10C14.5912 9.66667 14.5541 9.30556 14.4801 8.91667L15.7856 8.08333L15.0634 6.58333L13.3412 7.11111C13.119 6.88889 12.8782 6.69444 12.619 6.52778C12.3597 6.36111 12.0449 6.22222 11.6745 6.11111L11.3967 4.61111H9.84118L9.5634 6.11111C9.19303 6.22222 8.87822 6.36111 8.61896 6.52778C8.3597 6.69444 8.11896 6.88889 7.89674 7.11111L6.17451 6.58333L5.45229 8.08333L6.75785 8.91667C6.68377 9.30556 6.64674 9.66667 6.64674 10C6.64674 10.3333 6.68377 10.6944 6.75785 11.0833L5.45229 11.9167L6.17451 13.4167L7.89674 12.8889C8.11896 13.1111 8.3597 13.3056 8.61896 13.4722C8.87822 13.6389 9.19303 13.7778 9.5634 13.8889L9.84118 15.3889ZM10.619 12.3611C9.95229 12.3611 9.39211 12.1343 8.9384 11.6806C8.4847 11.2269 8.25785 10.6667 8.25785 10C8.25785 9.33333 8.4847 8.77315 8.9384 8.31944C9.39211 7.86574 9.95229 7.63889 10.619 7.63889C11.2856 7.63889 11.8458 7.86574 12.2995 8.31944C12.7532 8.77315 12.9801 9.33333 12.9801 10C12.9801 10.6667 12.7532 11.2269 12.2995 11.6806C11.8458 12.1343 11.2856 12.3611 10.619 12.3611ZM2.28562 20C1.84118 20 1.45229 19.8333 1.11896 19.5C0.785624 19.1667 0.618958 18.7778 0.618958 18.3333V1.66667C0.618958 1.22222 0.785624 0.833333 1.11896 0.5C1.45229 0.166667 1.84118 0 2.28562 0H18.9523C19.3967 0 19.7856 0.166667 20.119 0.5C20.4523 0.833333 20.619 1.22222 20.619 1.66667V18.3333C20.619 18.7778 20.4523 19.1667 20.119 19.5C19.7856 19.8333 19.3967 20 18.9523 20H2.28562ZM2.28562 18.3333H18.9523V1.66667H2.28562V18.3333Z" fill="#646364"/>
+                            </svg>
+                        </button>
+                    </a>
+                    
+                    <div id="notificationContainer" class="dropdown more-option-toggle text-end">
+                        <button id="dropdownMenuClickableInside" class="border-0 bg-transparent p-0 position-relative" type="button" id="notficationBar" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+                            <svg width="21" height="21" viewBox="0 0 30 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_107_520)">
+                                <path d="M29.5108 26.8299C28.5465 25.9702 27.7022 24.9847 27.0008 23.8999C26.235 22.4024 25.776 20.7671 25.6508 19.0899V14.1499C25.6574 11.5155 24.7018 8.96938 22.9635 6.98988C21.2252 5.01037 18.8239 3.73376 16.2108 3.3999V2.1099C16.2108 1.75584 16.0701 1.41628 15.8198 1.16591C15.5694 0.915554 15.2298 0.774902 14.8758 0.774902C14.5217 0.774902 14.1822 0.915554 13.9318 1.16591C13.6814 1.41628 13.5408 1.75584 13.5408 2.1099V3.4199C10.951 3.77783 8.57875 5.06216 6.86331 7.03501C5.14787 9.00786 4.20551 11.5355 4.21078 14.1499V19.0899C4.08554 20.7671 3.62656 22.4024 2.86078 23.8999C2.17166 24.9823 1.34098 25.9676 0.390781 26.8299C0.284113 26.9236 0.198623 27.039 0.139999 27.1683C0.0813747 27.2976 0.050961 27.4379 0.0507812 27.5799V28.9399C0.0507812 29.2051 0.156138 29.4595 0.343674 29.647C0.531211 29.8345 0.785565 29.9399 1.05078 29.9399H28.8508C29.116 29.9399 29.3704 29.8345 29.5579 29.647C29.7454 29.4595 29.8508 29.2051 29.8508 28.9399V27.5799C29.8506 27.4379 29.8202 27.2976 29.7616 27.1683C29.7029 27.039 29.6174 26.9236 29.5108 26.8299ZM2.13078 27.9399C3.06119 27.0411 3.88038 26.0339 4.57078 24.9399C5.53539 23.1314 6.09821 21.1359 6.22078 19.0899V14.1499C6.18112 12.9779 6.37771 11.81 6.79883 10.7156C7.21995 9.62116 7.85699 8.62269 8.67203 7.7796C9.48706 6.93652 10.4634 6.26607 11.543 5.80818C12.6225 5.35028 13.7831 5.11431 14.9558 5.11431C16.1284 5.11431 17.2891 5.35028 18.3686 5.80818C19.4481 6.26607 20.4245 6.93652 21.2395 7.7796C22.0546 8.62269 22.6916 9.62116 23.1127 10.7156C23.5339 11.81 23.7304 12.9779 23.6908 14.1499V19.0899C23.8134 21.1359 24.3762 23.1314 25.3408 24.9399C26.0312 26.0339 26.8504 27.0411 27.7808 27.9399H2.13078Z" fill="#646364"/>
+                                <path d="M15.0003 33.28C15.6302 33.2655 16.2348 33.0287 16.7069 32.6114C17.1791 32.1942 17.4884 31.6234 17.5803 31H12.3203C12.4148 31.6403 12.7386 32.2245 13.2316 32.6439C13.7246 33.0633 14.3531 33.2894 15.0003 33.28V33.28Z" fill="#646364"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_107_520">
+                                <rect width="30" height="34" fill="#646364"/>
+                                </clipPath>
+                                </defs>
+                            </svg>
+                            <span class="alert-orange"></span>
+                        </button>
+                        <div class="dropdown-menu notficationBar p-3" aria-labelledby="dropdownMenuClickableInside">
+                            <div class="notificationHeader d-flex align-items-center justify-content-between">
+                                <p class="body-medium med blue130 mb-0">Notification</p>
+                                <button class="filterCancel p-0 border-0 bg-transparent">
+                                    <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1.12805 10.4648L0.128052 9.46484L4.12805 5.46484L0.128052 1.46484L1.12805 0.464844L5.12805 4.46484L9.12805 0.464844L10.1281 1.46484L6.12805 5.46484L10.1281 9.46484L9.12805 10.4648L5.12805 6.46484L1.12805 10.4648Z" fill="#021E29"/>
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="notifications py-2">
+                                <div class="d-flex align-items-start py-4 border-bottom">
+                                    <div class="blueUserBadge blue120bg rounded-circle d-flex align-items-center justify-content-center">
+                                        <p class="blue20 body-tiny reg mb-0">SM</p>
+                                    </div>
+                                    <div class="ms-3">
+                                        <p class="body-small reg black80 mb-0">Reminder: Milestone-Milestone 3 is due 17
+                                            Mar 2023</p>
+                                        <p class="body-tiny reg black50 mb-0">about 13 hours ago</p>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-start py-4 border-bottom">
+                                    <div class="blueUserBadge blue120bg rounded-circle d-flex align-items-center justify-content-center">
+                                        <p class="blue20 body-tiny reg mb-0">SM</p>
+                                    </div>
+                                    <div class="ms-3">
+                                        <p class="body-small reg black80 mb-0">Reminder: Milestone-Milestone 3 is due 17
+                                            Mar 2023</p>
+                                        <p class="body-tiny reg black50 mb-0">about 13 hours ago</p>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-start py-4 border-bottom">
+                                    <div class="blueUserBadge blue120bg rounded-circle d-flex align-items-center justify-content-center">
+                                        <p class="blue20 body-tiny reg mb-0">SM</p>
+                                    </div>
+                                    <div class="ms-3">
+                                        <p class="body-small reg black80 mb-0">Reminder: Milestone-Milestone 3 is due 17
+                                            Mar 2023</p>
+                                        <p class="body-tiny reg black50 mb-0">about 13 hours ago</p>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-start py-4 border-bottom">
+                                    <div class="blueUserBadge blue120bg rounded-circle d-flex align-items-center justify-content-center">
+                                        <p class="blue20 body-tiny reg mb-0">SM</p>
+                                    </div>
+                                    <div class="ms-3">
+                                        <p class="body-small reg black80 mb-0">Reminder: Milestone-Milestone 3 is due 17
+                                            Mar 2023</p>
+                                        <p class="body-tiny reg black50 mb-0">about 13 hours ago</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="mainBody">
+
+        <!-- Sidebar Menu -->
+
+        <div id="sidebar" class="sidebar">
+            <div class="sidebar-content d-flex flex-column justify-content-between h-100">
+                <div class="sidebar-menu d-flex flex-column align-items-center pb-4">
+                    <a href="/hrm-screens/employee-list.html">
+                        <button href="" class="menu-item body-tiny reg">
+                            <svg width="20" height="17" viewBox="0 0 20 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0.0712891 16.6265V14.2046C0.0712891 13.6034 0.206069 13.058 0.47563 12.5685C0.74519 12.079 1.11958 11.714 1.5988 11.4735C2.69202 10.9238 3.67666 10.5288 4.55273 10.2883C5.4288 10.0478 6.33108 9.92759 7.25957 9.92759C8.18806 9.92759 9.08659 10.0478 9.95517 10.2883C10.8238 10.5288 11.8047 10.9238 12.8979 11.4735C13.3771 11.714 13.7552 12.079 14.0323 12.5685C14.3093 13.058 14.4479 13.6034 14.4479 14.2046V16.6265H0.0712891ZM15.7957 16.6265V14.2046C15.7957 13.1224 15.556 12.2335 15.0768 11.5379C14.5976 10.8422 13.9686 10.2797 13.1899 9.8503C14.2232 9.98771 15.1966 10.1895 16.1101 10.4558C17.0236 10.722 17.7649 11.0269 18.334 11.3704C18.8282 11.6968 19.2176 12.1004 19.5021 12.5814C19.7866 13.0623 19.9289 13.6034 19.9289 14.2046V16.6265H15.7957ZM7.25957 8.35593C6.27118 8.35593 5.4625 7.99522 4.83353 7.27381C4.20455 6.55239 3.89006 5.62486 3.89006 4.4912C3.89006 3.35754 4.20455 2.43001 4.83353 1.70859C5.4625 0.987174 6.27118 0.626465 7.25957 0.626465C8.24796 0.626465 9.05664 0.987174 9.68561 1.70859C10.3146 2.43001 10.6291 3.35754 10.6291 4.4912C10.6291 5.62486 10.3146 6.55239 9.68561 7.27381C9.05664 7.99522 8.24796 8.35593 7.25957 8.35593ZM15.3464 4.4912C15.3464 5.62486 15.0319 6.55239 14.4029 7.27381C13.7739 7.99522 12.9653 8.35593 11.9769 8.35593C11.8121 8.35593 11.6287 8.34305 11.4265 8.31729C11.2244 8.29152 11.0409 8.24429 10.8762 8.17558C11.2356 7.74616 11.5089 7.21798 11.6961 6.59104C11.8833 5.96409 11.9769 5.26415 11.9769 4.4912C11.9769 3.71825 11.8833 3.03548 11.6961 2.44289C11.5089 1.8503 11.2356 1.30494 10.8762 0.806819C11.0409 0.75529 11.2244 0.712348 11.4265 0.677995C11.6287 0.643642 11.8121 0.626465 11.9769 0.626465C12.9653 0.626465 13.7739 0.987174 14.4029 1.70859C15.0319 2.43001 15.3464 3.35754 15.3464 4.4912ZM1.41909 15.0806H13.1V14.2046C13.1 13.9297 13.0289 13.6635 12.8866 13.4059C12.7444 13.1482 12.5684 12.9678 12.3588 12.8648C11.2805 12.3151 10.3745 11.9458 9.64069 11.7569C8.90688 11.568 8.11318 11.4735 7.25957 11.4735C6.40596 11.4735 5.60851 11.568 4.86722 11.7569C4.12593 11.9458 3.21616 12.3151 2.13792 12.8648C1.92826 12.9678 1.75604 13.1482 1.62126 13.4059C1.48648 13.6635 1.41909 13.9297 1.41909 14.2046V15.0806ZM7.25957 6.81004C7.84362 6.81004 8.32658 6.59104 8.70846 6.15303C9.09033 5.71503 9.28127 5.16109 9.28127 4.4912C9.28127 3.82131 9.09033 3.26737 8.70846 2.82936C8.32658 2.39136 7.84362 2.17236 7.25957 2.17236C6.67552 2.17236 6.19256 2.39136 5.81068 2.82936C5.4288 3.26737 5.23787 3.82131 5.23787 4.4912C5.23787 5.16109 5.4288 5.71503 5.81068 6.15303C6.19256 6.59104 6.67552 6.81004 7.25957 6.81004Z" fill="#F8FBFC"/>
+                            </svg>
+                                
+                                HRM
+                        </button>
+                    </a>
+                    <a href="/hrm-screens/project.html">
+                        <button href="" class="menu-item body-tiny reg">
+                            <svg width="20" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.84177 16.2231C1.50493 16.2231 1.21019 16.0968 0.957561 15.8442C0.704929 15.5916 0.578613 15.2968 0.578613 14.96V4.85472C0.578613 4.51788 0.704929 4.22314 0.957561 3.97051C1.21019 3.71788 1.50493 3.59157 1.84177 3.59157H5.63124V1.4863C5.63124 1.14946 5.75756 0.854724 6.01019 0.602092C6.26282 0.34946 6.55756 0.223145 6.8944 0.223145H11.1049C11.4418 0.223145 11.7365 0.34946 11.9891 0.602092C12.2418 0.854724 12.3681 1.14946 12.3681 1.4863V3.59157H16.1576C16.4944 3.59157 16.7891 3.71788 17.0418 3.97051C17.2944 4.22314 17.4207 4.51788 17.4207 4.85472V14.96C17.4207 15.2968 17.2944 15.5916 17.0418 15.8442C16.7891 16.0968 16.4944 16.2231 16.1576 16.2231H1.84177ZM1.84177 14.96H16.1576V4.85472H1.84177V14.96ZM6.8944 3.59157H11.1049V1.4863H6.8944V3.59157Z" fill="white"/>
+                                </svg>
+                                
+                                Projects
+                        </button>
+                    </a>
+                    <a href="/hrm-screens/crm.html">
+                        <button href="" class="menu-item body-tiny reg">
+                            <svg width="14" height="17" viewBox="0 0 14 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6.84899 16.8462L4.54697 14.5442H1.1415C0.837099 14.5442 0.570749 14.43 0.342449 14.2017C0.11415 13.9734 0 13.7071 0 13.4027V1.98769C0 1.67378 0.11415 1.40505 0.342449 1.18151C0.570749 0.957963 0.837099 0.846191 1.1415 0.846191H12.5565C12.8609 0.846191 13.1272 0.957963 13.3555 1.18151C13.5838 1.40505 13.698 1.67378 13.698 1.98769V13.4027C13.698 13.7071 13.5838 13.9734 13.3555 14.2017C13.1272 14.43 12.8609 14.5442 12.5565 14.5442H9.15101L6.84899 16.8462ZM1.1415 12.6797C1.9025 11.9821 2.7643 11.4146 3.72692 10.977C4.68954 10.5394 5.72957 10.3206 6.84701 10.3206C7.96446 10.3206 9.00515 10.5394 9.96908 10.977C10.933 11.4146 11.7955 11.9821 12.5565 12.6797V1.98769H1.1415V12.6797ZM6.88704 8.81765C7.62267 8.81765 8.24415 8.56399 8.75149 8.05665C9.25882 7.54932 9.51248 6.92784 9.51248 6.19221C9.51248 5.45658 9.25882 4.83509 8.75149 4.32776C8.24415 3.82043 7.62267 3.56676 6.88704 3.56676C6.15141 3.56676 5.52992 3.82043 5.02259 4.32776C4.51526 4.83509 4.26159 5.45658 4.26159 6.19221C4.26159 6.92784 4.51526 7.54932 5.02259 8.05665C5.52992 8.56399 6.15141 8.81765 6.88704 8.81765ZM6.88704 7.67616C6.47483 7.67616 6.12445 7.53188 5.83591 7.24334C5.54736 6.95479 5.40309 6.60442 5.40309 6.19221C5.40309 5.78 5.54736 5.42962 5.83591 5.14108C6.12445 4.85253 6.47483 4.70826 6.88704 4.70826C7.29925 4.70826 7.64962 4.85253 7.93817 5.14108C8.22671 5.42962 8.37099 5.78 8.37099 6.19221C8.37099 6.60442 8.22671 6.95479 7.93817 7.24334C7.64962 7.53188 7.29925 7.67616 6.88704 7.67616ZM6.84899 15.153L8.59929 13.4027H11.5101V13.2314C10.8252 12.648 10.0918 12.2073 9.30983 11.9092C8.52788 11.6112 7.7076 11.4621 6.84899 11.4621C5.99921 11.4621 5.18113 11.6112 4.39477 11.9092C3.6084 12.2073 2.87277 12.648 2.18787 13.2314V13.4027H5.09869L6.84899 15.153Z" fill="white"/>
+                                </svg>
+                                
+                            CRM
+                        </button>
+                    </a>
+                </div>
+                <div class="sidebar-menu d-flex flex-column align-items-center">
+                    <button href="" class="menu-item active body-tiny reg">
+                        <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6.16 16.417L5.76 13.897C5.50667 13.8037 5.24 13.677 4.96 13.517C4.68 13.357 4.43333 13.1903 4.22 13.017L1.86 14.097L0 10.817L2.16 9.23699C2.13333 9.11699 2.11667 8.98033 2.11 8.82699C2.10333 8.67366 2.1 8.53699 2.1 8.41699C2.1 8.29699 2.10333 8.16033 2.11 8.00699C2.11667 7.85366 2.13333 7.71699 2.16 7.59699L0 6.01699L1.86 2.73699L4.22 3.81699C4.43333 3.64366 4.68 3.47699 4.96 3.31699C5.24 3.15699 5.50667 3.03699 5.76 2.95699L6.16 0.416992H9.84L10.24 2.93699C10.4933 3.03033 10.7633 3.15366 11.05 3.30699C11.3367 3.46033 11.58 3.63033 11.78 3.81699L14.14 2.73699L16 6.01699L13.84 7.55699C13.8667 7.69033 13.8833 7.83366 13.89 7.98699C13.8967 8.14033 13.9 8.28366 13.9 8.41699C13.9 8.55033 13.8967 8.69033 13.89 8.83699C13.8833 8.98366 13.8667 9.12366 13.84 9.25699L16 10.817L14.14 14.097L11.78 13.017C11.5667 13.1903 11.3233 13.3603 11.05 13.527C10.7767 13.6937 10.5067 13.817 10.24 13.897L9.84 16.417H6.16ZM8 11.017C8.72 11.017 9.33333 10.7637 9.84 10.257C10.3467 9.75033 10.6 9.13699 10.6 8.41699C10.6 7.69699 10.3467 7.08366 9.84 6.57699C9.33333 6.07033 8.72 5.81699 8 5.81699C7.28 5.81699 6.66667 6.07033 6.16 6.57699C5.65333 7.08366 5.4 7.69699 5.4 8.41699C5.4 9.13699 5.65333 9.75033 6.16 10.257C6.66667 10.7637 7.28 11.017 8 11.017ZM8 9.81699C7.61333 9.81699 7.28333 9.68033 7.01 9.40699C6.73667 9.13366 6.6 8.80366 6.6 8.41699C6.6 8.03033 6.73667 7.70033 7.01 7.42699C7.28333 7.15366 7.61333 7.01699 8 7.01699C8.38667 7.01699 8.71667 7.15366 8.99 7.42699C9.26333 7.70033 9.4 8.03033 9.4 8.41699C9.4 8.80366 9.26333 9.13366 8.99 9.40699C8.71667 9.68033 8.38667 9.81699 8 9.81699ZM7.12 15.217H8.88L9.16 12.977C9.6 12.8703 10.0167 12.7037 10.41 12.477C10.8033 12.2503 11.16 11.977 11.48 11.657L13.6 12.577L14.4 11.137L12.52 9.75699C12.5733 9.53033 12.6167 9.30699 12.65 9.08699C12.6833 8.86699 12.7 8.64366 12.7 8.41699C12.7 8.19033 12.6867 7.96699 12.66 7.74699C12.6333 7.52699 12.5867 7.30366 12.52 7.07699L14.4 5.69699L13.6 4.25699L11.48 5.17699C11.1733 4.83033 10.8267 4.54033 10.44 4.30699C10.0533 4.07366 9.62667 3.92366 9.16 3.85699L8.88 1.61699H7.12L6.84 3.85699C6.38667 3.95033 5.96333 4.11033 5.57 4.33699C5.17667 4.56366 4.82667 4.84366 4.52 5.17699L2.4 4.25699L1.6 5.69699L3.48 7.07699C3.42667 7.30366 3.38333 7.52699 3.35 7.74699C3.31667 7.96699 3.3 8.19033 3.3 8.41699C3.3 8.64366 3.31667 8.86699 3.35 9.08699C3.38333 9.30699 3.42667 9.53033 3.48 9.75699L1.6 11.137L2.4 12.577L4.52 11.657C4.84 11.977 5.19667 12.2503 5.59 12.477C5.98333 12.7037 6.4 12.8703 6.84 12.977L7.12 15.217Z" fill="white"/>
+                            </svg>
+                            
+                            Settings
+                    </button>
+                    <button href="" class="menu-item body-tiny reg">
+                        <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8.08 13.5062C8.29333 13.5062 8.47333 13.4329 8.62 13.2862C8.76667 13.1395 8.84 12.9595 8.84 12.7462C8.84 12.5329 8.76667 12.3529 8.62 12.2062C8.47333 12.0595 8.29333 11.9862 8.08 11.9862C7.86667 11.9862 7.68667 12.0595 7.54 12.2062C7.39333 12.3529 7.32 12.5329 7.32 12.7462C7.32 12.9595 7.39333 13.1395 7.54 13.2862C7.68667 13.4329 7.86667 13.5062 8.08 13.5062ZM7.38 10.5862H8.56C8.56 10.2395 8.60333 9.92286 8.69 9.63619C8.77667 9.34953 9.04667 9.01952 9.5 8.64619C9.91333 8.29952 10.2067 7.95953 10.38 7.62619C10.5533 7.29286 10.64 6.92619 10.64 6.52619C10.64 5.81953 10.41 5.25286 9.95 4.82619C9.49 4.39952 8.88 4.18619 8.12 4.18619C7.46667 4.18619 6.89 4.34952 6.39 4.67619C5.89 5.00286 5.52667 5.45286 5.3 6.02619L6.36 6.42619C6.50667 6.05286 6.72667 5.76286 7.02 5.55619C7.31333 5.34952 7.66 5.24619 8.06 5.24619C8.51333 5.24619 8.88 5.36952 9.16 5.61619C9.44 5.86286 9.58 6.17952 9.58 6.56619C9.58 6.85952 9.49333 7.13619 9.32 7.39619C9.14667 7.65619 8.89333 7.92619 8.56 8.20619C8.16 8.55286 7.86333 8.89619 7.67 9.23619C7.47667 9.57619 7.38 10.0262 7.38 10.5862ZM8 16.8462C6.90667 16.8462 5.87333 16.6362 4.9 16.2162C3.92667 15.7962 3.07667 15.2229 2.35 14.4962C1.62333 13.7695 1.05 12.9195 0.63 11.9462C0.21 10.9729 0 9.93952 0 8.84619C0 7.73952 0.21 6.69953 0.63 5.72619C1.05 4.75286 1.62333 3.90619 2.35 3.18619C3.07667 2.46619 3.92667 1.89619 4.9 1.47619C5.87333 1.05619 6.90667 0.846191 8 0.846191C9.10667 0.846191 10.1467 1.05619 11.12 1.47619C12.0933 1.89619 12.94 2.46619 13.66 3.18619C14.38 3.90619 14.95 4.75286 15.37 5.72619C15.79 6.69953 16 7.73952 16 8.84619C16 9.93952 15.79 10.9729 15.37 11.9462C14.95 12.9195 14.38 13.7695 13.66 14.4962C12.94 15.2229 12.0933 15.7962 11.12 16.2162C10.1467 16.6362 9.10667 16.8462 8 16.8462ZM8 15.6462C9.89333 15.6462 11.5 14.9829 12.82 13.6562C14.14 12.3295 14.8 10.7262 14.8 8.84619C14.8 6.95286 14.14 5.34619 12.82 4.02619C11.5 2.70619 9.89333 2.04619 8 2.04619C6.12 2.04619 4.51667 2.70619 3.19 4.02619C1.86333 5.34619 1.2 6.95286 1.2 8.84619C1.2 10.7262 1.86333 12.3295 3.19 13.6562C4.51667 14.9829 6.12 15.6462 8 15.6462Z" fill="white"/>
+                            </svg>
+                            
+                            Help
+                    </button>
+                    <div class="user-profile-active pt-4 border-top">
+                        <img src="../assets/images/user.png" alt="" width="35px" class="user-img">
+                        <div class="user-active"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="sidebar-toggler" onclick="sideham()">
+                <div id="sideHAM" class="ham-wrapper">
+                    <div class="ham ham1"></div>
+                    <div class="ham ham2"></div>
+                    <div class="ham ham3"></div>
+                </div>
+                <p class="m-0 ms-1 body-small">Menu</p>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+
+        <div class="crmContent">
+            <div class="crm-navItems w-100 py-3 px-4 border-bottom d-flex align-items-center justify-content-between w-100">
+                <div class="d-flex align-items-center body-normal sb black80">
+                    <a href="#" class="me-3">
+                        <svg width="20" height="17" viewBox="0 0 22 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7.7998 14.6543L0.799805 7.6543L7.7998 0.654297L9.05922 1.91371L4.19729 6.77564H21.8877V8.53296H4.19729L9.05922 13.3949L7.7998 14.6543Z" fill="#4E4D4D"/>
+                        </svg>
+                    </a>
+                    Settings
+                </div>
+            </div>
+            <div class="content-wrapper">
+                <div class="row border-bottom m-0">
+                    <div class="col-3 p-4 border-end">
+                        <ul class="nav settingsNav d-flex flex-column" id="pills-tab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                              <button class="active border-0 p-3 rounded my-2 d-flex align-items-center" id="pills-General-tab" data-bs-toggle="pill" data-bs-target="#pills-General" type="button" role="tab" aria-controls="pills-General" aria-selected="true">
+                                <svg class="me-2" width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M13.5972 8.74475V3.05725C13.5972 2.62627 13.426 2.21295 13.1212 1.9082C12.8165 1.60346 12.4031 1.43225 11.9722 1.43225H2.22217C1.79119 1.43225 1.37787 1.60346 1.07312 1.9082C0.768373 2.21295 0.597168 2.62627 0.597168 3.05725V8.74475M13.5972 8.74475V12.8073C13.5972 13.2382 13.426 13.6516 13.1212 13.9563C12.8165 14.261 12.4031 14.4323 11.9722 14.4323H2.22217C1.79119 14.4323 1.37787 14.261 1.07312 13.9563C0.768373 13.6516 0.597168 13.2382 0.597168 12.8073V8.74475M13.5972 8.74475H11.496C11.2806 8.7448 11.0739 8.83043 10.9216 8.98281L8.96023 10.9442C8.80789 11.0966 8.60126 11.1822 8.38579 11.1823H5.80854C5.59307 11.1822 5.38644 11.0966 5.23411 10.9442L3.27273 8.98281C3.12039 8.83043 2.91376 8.7448 2.69829 8.74475H0.597168" fill="transparent" stroke="#4E4D4D" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                    
+                                General
+                            </button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                              <button class="border-0 p-3 rounded my-2 d-flex align-items-center" id="pills-Pipeline-tab" data-bs-toggle="pill" data-bs-target="#pills-Pipeline" type="button" role="tab" aria-controls="pills-Pipeline" aria-selected="false">
+                                <svg class="me-2" width="17" height="15" viewBox="0 0 17 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M2.26481 7.4524H13.9315M2.26481 7.4524C1.82278 7.4524 1.39886 7.27681 1.0863 6.96425C0.773739 6.65169 0.598145 6.22776 0.598145 5.78574V2.4524C0.598145 2.01038 0.773739 1.58645 1.0863 1.27389C1.39886 0.961331 1.82278 0.785736 2.26481 0.785736H13.9315C14.3735 0.785736 14.7974 0.961331 15.11 1.27389C15.4225 1.58645 15.5981 2.01038 15.5981 2.4524V5.78574C15.5981 6.22776 15.4225 6.65169 15.11 6.96425C14.7974 7.27681 14.3735 7.4524 13.9315 7.4524M2.26481 7.4524C1.82278 7.4524 1.39886 7.628 1.0863 7.94056C0.773739 8.25312 0.598145 8.67704 0.598145 9.11907V12.4524C0.598145 12.8944 0.773739 13.3184 1.0863 13.6309C1.39886 13.9435 1.82278 14.1191 2.26481 14.1191H13.9315C14.3735 14.1191 14.7974 13.9435 15.11 13.6309C15.4225 13.3184 15.5981 12.8944 15.5981 12.4524V9.11907C15.5981 8.67704 15.4225 8.25312 15.11 7.94056C14.7974 7.628 14.3735 7.4524 13.9315 7.4524M12.2648 4.11907H12.2731M12.2648 10.7857H12.2731" fill="transparent" stroke="#4E4D4D" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                    
+                                Pipeline
+                            </button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                              <button class="border-0 p-3 rounded my-2 d-flex align-items-center" id="pills-at-tab" data-bs-toggle="pill" data-bs-target="#pills-at" type="button" role="tab" aria-controls="pills-at" aria-selected="false">
+                                <svg class="me-2" width="17" height="14" viewBox="0 0 17 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8.54259 8.70587L9.42731 6.77392L11.3593 5.8892L9.42731 5.00448L8.54259 3.07253L7.65787 5.00448L5.72592 5.8892L7.65787 6.77392L8.54259 8.70587ZM2.4037 11.3059C2.11481 11.3059 1.86203 11.1975 1.64537 10.9809C1.4287 10.7642 1.32037 10.5114 1.32037 10.2225V1.55587C1.32037 1.26698 1.4287 1.0142 1.64537 0.797534C1.86203 0.580868 2.11481 0.472534 2.4037 0.472534H14.6815C14.9704 0.472534 15.2231 0.580868 15.4398 0.797534C15.6565 1.0142 15.7648 1.26698 15.7648 1.55587V10.2225C15.7648 10.5114 15.6565 10.7642 15.4398 10.9809C15.2231 11.1975 14.9704 11.3059 14.6815 11.3059H2.4037ZM2.4037 10.2225H14.6815V1.55587H2.4037V10.2225ZM1.13981 13.4725C0.986339 13.4725 0.857693 13.4203 0.753874 13.3159C0.650054 13.2115 0.598145 13.0821 0.598145 12.9277C0.598145 12.7733 0.650054 12.645 0.753874 12.5427C0.857693 12.4404 0.986339 12.3892 1.13981 12.3892H15.9454C16.0988 12.3892 16.2275 12.4414 16.3313 12.5458C16.4351 12.6503 16.487 12.7797 16.487 12.934C16.487 13.0884 16.4351 13.2167 16.3313 13.3191C16.2275 13.4214 16.0988 13.4725 15.9454 13.4725H1.13981Z" stroke="#4E4D4D"/>
+                                    </svg>
+                                    
+                                Activity Type
+                            </button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-9 p-4">
+                        <div class="tab-content" id="pills-tabContent">
+                            <div class="tab-pane fade show active" id="pills-General" role="tabpanel" aria-labelledby="pills-General-tab" tabindex="0">
+                                
+                                <div class="editDealOptions border-bottom d-flex align-items-center" id="pills-tab" role="tablist">
+                                    <div role="presentation">
+                                        <button class="p-2 pt-0 mx-3 bg-transparent body-normal sb active" id="pills-ds-tab" data-bs-toggle="pill" data-bs-target="#pills-ds" type="button" role="tab" aria-controls="pills-ds" aria-selected="true">Deal Status</button>
+                                    </div>
+                                    <div role="presentation">
+                                        <button class="p-2 pt-0 mx-3 bg-transparent body-normal sb" data-bs-toggle="pill" data-bs-target="#pills-dcm" type="button" role="tab" aria-controls="pills-dcm" aria-selected="false">Default Calling Method</button>
+                                    </div>
+                                </div>
+
+                                <div class="tab-content p-4" id="pills-tabContent">
+                                    <div class="tab-pane fade show active" id="pills-ds" role="tabpanel" aria-labelledby="pills-ds-tab" tabindex="0">
+                                        <p class="body-medium med black20">Deal Status</p>
+
+                                        <div class="statusContainer mt-4">
+                                            <div class="py-3">
+                                                <p class="body-normal reg black20 mb-2">When a deal is marked as Won. Show  congratulatory message.</p>
+
+                                                <div class="d-flex align-items-center">
+                                                    <div class="form-check me-3">
+                                                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="msgY">
+                                                        <label class="form-check-label" for="msgY">
+                                                            Yes
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="msgN">
+                                                        <label class="form-check-label" for="msgN">
+                                                            No
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="py-3">
+                                                <div class="productEditorCont">
+                                                    <p class="body-normal reg black20 mb-2">Message :</p>
+                                                    <div class="d-flex align-items-center justify-content-between p-3 border rounded my-2">
+                                                        <p class="body-normal reg black70 m-0">Congratulation</p>
+                                                        <button class="addValue body-small med primary d-flex align-items-center p-0 border-0 bg-transparent" targeted-element="message">
+                                                            <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M10.2751 2.59063L12.9271 5.24263M11.4001 1.46563C11.7518 1.11395 12.2287 0.916382 12.7261 0.916382C13.2234 0.916382 13.7004 1.11395 14.0521 1.46563C14.4038 1.81731 14.6013 2.29428 14.6013 2.79163C14.6013 3.28898 14.4038 3.76595 14.0521 4.11763L3.72607 14.4436H1.10107V11.7646L11.4001 1.46563Z" stroke="#383637" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            </svg>
+                                                        </button>
+                                                    </div>
+                                                    
+                                                    <div class="p-0 w-100 productEditInput my-2" id="message">
+                                                        <div class="d-flex align-items-center justify-content-between">
+                                                            <input type="text" class="p-3 body-small med black80 border rounded w-100">
+                                                            
+                                                            <button class="p-3 mx-2 border-0 bg-success rounded-circle d-flex align-items-center justify-content-center closeAddElement">
+                                                                <svg width="15" height="14" viewBox="0 0 17 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path d="M5.85351 11.6827L0.436401 6.26555L1.47629 5.22566L5.85351 9.60287L15.14 0.316406L16.1799 1.3563L5.85351 11.6827Z" fill="white"/>
+                                                                    </svg>
+                                                                    
+                                                            </button>
+                                                            <button class="p-3 border-0 bg-danger rounded-circle d-flex align-items-center justify-content-center closeAddElement" closeInput="message">
+                                                                <svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path d="M2.06882 14L0.668823 12.6L6.26882 7L0.668823 1.4L2.06882 0L7.66882 5.6L13.2688 0L14.6688 1.4L9.06882 7L14.6688 12.6L13.2688 14L7.66882 8.4L2.06882 14Z" fill="white"/>
+                                                                </svg>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="py-3">
+                                                <p class="body-normal reg black20 mb-2">What a deal is marked  as Lost. Users can specify the reason.</p>
+
+                                                <div class="d-flex align-items-center">
+                                                    <div class="form-check me-3">
+                                                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="rsnY">
+                                                        <label class="form-check-label" for="rsnY">
+                                                            Yes
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="rsnN">
+                                                        <label class="form-check-label" for="rsnN">
+                                                            No
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- Reason -->
+
+                                            <div class="d-flex align-items-center justify-content-between my-4">
+                                                <p class="body-normal reg black20 m-0">Reason :</p>
+                                                <button class="body-normal med grey0 py-2 px-3 rounded primaryBG border-0" data-bs-target="#predefinedReason" data-bs-toggle="modal">
+                                                    Add Predefined Reason
+                                                </button>
+                                            </div>
+                                            <div>
+                                                <div class="productEditorCont">
+                                                    <div class="d-flex align-items-center justify-content-between p-3 border rounded my-2">
+                                                        <p class="body-normal reg black70 m-0">Congratulation</p>
+                                                        <button class="addValue body-small med primary d-flex align-items-center p-0 border-0 bg-transparent" targeted-element="Reason">
+                                                            <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M10.2751 2.59063L12.9271 5.24263M11.4001 1.46563C11.7518 1.11395 12.2287 0.916382 12.7261 0.916382C13.2234 0.916382 13.7004 1.11395 14.0521 1.46563C14.4038 1.81731 14.6013 2.29428 14.6013 2.79163C14.6013 3.28898 14.4038 3.76595 14.0521 4.11763L3.72607 14.4436H1.10107V11.7646L11.4001 1.46563Z" stroke="#383637" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            </svg>
+                                                        </button>
+                                                    </div>
+                                                    
+                                                    <div class="p-0 w-100 productEditInput my-2" id="Reason">
+                                                        <div class="d-flex align-items-center justify-content-between">
+                                                            <input type="text" class="p-3 body-small med black80 border rounded w-100">
+                                                            
+                                                            <button class="p-3 mx-2 border-0 bg-success rounded-circle d-flex align-items-center justify-content-center closeAddElement">
+                                                                <svg width="15" height="14" viewBox="0 0 17 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path d="M5.85351 11.6827L0.436401 6.26555L1.47629 5.22566L5.85351 9.60287L15.14 0.316406L16.1799 1.3563L5.85351 11.6827Z" fill="white"/>
+                                                                </svg>
+                                                            </button>
+                                                            <button class="p-3 border-0 bg-danger rounded-circle d-flex align-items-center justify-content-center closeAddElement" closeInput="Reason">
+                                                                <svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path d="M2.06882 14L0.668823 12.6L6.26882 7L0.668823 1.4L2.06882 0L7.66882 5.6L13.2688 0L14.6688 1.4L9.06882 7L14.6688 12.6L13.2688 14L7.66882 8.4L2.06882 14Z" fill="white"/>
+                                                                </svg>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+
+                                        </div>
+
+                                    </div>
+                                    <div class="tab-pane fade" id="pills-dcm" role="tabpanel" aria-labelledby="pills-dcm-tab" tabindex="0">
+                                        <p>Default Calling Method</p>
+                                        <p>Select a Syntax to use for your default ccalling method. Clicking any phone number in CRM will initiate  a call  using thidd mrtho</p>
+                                        
+
+                                        <div class="py-4">
+                                            <p class="body-normal reg black20 mb-3">Select Method</p>
+
+                                            <select name="" id="" class="body-small reg black80 py-2 border-0 border-bottom">
+                                                <option value="" selected disabled>Default Call to Handler</option>
+                                                <option value="">Option 1</option>
+                                                <option value="">Option 2</option>
+                                                <option value="">Option 3</option>
+                                            </select>
+                                            <input type="text" class="body-small reg black80 py-2 border-0 border-bottom w-100 my-3" placeholder="Call to : (Number)">
+                                            <div class="text-end mt-4">
+                                                <button class="body-medium2 med grey0 border-0 primaryBG py-2 px-3 rounded">
+                                                    Save
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                            <div class="tab-pane fade" id="pills-Pipeline" role="tabpanel" aria-labelledby="pills-Pipeline-tab" tabindex="0">
+                                <div>
+                                    <p class="heading-four med black80 mb-5">Customize Sales Pipeline</p>
+
+                                    <div class="Stage">
+                                        <div class="d-flex align-items-center">
+                                            <p class="body-normal med black80 mb-0 me-3">Pipeline 1</p>
+                                            <div class="dropdown dropstart more-option-toggle">
+                                                <button class="border-0 p-0 bg-transparent" type="button" id="more-option1" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    <svg width="4" height="16" viewBox="0 0 4 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M2 16C1.45 16 0.979334 15.8043 0.588 15.413C0.196 15.021 0 14.55 0 14C0 13.45 0.196 12.979 0.588 12.587C0.979334 12.1957 1.45 12 2 12C2.55 12 3.021 12.1957 3.413 12.587C3.80433 12.979 4 13.45 4 14C4 14.55 3.80433 15.021 3.413 15.413C3.021 15.8043 2.55 16 2 16ZM2 10C1.45 10 0.979334 9.804 0.588 9.412C0.196 9.02067 0 8.55 0 8C0 7.45 0.196 6.979 0.588 6.587C0.979334 6.19567 1.45 6 2 6C2.55 6 3.021 6.19567 3.413 6.587C3.80433 6.979 4 7.45 4 8C4 8.55 3.80433 9.02067 3.413 9.412C3.021 9.804 2.55 10 2 10ZM2 4C1.45 4 0.979334 3.804 0.588 3.412C0.196 3.02067 0 2.55 0 2C0 1.45 0.196 0.979333 0.588 0.588C0.979334 0.196 1.45 0 2 0C2.55 0 3.021 0.196 3.413 0.588C3.80433 0.979333 4 1.45 4 2C4 2.55 3.80433 3.02067 3.413 3.412C3.021 3.804 2.55 4 2 4Z" fill="#7A797A"></path>
+                                                        </svg>
+                                                </button>
+                                                <ul class="dropdown-menu more-options p-0" aria-labelledby="more-option1">
+                                                    <li>
+                                                        <button type="button" class="dropdown-item border-0 body-normal reg black80 p-2">
+                                                            Option 1
+                                                        </button>
+                                                    </li>
+                                                    <li>
+                                                        <button type="button" class="dropdown-item border-0 body-normal reg black80 p-2">
+                                                        Option 2
+                                                        </button>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="my-3 d-flex align-items-center">
+                                            <button class="border-0 rounded body-normal reg black80 py-2 px-3 mx-2" data-bs-target="#editStage" data-bs-toggle="modal">Stage 1</button>
+                                            <button class="border-0 rounded body-normal reg black80 py-2 px-3 mx-2" data-bs-target="#editStage" data-bs-toggle="modal">Stage 1</button>
+                                            <button class="border-0 rounded body-normal reg black80 py-2 px-3 mx-2" data-bs-target="#editStage" data-bs-toggle="modal">Stage 1</button>
+                                            <button class="border-0 rounded body-normal reg black80 py-2 px-3 mx-2" data-bs-target="#editStage" data-bs-toggle="modal">Stage 1</button>
+                                            <button class="border-0 rounded body-normal reg black80 py-2 px-3 mx-2" data-bs-target="#editStage" data-bs-toggle="modal">Stage 1</button>
+                                        </div>
+                                        
+                                        <button class="border-0 rounded body-medium2 med black80 py-2 px-3 mt-2 primaryBG grey0" data-bs-target="#addStage" data-bs-toggle="modal">Add Stage</button>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <div class="tab-pane fade" id="pills-at" role="tabpanel" aria-labelledby="pills-at-tab" tabindex="0">
+                                
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <p class="heading-four med black80 mb-0">Customize Sales Activities</p>
+                                    <div class="d-flex align-items-center">
+                                        <button class="body-medium2 med grey0 black30bg border-0 py-3 px-4 rounded me-3">
+                                            Deactivate
+                                        </button>
+                                        <button class="body-medium2 med grey0 primaryBG border-0 py-3 px-4 rounded" data-bs-target="#addActivityType" data-bs-toggle="modal">
+                                            Add Activity Type
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div class="d-flex align-items-center py-4">
+                                    <p class="body-normal med black80 mb-0">Show Activity Type</p>
+                                    <div class="dropdown more-option-toggle mx-3">
+                                        <button class="body-normal reg black80 bg-transparent border py-2 px-3 rounded dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Acivated</button>
+                                        <ul class="dropdown-menu more-options p-0" aria-labelledby="more-option1">
+                                            <li>
+                                                <button type="button" class="dropdown-item border-0 body-normal reg black80 p-2">
+                                                    Option 1
+                                                </button>
+                                            </li>
+                                            <li>
+                                                <button type="button" class="dropdown-item border-0 body-normal reg black80 p-2">
+                                                Option 2
+                                                </button>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="search-input-box px-3 py-0 border h-auto rounded w-auto">
+                                        <img src="../assets/images/search-icon.svg" alt="" width="12px">
+                                        <input type="text" class="search-input py-2 h-auto body-normal reg black80" placeholder="Search">
+                                    </div>
+                                </div>
+
+                                <div class=" table-responsive-lg">
+                                    <table class="table w-100 m-0">
+                                        <thead class="list-info-head-row">
+                                            <th class="list-info-head"></th>
+                                            <th class="list-info-head body-medium med black90 m-0" scope="col">Name</th>
+                                            <th class="list-info-head body-medium med black90 m-0" scope="col">Icon</th>
+                                            <th class="list-info-head body-medium med black90 m-0" scope="col">Actions</th>
+                                            <th></th>
+                                        </thead>
+                                        <tbody>
+                                            <tr class="list-info-row">
+                                                <td class="list-info-item">
+                                                    <input type="checkbox" class="my-1">
+                                                </td>
+                                                <td class="list-info-item">
+                                                    <p class="m-0 body-normal black70 my-1">Call</p>
+                                                </td>
+                                                <td class="list-info-item">
+                                                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M1.39052 1.05715C1.14048 1.3072 1 1.64634 1 1.99996V2.66663C1 8.18929 5.47733 12.6666 11 12.6666H11.6667C12.0203 12.6666 12.3594 12.5262 12.6095 12.2761C12.8595 12.0261 13 11.6869 13 11.3333V9.14729C13 9.00732 12.956 8.87088 12.8742 8.75733C12.7923 8.64377 12.6768 8.55886 12.544 8.51463L9.54867 7.51596C9.39644 7.46536 9.23107 7.47134 9.0829 7.53281C8.93473 7.59429 8.8137 7.70712 8.742 7.85063L7.98867 9.35529C6.35631 8.61775 5.04888 7.31032 4.31133 5.67796L5.816 4.92463C5.9595 4.85293 6.07234 4.73189 6.13381 4.58372C6.19528 4.43555 6.20127 4.27019 6.15067 4.11796L5.152 1.12263C5.1078 0.98993 5.02299 0.874495 4.90957 0.792659C4.79615 0.710823 4.65986 0.666732 4.52 0.666626H2.33333C1.97971 0.666626 1.64057 0.807102 1.39052 1.05715Z" stroke="#383637" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    </svg>
+                                                </td>
+                                                <td class="list-info-item">
+                                                    <div class="d-flex align-items-center h-100">
+                                                        <button class="border-0 bg-transparent p-0 me-2 d-flex align-items-center justify-content-center" data-bs-target="#editActivityType" data-bs-toggle="modal">
+                                                            <svg width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M9.98906 2.92425L12.6411 5.57625M11.1141 1.79925C11.4657 1.44757 11.9427 1.25 12.4401 1.25C12.9374 1.25 13.4144 1.44757 13.7661 1.79925C14.1177 2.15092 14.3153 2.6279 14.3153 3.12525C14.3153 3.62259 14.1177 4.09957 13.7661 4.45125L3.44006 14.7772H0.815063V12.0982L11.1141 1.79925Z" stroke="#383637" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                </svg>
+                                                        </button>
+                                                        <button class="border-0 bg-transparent p-0 ms-2 d-flex align-items-center justify-content-center" data-bs-target="#delete" data-bs-toggle="modal">
+                                                            <svg width="15" height="16" viewBox="0 0 16 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M5.81506 8V13.25M9.31506 8V13.25M0.565063 4.5H14.5651M13.6901 4.5L12.9314 15.1243C12.9 15.5658 12.7024 15.979 12.3785 16.2806C12.0546 16.5823 11.6284 16.75 11.1858 16.75H3.94431C3.50169 16.75 3.0755 16.5823 2.75159 16.2806C2.42768 15.979 2.23012 15.5658 2.19869 15.1243L1.44006 4.5H13.6901ZM10.1901 4.5V1.875C10.1901 1.64294 10.0979 1.42038 9.93378 1.25628C9.76969 1.09219 9.54713 1 9.31506 1H5.81506C5.583 1 5.36044 1.09219 5.19635 1.25628C5.03225 1.42038 4.94006 1.64294 4.94006 1.875V4.5H10.1901Z" stroke="#C73C10" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                </svg>
+                                                                
+                                                        </button>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <div class="modal fade" id="predefinedReason" tabindex="-1" aria-labelledby="predefinedReason" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered rounded">
+            <div class="modal-content p-4 border rounded position-relative mx-auto" style="max-width: 80%;">
+                <div class="d-flex align-items-center justify-content-between mb-3">
+                    <p class="black20 body-medium sb m-0">Reasons:</p>
+                        <button class="border-0 bg-transparent" data-bs-dismiss="modal">
+                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.4 14L0 12.6L5.6 7L0 1.4L1.4 0L7 5.6L12.6 0L14 1.4L8.4 7L14 12.6L12.6 14L7 8.4L1.4 14Z" fill="#383637"/>
+                            </svg>
+                        </button>
+                </div>
+                <div>
+                    <input type="text" class="body-small reg black80 py-2 border-0 border-bottom w-100" placeholder="Type your lost reason here...">
+                </div>
+                <div class="d-flex align-items-center justify-content-end mt-3">
+                    <button class="bg-transparent p-0 body-normal med primary border-0 me-3" data-bs-dismiss="modal">Cancel</button>
+                    <button class="primaryBG py-2 px-3 body-medium2 med grey0 border-0 rounded">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="addStage" tabindex="-1" aria-labelledby="addStage" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered rounded">
+            <div class="modal-content p-4 border rounded position-relative mx-auto" style="max-width: 80%;">
+                <div class="d-flex align-items-center justify-content-between border-bottom pb-2 mb-3">
+                    <p class="black20 body-medium sb m-0">Add New Stage</p>
+                        <button class="border-0 bg-transparent" data-bs-dismiss="modal">
+                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.4 14L0 12.6L5.6 7L0 1.4L1.4 0L7 5.6L12.6 0L14 1.4L8.4 7L14 12.6L12.6 14L7 8.4L1.4 14Z" fill="#383637"/>
+                            </svg>
+                        </button>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <p class="body-normal reg black20 mb-2">Stage Name</p>
+                        <select name="" id="" class="body-small reg black80 py-2 border-0 border-bottom">
+                            <option value="" selected disabled>Select</option>
+                            <option value="">Option 1</option>
+                            <option value="">Option 2</option>
+                            <option value="">Option 3</option>
+                        </select>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="mb-2 d-flex align-items-center justify-content-between">
+                            <p class="body-normal reg black20 mb-0">Deal Routing</p>
+                            <div class="dashboardToggle">
+                                <input class="dashCheckBox" type="checkbox">
+                                <div class="dashToggler">
+                                    <div class="dToggleCircle"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <select name="" id="" class="body-small reg black80 py-2 border-0 border-bottom">
+                            <option value="" selected disabled>Select</option>
+                            <option value="">Option 1</option>
+                            <option value="">Option 2</option>
+                            <option value="">Option 3</option>
+                        </select>
+                        <p class="body-small reg black80 mb-0 mt-2 "><span class="sb">Note:</span>
+                            Set number of days after which deals  in the stage will rot.</p>
+                    </div>
+                </div>
+                <div class="d-flex align-items-center justify-content-end mt-3">
+                    <button class="bg-transparent p-0 body-normal med primary border-0 me-3" data-bs-dismiss="modal">Cancel</button>
+                    <button class="primaryBG py-2 px-3 body-medium2 med grey0 border-0 rounded">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="editStage" tabindex="-1" aria-labelledby="editStage" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered rounded">
+            <div class="modal-content p-4 border rounded position-relative mx-auto" style="max-width: 80%;">
+                <div class="d-flex align-items-center justify-content-between border-bottom pb-2 mb-3">
+                    <p class="black20 body-medium sb m-0">Add New Stage</p>
+                        <button class="border-0 bg-transparent" data-bs-dismiss="modal">
+                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.4 14L0 12.6L5.6 7L0 1.4L1.4 0L7 5.6L12.6 0L14 1.4L8.4 7L14 12.6L12.6 14L7 8.4L1.4 14Z" fill="#383637"/>
+                            </svg>
+                        </button>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <p class="body-normal reg black20 mb-2">Stage Name</p>
+                        <select name="" id="" class="body-small reg black80 py-2 border-0 border-bottom">
+                            <option value="" selected disabled>Select</option>
+                            <option value="">Option 1</option>
+                            <option value="">Option 2</option>
+                            <option value="">Option 3</option>
+                        </select>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="mb-2 d-flex align-items-center justify-content-between">
+                            <p class="body-normal reg black20 mb-0">Deal Routing</p>
+                            <div class="dashboardToggle">
+                                <input class="dashCheckBox" type="checkbox">
+                                <div class="dashToggler">
+                                    <div class="dToggleCircle"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <select name="" id="" class="body-small reg black80 py-2 border-0 border-bottom">
+                            <option value="" selected disabled>Select</option>
+                            <option value="">Option 1</option>
+                            <option value="">Option 2</option>
+                            <option value="">Option 3</option>
+                        </select>
+                        <p class="body-small reg black80 mb-0 mt-2 "><span class="sb">Note:</span>
+                            Set number of days after which deals  in the stage will rot.</p>
+                    </div>
+                </div>
+                <div class="d-flex align-items-center justify-content-between mt-3">
+                    
+                    <button class="bg-transparent p-0 body-normal med alert-red d-flex align-items-center border-0">
+                        <svg class="me-2" width="11" height="13" viewBox="0 0 11 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4.07202 5.93431V9.43431M6.40536 5.93431V9.43431M0.572021 3.60097H9.90536M9.32202 3.60097L8.81627 10.6838C8.79532 10.9781 8.66361 11.2536 8.44767 11.4547C8.23173 11.6558 7.94761 11.7676 7.65252 11.7676H2.82485C2.52977 11.7676 2.24564 11.6558 2.0297 11.4547C1.81377 11.2536 1.68206 10.9781 1.6611 10.6838L1.15535 3.60097H9.32202ZM6.98869 3.60097V1.85097C6.98869 1.69626 6.92723 1.54789 6.81783 1.43849C6.70844 1.3291 6.56006 1.26764 6.40536 1.26764H4.07202C3.91731 1.26764 3.76894 1.3291 3.65954 1.43849C3.55015 1.54789 3.48869 1.69626 3.48869 1.85097V3.60097H6.98869Z" stroke="#C73C10" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                            
+                        Delete this Stage
+                    </button>
+                    <div>
+                        <button class="bg-transparent p-0 body-normal med primary border-0 me-3" data-bs-dismiss="modal">Cancel</button>
+                        <button class="primaryBG py-2 px-3 body-medium2 med grey0 border-0 rounded">Save</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="addActivityType" tabindex="-1" aria-labelledby="addActivity" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered rounded">
+            <div class="modal-content p-4 border rounded position-relative mx-auto">
+                <div class="d-flex align-items-center justify-content-between border-bottom pb-2 mb-3">
+                    <p class="black20 body-medium sb m-0">Add Activity Type</p>
+                        <button class="border-0 bg-transparent" data-bs-dismiss="modal">
+                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.4 14L0 12.6L5.6 7L0 1.4L1.4 0L7 5.6L12.6 0L14 1.4L8.4 7L14 12.6L12.6 14L7 8.4L1.4 14Z" fill="#383637"/>
+                            </svg>
+                        </button>
+                </div>
+                <p class="body-normal reg black20 mb-2">Activity Type Name</p>
+                        <select name="" id="" class="body-small reg black80 py-2 border-0 border-bottom">
+                            <option value="" selected disabled>Select</option>
+                            <option value="">Option 1</option>
+                            <option value="">Option 2</option>
+                            <option value="">Option 3</option>
+                        </select>
+
+                <div class="typeSymbol my-3 p-3 d-flex align-items-center flex-wrap">
+                    <button class="border-0 p-0">
+                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1.05826 1.10935C0.839469 1.32814 0.716553 1.62489 0.716553 1.93431V2.51764C0.716553 7.34997 4.63422 11.2676 9.46655 11.2676H10.0499C10.3593 11.2676 10.6561 11.1447 10.8748 10.9259C11.0936 10.7071 11.2166 10.4104 11.2166 10.101V8.18822C11.2166 8.06574 11.1781 7.94636 11.1064 7.847C11.0348 7.74764 10.9338 7.67334 10.8176 7.63464L8.19664 6.76081C8.06344 6.71653 7.91874 6.72177 7.78909 6.77555C7.65944 6.82934 7.55354 6.92807 7.4908 7.05364L6.83164 8.37022C5.40332 7.72487 4.25932 6.58087 3.61397 5.15256L4.93055 4.49339C5.05612 4.43065 5.15485 4.32475 5.20864 4.1951C5.26243 4.06545 5.26766 3.92075 5.22339 3.78756L4.34955 1.16664C4.31088 1.05053 4.23667 0.949525 4.13743 0.877918C4.03818 0.806312 3.91893 0.767732 3.79655 0.767639H1.88322C1.5738 0.767639 1.27705 0.890555 1.05826 1.10935Z" stroke="#383637" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                             
+                    </button>
+                    <button class="border-0 p-0">
+                        <svg width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3.96647 2.35097H2.63314C2.27952 2.35097 1.94038 2.49145 1.69033 2.7415C1.44028 2.99155 1.2998 3.33068 1.2998 3.68431V11.6843C1.2998 12.0379 1.44028 12.3771 1.69033 12.6271C1.94038 12.8772 2.27952 13.0176 2.63314 13.0176H9.2998C9.65343 13.0176 9.99257 12.8772 10.2426 12.6271C10.4927 12.3771 10.6331 12.0379 10.6331 11.6843V3.68431C10.6331 3.33068 10.4927 2.99155 10.2426 2.7415C9.99257 2.49145 9.65343 2.35097 9.2998 2.35097H7.96647M3.96647 2.35097C3.96647 2.70459 4.10695 3.04373 4.357 3.29378C4.60704 3.54383 4.94618 3.68431 5.2998 3.68431H6.63314C6.98676 3.68431 7.3259 3.54383 7.57595 3.29378C7.826 3.04373 7.96647 2.70459 7.96647 2.35097M3.96647 2.35097C3.96647 1.99735 4.10695 1.65821 4.357 1.40816C4.60704 1.15811 4.94618 1.01764 5.2998 1.01764H6.63314C6.98676 1.01764 7.3259 1.15811 7.57595 1.40816C7.826 1.65821 7.96647 1.99735 7.96647 2.35097M3.96647 8.35097L5.2998 9.68431L7.96647 7.01764" stroke="#383637" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>    
+                    </button>
+                    <button class="border-0 p-0">
+                        <svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3.63322 3.35096H10.2999M3.63322 6.01763H6.29989M6.96655 11.351L4.29989 8.6843H2.29989C1.94626 8.6843 1.60713 8.54382 1.35708 8.29377C1.10703 8.04372 0.966553 7.70458 0.966553 7.35096V2.01763C0.966553 1.66401 1.10703 1.32487 1.35708 1.07482C1.60713 0.824771 1.94626 0.684296 2.29989 0.684296H11.6332C11.9868 0.684296 12.326 0.824771 12.576 1.07482C12.8261 1.32487 12.9666 1.66401 12.9666 2.01763V7.35096C12.9666 7.70458 12.8261 8.04372 12.576 8.29377C12.326 8.54382 11.9868 8.6843 11.6332 8.6843H9.63322L6.96655 11.351Z" stroke="#383637" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>                             
+                    </button>
+                    <button class="border-0 p-0">
+                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12.9666 13.0176L8.96655 9.01764M10.2999 5.68431C10.2999 6.29714 10.1792 6.90398 9.94466 7.47016C9.71014 8.03635 9.36639 8.5508 8.93305 8.98414C8.49971 9.41748 7.98526 9.76122 7.41908 9.99574C6.85289 10.2303 6.24605 10.351 5.63322 10.351C5.02038 10.351 4.41355 10.2303 3.84736 9.99574C3.28118 9.76122 2.76673 9.41748 2.33339 8.98414C1.90005 8.5508 1.5563 8.03635 1.32178 7.47016C1.08726 6.90398 0.966553 6.29714 0.966553 5.68431C0.966553 4.44663 1.45822 3.25964 2.33339 2.38447C3.20856 1.5093 4.39554 1.01764 5.63322 1.01764C6.8709 1.01764 8.05788 1.5093 8.93305 2.38447C9.80822 3.25964 10.2999 4.44663 10.2999 5.68431Z" stroke="#383637" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                              
+                    </button>
+                    <button class="border-0 p-0">
+                        <svg width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7.96663 10.351H11.3L10.3633 9.41431C10.2375 9.28849 10.1377 9.13913 10.0697 8.97476C10.0016 8.81039 9.96661 8.63421 9.96663 8.45631V6.35097C9.96673 5.5236 9.71035 4.71653 9.23279 4.0409C8.75522 3.36526 8.07996 2.85428 7.29997 2.57831V2.35097C7.29997 1.99735 7.15949 1.65821 6.90944 1.40816C6.65939 1.15811 6.32026 1.01764 5.96663 1.01764C5.61301 1.01764 5.27387 1.15811 5.02383 1.40816C4.77378 1.65821 4.6333 1.99735 4.6333 2.35097V2.57831C3.07997 3.12764 1.96663 4.60964 1.96663 6.35097V8.45697C1.96663 8.81564 1.82397 9.16031 1.56997 9.41431L0.633301 10.351H3.96663M7.96663 10.351H3.96663M7.96663 10.351V11.0176C7.96663 11.5481 7.75592 12.0568 7.38085 12.4319C7.00577 12.8069 6.49707 13.0176 5.96663 13.0176C5.4362 13.0176 4.92749 12.8069 4.55242 12.4319C4.17735 12.0568 3.96663 11.5481 3.96663 11.0176V10.351" stroke="#383637" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                               
+                    </button>
+                    <button class="border-0 p-0">
+                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6.96655 1.92031C7.32485 1.51411 7.79834 1.22664 8.32403 1.09617C8.84971 0.965692 9.40267 0.998388 9.90932 1.18991C10.416 1.38143 10.8523 1.72269 11.1602 2.16828C11.4681 2.61387 11.6331 3.14267 11.6331 3.68431C11.6331 4.22594 11.4681 4.75474 11.1602 5.20033C10.8523 5.64593 10.416 5.98719 9.90932 6.17871C9.40267 6.37022 8.84971 6.40292 8.32403 6.27244C7.79834 6.14197 7.32485 5.85451 6.96655 5.44831M8.96655 13.0176H0.966553V12.351C0.966553 11.2901 1.38798 10.2727 2.13813 9.52255C2.88827 8.7724 3.90569 8.35097 4.96655 8.35097C6.02742 8.35097 7.04483 8.7724 7.79498 9.52255C8.54513 10.2727 8.96655 11.2901 8.96655 12.351V13.0176ZM8.96655 13.0176H12.9666V12.351C12.9667 11.6488 12.7819 10.9589 12.4309 10.3508C12.0798 9.74262 11.5749 9.23759 10.9668 8.88645C10.3587 8.53531 9.66889 8.35043 8.96669 8.35041C8.2645 8.35038 7.57467 8.53521 6.96655 8.88631M7.63322 3.68431C7.63322 4.39155 7.35227 5.06983 6.85217 5.56992C6.35207 6.07002 5.6738 6.35097 4.96655 6.35097C4.25931 6.35097 3.58103 6.07002 3.08093 5.56992C2.58084 5.06983 2.29989 4.39155 2.29989 3.68431C2.29989 2.97706 2.58084 2.29879 3.08093 1.79869C3.58103 1.29859 4.25931 1.01764 4.96655 1.01764C5.6738 1.01764 6.35207 1.29859 6.85217 1.79869C7.35227 2.29879 7.63322 2.97706 7.63322 3.68431Z" stroke="#383637" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            
+                    </button>
+                    <button class="border-0 p-0">
+                        <svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M2.29989 10.6843C1.94626 10.6843 1.60713 10.5438 1.35708 10.2938C1.10703 10.0437 0.966553 9.7046 0.966553 9.35098V2.68432C0.966553 2.33069 1.10703 1.99156 1.35708 1.74151C1.60713 1.49146 1.94626 1.35098 2.29989 1.35098H4.96655L6.29989 2.68432H8.96655C9.32017 2.68432 9.65931 2.82479 9.90936 3.07484C10.1594 3.32489 10.2999 3.66403 10.2999 4.01765V4.68432M2.29989 10.6843H11.6332C11.9868 10.6843 12.326 10.5438 12.576 10.2938C12.8261 10.0437 12.9666 9.7046 12.9666 9.35098V6.01765C12.9666 5.66403 12.8261 5.32489 12.576 5.07484C12.326 4.82479 11.9868 4.68432 11.6332 4.68432H4.96655C4.61293 4.68432 4.27379 4.82479 4.02374 5.07484C3.7737 5.32489 3.63322 5.66403 3.63322 6.01765V9.35098C3.63322 9.7046 3.49274 10.0437 3.2427 10.2938C2.99265 10.5438 2.65351 10.6843 2.29989 10.6843Z" stroke="#383637" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                               
+                    </button>
+                    <button class="border-0 p-0">
+                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M11.6332 12.5145H2.29989C1.94626 12.5145 1.60713 12.3631 1.35708 12.0936C1.10703 11.8241 0.966553 11.4586 0.966553 11.0774V2.45475C0.966553 2.07361 1.10703 1.70807 1.35708 1.43856C1.60713 1.16905 1.94626 1.01764 2.29989 1.01764H8.96655C9.32017 1.01764 9.65931 1.16905 9.90936 1.43856C10.1594 1.70807 10.2999 2.07361 10.2999 2.45475V3.17331M11.6332 12.5145C11.2796 12.5145 10.9405 12.3631 10.6904 12.0936C10.4404 11.8241 10.2999 11.4586 10.2999 11.0774V3.17331M11.6332 12.5145C11.9868 12.5145 12.326 12.3631 12.576 12.0936C12.8261 11.8241 12.9666 11.4586 12.9666 11.0774V4.61042C12.9666 4.22927 12.8261 3.86374 12.576 3.59423C12.326 3.32472 11.9868 3.17331 11.6332 3.17331H10.2999M7.63322 1.01764H4.96655M3.63322 9.64031H7.63322M3.63322 3.89186H7.63322V6.76609H3.63322V3.89186Z" stroke="#383637" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            
+                    </button>
+                    <button class="border-0 p-0">
+                        <svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7.63322 0.684296H12.9666M12.9666 0.684296V6.01763M12.9666 0.684296L7.63322 6.01763L4.96655 3.35096L0.966553 7.35096" stroke="#383637" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            
+                    </button>
+                    <button class="border-0 p-0">
+                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.966553 13.0176V10.351M0.966553 10.351V2.35097C0.966553 1.99735 1.10703 1.65821 1.35708 1.40816C1.60713 1.15811 1.94626 1.01764 2.29989 1.01764H6.63322L7.29989 1.68431H12.9666L10.9666 5.68431L12.9666 9.68431H7.29989L6.63322 9.01764H2.29989C1.94626 9.01764 1.60713 9.15812 1.35708 9.40816C1.10703 9.65821 0.966553 9.99735 0.966553 10.351ZM6.96655 1.35097V5.01764" stroke="#383637" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                              
+                    </button>
+                    <button class="border-0 p-0">
+                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1.96647 1.35098C6.75314 1.35098 10.6331 5.23098 10.6331 10.0176M1.96647 5.35098C3.20415 5.35098 4.39113 5.84265 5.2663 6.71782C6.14147 7.59299 6.63314 8.77997 6.63314 10.0176M2.63314 10.0176C2.63314 10.1945 2.5629 10.364 2.43788 10.4891C2.31285 10.6141 2.14328 10.6843 1.96647 10.6843C1.78966 10.6843 1.62009 10.6141 1.49507 10.4891C1.37004 10.364 1.2998 10.1945 1.2998 10.0176C1.2998 9.84084 1.37004 9.67127 1.49507 9.54624C1.62009 9.42122 1.78966 9.35098 1.96647 9.35098C2.14328 9.35098 2.31285 9.42122 2.43788 9.54624C2.5629 9.67127 2.63314 9.84084 2.63314 10.0176Z" stroke="#383637" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>                            
+                               
+                    </button>
+                    <button class="border-0 p-0">
+                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4.96655 11.6843V3.01764L12.9666 1.01764V9.68431M4.96655 11.6843C4.96655 12.421 4.07122 13.0176 2.96655 13.0176C1.86189 13.0176 0.966553 12.421 0.966553 11.6843C0.966553 10.9476 1.86189 10.351 2.96655 10.351C4.07122 10.351 4.96655 10.9476 4.96655 11.6843ZM12.9666 9.68431C12.9666 10.421 12.0712 11.0176 10.9666 11.0176C9.86189 11.0176 8.96655 10.421 8.96655 9.68431C8.96655 8.94764 9.86189 8.35097 10.9666 8.35097C12.0712 8.35097 12.9666 8.94764 12.9666 9.68431ZM4.96655 5.68431L12.9666 3.68431" stroke="#383637" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            
+                               
+                    </button>
+
+
+                    <button class="border-0 p-0">
+                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8.18527 5.91428C7.6852 5.41435 7.00704 5.13351 6.29994 5.13351C5.59284 5.13351 4.91468 5.41435 4.41461 5.91428L1.74794 8.58094C1.49325 8.82693 1.29009 9.12119 1.15034 9.44653C1.01058 9.77187 0.937015 10.1218 0.933939 10.4759C0.930862 10.83 0.998333 11.1811 1.13242 11.5088C1.2665 11.8365 1.46451 12.1343 1.71489 12.3847C1.96527 12.635 2.26301 12.8331 2.59073 12.9671C2.91845 13.1012 3.2696 13.1687 3.62368 13.1656C3.97775 13.1625 4.32767 13.089 4.65302 12.9492C4.97836 12.8095 5.27262 12.6063 5.51861 12.3516L6.25327 11.6176M5.74794 8.35161C6.24801 8.85153 6.92617 9.13237 7.63327 9.13237C8.34038 9.13237 9.01853 8.85153 9.51861 8.35161L12.1853 5.68494C12.671 5.182 12.9398 4.5084 12.9337 3.80921C12.9277 3.11001 12.6472 2.44118 12.1528 1.94676C11.6584 1.45234 10.9895 1.17189 10.2903 1.16581C9.59115 1.15974 8.91755 1.42852 8.41461 1.91428L7.68127 2.64761" stroke="#383637" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                              
+                    </button>
+                    <button class="border-0 p-0">
+                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12.9666 7.13293C12.9666 8.72423 12.3344 10.2504 11.2092 11.3756C10.084 12.5008 8.55785 13.1329 6.96655 13.1329M12.9666 7.13293C12.9666 5.54164 12.3344 4.01551 11.2092 2.89029C10.084 1.76508 8.55785 1.13293 6.96655 1.13293M12.9666 7.13293H0.966553M6.96655 13.1329C5.37525 13.1329 3.84913 12.5008 2.72391 11.3756C1.59869 10.2504 0.966553 8.72423 0.966553 7.13293M6.96655 13.1329C8.07122 13.1329 8.96655 10.4463 8.96655 7.13293C8.96655 3.8196 8.07122 1.13293 6.96655 1.13293M6.96655 13.1329C5.86189 13.1329 4.96655 10.4463 4.96655 7.13293C4.96655 3.8196 5.86189 1.13293 6.96655 1.13293M6.96655 1.13293C5.37525 1.13293 3.84913 1.76508 2.72391 2.89029C1.59869 4.01551 0.966553 5.54164 0.966553 7.13293" stroke="#383637" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            
+                    </button>
+                    <button class="border-0 p-0">
+                        <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4.29989 4.79961H4.30655M6.96655 4.79961H6.97322M9.63322 4.79961H9.63989M4.96655 8.79961H2.29989C1.94626 8.79961 1.60713 8.65913 1.35708 8.40908C1.10703 8.15903 0.966553 7.81989 0.966553 7.46627V2.13294C0.966553 1.77932 1.10703 1.44018 1.35708 1.19013C1.60713 0.940082 1.94626 0.799606 2.29989 0.799606H11.6332C11.9868 0.799606 12.326 0.940082 12.576 1.19013C12.8261 1.44018 12.9666 1.77932 12.9666 2.13294V7.46627C12.9666 7.81989 12.8261 8.15903 12.576 8.40908C12.326 8.65913 11.9868 8.79961 11.6332 8.79961H8.29989L4.96655 12.1329V8.79961Z" stroke="#383637" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            
+                    </button>
+                    <button class="border-0 p-0">
+                        <svg width="13" height="14" viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6.96655 6.46626C6.96655 8.81093 6.29389 10.9989 5.13122 12.8469M2.83789 11.4869L2.87389 11.4269C3.8089 9.94155 4.30337 8.22142 4.29989 6.46626C4.29989 5.75902 4.58084 5.08074 5.08093 4.58064C5.58103 4.08055 6.25931 3.79959 6.96655 3.79959C7.6738 3.79959 8.35207 4.08055 8.85217 4.58064C9.35227 5.08074 9.63322 5.75902 9.63322 6.46626C9.63322 7.14426 9.58655 7.81226 9.49789 8.46626M8.08589 13.0289C8.49737 12.2079 8.83041 11.3499 9.08055 10.4663M11.6399 11.2209C12.0699 9.71026 12.2999 8.11493 12.2999 6.46626C12.3001 5.52996 12.0538 4.61011 11.5858 3.79917C11.1178 2.98824 10.4445 2.3148 9.63374 1.84656C8.82293 1.37832 7.90315 1.13178 6.96685 1.13173C6.03055 1.13168 5.11074 1.37811 4.29989 1.84626M0.966553 9.37559C1.39322 8.49626 1.63322 7.50893 1.63322 6.46626C1.63322 5.49493 1.89322 4.58426 2.34655 3.79959" stroke="#383637" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>                            
+                            
+                    </button>
+                    <button class="border-0 p-0">
+                        <svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6.96655 4.7996V8.7996M6.96655 8.7996L4.96655 6.7996M6.96655 8.7996L8.96655 6.7996M0.966553 9.46626V2.7996C0.966553 2.44597 1.10703 2.10684 1.35708 1.85679C1.60713 1.60674 1.94626 1.46626 2.29989 1.46626H6.29989L7.63322 2.7996H11.6332C11.9868 2.7996 12.326 2.94007 12.576 3.19012C12.8261 3.44017 12.9666 3.77931 12.9666 4.13293V9.46626C12.9666 9.81989 12.8261 10.159 12.576 10.4091C12.326 10.6591 11.9868 10.7996 11.6332 10.7996H2.29989C1.94626 10.7996 1.60713 10.6591 1.35708 10.4091C1.10703 10.159 0.966553 9.81989 0.966553 9.46626Z" stroke="#383637" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            
+                    </button>
+                </div>
+                <div class="d-flex align-items-center justify-content-end mt-3">
+    
+                        <button class="bg-transparent p-0 body-normal med primary border-0 me-3" data-bs-dismiss="modal">Cancel</button>
+                        <button class="primaryBG py-2 px-3 body-medium2 med grey0 border-0 rounded">Save</button>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="editActivityType" tabindex="-1" aria-labelledby="editActivityType" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered rounded">
+            <div class="modal-content p-4 border rounded position-relative mx-auto">
+                <div class="d-flex align-items-center justify-content-between border-bottom pb-2 mb-3">
+                    <p class="black20 body-medium sb m-0">Add Activity Type</p>
+                        <button class="border-0 bg-transparent" data-bs-dismiss="modal">
+                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.4 14L0 12.6L5.6 7L0 1.4L1.4 0L7 5.6L12.6 0L14 1.4L8.4 7L14 12.6L12.6 14L7 8.4L1.4 14Z" fill="#383637"/>
+                            </svg>
+                        </button>
+                </div>
+                <p class="body-normal reg black20 mb-2">Activity Type Name</p>
+                        <select name="" id="" class="body-small reg black80 py-2 border-0 border-bottom">
+                            <option value="" selected disabled>Select</option>
+                            <option value="">Option 1</option>
+                            <option value="">Option 2</option>
+                            <option value="">Option 3</option>
+                        </select>
+
+                <div class="typeSymbol my-3 p-3 d-flex align-items-center flex-wrap">
+                    <button class="border-0 p-0">
+                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1.05826 1.10935C0.839469 1.32814 0.716553 1.62489 0.716553 1.93431V2.51764C0.716553 7.34997 4.63422 11.2676 9.46655 11.2676H10.0499C10.3593 11.2676 10.6561 11.1447 10.8748 10.9259C11.0936 10.7071 11.2166 10.4104 11.2166 10.101V8.18822C11.2166 8.06574 11.1781 7.94636 11.1064 7.847C11.0348 7.74764 10.9338 7.67334 10.8176 7.63464L8.19664 6.76081C8.06344 6.71653 7.91874 6.72177 7.78909 6.77555C7.65944 6.82934 7.55354 6.92807 7.4908 7.05364L6.83164 8.37022C5.40332 7.72487 4.25932 6.58087 3.61397 5.15256L4.93055 4.49339C5.05612 4.43065 5.15485 4.32475 5.20864 4.1951C5.26243 4.06545 5.26766 3.92075 5.22339 3.78756L4.34955 1.16664C4.31088 1.05053 4.23667 0.949525 4.13743 0.877918C4.03818 0.806312 3.91893 0.767732 3.79655 0.767639H1.88322C1.5738 0.767639 1.27705 0.890555 1.05826 1.10935Z" stroke="#383637" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                             
+                    </button>
+                    <button class="border-0 p-0">
+                        <svg width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3.96647 2.35097H2.63314C2.27952 2.35097 1.94038 2.49145 1.69033 2.7415C1.44028 2.99155 1.2998 3.33068 1.2998 3.68431V11.6843C1.2998 12.0379 1.44028 12.3771 1.69033 12.6271C1.94038 12.8772 2.27952 13.0176 2.63314 13.0176H9.2998C9.65343 13.0176 9.99257 12.8772 10.2426 12.6271C10.4927 12.3771 10.6331 12.0379 10.6331 11.6843V3.68431C10.6331 3.33068 10.4927 2.99155 10.2426 2.7415C9.99257 2.49145 9.65343 2.35097 9.2998 2.35097H7.96647M3.96647 2.35097C3.96647 2.70459 4.10695 3.04373 4.357 3.29378C4.60704 3.54383 4.94618 3.68431 5.2998 3.68431H6.63314C6.98676 3.68431 7.3259 3.54383 7.57595 3.29378C7.826 3.04373 7.96647 2.70459 7.96647 2.35097M3.96647 2.35097C3.96647 1.99735 4.10695 1.65821 4.357 1.40816C4.60704 1.15811 4.94618 1.01764 5.2998 1.01764H6.63314C6.98676 1.01764 7.3259 1.15811 7.57595 1.40816C7.826 1.65821 7.96647 1.99735 7.96647 2.35097M3.96647 8.35097L5.2998 9.68431L7.96647 7.01764" stroke="#383637" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>    
+                    </button>
+                    <button class="border-0 p-0">
+                        <svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3.63322 3.35096H10.2999M3.63322 6.01763H6.29989M6.96655 11.351L4.29989 8.6843H2.29989C1.94626 8.6843 1.60713 8.54382 1.35708 8.29377C1.10703 8.04372 0.966553 7.70458 0.966553 7.35096V2.01763C0.966553 1.66401 1.10703 1.32487 1.35708 1.07482C1.60713 0.824771 1.94626 0.684296 2.29989 0.684296H11.6332C11.9868 0.684296 12.326 0.824771 12.576 1.07482C12.8261 1.32487 12.9666 1.66401 12.9666 2.01763V7.35096C12.9666 7.70458 12.8261 8.04372 12.576 8.29377C12.326 8.54382 11.9868 8.6843 11.6332 8.6843H9.63322L6.96655 11.351Z" stroke="#383637" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>                             
+                    </button>
+                    <button class="border-0 p-0">
+                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12.9666 13.0176L8.96655 9.01764M10.2999 5.68431C10.2999 6.29714 10.1792 6.90398 9.94466 7.47016C9.71014 8.03635 9.36639 8.5508 8.93305 8.98414C8.49971 9.41748 7.98526 9.76122 7.41908 9.99574C6.85289 10.2303 6.24605 10.351 5.63322 10.351C5.02038 10.351 4.41355 10.2303 3.84736 9.99574C3.28118 9.76122 2.76673 9.41748 2.33339 8.98414C1.90005 8.5508 1.5563 8.03635 1.32178 7.47016C1.08726 6.90398 0.966553 6.29714 0.966553 5.68431C0.966553 4.44663 1.45822 3.25964 2.33339 2.38447C3.20856 1.5093 4.39554 1.01764 5.63322 1.01764C6.8709 1.01764 8.05788 1.5093 8.93305 2.38447C9.80822 3.25964 10.2999 4.44663 10.2999 5.68431Z" stroke="#383637" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                              
+                    </button>
+                    <button class="border-0 p-0">
+                        <svg width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7.96663 10.351H11.3L10.3633 9.41431C10.2375 9.28849 10.1377 9.13913 10.0697 8.97476C10.0016 8.81039 9.96661 8.63421 9.96663 8.45631V6.35097C9.96673 5.5236 9.71035 4.71653 9.23279 4.0409C8.75522 3.36526 8.07996 2.85428 7.29997 2.57831V2.35097C7.29997 1.99735 7.15949 1.65821 6.90944 1.40816C6.65939 1.15811 6.32026 1.01764 5.96663 1.01764C5.61301 1.01764 5.27387 1.15811 5.02383 1.40816C4.77378 1.65821 4.6333 1.99735 4.6333 2.35097V2.57831C3.07997 3.12764 1.96663 4.60964 1.96663 6.35097V8.45697C1.96663 8.81564 1.82397 9.16031 1.56997 9.41431L0.633301 10.351H3.96663M7.96663 10.351H3.96663M7.96663 10.351V11.0176C7.96663 11.5481 7.75592 12.0568 7.38085 12.4319C7.00577 12.8069 6.49707 13.0176 5.96663 13.0176C5.4362 13.0176 4.92749 12.8069 4.55242 12.4319C4.17735 12.0568 3.96663 11.5481 3.96663 11.0176V10.351" stroke="#383637" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                               
+                    </button>
+                    <button class="border-0 p-0">
+                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6.96655 1.92031C7.32485 1.51411 7.79834 1.22664 8.32403 1.09617C8.84971 0.965692 9.40267 0.998388 9.90932 1.18991C10.416 1.38143 10.8523 1.72269 11.1602 2.16828C11.4681 2.61387 11.6331 3.14267 11.6331 3.68431C11.6331 4.22594 11.4681 4.75474 11.1602 5.20033C10.8523 5.64593 10.416 5.98719 9.90932 6.17871C9.40267 6.37022 8.84971 6.40292 8.32403 6.27244C7.79834 6.14197 7.32485 5.85451 6.96655 5.44831M8.96655 13.0176H0.966553V12.351C0.966553 11.2901 1.38798 10.2727 2.13813 9.52255C2.88827 8.7724 3.90569 8.35097 4.96655 8.35097C6.02742 8.35097 7.04483 8.7724 7.79498 9.52255C8.54513 10.2727 8.96655 11.2901 8.96655 12.351V13.0176ZM8.96655 13.0176H12.9666V12.351C12.9667 11.6488 12.7819 10.9589 12.4309 10.3508C12.0798 9.74262 11.5749 9.23759 10.9668 8.88645C10.3587 8.53531 9.66889 8.35043 8.96669 8.35041C8.2645 8.35038 7.57467 8.53521 6.96655 8.88631M7.63322 3.68431C7.63322 4.39155 7.35227 5.06983 6.85217 5.56992C6.35207 6.07002 5.6738 6.35097 4.96655 6.35097C4.25931 6.35097 3.58103 6.07002 3.08093 5.56992C2.58084 5.06983 2.29989 4.39155 2.29989 3.68431C2.29989 2.97706 2.58084 2.29879 3.08093 1.79869C3.58103 1.29859 4.25931 1.01764 4.96655 1.01764C5.6738 1.01764 6.35207 1.29859 6.85217 1.79869C7.35227 2.29879 7.63322 2.97706 7.63322 3.68431Z" stroke="#383637" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            
+                    </button>
+                    <button class="border-0 p-0">
+                        <svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M2.29989 10.6843C1.94626 10.6843 1.60713 10.5438 1.35708 10.2938C1.10703 10.0437 0.966553 9.7046 0.966553 9.35098V2.68432C0.966553 2.33069 1.10703 1.99156 1.35708 1.74151C1.60713 1.49146 1.94626 1.35098 2.29989 1.35098H4.96655L6.29989 2.68432H8.96655C9.32017 2.68432 9.65931 2.82479 9.90936 3.07484C10.1594 3.32489 10.2999 3.66403 10.2999 4.01765V4.68432M2.29989 10.6843H11.6332C11.9868 10.6843 12.326 10.5438 12.576 10.2938C12.8261 10.0437 12.9666 9.7046 12.9666 9.35098V6.01765C12.9666 5.66403 12.8261 5.32489 12.576 5.07484C12.326 4.82479 11.9868 4.68432 11.6332 4.68432H4.96655C4.61293 4.68432 4.27379 4.82479 4.02374 5.07484C3.7737 5.32489 3.63322 5.66403 3.63322 6.01765V9.35098C3.63322 9.7046 3.49274 10.0437 3.2427 10.2938C2.99265 10.5438 2.65351 10.6843 2.29989 10.6843Z" stroke="#383637" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                               
+                    </button>
+                    <button class="border-0 p-0">
+                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M11.6332 12.5145H2.29989C1.94626 12.5145 1.60713 12.3631 1.35708 12.0936C1.10703 11.8241 0.966553 11.4586 0.966553 11.0774V2.45475C0.966553 2.07361 1.10703 1.70807 1.35708 1.43856C1.60713 1.16905 1.94626 1.01764 2.29989 1.01764H8.96655C9.32017 1.01764 9.65931 1.16905 9.90936 1.43856C10.1594 1.70807 10.2999 2.07361 10.2999 2.45475V3.17331M11.6332 12.5145C11.2796 12.5145 10.9405 12.3631 10.6904 12.0936C10.4404 11.8241 10.2999 11.4586 10.2999 11.0774V3.17331M11.6332 12.5145C11.9868 12.5145 12.326 12.3631 12.576 12.0936C12.8261 11.8241 12.9666 11.4586 12.9666 11.0774V4.61042C12.9666 4.22927 12.8261 3.86374 12.576 3.59423C12.326 3.32472 11.9868 3.17331 11.6332 3.17331H10.2999M7.63322 1.01764H4.96655M3.63322 9.64031H7.63322M3.63322 3.89186H7.63322V6.76609H3.63322V3.89186Z" stroke="#383637" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            
+                    </button>
+                    <button class="border-0 p-0">
+                        <svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7.63322 0.684296H12.9666M12.9666 0.684296V6.01763M12.9666 0.684296L7.63322 6.01763L4.96655 3.35096L0.966553 7.35096" stroke="#383637" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            
+                    </button>
+                    <button class="border-0 p-0">
+                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.966553 13.0176V10.351M0.966553 10.351V2.35097C0.966553 1.99735 1.10703 1.65821 1.35708 1.40816C1.60713 1.15811 1.94626 1.01764 2.29989 1.01764H6.63322L7.29989 1.68431H12.9666L10.9666 5.68431L12.9666 9.68431H7.29989L6.63322 9.01764H2.29989C1.94626 9.01764 1.60713 9.15812 1.35708 9.40816C1.10703 9.65821 0.966553 9.99735 0.966553 10.351ZM6.96655 1.35097V5.01764" stroke="#383637" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                              
+                    </button>
+                    <button class="border-0 p-0">
+                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1.96647 1.35098C6.75314 1.35098 10.6331 5.23098 10.6331 10.0176M1.96647 5.35098C3.20415 5.35098 4.39113 5.84265 5.2663 6.71782C6.14147 7.59299 6.63314 8.77997 6.63314 10.0176M2.63314 10.0176C2.63314 10.1945 2.5629 10.364 2.43788 10.4891C2.31285 10.6141 2.14328 10.6843 1.96647 10.6843C1.78966 10.6843 1.62009 10.6141 1.49507 10.4891C1.37004 10.364 1.2998 10.1945 1.2998 10.0176C1.2998 9.84084 1.37004 9.67127 1.49507 9.54624C1.62009 9.42122 1.78966 9.35098 1.96647 9.35098C2.14328 9.35098 2.31285 9.42122 2.43788 9.54624C2.5629 9.67127 2.63314 9.84084 2.63314 10.0176Z" stroke="#383637" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>                            
+                               
+                    </button>
+                    <button class="border-0 p-0">
+                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4.96655 11.6843V3.01764L12.9666 1.01764V9.68431M4.96655 11.6843C4.96655 12.421 4.07122 13.0176 2.96655 13.0176C1.86189 13.0176 0.966553 12.421 0.966553 11.6843C0.966553 10.9476 1.86189 10.351 2.96655 10.351C4.07122 10.351 4.96655 10.9476 4.96655 11.6843ZM12.9666 9.68431C12.9666 10.421 12.0712 11.0176 10.9666 11.0176C9.86189 11.0176 8.96655 10.421 8.96655 9.68431C8.96655 8.94764 9.86189 8.35097 10.9666 8.35097C12.0712 8.35097 12.9666 8.94764 12.9666 9.68431ZM4.96655 5.68431L12.9666 3.68431" stroke="#383637" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            
+                               
+                    </button>
+
+
+                    <button class="border-0 p-0">
+                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8.18527 5.91428C7.6852 5.41435 7.00704 5.13351 6.29994 5.13351C5.59284 5.13351 4.91468 5.41435 4.41461 5.91428L1.74794 8.58094C1.49325 8.82693 1.29009 9.12119 1.15034 9.44653C1.01058 9.77187 0.937015 10.1218 0.933939 10.4759C0.930862 10.83 0.998333 11.1811 1.13242 11.5088C1.2665 11.8365 1.46451 12.1343 1.71489 12.3847C1.96527 12.635 2.26301 12.8331 2.59073 12.9671C2.91845 13.1012 3.2696 13.1687 3.62368 13.1656C3.97775 13.1625 4.32767 13.089 4.65302 12.9492C4.97836 12.8095 5.27262 12.6063 5.51861 12.3516L6.25327 11.6176M5.74794 8.35161C6.24801 8.85153 6.92617 9.13237 7.63327 9.13237C8.34038 9.13237 9.01853 8.85153 9.51861 8.35161L12.1853 5.68494C12.671 5.182 12.9398 4.5084 12.9337 3.80921C12.9277 3.11001 12.6472 2.44118 12.1528 1.94676C11.6584 1.45234 10.9895 1.17189 10.2903 1.16581C9.59115 1.15974 8.91755 1.42852 8.41461 1.91428L7.68127 2.64761" stroke="#383637" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                              
+                    </button>
+                    <button class="border-0 p-0">
+                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12.9666 7.13293C12.9666 8.72423 12.3344 10.2504 11.2092 11.3756C10.084 12.5008 8.55785 13.1329 6.96655 13.1329M12.9666 7.13293C12.9666 5.54164 12.3344 4.01551 11.2092 2.89029C10.084 1.76508 8.55785 1.13293 6.96655 1.13293M12.9666 7.13293H0.966553M6.96655 13.1329C5.37525 13.1329 3.84913 12.5008 2.72391 11.3756C1.59869 10.2504 0.966553 8.72423 0.966553 7.13293M6.96655 13.1329C8.07122 13.1329 8.96655 10.4463 8.96655 7.13293C8.96655 3.8196 8.07122 1.13293 6.96655 1.13293M6.96655 13.1329C5.86189 13.1329 4.96655 10.4463 4.96655 7.13293C4.96655 3.8196 5.86189 1.13293 6.96655 1.13293M6.96655 1.13293C5.37525 1.13293 3.84913 1.76508 2.72391 2.89029C1.59869 4.01551 0.966553 5.54164 0.966553 7.13293" stroke="#383637" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            
+                    </button>
+                    <button class="border-0 p-0">
+                        <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4.29989 4.79961H4.30655M6.96655 4.79961H6.97322M9.63322 4.79961H9.63989M4.96655 8.79961H2.29989C1.94626 8.79961 1.60713 8.65913 1.35708 8.40908C1.10703 8.15903 0.966553 7.81989 0.966553 7.46627V2.13294C0.966553 1.77932 1.10703 1.44018 1.35708 1.19013C1.60713 0.940082 1.94626 0.799606 2.29989 0.799606H11.6332C11.9868 0.799606 12.326 0.940082 12.576 1.19013C12.8261 1.44018 12.9666 1.77932 12.9666 2.13294V7.46627C12.9666 7.81989 12.8261 8.15903 12.576 8.40908C12.326 8.65913 11.9868 8.79961 11.6332 8.79961H8.29989L4.96655 12.1329V8.79961Z" stroke="#383637" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            
+                    </button>
+                    <button class="border-0 p-0">
+                        <svg width="13" height="14" viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6.96655 6.46626C6.96655 8.81093 6.29389 10.9989 5.13122 12.8469M2.83789 11.4869L2.87389 11.4269C3.8089 9.94155 4.30337 8.22142 4.29989 6.46626C4.29989 5.75902 4.58084 5.08074 5.08093 4.58064C5.58103 4.08055 6.25931 3.79959 6.96655 3.79959C7.6738 3.79959 8.35207 4.08055 8.85217 4.58064C9.35227 5.08074 9.63322 5.75902 9.63322 6.46626C9.63322 7.14426 9.58655 7.81226 9.49789 8.46626M8.08589 13.0289C8.49737 12.2079 8.83041 11.3499 9.08055 10.4663M11.6399 11.2209C12.0699 9.71026 12.2999 8.11493 12.2999 6.46626C12.3001 5.52996 12.0538 4.61011 11.5858 3.79917C11.1178 2.98824 10.4445 2.3148 9.63374 1.84656C8.82293 1.37832 7.90315 1.13178 6.96685 1.13173C6.03055 1.13168 5.11074 1.37811 4.29989 1.84626M0.966553 9.37559C1.39322 8.49626 1.63322 7.50893 1.63322 6.46626C1.63322 5.49493 1.89322 4.58426 2.34655 3.79959" stroke="#383637" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>                            
+                            
+                    </button>
+                    <button class="border-0 p-0">
+                        <svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6.96655 4.7996V8.7996M6.96655 8.7996L4.96655 6.7996M6.96655 8.7996L8.96655 6.7996M0.966553 9.46626V2.7996C0.966553 2.44597 1.10703 2.10684 1.35708 1.85679C1.60713 1.60674 1.94626 1.46626 2.29989 1.46626H6.29989L7.63322 2.7996H11.6332C11.9868 2.7996 12.326 2.94007 12.576 3.19012C12.8261 3.44017 12.9666 3.77931 12.9666 4.13293V9.46626C12.9666 9.81989 12.8261 10.159 12.576 10.4091C12.326 10.6591 11.9868 10.7996 11.6332 10.7996H2.29989C1.94626 10.7996 1.60713 10.6591 1.35708 10.4091C1.10703 10.159 0.966553 9.81989 0.966553 9.46626Z" stroke="#383637" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            
+                    </button>
+                </div>
+                <div class="d-flex align-items-center justify-content-end mt-3">
+    
+                        <button class="bg-transparent p-0 body-normal med primary border-0 me-3" data-bs-dismiss="modal">Cancel</button>
+                        <button class="primaryBG py-2 px-3 body-medium2 med grey0 border-0 rounded">Save</button>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+        <!-- Delete Popup -->
+        <div class="modal fade" id="delete" tabindex="-1" aria-labelledby="delete" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered rounded">
+                <div class="modal-content dlt-employee-cont py-4 px-5 mx-auto text-center">
+                    <p class="body-medium med black90 mb-4">Are you sure you want to delete this Activity?</p>
+                    <div class="buttons d-flex align-items-center justify-content-center">
+                        <button class="modal-close canceldlt body-normal med black20 mx-2" data-bs-dismiss="modal">Cancel</button>
+                        <button class="modal-close proceeddlt body-normal med grey0 mx-2">Delete</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="/assets/js/popper.min.js"></script>
+    <script src="/assets/js/bootstrap_js/bootstrap.js"></script>
+    <script src="/assets/js/chosen/chosen.jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script src="/assets/js/deal-list.js"></script>
+
+
+
+    <script>
+          // jQuery code
+  $(document).ready(function() {
+    $('.typeSymbol button').click(function() {
+      // Remove active class from all buttons
+      $('.typeSymbol button').removeClass('active');
+      
+      // Add active class to the clicked button
+      $(this).addClass('active');
+    });
+  });
+    </script>
+
+
+</body>
+</html>
