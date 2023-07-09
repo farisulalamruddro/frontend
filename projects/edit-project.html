@@ -486,14 +486,7 @@
                                     <p class="body-normal med black20 mb-0">Discussion</p>
 
                                     <div class="d-flex align-items-center">
-                                        <button class="body-medium2 med black80 d-flex align-items-center bg-transparent border-0 p-0">
-                                            Messages
-                                            <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M10 12.6968L5.83337 8.53015H14.1667L10 12.6968Z" fill="#4E4D4D"/>
-                                                </svg>
-                                                
-                                        </button>
-                                        <div class="dropdown mx-4">
+                                        <div class="dropdown">
                                             <button id="dropdownMenuClickableInside" class="border-0 bg-transparent p-0 body-medium2 med black80 d-flex align-items-center justify-content-between dropdown-toggle" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">Messages
                                             </button>
                                             <div class="dropdown-menu deal-settings1 bg-transparent border-0 rounded-0 p-0" aria-labelledby="dropdownMenuClickableInside" style="">
@@ -522,7 +515,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <button class="primaryBG border-0 body-medium2 med grey0 py-2 px-4 rounded">
+                                        <button class="primaryBG border-0 body-medium2 med grey0 py-2 px-4 rounded" data-bs-toggle="modal" data-bs-target="#postMessage">
                                             Post a Message
                                         </button>
                                     </div>
@@ -1348,6 +1341,44 @@
     </div>
 
 
+    <!-- Post Message Popup -->
+
+        <div class="modal fade show" id="postMessage" tabindex="-1" aria-labelledby="postMessage" aria-hidden="true" style="display: block;">
+            <div class="modal-dialog modal-dialog-centered rounded">
+                <div class="modal-content p-4 border-0 rounded">
+    
+                    <div class="d-flex align-items-center justify-content-between">
+                        <div class="d-flex align-items-center">
+                            <input type="text" placeholder="Subject" class="body-medium sb text-dark border-0">
+                        </div>
+                        <button class="border-0 bg-transparent py-1 px-2" data-bs-dismiss="modal">
+                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.4 14L0 12.6L5.6 7L0 1.4L1.4 0L7 5.6L12.6 0L14 1.4L8.4 7L14 12.6L12.6 14L7 8.4L1.4 14Z" fill="#383637"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="row mt-3">
+                        
+                    
+                        
+                        
+                    </div>
+                    <div class="d-flex align-items-center justify-content-between mt-3">
+                        <button class="bg-transparent p-0 body-normal med primary border-0 d-flex align-items-center" data-bs-toggle="modal" data-bs-target="#tagSlide">
+                            <svg class="me-2" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8 5.75V8M8 8V10.25M8 8H10.25M8 8H5.75M14.75 8C14.75 8.88642 14.5754 9.76417 14.2362 10.5831C13.897 11.4021 13.3998 12.1462 12.773 12.773C12.1462 13.3998 11.4021 13.897 10.5831 14.2362C9.76417 14.5754 8.88642 14.75 8 14.75C7.11358 14.75 6.23583 14.5754 5.41689 14.2362C4.59794 13.897 3.85382 13.3998 3.22703 12.773C2.60023 12.1462 2.10303 11.4021 1.76381 10.5831C1.42459 9.76417 1.25 8.88642 1.25 8C1.25 6.20979 1.96116 4.4929 3.22703 3.22703C4.4929 1.96116 6.20979 1.25 8 1.25C9.79021 1.25 11.5071 1.96116 12.773 3.22703C14.0388 4.4929 14.75 6.20979 14.75 8Z" stroke="#1D9CD3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                
+                            Tags
+                        </button>
+                        <div class="d-flex align-items-center">
+                            <button class="bg-transparent p-0 body-normal med primary border-0 me-3">Add Contact</button>
+                            <button class="primaryBG py-2 px-3 body-medium2 med grey0 border-0 rounded">Save</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
 
 
