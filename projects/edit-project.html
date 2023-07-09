@@ -217,7 +217,7 @@
         <div class="crmContent">
             <div class="crm-navItems w-100 py-3 px-4 border-bottom d-flex align-items-center justify-content-between ">
                 <div class="d-flex align-items-center body-normal sb black80">
-                    <a href="/crm/deal-list.html" class="me-3">
+                    <a href="/projects/projects.html" class="me-3">
                         <svg width="20" height="17" viewBox="0 0 22 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M7.7998 14.6543L0.799805 7.6543L7.7998 0.654297L9.05922 1.91371L4.19729 6.77564H21.8877V8.53296H4.19729L9.05922 13.3949L7.7998 14.6543Z" fill="#4E4D4D"/>
                         </svg>
@@ -698,11 +698,9 @@
                                                 </button>
                                             </div>
                                         </div>
-                                        <a href="">
-                                            <button class="primaryBG border-0 body-medium2 med grey0 py-2 px-4 rounded">
+                                            <button class="primaryBG border-0 body-medium2 med grey0 py-2 px-4 rounded" data-bs-toggle="modal" data-bs-target="#projectAddNote">
                                                 Add Notes
                                             </button>
-                                        </a>
                                     </div>
                                 </div>
                                 <div class="p-3 tab-content"  id="pills-tabContent">
@@ -730,7 +728,7 @@
                                                                 </button>
                                                             </li>
                                                             <li>
-                                                                <button type="button" class="dropdown-item border-0 body-normal reg black80 p-2">
+                                                                <button type="button" class="dropdown-item border-0 body-normal reg black80 p-2" data-bs-toggle="modal" data-bs-target="#delete">
                                                                     <svg width="16" height="19" viewBox="0 0 16 19" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                                         <path d="M6.125 8.99072V14.6157M9.875 8.99072V14.6157M0.5 5.24072H15.5M14.5625 5.24072L13.7497 16.6238C13.716 17.0969 13.5043 17.5396 13.1573 17.8628C12.8102 18.186 12.3536 18.3657 11.8794 18.3657H4.12062C3.64638 18.3657 3.18975 18.186 2.8427 17.8628C2.49566 17.5396 2.28398 17.0969 2.25031 16.6238L1.4375 5.24072H14.5625ZM10.8125 5.24072V2.42822C10.8125 2.17958 10.7137 1.94113 10.5379 1.76531C10.3621 1.58949 10.1236 1.49072 9.875 1.49072H6.125C5.87636 1.49072 5.6379 1.58949 5.46209 1.76531C5.28627 1.94113 5.1875 2.17958 5.1875 2.42822V5.24072H10.8125Z" stroke="#C73C10" stroke-linecap="round" stroke-linejoin="round"/>
                                                                         </svg>
@@ -792,7 +790,7 @@
                                                                 </button>
                                                             </li>
                                                             <li>
-                                                                <button type="button" class="dropdown-item border-0 body-normal reg black80 p-2">
+                                                                <button type="button" class="dropdown-item border-0 body-normal reg black80 p-2" data-bs-toggle="modal" data-bs-target="#delete">
                                                                     <svg width="16" height="19" viewBox="0 0 16 19" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                                         <path d="M6.125 8.99072V14.6157M9.875 8.99072V14.6157M0.5 5.24072H15.5M14.5625 5.24072L13.7497 16.6238C13.716 17.0969 13.5043 17.5396 13.1573 17.8628C12.8102 18.186 12.3536 18.3657 11.8794 18.3657H4.12062C3.64638 18.3657 3.18975 18.186 2.8427 17.8628C2.49566 17.5396 2.28398 17.0969 2.25031 16.6238L1.4375 5.24072H14.5625ZM10.8125 5.24072V2.42822C10.8125 2.17958 10.7137 1.94113 10.5379 1.76531C10.3621 1.58949 10.1236 1.49072 9.875 1.49072H6.125C5.87636 1.49072 5.6379 1.58949 5.46209 1.76531C5.28627 1.94113 5.1875 2.17958 5.1875 2.42822V5.24072H10.8125Z" stroke="#C73C10" stroke-linecap="round" stroke-linejoin="round"/>
                                                                         </svg>
@@ -854,7 +852,7 @@
                                                                 </button>
                                                             </li>
                                                             <li>
-                                                                <button type="button" class="dropdown-item border-0 body-normal reg black80 p-2">
+                                                                <button type="button" class="dropdown-item border-0 body-normal reg black80 p-2" data-bs-toggle="modal" data-bs-target="#delete">
                                                                     <svg width="16" height="19" viewBox="0 0 16 19" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                                         <path d="M6.125 8.99072V14.6157M9.875 8.99072V14.6157M0.5 5.24072H15.5M14.5625 5.24072L13.7497 16.6238C13.716 17.0969 13.5043 17.5396 13.1573 17.8628C12.8102 18.186 12.3536 18.3657 11.8794 18.3657H4.12062C3.64638 18.3657 3.18975 18.186 2.8427 17.8628C2.49566 17.5396 2.28398 17.0969 2.25031 16.6238L1.4375 5.24072H14.5625ZM10.8125 5.24072V2.42822C10.8125 2.17958 10.7137 1.94113 10.5379 1.76531C10.3621 1.58949 10.1236 1.49072 9.875 1.49072H6.125C5.87636 1.49072 5.6379 1.58949 5.46209 1.76531C5.28627 1.94113 5.1875 2.17958 5.1875 2.42822V5.24072H10.8125Z" stroke="#C73C10" stroke-linecap="round" stroke-linejoin="round"/>
                                                                         </svg>
@@ -916,7 +914,7 @@
                                                                 </button>
                                                             </li>
                                                             <li>
-                                                                <button type="button" class="dropdown-item border-0 body-normal reg black80 p-2">
+                                                                <button type="button" class="dropdown-item border-0 body-normal reg black80 p-2" data-bs-toggle="modal" data-bs-target="#delete">
                                                                     <svg width="16" height="19" viewBox="0 0 16 19" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                                         <path d="M6.125 8.99072V14.6157M9.875 8.99072V14.6157M0.5 5.24072H15.5M14.5625 5.24072L13.7497 16.6238C13.716 17.0969 13.5043 17.5396 13.1573 17.8628C12.8102 18.186 12.3536 18.3657 11.8794 18.3657H4.12062C3.64638 18.3657 3.18975 18.186 2.8427 17.8628C2.49566 17.5396 2.28398 17.0969 2.25031 16.6238L1.4375 5.24072H14.5625ZM10.8125 5.24072V2.42822C10.8125 2.17958 10.7137 1.94113 10.5379 1.76531C10.3621 1.58949 10.1236 1.49072 9.875 1.49072H6.125C5.87636 1.49072 5.6379 1.58949 5.46209 1.76531C5.28627 1.94113 5.1875 2.17958 5.1875 2.42822V5.24072H10.8125Z" stroke="#C73C10" stroke-linecap="round" stroke-linejoin="round"/>
                                                                         </svg>
@@ -978,7 +976,7 @@
                                                                 </button>
                                                             </li>
                                                             <li>
-                                                                <button type="button" class="dropdown-item border-0 body-normal reg black80 p-2">
+                                                                <button type="button" class="dropdown-item border-0 body-normal reg black80 p-2" data-bs-toggle="modal" data-bs-target="#delete">
                                                                     <svg width="16" height="19" viewBox="0 0 16 19" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                                         <path d="M6.125 8.99072V14.6157M9.875 8.99072V14.6157M0.5 5.24072H15.5M14.5625 5.24072L13.7497 16.6238C13.716 17.0969 13.5043 17.5396 13.1573 17.8628C12.8102 18.186 12.3536 18.3657 11.8794 18.3657H4.12062C3.64638 18.3657 3.18975 18.186 2.8427 17.8628C2.49566 17.5396 2.28398 17.0969 2.25031 16.6238L1.4375 5.24072H14.5625ZM10.8125 5.24072V2.42822C10.8125 2.17958 10.7137 1.94113 10.5379 1.76531C10.3621 1.58949 10.1236 1.49072 9.875 1.49072H6.125C5.87636 1.49072 5.6379 1.58949 5.46209 1.76531C5.28627 1.94113 5.1875 2.17958 5.1875 2.42822V5.24072H10.8125Z" stroke="#C73C10" stroke-linecap="round" stroke-linejoin="round"/>
                                                                         </svg>
@@ -1040,7 +1038,7 @@
                                                                 </button>
                                                             </li>
                                                             <li>
-                                                                <button type="button" class="dropdown-item border-0 body-normal reg black80 p-2">
+                                                                <button type="button" class="dropdown-item border-0 body-normal reg black80 p-2" data-bs-toggle="modal" data-bs-target="#delete">
                                                                     <svg width="16" height="19" viewBox="0 0 16 19" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                                         <path d="M6.125 8.99072V14.6157M9.875 8.99072V14.6157M0.5 5.24072H15.5M14.5625 5.24072L13.7497 16.6238C13.716 17.0969 13.5043 17.5396 13.1573 17.8628C12.8102 18.186 12.3536 18.3657 11.8794 18.3657H4.12062C3.64638 18.3657 3.18975 18.186 2.8427 17.8628C2.49566 17.5396 2.28398 17.0969 2.25031 16.6238L1.4375 5.24072H14.5625ZM10.8125 5.24072V2.42822C10.8125 2.17958 10.7137 1.94113 10.5379 1.76531C10.3621 1.58949 10.1236 1.49072 9.875 1.49072H6.125C5.87636 1.49072 5.6379 1.58949 5.46209 1.76531C5.28627 1.94113 5.1875 2.17958 5.1875 2.42822V5.24072H10.8125Z" stroke="#C73C10" stroke-linecap="round" stroke-linejoin="round"/>
                                                                         </svg>
@@ -1138,7 +1136,70 @@
                                                             </button>
                                                         </li>
                                                         <li>
+                                                            <button type="button" class="dropdown-item border-0 body-normal reg black80 p-2" data-bs-toggle="modal" data-bs-target="#delete">
+                                                                <svg width="16" height="19" viewBox="0 0 16 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path d="M6.125 8.99072V14.6157M9.875 8.99072V14.6157M0.5 5.24072H15.5M14.5625 5.24072L13.7497 16.6238C13.716 17.0969 13.5043 17.5396 13.1573 17.8628C12.8102 18.186 12.3536 18.3657 11.8794 18.3657H4.12062C3.64638 18.3657 3.18975 18.186 2.8427 17.8628C2.49566 17.5396 2.28398 17.0969 2.25031 16.6238L1.4375 5.24072H14.5625ZM10.8125 5.24072V2.42822C10.8125 2.17958 10.7137 1.94113 10.5379 1.76531C10.3621 1.58949 10.1236 1.49072 9.875 1.49072H6.125C5.87636 1.49072 5.6379 1.58949 5.46209 1.76531C5.28627 1.94113 5.1875 2.17958 5.1875 2.42822V5.24072H10.8125Z" stroke="#C73C10" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                    </svg>
+                                                            </button>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="my-3 w-100 px-3 py-4 border rounded d-flex align-items-center justify-content-between w-50">
+                                            <div class="d-flex align-items-center">
+                                                <input type="checkbox">
+                                                <p class="body-small med black80 mb-0 ms-2">Title</p> 
+                                            </div>
+                                            
+                                            <div class="d-flex align-items-center">
+                                                <div class="dropdown me-5">
+                                                    <button id="dropdownMenuClickableInside" class="body-normal reg black80 bg-transparent border-0 p-0" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+                                                        <p class="body-small med black80 my-2 d-flex align-items-center">
+                                                            <span class="bg-light p-2 rounded-circle me-2">
+                                                                <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M16.4535 15.3956C15.4039 13.5876 13.7239 12.2305 11.7355 11.5847C12.6886 11.0179 13.4292 10.154 13.8436 9.12547C14.2581 8.09697 14.3233 6.96086 14.0295 5.89167C13.7356 4.82247 13.0988 3.87933 12.2169 3.20715C11.335 2.53496 10.2568 2.1709 9.148 2.1709C8.03915 2.1709 6.96097 2.53496 6.07909 3.20715C5.19721 3.87933 4.56042 4.82247 4.26654 5.89167C3.97266 6.96086 4.03794 8.09697 4.45236 9.12547C4.86679 10.154 5.60743 11.0179 6.5605 11.5847C4.57213 12.2305 2.89211 13.5876 1.84253 15.3956C1.79851 15.4595 1.76817 15.5318 1.75342 15.6079C1.73868 15.6841 1.73984 15.7625 1.75684 15.8381C1.77384 15.9138 1.80631 15.9852 1.85221 16.0477C1.89811 16.1102 1.95645 16.1626 2.02355 16.2015C2.09066 16.2404 2.16509 16.265 2.24216 16.2738C2.31924 16.2825 2.39729 16.2752 2.47141 16.2524C2.54554 16.2295 2.61413 16.1916 2.67289 16.141C2.73165 16.0903 2.7793 16.0281 2.81284 15.9581C3.45577 14.8472 4.37953 13.9248 5.49147 13.2836C6.60341 12.6424 7.86442 12.3048 9.148 12.3048C10.4316 12.3048 11.6926 12.6424 12.8045 13.2836C13.9165 13.9248 14.8402 14.8472 15.4832 15.9581C15.5167 16.0281 15.5643 16.0903 15.6231 16.141C15.6819 16.1916 15.7505 16.2295 15.8246 16.2524C15.8987 16.2752 15.9768 16.2825 16.0538 16.2738C16.1309 16.265 16.2053 16.2404 16.2724 16.2015C16.3396 16.1626 16.3979 16.1102 16.4438 16.0477C16.4897 15.9852 16.5222 15.9138 16.5392 15.8381C16.5562 15.7625 16.5573 15.6841 16.5426 15.6079C16.5278 15.5318 16.4975 15.4595 16.4535 15.3956ZM5.2105 7.23938C5.2105 6.46061 5.44143 5.69934 5.87409 5.05182C6.30675 4.4043 6.9217 3.89962 7.64118 3.6016C8.36067 3.30358 9.15237 3.22561 9.91617 3.37754C10.68 3.52947 11.3816 3.90448 11.9322 4.45515C12.4829 5.00582 12.8579 5.70741 13.0098 6.47121C13.1618 7.23501 13.0838 8.02671 12.7858 8.74619C12.4878 9.46568 11.9831 10.0806 11.3356 10.5133C10.688 10.9459 9.92676 11.1769 9.148 11.1769C8.10371 11.1769 7.10219 10.762 6.36377 10.0236C5.62534 9.28519 5.2105 8.28367 5.2105 7.23938Z" fill="#383637"></path>
+                                                                </svg>
+                                                            </span>
+                                                            User Name
+                                                        </p>
+                                                    </button>
+                                                    <div class="dropdown-menu deal-settings1 bg-transparent border-0 rounded-0 p-0 pt-3" aria-labelledby="dropdownMenuClickableInside" style="">
+                                                        <div class="tags-filter bg-white p-0">
+                                                            <p class="black90 body-small reg py-2 px-3 text-center blue20bg mb-0">Assigned To</p>
+                                                            <div class="py-2 px-3">
+                                                                <div class="search-input-box border rounded px-2">
+                                                                    <input type="text" class="border-0 body-tiny reg black60 py-2" placeholder="Search">
+                                                                    <img src="../assets/images/search-icon.svg" alt="" width="12px">
+                                                                </div>
+                                                                <p class="body-tiny reg black60 p-2 border rounded my-2">User 1</p>
+                                                                <p class="body-tiny reg black60 p-2 border rounded my-2">User 2</p>
+                                                            </div>
+                                                            <div class="bg-light p-3 d-flex align-items-center justify-content-between"> 
+                                                                <button class="body-normal med border-0 p-0 bg-transparent primary filterCancel">Cancel</button>
+                                                                <button class="body-normal med grey0 border-0 rounded py-2 px-3 primaryBG">Done</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            
+                                                <div class="ms-5 dropdown more-option-toggle text-end">
+                                                    <button class="border-0 p-0 bg-transparent" type="button" id="more-option1" data-bs-toggle="dropdown" aria-expanded="false">
+                                                        <svg width="17" height="5" viewBox="0 0 17 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M0.972656 2.40735C0.972656 1.85735 1.16832 1.38668 1.55966 0.995348C1.95166 0.603348 2.42266 0.407348 2.97266 0.407348C3.52266 0.407348 3.99366 0.603348 4.38566 0.995348C4.77699 1.38668 4.97266 1.85735 4.97266 2.40735C4.97266 2.95735 4.77699 3.42835 4.38566 3.82035C3.99366 4.21168 3.52266 4.40735 2.97266 4.40735C2.42266 4.40735 1.95166 4.21168 1.55966 3.82035C1.16832 3.42835 0.972656 2.95735 0.972656 2.40735ZM6.97266 2.40735C6.97266 1.85735 7.16866 1.38668 7.56066 0.995349C7.95199 0.603349 8.42266 0.407348 8.97266 0.407348C9.52266 0.407348 9.99366 0.603349 10.3857 0.995349C10.777 1.38668 10.9727 1.85735 10.9727 2.40735C10.9727 2.95735 10.777 3.42835 10.3857 3.82035C9.99366 4.21168 9.52266 4.40735 8.97266 4.40735C8.42266 4.40735 7.95199 4.21168 7.56066 3.82035C7.16866 3.42835 6.97266 2.95735 6.97266 2.40735ZM12.9727 2.40735C12.9727 1.85735 13.1687 1.38668 13.5607 0.995349C13.952 0.603349 14.4227 0.407349 14.9727 0.407349C15.5227 0.407349 15.9933 0.603349 16.3847 0.995349C16.7767 1.38668 16.9727 1.85735 16.9727 2.40735C16.9727 2.95735 16.7767 3.42835 16.3847 3.82035C15.9933 4.21168 15.5227 4.40735 14.9727 4.40735C14.4227 4.40735 13.952 4.21168 13.5607 3.82035C13.1687 3.42835 12.9727 2.95735 12.9727 2.40735Z" fill="#646364"/>
+                                                            </svg>
+                                                            
+                                                    </button>
+                                                    <ul class="dropdown-menu text-center p-2" aria-labelledby="more-option1" style="min-width: inherit;">
+                                                        <li>
                                                             <button type="button" class="dropdown-item border-0 body-normal reg black80 p-2">
+                                                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path d="M10.424 2.73614L13.076 5.38814M11.549 1.61114C11.9007 1.25946 12.3777 1.06189 12.875 1.06189C13.3723 1.06189 13.8493 1.25946 14.201 1.61114C14.5527 1.96281 14.7502 2.43979 14.7502 2.93714C14.7502 3.43448 14.5527 3.91146 14.201 4.26314L3.875 14.5891H1.25V11.9101L11.549 1.61114Z" stroke="#383637" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                    </svg>
+                                                            </button>
+                                                        </li>
+                                                        <li>
+                                                            <button type="button" class="dropdown-item border-0 body-normal reg black80 p-2" data-bs-toggle="modal" data-bs-target="#delete">
                                                                 <svg width="16" height="19" viewBox="0 0 16 19" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                                     <path d="M6.125 8.99072V14.6157M9.875 8.99072V14.6157M0.5 5.24072H15.5M14.5625 5.24072L13.7497 16.6238C13.716 17.0969 13.5043 17.5396 13.1573 17.8628C12.8102 18.186 12.3536 18.3657 11.8794 18.3657H4.12062C3.64638 18.3657 3.18975 18.186 2.8427 17.8628C2.49566 17.5396 2.28398 17.0969 2.25031 16.6238L1.4375 5.24072H14.5625ZM10.8125 5.24072V2.42822C10.8125 2.17958 10.7137 1.94113 10.5379 1.76531C10.3621 1.58949 10.1236 1.49072 9.875 1.49072H6.125C5.87636 1.49072 5.6379 1.58949 5.46209 1.76531C5.28627 1.94113 5.1875 2.17958 5.1875 2.42822V5.24072H10.8125Z" stroke="#C73C10" stroke-linecap="round" stroke-linejoin="round"/>
                                                                     </svg>
@@ -1202,71 +1263,7 @@
                                                             </button>
                                                         </li>
                                                         <li>
-                                                            <button type="button" class="dropdown-item border-0 body-normal reg black80 p-2">
-                                                                <svg width="16" height="19" viewBox="0 0 16 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                    <path d="M6.125 8.99072V14.6157M9.875 8.99072V14.6157M0.5 5.24072H15.5M14.5625 5.24072L13.7497 16.6238C13.716 17.0969 13.5043 17.5396 13.1573 17.8628C12.8102 18.186 12.3536 18.3657 11.8794 18.3657H4.12062C3.64638 18.3657 3.18975 18.186 2.8427 17.8628C2.49566 17.5396 2.28398 17.0969 2.25031 16.6238L1.4375 5.24072H14.5625ZM10.8125 5.24072V2.42822C10.8125 2.17958 10.7137 1.94113 10.5379 1.76531C10.3621 1.58949 10.1236 1.49072 9.875 1.49072H6.125C5.87636 1.49072 5.6379 1.58949 5.46209 1.76531C5.28627 1.94113 5.1875 2.17958 5.1875 2.42822V5.24072H10.8125Z" stroke="#C73C10" stroke-linecap="round" stroke-linejoin="round"/>
-                                                                    </svg>
-                                                                    
-                                                            </button>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="my-3 w-100 px-3 py-4 border rounded d-flex align-items-center justify-content-between w-50">
-                                            <div class="d-flex align-items-center">
-                                                <input type="checkbox">
-                                                <p class="body-small med black80 mb-0 ms-2">Title</p> 
-                                            </div>
-                                            
-                                            <div class="d-flex align-items-center">
-                                                <div class="dropdown me-5">
-                                                    <button id="dropdownMenuClickableInside" class="body-normal reg black80 bg-transparent border-0 p-0" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
-                                                        <p class="body-small med black80 my-2 d-flex align-items-center">
-                                                            <span class="bg-light p-2 rounded-circle me-2">
-                                                                <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                <path d="M16.4535 15.3956C15.4039 13.5876 13.7239 12.2305 11.7355 11.5847C12.6886 11.0179 13.4292 10.154 13.8436 9.12547C14.2581 8.09697 14.3233 6.96086 14.0295 5.89167C13.7356 4.82247 13.0988 3.87933 12.2169 3.20715C11.335 2.53496 10.2568 2.1709 9.148 2.1709C8.03915 2.1709 6.96097 2.53496 6.07909 3.20715C5.19721 3.87933 4.56042 4.82247 4.26654 5.89167C3.97266 6.96086 4.03794 8.09697 4.45236 9.12547C4.86679 10.154 5.60743 11.0179 6.5605 11.5847C4.57213 12.2305 2.89211 13.5876 1.84253 15.3956C1.79851 15.4595 1.76817 15.5318 1.75342 15.6079C1.73868 15.6841 1.73984 15.7625 1.75684 15.8381C1.77384 15.9138 1.80631 15.9852 1.85221 16.0477C1.89811 16.1102 1.95645 16.1626 2.02355 16.2015C2.09066 16.2404 2.16509 16.265 2.24216 16.2738C2.31924 16.2825 2.39729 16.2752 2.47141 16.2524C2.54554 16.2295 2.61413 16.1916 2.67289 16.141C2.73165 16.0903 2.7793 16.0281 2.81284 15.9581C3.45577 14.8472 4.37953 13.9248 5.49147 13.2836C6.60341 12.6424 7.86442 12.3048 9.148 12.3048C10.4316 12.3048 11.6926 12.6424 12.8045 13.2836C13.9165 13.9248 14.8402 14.8472 15.4832 15.9581C15.5167 16.0281 15.5643 16.0903 15.6231 16.141C15.6819 16.1916 15.7505 16.2295 15.8246 16.2524C15.8987 16.2752 15.9768 16.2825 16.0538 16.2738C16.1309 16.265 16.2053 16.2404 16.2724 16.2015C16.3396 16.1626 16.3979 16.1102 16.4438 16.0477C16.4897 15.9852 16.5222 15.9138 16.5392 15.8381C16.5562 15.7625 16.5573 15.6841 16.5426 15.6079C16.5278 15.5318 16.4975 15.4595 16.4535 15.3956ZM5.2105 7.23938C5.2105 6.46061 5.44143 5.69934 5.87409 5.05182C6.30675 4.4043 6.9217 3.89962 7.64118 3.6016C8.36067 3.30358 9.15237 3.22561 9.91617 3.37754C10.68 3.52947 11.3816 3.90448 11.9322 4.45515C12.4829 5.00582 12.8579 5.70741 13.0098 6.47121C13.1618 7.23501 13.0838 8.02671 12.7858 8.74619C12.4878 9.46568 11.9831 10.0806 11.3356 10.5133C10.688 10.9459 9.92676 11.1769 9.148 11.1769C8.10371 11.1769 7.10219 10.762 6.36377 10.0236C5.62534 9.28519 5.2105 8.28367 5.2105 7.23938Z" fill="#383637"></path>
-                                                                </svg>
-                                                            </span>
-                                                            User Name
-                                                        </p>
-                                                    </button>
-                                                    <div class="dropdown-menu deal-settings1 bg-transparent border-0 rounded-0 p-0 pt-3" aria-labelledby="dropdownMenuClickableInside" style="">
-                                                        <div class="tags-filter bg-white p-0">
-                                                            <p class="black90 body-small reg py-2 px-3 text-center blue20bg mb-0">Assigned To</p>
-                                                            <div class="py-2 px-3">
-                                                                <div class="search-input-box border rounded px-2">
-                                                                    <input type="text" class="border-0 body-tiny reg black60 py-2" placeholder="Search">
-                                                                    <img src="../assets/images/search-icon.svg" alt="" width="12px">
-                                                                </div>
-                                                                <p class="body-tiny reg black60 p-2 border rounded my-2">User 1</p>
-                                                                <p class="body-tiny reg black60 p-2 border rounded my-2">User 2</p>
-                                                            </div>
-                                                            <div class="bg-light p-3 d-flex align-items-center justify-content-between"> 
-                                                                <button class="body-normal med border-0 p-0 bg-transparent primary filterCancel">Cancel</button>
-                                                                <button class="body-normal med grey0 border-0 rounded py-2 px-3 primaryBG">Done</button>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            
-                                                <div class="ms-5 dropdown more-option-toggle text-end">
-                                                    <button class="border-0 p-0 bg-transparent" type="button" id="more-option1" data-bs-toggle="dropdown" aria-expanded="false">
-                                                        <svg width="17" height="5" viewBox="0 0 17 5" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                            <path d="M0.972656 2.40735C0.972656 1.85735 1.16832 1.38668 1.55966 0.995348C1.95166 0.603348 2.42266 0.407348 2.97266 0.407348C3.52266 0.407348 3.99366 0.603348 4.38566 0.995348C4.77699 1.38668 4.97266 1.85735 4.97266 2.40735C4.97266 2.95735 4.77699 3.42835 4.38566 3.82035C3.99366 4.21168 3.52266 4.40735 2.97266 4.40735C2.42266 4.40735 1.95166 4.21168 1.55966 3.82035C1.16832 3.42835 0.972656 2.95735 0.972656 2.40735ZM6.97266 2.40735C6.97266 1.85735 7.16866 1.38668 7.56066 0.995349C7.95199 0.603349 8.42266 0.407348 8.97266 0.407348C9.52266 0.407348 9.99366 0.603349 10.3857 0.995349C10.777 1.38668 10.9727 1.85735 10.9727 2.40735C10.9727 2.95735 10.777 3.42835 10.3857 3.82035C9.99366 4.21168 9.52266 4.40735 8.97266 4.40735C8.42266 4.40735 7.95199 4.21168 7.56066 3.82035C7.16866 3.42835 6.97266 2.95735 6.97266 2.40735ZM12.9727 2.40735C12.9727 1.85735 13.1687 1.38668 13.5607 0.995349C13.952 0.603349 14.4227 0.407349 14.9727 0.407349C15.5227 0.407349 15.9933 0.603349 16.3847 0.995349C16.7767 1.38668 16.9727 1.85735 16.9727 2.40735C16.9727 2.95735 16.7767 3.42835 16.3847 3.82035C15.9933 4.21168 15.5227 4.40735 14.9727 4.40735C14.4227 4.40735 13.952 4.21168 13.5607 3.82035C13.1687 3.42835 12.9727 2.95735 12.9727 2.40735Z" fill="#646364"/>
-                                                            </svg>
-                                                            
-                                                    </button>
-                                                    <ul class="dropdown-menu text-center p-2" aria-labelledby="more-option1" style="min-width: inherit;">
-                                                        <li>
-                                                            <button type="button" class="dropdown-item border-0 body-normal reg black80 p-2">
-                                                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                    <path d="M10.424 2.73614L13.076 5.38814M11.549 1.61114C11.9007 1.25946 12.3777 1.06189 12.875 1.06189C13.3723 1.06189 13.8493 1.25946 14.201 1.61114C14.5527 1.96281 14.7502 2.43979 14.7502 2.93714C14.7502 3.43448 14.5527 3.91146 14.201 4.26314L3.875 14.5891H1.25V11.9101L11.549 1.61114Z" stroke="#383637" stroke-linecap="round" stroke-linejoin="round"/>
-                                                                    </svg>
-                                                            </button>
-                                                        </li>
-                                                        <li>
-                                                            <button type="button" class="dropdown-item border-0 body-normal reg black80 p-2">
+                                                            <button type="button" class="dropdown-item border-0 body-normal reg black80 p-2" data-bs-toggle="modal" data-bs-target="#delete">
                                                                 <svg width="16" height="19" viewBox="0 0 16 19" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                                     <path d="M6.125 8.99072V14.6157M9.875 8.99072V14.6157M0.5 5.24072H15.5M14.5625 5.24072L13.7497 16.6238C13.716 17.0969 13.5043 17.5396 13.1573 17.8628C12.8102 18.186 12.3536 18.3657 11.8794 18.3657H4.12062C3.64638 18.3657 3.18975 18.186 2.8427 17.8628C2.49566 17.5396 2.28398 17.0969 2.25031 16.6238L1.4375 5.24072H14.5625ZM10.8125 5.24072V2.42822C10.8125 2.17958 10.7137 1.94113 10.5379 1.76531C10.3621 1.58949 10.1236 1.49072 9.875 1.49072H6.125C5.87636 1.49072 5.6379 1.58949 5.46209 1.76531C5.28627 1.94113 5.1875 2.17958 5.1875 2.42822V5.24072H10.8125Z" stroke="#C73C10" stroke-linecap="round" stroke-linejoin="round"/>
                                                                     </svg>
@@ -1304,794 +1301,33 @@
         </div>
     </div>
 
-    <!-- Merge Deal Popup -->
-    <div class="modal fade" id="mergeDeal" tabindex="-1" aria-labelledby="mergeDeal" aria-hidden="true">
+
+    <!-- Add Note Popup -->
+    <div class="modal fade" id="projectAddNote" tabindex="-1" aria-labelledby="projectAddNote" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered rounded">
-            <div class="modal-content p-4 border-0 rounded position-relative">
-                <div class="d-flex align-items-center justify-content-between pb-3 border-bottom">
-                    <div class="d-flex align-items-center">
-                        <p class="body-medium sb black20 mb-0">Merge Details</p>
+            <div class="modal-content p-4 mx-auto">
+              
+                <form action="">
+                    <div class="d-flex flex-column pb-4">
+                        <label for="" class="body-normal reg mb-2">Title</label>
+                        <input type="text" class="body-small reg black80 py-2 border-0 border-bottom w-100" placeholder="Write a Title here">
                     </div>
-                    <div class="text-end">
-                        <button class="border-0 bg-transparent" data-bs-dismiss="modal">
-                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M1.4 14L0 12.6L5.6 7L0 1.4L1.4 0L7 5.6L12.6 0L14 1.4L8.4 7L14 12.6L12.6 14L7 8.4L1.4 14Z" fill="#383637"/>
-                            </svg>
-                        </button>
+                    <div class="d-flex align-items-center flex-column">
+                        <input id="noteDesc" type="text" class="w-100 p-3 body-small med black80 border rounded w-100">
                     </div>
-                </div>
-
-                <div class="row mt-3">
-                    <div class="col-md-6">
-                        <div class="mergeDetailsCol border rounded h-100">
-                            <p class="blue20bg w-100 p-2 mb-0 body-small reg black70 text-center">Deal 01</p>
-                            <div class="mergeDetails p-2 d-flex flex-column">
-                                <div class="d-flex align-items-center my-2">
-                                    <p class="w-50 body-small sb black70 mb-0">Deal</p>
-                                    <span class="body-small reg black90 mb-0 mx-3">:</span>
-                                    <p class="w-50 body-small reg black70 mb-0">Deal Name</p>
-                                </div>
-                                <div class="d-flex align-items-center my-2">
-                                    <p class="w-50 body-small sb black70 mb-0">Organization</p>
-                                    <span class="body-small reg black90 mb-0 mx-3">:</span>
-                                    <p class="w-50 body-small reg black70 mb-0">Organization Name</p>
-                                </div>
-                                <div class="d-flex align-items-center my-2">
-                                    <p class="w-50 body-small sb black70 mb-0">Currency</p>
-                                    <span class="body-small reg black90 mb-0 mx-3">:</span>
-                                    <p class="w-50 body-small reg black70 mb-0">Currency</p>
-                                </div>
-                                <div class="d-flex align-items-center my-2">
-                                    <p class="w-50 body-small sb black70 mb-0">Deal Value</p>
-                                    <span class="body-small reg black90 mb-0 mx-3">:</span>
-                                    <p class="w-50 body-small reg black70 mb-0">Value</p>
-                                </div>
-                                <div class="d-flex align-items-center my-2">
-                                    <p class="w-50 body-small sb black70 mb-0">Created On</p>
-                                    <span class="body-small reg black90 mb-0 mx-3">:</span>
-                                    <p class="w-50 body-small reg black70 mb-0">Created Date</p>
-                                </div>
-                                <div class="d-flex align-items-center my-2">
-                                    <p class="w-50 body-small sb black70 mb-0">Created By</p>
-                                    <span class="body-small reg black90 mb-0 mx-3">:</span>
-                                    <p class="w-50 body-small reg black70 mb-0">Created By</p>
-                                </div>
-                                <div class="d-flex align-items-center my-2">
-                                    <p class="w-50 body-small sb black70 mb-0">Owner</p>
-                                    <span class="body-small reg black90 mb-0 mx-3">:</span>
-                                    <p class="w-50 body-small reg black70 mb-0">Owner Name</p>
-                                </div>
-                                <div class="d-flex align-items-center my-2">
-                                    <p class="w-50 body-small sb black70 mb-0">Status</p>
-                                    <span class="body-small reg black90 mb-0 mx-3">:</span>
-                                    <p class="w-50 body-small reg black70 mb-0">Status</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div id="merge_Deals" class="dealsToMerge border rounded h-100">
-                            <div class="enterDeals">
-                                <select name="" id="" class="text-center h-auto p-2 blue20bg">
-                                        <option value="" selected disabled>Enter Person Name to Merge</option>
-                                        <option value="">Name 1</option>
-                                        <option value="">Name 2</option>
-                                        <option value="">Name 3</option>
-                                        <option value="">Name 4</option>
-                                        <option value="">Name 5</option>
-                                </select>
-                            </div>
-                            
-                            <div class="mergeDetails p-2 d-flex flex-column">
-                                <div class="d-flex align-items-center my-2">
-                                    <p class="w-50 body-small sb black70 mb-0">Deal</p>
-                                    <span class="body-small reg black90 mb-0 mx-3">:</span>
-                                    <p class="w-50 body-small reg black70 mb-0">Deal Name</p>
-                                </div>
-                                <div class="d-flex align-items-center my-2">
-                                    <p class="w-50 body-small sb black70 mb-0">Organization</p>
-                                    <span class="body-small reg black90 mb-0 mx-3">:</span>
-                                    <p class="w-50 body-small reg black70 mb-0">Organization Name</p>
-                                </div>
-                                <div class="d-flex align-items-center my-2">
-                                    <p class="w-50 body-small sb black70 mb-0">Currency</p>
-                                    <span class="body-small reg black90 mb-0 mx-3">:</span>
-                                    <p class="w-50 body-small reg black70 mb-0">Currency</p>
-                                </div>
-                                <div class="d-flex align-items-center my-2">
-                                    <p class="w-50 body-small sb black70 mb-0">Deal Value</p>
-                                    <span class="body-small reg black90 mb-0 mx-3">:</span>
-                                    <p class="w-50 body-small reg black70 mb-0">Value</p>
-                                </div>
-                                <div class="d-flex align-items-center my-2">
-                                    <p class="w-50 body-small sb black70 mb-0">Created On</p>
-                                    <span class="body-small reg black90 mb-0 mx-3">:</span>
-                                    <p class="w-50 body-small reg black70 mb-0">Created Date</p>
-                                </div>
-                                <div class="d-flex align-items-center my-2">
-                                    <p class="w-50 body-small sb black70 mb-0">Created By</p>
-                                    <span class="body-small reg black90 mb-0 mx-3">:</span>
-                                    <p class="w-50 body-small reg black70 mb-0">Created By</p>
-                                </div>
-                                <div class="d-flex align-items-center my-2">
-                                    <p class="w-50 body-small sb black70 mb-0">Owner</p>
-                                    <span class="body-small reg black90 mb-0 mx-3">:</span>
-                                    <p class="w-50 body-small reg black70 mb-0">Owner Name</p>
-                                </div>
-                                <div class="d-flex align-items-center my-2">
-                                    <p class="w-50 body-small sb black70 mb-0">Status</p>
-                                    <span class="body-small reg black90 mb-0 mx-3">:</span>
-                                    <p class="w-50 body-small reg black70 mb-0">Status</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
+                </form>
+                
                 <div class="d-flex align-items-center justify-content-end mt-3">
-                    <button type="button" class="bg-transparent p-0 body-normal med primary border-0 d-flex align-items-center me-3" data-bs-toggle="modal" data-bs-target="#mergeDetails">
-                        Edit
-                    </button>
-                    <button class="primaryBG py-2 px-3 body-medium2 med grey0 border-0 rounded" data-bs-toggle="modal" data-bs-target="#mergeDetailsPreview">Preview</button>
-                </div>
-
-            </div>
-        </div>
-    </div>
-
-    <!-- Merge Details Popup -->
-    <div class="modal fade" id="mergeDetails" tabindex="-1" aria-labelledby="mergeDetails" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-scrollable rounded">
-            <div class="modal-content p-4 border-0 rounded position-relative">
-                <div class="d-flex align-items-center justify-content-between pb-3 border-bottom">
-                    <div class="d-flex align-items-center">
-                        <button type="button" class="p-0 border-0 bg-transparent me-3" data-bs-toggle="modal" data-bs-target="#mergeDeal">
-                            <svg width="22" height="15" viewBox="0 0 22 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M7.91211 14.0884L0.912109 7.08838L7.91211 0.0883789L9.17152 1.34779L4.3096 6.20972H22V7.96704H4.3096L9.17152 12.829L7.91211 14.0884Z" fill="#4E4D4D"/>
-                                </svg>
-                        </button>
-                        <p class="body-medium sb black20 mb-0">Merge Details</p>
-                    </div>
-                    <div class="text-end">
-                        <button class="border-0 bg-transparent" data-bs-dismiss="modal">
-                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M1.4 14L0 12.6L5.6 7L0 1.4L1.4 0L7 5.6L12.6 0L14 1.4L8.4 7L14 12.6L12.6 14L7 8.4L1.4 14Z" fill="#383637"/>
-                            </svg>
-                        </button>
-                    </div>
-                </div>
-
-                <div class="modal-body mergeDetailsCol rounded mt-3">
-                    <table class="w-100">
-                        <thead class="blue20bg">
-                            <tr>
-                                <th class="p-2"></th>
-                                <th class="p-2">
-                                    <p class="mb-0 body-small med black80">Title</p>
-                                </th>
-                                <th class="p-2">
-                                    <p class="mb-0 body-small med black80">Deal Name</p>
-                                </th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr class="border-bottom">
-                                <td class="p-2">
-                                    <input type="checkbox">
-                                </td>
-                                <td class="p-2">
-                                    <p class="body-small reg black80 mb-0">Organization</p>
-                                </td>
-                                <td class="p-2">
-                                    <p class="body-small reg black80 mb-0">Organization Name</p>
-                                </td>
-                            </tr>
-                            <tr class="border-bottom">
-                                <td class="p-2">
-                                    <input type="checkbox">
-                                </td>
-                                <td class="p-2">
-                                    <p class="body-small reg black80 mb-0">Organization</p>
-                                </td>
-                                <td class="p-2">
-                                    <p class="body-small reg black80 mb-0">Organization Name</p>
-                                </td>
-                            </tr>
-                            <tr class="border-bottom">
-                                <td class="p-2">
-                                    <input type="checkbox">
-                                </td>
-                                <td class="p-2">
-                                    <p class="body-small reg black80 mb-0">Deal Value</p>
-                                </td>
-                                <td class="p-2">
-                                    <p class="body-small reg black80 mb-0">Deal Value</p>
-                                </td>
-                            </tr>
-                            <tr class="border-bottom">
-                                <td class="p-2">
-                                    <input type="checkbox">
-                                </td>
-                                <td class="p-2">
-                                    <p class="body-small reg black80 mb-0">Currency</p>
-                                </td>
-                                <td class="p-2">
-                                    <p class="body-small reg black80 mb-0">Currency</p>
-                                </td>
-                            </tr>
-                            <tr class="border-bottom">
-                                <td class="p-2">
-                                    <input type="checkbox">
-                                </td>
-                                <td class="p-2">
-                                    <p class="body-small reg black80 mb-0">Created On</p>
-                                </td>
-                                <td class="p-2">
-                                    <p class="body-small reg black80 mb-0">Created By</p>
-                                </td>
-                            </tr>
-                            <tr class="border-bottom">
-                                <td class="p-2">
-                                    <input type="checkbox">
-                                </td>
-                                <td class="p-2">
-                                    <p class="body-small reg black80 mb-0">Owner</p>
-                                </td>
-                                <td class="p-2">
-                                    <p class="body-small reg black80 mb-0">Owner Name</p>
-                                </td>
-                            </tr>
-                            <tr class="border-bottom">
-                                <td class="p-2">
-                                    <input type="checkbox">
-                                </td>
-                                <td class="p-2">
-                                    <p class="body-small reg black80 mb-0">Status</p>
-                                </td>
-                                <td class="p-2">
-                                    <p class="body-small reg black80 mb-0">Status</p>
-                                </td>
-                            </tr>
-                            <tr class="border-bottom">
-                                <td class="p-2">
-                                    <input type="checkbox">
-                                </td>
-                                <td class="p-2">
-                                    <p class="body-small reg black80 mb-0">Done Activities</p>
-                                </td>
-                                <td class="p-2">
-                                    <p class="body-small reg black80 mb-0">Done Activities Count</p>
-                                </td>
-                            </tr>
-                            <tr class="border-bottom">
-                                <td class="p-2">
-                                    <input type="checkbox">
-                                </td>
-                                <td class="p-2">
-                                    <p class="body-small reg black80 mb-0">Undone Activities</p>
-                                </td>
-                                <td class="p-2">
-                                    <p class="body-small reg black80 mb-0">Undone Activities Count</p>
-                                </td>
-                            </tr>
-                            <tr class="border-bottom">
-                                <td class="p-2">
-                                    <input type="checkbox">
-                                </td>
-                                <td class="p-2">
-                                    <p class="body-small reg black80 mb-0">Total Activities</p>
-                                </td>
-                                <td class="p-2">
-                                    <p class="body-small reg black80 mb-0">Total Activities Count</p>
-                                </td>
-                            </tr>
-                            <tr class="border-bottom">
-                                <td class="p-2">
-                                    <input type="checkbox">
-                                </td>
-                                <td class="p-2">
-                                    <p class="body-small reg black80 mb-0">Next Activities</p>
-                                </td>
-                                <td class="p-2">
-                                    <p class="body-small reg black80 mb-0">Next Activities Day</p>
-                                </td>
-                            </tr>
-                            <tr class="border-bottom">
-                                <td class="p-2">
-                                    <input type="checkbox">
-                                </td>
-                                <td class="p-2">
-                                    <p class="body-small reg black80 mb-0">Last Activity</p>
-                                </td>
-                                <td class="p-2">
-                                    <p class="body-small reg black80 mb-0">Last Activity  Day</p>
-                                </td>
-                            </tr>
-                            <tr class="border-bottom">
-                                <td class="p-2">
-                                    <input type="checkbox">
-                                </td>
-                                <td class="p-2">
-                                    <p class="body-small reg black80 mb-0">Description</p>
-                                </td>
-                                <td class="p-2">
-                                    <p class="body-small reg black80 mb-0">Description</p>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-                <p class="body-small reg black80 my-3">
-                    <span class="sb">Note:</span> 
-                    All Related Data (People, Activities, Emails, Files, Notes, Followers)
-                    will be transferred.
-                </p>
-                <div class="d-flex align-items-center justify-content-end mt-3">
-                    <button class="primaryBG py-2 px-3 body-medium2 med grey0 border-0 rounded">Merge</button>
-                </div>
-
-            </div>
-        </div>
-    </div>
-    <!-- Merge Details Preview Popup -->
-    <div class="modal fade" id="mergeDetailsPreview" tabindex="-1" aria-labelledby="mergeDetailsPreview" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-scrollable rounded">
-            <div class="modal-content p-4 border-0 rounded position-relative">
-                <div class="d-flex align-items-center justify-content-between pb-3 border-bottom">
-                    <div class="d-flex align-items-center">
-                        <button type="button" class="p-0 border-0 bg-transparent me-3" data-bs-toggle="modal" data-bs-target="#mergeDeal">
-                            <svg width="22" height="15" viewBox="0 0 22 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M7.91211 14.0884L0.912109 7.08838L7.91211 0.0883789L9.17152 1.34779L4.3096 6.20972H22V7.96704H4.3096L9.17152 12.829L7.91211 14.0884Z" fill="#4E4D4D"/>
-                                </svg>
-                        </button>
-                        <p class="body-medium sb black20 mb-0">Merge Details</p>
-                    </div>
-                    <div class="text-end">
-                        <button class="border-0 bg-transparent" data-bs-dismiss="modal">
-                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M1.4 14L0 12.6L5.6 7L0 1.4L1.4 0L7 5.6L12.6 0L14 1.4L8.4 7L14 12.6L12.6 14L7 8.4L1.4 14Z" fill="#383637"/>
-                            </svg>
-                        </button>
-                    </div>
-                </div>
-
-                <div class="modal-body mergeDetailsCol rounded mt-3">
-                    <table class="w-100">
-                        <thead class="blue20bg">
-                            <tr>
-                                <th class="p-2">
-                                    <p class="mb-0 body-small med black80">Title</p>
-                                </th>
-                                <th class="p-2">
-                                    <p class="mb-0 body-small med black80">Deal Name</p>
-                                </th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr class="border-bottom">
-                                <td class="p-2">
-                                    <p class="body-small reg black80 mb-0">Organization</p>
-                                </td>
-                                <td class="p-2">
-                                    <p class="body-small reg black80 mb-0">Organization Name</p>
-                                </td>
-                            </tr>
-                            <tr class="border-bottom">
-                                <td class="p-2">
-                                    <p class="body-small reg black80 mb-0">Organization</p>
-                                </td>
-                                <td class="p-2">
-                                    <p class="body-small reg black80 mb-0">Organization Name</p>
-                                </td>
-                            </tr>
-                            <tr class="border-bottom">
-                                <td class="p-2">
-                                    <p class="body-small reg black80 mb-0">Deal Value</p>
-                                </td>
-                                <td class="p-2">
-                                    <p class="body-small reg black80 mb-0">Deal Value</p>
-                                </td>
-                            </tr>
-                            <tr class="border-bottom">
-                                <td class="p-2">
-                                    <p class="body-small reg black80 mb-0">Currency</p>
-                                </td>
-                                <td class="p-2">
-                                    <p class="body-small reg black80 mb-0">Currency</p>
-                                </td>
-                            </tr>
-                            <tr class="border-bottom">
-                                <td class="p-2">
-                                    <p class="body-small reg black80 mb-0">Created On</p>
-                                </td>
-                                <td class="p-2">
-                                    <p class="body-small reg black80 mb-0">Created By</p>
-                                </td>
-                            </tr>
-                            <tr class="border-bottom">
-                                <td class="p-2">
-                                    <p class="body-small reg black80 mb-0">Owner</p>
-                                </td>
-                                <td class="p-2">
-                                    <p class="body-small reg black80 mb-0">Owner Name</p>
-                                </td>
-                            </tr>
-                            <tr class="border-bottom">
-                                <td class="p-2">
-                                    <p class="body-small reg black80 mb-0">Status</p>
-                                </td>
-                                <td class="p-2">
-                                    <p class="body-small reg black80 mb-0">Status</p>
-                                </td>
-                            </tr>
-                            <tr class="border-bottom">
-                                <td class="p-2">
-                                    <p class="body-small reg black80 mb-0">Done Activities</p>
-                                </td>
-                                <td class="p-2">
-                                    <p class="body-small reg black80 mb-0">Done Activities Count</p>
-                                </td>
-                            </tr>
-                            <tr class="border-bottom">
-                                <td class="p-2">
-                                    <p class="body-small reg black80 mb-0">Undone Activities</p>
-                                </td>
-                                <td class="p-2">
-                                    <p class="body-small reg black80 mb-0">Undone Activities Count</p>
-                                </td>
-                            </tr>
-                            <tr class="border-bottom">
-                                <td class="p-2">
-                                    <p class="body-small reg black80 mb-0">Total Activities</p>
-                                </td>
-                                <td class="p-2">
-                                    <p class="body-small reg black80 mb-0">Total Activities Count</p>
-                                </td>
-                            </tr>
-                            <tr class="border-bottom">
-                                <td class="p-2">
-                                    <p class="body-small reg black80 mb-0">Next Activities</p>
-                                </td>
-                                <td class="p-2">
-                                    <p class="body-small reg black80 mb-0">Next Activities Day</p>
-                                </td>
-                            </tr>
-                            <tr class="border-bottom">
-                                <td class="p-2">
-                                    <p class="body-small reg black80 mb-0">Last Activity</p>
-                                </td>
-                                <td class="p-2">
-                                    <p class="body-small reg black80 mb-0">Last Activity  Day</p>
-                                </td>
-                            </tr>
-                            <tr class="border-bottom">
-                                <td class="p-2">
-                                    <p class="body-small reg black80 mb-0">Description</p>
-                                </td>
-                                <td class="p-2">
-                                    <p class="body-small reg black80 mb-0">Description</p>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-                <p class="body-small reg black80 my-3">
-                    <span class="sb">Note:</span> 
-                    All Related Data (People, Activities, Emails, Files, Notes, Followers)
-                    will be transferred.
-                </p>
-                <div class="d-flex align-items-center justify-content-end mt-3">
-                    <button class="primaryBG py-2 px-3 body-medium2 med grey0 border-0 rounded">Merge</button>
-                </div>
-
-            </div>
-        </div>
-    </div>
-
-            <!-- Product Pricing Popup -->
-            <div class="modal fade" id="productPricing" tabindex="-1" aria-labelledby="productPricing" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered rounded">
-                    <div class="modal-content p-4 border-0 rounded position-relative">
-                        <div class="d-flex align-items-center justify-content-between">
-                            <div class="d-flex align-items-center">
-                                <p class="body-medium sb black20 mb-0">Edit Deal</p>
-                            </div>
-                            <div class="text-end">
-                                <button class="border-0 bg-transparent" data-bs-dismiss="modal">
-                                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M1.4 14L0 12.6L5.6 7L0 1.4L1.4 0L7 5.6L12.6 0L14 1.4L8.4 7L14 12.6L12.6 14L7 8.4L1.4 14Z" fill="#383637"/>
-                                    </svg>
-                                </button>
-                            </div>
-                        </div>
-                        <div class="row align-items-end py-4 border-bottom">
-                            <div class="col-md-5">
-                                <label for="" class="body-normal reg black90 mb-2">Deals Currency</label>
-                                <select class="addDealSelect body-normal reg black40 p-2 border rounded " id="dealsCurrency" data-live-search="true">
-                                    <option data-tokens="option1">Option 1</option>
-                                    <option data-tokens="option2">Option 2</option>
-                                    <option data-tokens="option3">Option 3</option>
-                                </select>
-                            </div>
-                            <div class="col-md-7 d-flex align-items-center mt-2">
-                                <div class="d-flex align-items-center">
-                                    <input class="form-check-input m-0" type="radio" name="addDealTax" id="taxInclusive">
-                                    <label class="body-normal reg black90 ms-2" for="taxInclusive">
-                                        Tax inclusive
-                                    </label>
-                                </div>
-                                <div class="d-flex align-items-center mx-2">
-                                    <input class="form-check-input m-0" type="radio" name="addDealTax" id="taxExclusive">
-                                    <label class="body-normal reg black90 ms-2" for="taxExclusive">
-                                        Tax Exclusive
-                                    </label>
-                                </div>
-                                <div class="d-flex align-items-center">
-                                    <input class="form-check-input m-0" type="radio" name="addDealTax" id="tax">
-                                    <label class="body-normal reg black90 ms-2" for="tax">
-                                        Tax
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Add New Item -->
-                        <div id="addNewItemContainer">
-                            <div class="addNewItemRow row mt-3 gx-1 align-items-end">
-                                <div class="col-md-3 mt-3 d-flex align-items-center">
-                                    <input type="checkbox">
-                                    <div class="d-flex flex-column ms-2 ">
-                                        <label for="" class="body-normal reg black90 mb-2">Item</label>
-                                        <select name="" id="addDealPOPitems" class="body-normal reg black40 p-2 border rounded ">
-                                            <option value="">Option 1</option>
-                                            <option value="">Option 2</option>
-                                            <option value="">Option 3</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="col-md-2">
-                                    <div class="d-flex flex-column">
-                                        <label for="" class="body-normal reg black90 mb-2">Price</label>
-                                        <input type="text" class="body-normal reg black40 p-2 border rounded w-auto">
-                                    </div>
-                                </div>
-                                <div class="col-md-2">
-                                    <div class="d-flex flex-column">
-                                        <label for="" class="body-normal reg black90 mb-2">Quantity</label>
-                                        <input type="text" class="body-normal reg black40 p-2 border rounded w-auto">
-                                    </div>
-                                </div>
-                                <div class="col-md-1">
-                                    <div class="d-flex flex-column">
-                                        <label for="" class="body-normal reg black90 mb-2">Tax %</label>
-                                        <input type="text" class="body-normal reg black40 p-2 border rounded w-auto">
-                                    </div>
-                                </div>
-                                <div class="col-md-2">
-                                    <div class="d-flex flex-column">
-                                        <label for="" class="body-normal reg black90 mb-2">Discount</label>
-                                        <input type="text" class="body-normal reg black40 p-2 border rounded w-auto">
-                                    </div>
-                                </div>
-                                <div class="col-md-2">
-                                    <div class="d-flex flex-column">
-                                        <label for="" class="body-normal reg black90 mb-2">Amount</label>
-                                        <input type="text" class="body-normal reg black40 p-2 border rounded w-auto">
-                                    </div>
-                                </div>
-                                <div class="col-md-3 mt-2 additionalCostField">
-                                    <div class="d-flex flex-column">
-                                        <input type="text" class="body-normal reg black40 p-2 border rounded w-auto" placeholder="Additional Cost">
-                                    </div>
-                                </div>
-                                <div class="col-md-3 mt-2 additionalCostField">
-                                    <div class="d-flex flex-column">
-                                        <input type="text" class="body-normal reg black40 p-2 border rounded w-auto" value="0">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="d-flex flex-column mt-3">
-                                <button id="addNewItemBTN" class="primary body-normal med d-flex align-items-center bg-transparent border-0 p-0 mb-2">
-                                    <svg class="me-2" width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M7.67871 1.78564V7.78564M7.67871 7.78564V13.7856M7.67871 7.78564H13.6787M7.67871 7.78564H1.67871" stroke="#1D9CD3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                        </svg>
-                                        
-                                    Add New Item
-                                </button>
-                                <button id="additionalCostBTN" class="primary body-normal med d-flex align-items-center bg-transparent border-0 p-0 mb-2">
-                                    <svg class="me-2" width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M7.67871 1.78564V7.78564M7.67871 7.78564V13.7856M7.67871 7.78564H13.6787M7.67871 7.78564H1.67871" stroke="#1D9CD3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                        </svg>
-                                        
-                                        Add Additional Cost
-                                </button>
-                            </div>
-                        </div>
-                        
-                        <div class="w-50 ms-auto">
-                            <div class="d-flex align-items-center my-1">
-                                <p class="w-50 body-small reg black90 mb-0">Subtotal</p>
-                                <span class="body-small reg black90 mb-0 mx-3">:</span>
-                                <p class="w-50 body-small reg black90 mb-0">0000</p>
-                            </div>
-                            <div class="d-flex align-items-center my-1">
-                                <p class="w-50 body-small reg black90 mb-0">Included tax (18%)</p>
-                                <span class="body-small reg black90 mb-0 mx-3">:</span>
-                                <p class="w-50 body-small reg black90 mb-0">0000</p>
-                            </div>
-                            <div class="d-flex align-items-center my-1">
-                                <p class="w-50 body-small reg black90 mb-0">Included tax (5%) </p>
-                                <span class="body-small reg black90 mb-0 mx-3">:</span>
-                                <p class="w-50 body-small reg black90 mb-0">0000</p>
-                            </div>
-                            <div class="d-flex align-items-center my-1">
-                                <p class="w-50 body-normal sb black90 mb-0">Total</p>
-                                <span class="body-small reg black90 mb-0 mx-3">:</span>
-                                <p class="w-50 body-normal sb black90 mb-0">0000</p>
-                            </div>
-                        </div>
-                        <div class="d-flex align-items-center justify-content-between mt-3">
-                            <button id="removeAllItems" class="bg-transparent p-0 body-normal med text-danger border-0 d-flex align-items-center">
-                                <svg class="me-2" width="11" height="13" viewBox="0 0 11 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M4.23242 6.00456V9.50456M6.56576 6.00456V9.50456M0.732422 3.67122H10.0658M9.48242 3.67122L8.97667 10.7541C8.95572 11.0484 8.82401 11.3239 8.60807 11.525C8.39213 11.7261 8.10801 11.8379 7.81292 11.8379H2.98526C2.69017 11.8379 2.40604 11.7261 2.1901 11.525C1.97417 11.3239 1.84246 11.0484 1.82151 10.7541L1.31576 3.67122H9.48242ZM7.14909 3.67122V1.92122C7.14909 1.76651 7.08763 1.61814 6.97823 1.50874C6.86884 1.39935 6.72047 1.33789 6.56576 1.33789H4.23242C4.07771 1.33789 3.92934 1.39935 3.81994 1.50874C3.71055 1.61814 3.64909 1.76651 3.64909 1.92122V3.67122H7.14909Z" stroke="#C73C10" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                                    
-                                Remove All
-                            </button>
-                            <button class="primaryBG py-2 px-3 body-medium2 med grey0 border-0 rounded">Save</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-    <!-- Details Link Person Popup -->
-    <div class="modal fade" id="personPopup" tabindex="-1" aria-labelledby="personPopup" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered rounded">
-            <div class="modal-content p-4 border-0 rounded position-relative">
-                <div class="d-flex align-items-center justify-content-between pb-3 border-bottom">
-                    <div class="d-flex align-items-center">
-                        <p class="body-medium med black20 mb-0">Deals</p>
-                        <svg class="mx-3" width="6" height="26" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M1.5 1.22949L5 4.72949L1.5 8.22949" stroke="#646364" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                        <p class="body-small reg black70 mb-0">Link a  person</p>
-                    </div>
-                    <div class="text-end">
-                        <button class="border-0 bg-transparent" data-bs-dismiss="modal">
-                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M1.4 14L0 12.6L5.6 7L0 1.4L1.4 0L7 5.6L12.6 0L14 1.4L8.4 7L14 12.6L12.6 14L7 8.4L1.4 14Z" fill="#383637"/>
-                            </svg>
-                        </button>
-                    </div>
-                </div>
-                <div class="row mt-3">
-                    <div class="col-md-6 d-flex flex-column">
-                        <label for="" class="body-normal reg black90 mb-2 mt-3">First Name</label>
-                        <input type="text" class="body-small reg black80 py-2 border-0 border-bottom">
-                    </div>
-                    <div class="col-md-6 d-flex flex-column">
-                        <label for="" class="body-normal reg black90 mb-2 mt-3">Last Name</label>
-                        <input type="text" class="body-small reg black80 py-2 border-0 border-bottom">
-                    </div>
-                    <div class="col-12 d-flex flex-column">
-                        <label for="" class="body-normal reg black90 mb-2 mt-3">Email Address</label>
-                        <input type="email" class="body-small reg black80 py-2 border-0 border-bottom">
-                    </div>
-                    <div class="col-12 d-flex flex-column">
-                        <label for="" class="body-normal reg black90 mb-2 mt-3">Organization</label>
-                        <select name="" id="" class="organizationSelect body-small reg black80 py-2 border-0 border-bottom">
-                            <option value="opt11">Option 111</option>
-                            <option value="opt22">Option 222</option>
-                            <option value="opt33">Option 333</option>
-                        </select>
-                    </div>
-                    <div class="col-12 d-flex flex-column">
-                        <label for="" class="body-normal reg black90 mb-2 mt-3">Phone</label>
-                        <input type="tel" class="body-small reg black80 py-2 border-0 border-bottom">
-                    </div>
-                </div>
-                <div class="d-flex align-items-center justify-content-end mt-3">
+                    <button class="bg-transparent p-0 body-normal med primary border-0 me-3" data-bs-dismiss="modal">Cancel</button>
                     <button class="primaryBG py-2 px-3 body-medium2 med grey0 border-0 rounded">Save</button>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- Organization Popup -->
-    <div class="modal fade" id="organization" tabindex="-1" aria-labelledby="organization" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered rounded">
-            <div class="modal-content p-4 border-0 rounded position-relative">
-                <div class="d-flex align-items-center justify-content-between pb-3 border-bottom">
-                    <div class="d-flex align-items-center">
-                        <p class="body-medium med black20 mb-0">Organization</p>
-                        <svg class="mx-3" width="6" height="26" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M1.5 1.22949L5 4.72949L1.5 8.22949" stroke="#646364" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                        <p class="body-small reg black70 mb-0">Link Organization</p>
-                    </div>
-                    <div class="text-end">
-                        <button class="border-0 bg-transparent" data-bs-dismiss="modal">
-                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M1.4 14L0 12.6L5.6 7L0 1.4L1.4 0L7 5.6L12.6 0L14 1.4L8.4 7L14 12.6L12.6 14L7 8.4L1.4 14Z" fill="#383637"/>
-                            </svg>
-                        </button>
-                    </div>
-                </div>
-                <div class="row mt-3">
-                    <div class="col-12 d-flex flex-column">
-                        <label for="" class="body-normal reg black90 mb-2 mt-3">Name</label>
-                        <input type="text" class="body-small reg black80 py-2 border-0 border-bottom">
-                    </div>
-                    <div class="col-12 d-flex flex-column">
-                        <label for="" class="body-normal reg black90 mb-2 mt-3">Website</label>
-                        <input type="url" class="body-small reg black80 py-2 border-0 border-bottom">
-                    </div>
-                    <div class="col-12 d-flex flex-column">
-                        <label for="" class="body-normal reg black90 mb-2 mt-3">Address</label>
-                        <input type="text" class="body-small reg black80 py-2 border-0 border-bottom">
-                    </div>
-                    <div class="col-12 d-flex flex-column">
-                        <label for="" class="body-normal reg black90 mb-2 mt-3">Phone</label>
-                        <input type="tel" class="body-small reg black80 py-2 border-0 border-bottom">
-                    </div>
-                </div>
-                <div class="d-flex align-items-center justify-content-end mt-3">
-                    <button class="primaryBG py-2 px-3 body-medium2 med grey0 border-0 rounded">Save</button>
-                </div>
-            </div>
-        </div>
-    </div>
 
-    <!-- Projects Link Popup -->
-    <div class="modal fade" id="projectsLink" tabindex="-1" aria-labelledby="projectsLink" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered rounded">
-            <div class="modal-content p-4 border-0 rounded position-relative">
-                <div class="d-flex align-items-center justify-content-between pb-3 border-bottom">
-                    <div class="d-flex align-items-center">
-                        <p class="body-medium med black20 mb-0">Link Project </p>
-                        <svg class="mx-3" width="6" height="26" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M1.5 1.22949L5 4.72949L1.5 8.22949" stroke="#646364" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                        <p class="body-small reg black70 mb-0">Link a  project</p>
-                    </div>
-                    <div class="text-end">
-                        <button class="border-0 bg-transparent" data-bs-dismiss="modal">
-                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M1.4 14L0 12.6L5.6 7L0 1.4L1.4 0L7 5.6L12.6 0L14 1.4L8.4 7L14 12.6L12.6 14L7 8.4L1.4 14Z" fill="#383637"/>
-                            </svg>
-                        </button>
-                    </div>
-                </div>
-                <div class="row mt-3">
-                    <div class="col-12 d-flex flex-column">
-                        <label for="" class="body-normal reg black90 mb-2 mt-3">Organization Name</label>
-                        <input type="text" class="body-small reg black80 py-2 border-0 border-bottom">
-                    </div>
-                    <div class="col-md-6 d-flex flex-column">
-                        <label for="" class="body-normal reg black90 mb-2 mt-3">Client Name</label>
-                        <input type="text" class="body-small reg black80 py-2 border-0 border-bottom">
-                    </div>
-                    <div class="col-md-6 d-flex flex-column">
-                        <label for="" class="body-normal reg black90 mb-2 mt-3">Client Mail</label>
-                        <input type="email" class="body-small reg black80 py-2 border-0 border-bottom">
-                    </div>
-                    <div class="col-12 d-flex flex-column">
-                        <label for="" class="body-normal reg black90 mb-2 mt-3">Search Product</label>
-                        <input type="search" class="body-small reg black80 py-2 border-0 border-bottom">
-                    </div>
-                </div>
-                <div class="d-flex align-items-center justify-content-between mt-3">
-                    <button class="d-flex align-items-center bg-transparent border-0 p-0 body-normal reg black80">
-                        <svg class="me-2" width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M7 8.72949H13M10 5.72949V11.7295M1 12.7295V2.72949C1 2.19906 1.21071 1.69035 1.58579 1.31528C1.96086 0.940206 2.46957 0.729492 3 0.729492H9L11 2.72949H17C17.5304 2.72949 18.0391 2.94021 18.4142 3.31528C18.7893 3.69035 19 4.19906 19 4.72949V12.7295C19 13.2599 18.7893 13.7686 18.4142 14.1437C18.0391 14.5188 17.5304 14.7295 17 14.7295H3C2.46957 14.7295 1.96086 14.5188 1.58579 14.1437C1.21071 13.7686 1 13.2599 1 12.7295Z" stroke="#383637" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                            
-                        Add Notes
-                    </button>
-                    <button class="primaryBG py-2 px-3 body-medium2 med grey0 border-0 rounded">Save</button>
-                </div>
-            </div>
-        </div>
-    </div>
+
+
 
     <!-- Start a Project Popup -->
     <div class="modal fade" id="startProject" tabindex="-1" aria-labelledby="startProject" aria-hidden="true">
@@ -2203,89 +1439,6 @@
     </div>
 
 
-    <!-- Schedule Activity Popup -->
-    <div class="modal fade" id="scheduleActivity" tabindex="-1" aria-labelledby="scheduleActivity" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered rounded">
-            <div class="modal-content p-4 border-0 rounded position-relative">
-                <button class="border-0 bg-transparent py-1 px-2 position-absolute top-0 end-0" data-bs-dismiss="modal">
-                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M1.4 14L0 12.6L5.6 7L0 1.4L1.4 0L7 5.6L12.6 0L14 1.4L8.4 7L14 12.6L12.6 14L7 8.4L1.4 14Z" fill="#383637"/>
-                    </svg>
-                </button>
-                <div class="d-flex align-items-center">
-                    <p class="body-medium sb text-dark mb-0 me-2">Action</p>
-                    <div class="form-check form-switch d-flex align-items-center">
-                        <input class="form-check-input" type="checkbox" role="switch">
-                    </div>
-                </div>
-                <div class="row mt-3">
-                    <div class="col-md-4 d-flex flex-column">
-                        <label for="" class="body-normal reg black90 mb-2 mt-3">Organization</label>
-                        <input id="Organization" type="text" class="body-small reg black80 py-2 border-0 border-bottom">
-                    </div>
-                    <div class="col-md-4 d-flex flex-column">
-                        <label for="" class="body-normal reg black90 mb-2 mt-3">Contact Person</label>
-                        <input id="contPer" type="text" class="body-small reg black80 py-2 border-0 border-bottom">
-                    </div>
-                    <div class="col-md-4 d-flex flex-column">
-                        <label for="" class="body-normal reg black90 mb-2 mt-3">Deal</label>
-                        <input id="dealInput" type="text" class="body-small reg black80 py-2 border-0 border-bottom">
-                    </div>
-                    <div class="col-md-4 d-flex flex-column">
-                        <label for="" class="body-normal reg black90 mb-2 mt-3">Action Title</label>
-                        <select name="" id="" class="body-small reg black80 py-2 border-0 border-bottom">
-                            <option value="">Option 1</option>
-                            <option value="">Option 2</option>
-                            <option value="">Option 3</option>
-                        </select>
-                    </div>
-                    <div class="col-md-4 d-flex flex-column">
-                        <label for="" class="body-normal reg black90 mb-2 mt-3">Action Title</label>
-                        <select name="" id="" class="body-small reg black80 py-2 border-0 border-bottom">
-                            <option value="">Option 1</option>
-                            <option value="">Option 2</option>
-                            <option value="">Option 3</option>
-                        </select>
-                    </div>
-                    <div class="col-12 d-flex flex-column">
-                        <label for="" class="body-normal reg black90 mb-2 mt-3">Note</label>
-                        <input type="text" class="body-small reg black80 py-2 border-0 border-bottom" placeholder="Select">
-                    </div>
-                    <div class="col-md-4 d-flex flex-column">
-                        <label for="" class="body-normal reg black90 mb-2 mt-3">Date</label>
-                        <input type="date" class="body-small reg black80 py-2 border-0 border-bottom">
-                    </div>
-                    <div class="col-md-4 d-flex flex-column">
-                        <label for="" class="body-normal reg black90 mb-2 mt-3">Assigned To</label>
-                        <select name="" id="" class="body-small reg black80 py-2 border-0 border-bottom">
-                            <option value="">Option 1</option>
-                            <option value="">Option 2</option>
-                            <option value="">Option 3</option>
-                        </select>
-                    </div>
-                    <div class="col-md-4 d-flex flex-column">
-                        <label for="" class="body-normal reg black90 mb-2 mt-3">Time</label>
-                        <input type="time" class="body-small reg black80 py-2 border-0 border-bottom">
-                    </div>
-                    <div class="col-md-4 d-flex flex-column">
-                        <label for="" class="body-normal reg black90 mb-2 mt-3">Duration</label>
-                        <select name="" id="" class="body-small reg black80 py-2 border-0 border-bottom">
-                            <option value="">Option 1</option>
-                            <option value="">Option 2</option>
-                            <option value="">Option 3</option>
-                        </select>
-                    </div>
-                </div>
-                <div class="d-flex align-items-center justify-content-between mt-3">
-                    <div class="d-flex align-items-center">
-                        <input type="checkbox">
-                        <p class="body-normal reg black80 mb-0 ms-2">Mark as Done</p>
-                    </div>
-                    <button class="primaryBG py-2 px-3 body-medium2 med grey0 border-0 rounded">Save</button>
-                </div>
-            </div>
-        </div>
-    </div>
 
     
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -2301,8 +1454,7 @@
         width: '100%',
         height: 150,
         menubar:"false",
-        toolbar: '| blocks | ' +
-        'bold italic alignleft aligncenter alignright alignjustify',
+        toolbar: 'bold italic underline',
         toolbar_location: 'bottom',
         branding: false,
         statusbar: false,
