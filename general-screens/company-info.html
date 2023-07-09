@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/general/user-access.css">
+    <link rel="stylesheet" href="../assets/css/bootstrap/bootstrap.css">   
+    <link rel="stylesheet" href="/assets/js/chosen/chosen.min.css">
+    <link rel="stylesheet" href="../assets/form-phone-list/build/css/intlTelInput.css">
+    <title>Company Info</title>
+</head>
+<body>
+    
+    <section class="container-fluid">
+        <div class="row">
+
+            <!-- Column with Form -->
+            <div class="col-12  access-col2">
+                <div class="access-right m-auto">
+                    <img src="../assets/images/logo.png" alt="" class="logo">
+                    <div class="form">
+                        <h4 class="heading-four sb black90">
+                            Company Info
+                        </h4>
+                        <form action="" class="access-form">
+                            <div class="form-field">
+                                <label for="name" class="body-small reg black80">Company name <span class="required med">*</span></label>
+                                <input type="name" class="input-field body-normal reg black80" id="name" placeholder="Enter company name" required> 
+                            </div>
+                            <div class="form-field">
+                                <label for="employees" class="body-small reg black80">Company strength <span class="required med">*</span></label>
+                                <input type="number" class="input-field body-normal reg black80" id="employees" placeholder="How many people work here?" required> 
+                            </div>
+                            <div class="form-field">
+                                <label for="phone" class="body-small reg black80">Phone number <span class="required med">*</span></label>
+                                <input type="tel" class="input-field body-normal reg black80" id="phone" required>
+                            </div>
+                            
+
+
+                            <input type="submit" class="form-submitBTN body-medium2 grey0 med" value="Complete sign up">
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+    <script src="../assets/form-phone-list/build/js/intlTelInput.js"></script>
+
+    <script>
+        var input = document.querySelector("#phone");
+        window.intlTelInput(input,{
+
+            preferredCountries: [ "in" ],
+            placeholderNumberType:"MOBILE",
+
+            utilsScript:"../assets/form-phone-list/build/js/utils.js"
+
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,45 @@
+.coming-soon{
+    width: 100%;  
+}
+
+.coming-soonContainer{
+    text-align: center;
+
+
+}
+
+.coming-soonContainer .coming-soon-title h1{
+    font-weight: 600;
+    font-size: 96px;
+    line-height: 116px;
+    margin-top: 80px;
+    margin-bottom: 61px;
+}
+
+.coming-soonContainer h2{
+    margin-bottom: 151px;
+}
+
+.back-toLOGIN{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.back-toLOGIN::before{
+    content: url(/assets/images/back-arrow.svg);
+    margin-right: 10px;
+}
+
+
+@media (max-width: 768px) { 
+    .coming-soonContainer .coming-soon-title h1 {
+        font-weight: 600;
+        font-size: 56px;
+        line-height: 66px;
+        margin-top: 80px;
+        margin-bottom: 61px;
+    }
+ 
+ }
