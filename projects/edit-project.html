@@ -698,11 +698,9 @@
                                                 </button>
                                             </div>
                                         </div>
-                                        <a href="">
-                                            <button class="primaryBG border-0 body-medium2 med grey0 py-2 px-4 rounded">
+                                            <button class="primaryBG border-0 body-medium2 med grey0 py-2 px-4 rounded" data-bs-toggle="modal" data-bs-target="#projectAddNote">
                                                 Add Notes
                                             </button>
-                                        </a>
                                     </div>
                                 </div>
                                 <div class="p-3 tab-content"  id="pills-tabContent">
@@ -1305,7 +1303,7 @@
 
 
     <!-- Add Note Popup -->
-    <div class="modal fade show" id="projectAddNote" tabindex="-1" aria-labelledby="projectAddNote" aria-hidden="true" style="display: block;">
+    <div class="modal fade" id="projectAddNote" tabindex="-1" aria-labelledby="projectAddNote" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered rounded">
             <div class="modal-content p-4 mx-auto">
               
@@ -1456,8 +1454,7 @@
         width: '100%',
         height: 150,
         menubar:"false",
-        toolbar: '| blocks | ' +
-        'bold italic alignleft aligncenter alignright alignjustify',
+        toolbar: 'bold italic underline',
         toolbar_location: 'bottom',
         branding: false,
         statusbar: false,
