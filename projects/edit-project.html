@@ -1376,7 +1376,10 @@
                         
                     </div>
                     <div class="mt-4">
-                        <p class="body-small reg primary m-0">Add Description (Optional)</p>
+                        <button class="dealAddBTN body-small reg primary m-0 p-0 border-0 bg-transparent">Add Description (Optional)</button>
+                        <div class="dealAddElementOption mt-3">
+                            <input id="addDesc" type="text" class="p-3 body-small med black80 border rounded w-100" placeholder="Type your comment here">
+                        </div>
                     </div>
                     <div class="d-flex align-items-center justify-content-between mt-3">
                         <button class="bg-transparent p-0 body-small reg primary border-0 d-flex align-items-center" data-bs-toggle="modal" data-bs-target="#tagSlide">
@@ -1524,6 +1527,16 @@
         menubar:"false",
         toolbar: 'bold italic underline',
         toolbar_location: 'bottom',
+        branding: false,
+        statusbar: false,
+        });
+        tinymce.init({
+        selector: '#addDesc',
+        width: '100%',
+        height: 120,
+        menubar:"false",
+        toolbar: 'bold italic underline',
+        toolbar_location: 'top',
         branding: false,
         statusbar: false,
         });
