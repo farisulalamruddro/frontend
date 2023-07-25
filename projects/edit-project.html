@@ -1343,7 +1343,7 @@
 
     <!-- Post Message Popup -->
 
-        <div class="modal fade show" id="postMessage" tabindex="-1" aria-labelledby="postMessage" aria-hidden="true" style="display: block;">
+        <div class="modal fade" id="postMessage" tabindex="-1" aria-labelledby="postMessage" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered rounded">
                 <div class="modal-content p-4 border-0 rounded">
     
@@ -1357,23 +1357,38 @@
                             </svg>
                         </button>
                     </div>
-                    <div class="row mt-3">
-                        
-                    
-                        
+                    <div class="mt-3">
+                        <p class="body-small reg m-0">Who can view the discussion?</p>    
+                        <div class="privacyForm mt-2 d-flex align-items-center"> 
+                            <div class="form-check d-flex align-items-center me-3">
+                                <input class="form-check-input mt-0 me-2" type="checkbox" value="" id="everyone">
+                                <label class="form-check-label body-small reg" for="everyone">
+                                Everyone
+                                </label>
+                            </div>
+                            <div class="form-check d-flex align-items-center">
+                                <input class="form-check-input mt-0 me-2" type="checkbox" value="" id="private">
+                                <label class="form-check-label body-small reg" for="private">
+                                Private
+                                </label>
+                            </div>
+                        </div>
                         
                     </div>
+                    <div class="mt-4">
+                        <p class="body-small reg primary m-0">Add Description (Optional)</p>
+                    </div>
                     <div class="d-flex align-items-center justify-content-between mt-3">
-                        <button class="bg-transparent p-0 body-normal med primary border-0 d-flex align-items-center" data-bs-toggle="modal" data-bs-target="#tagSlide">
-                            <svg class="me-2" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M8 5.75V8M8 8V10.25M8 8H10.25M8 8H5.75M14.75 8C14.75 8.88642 14.5754 9.76417 14.2362 10.5831C13.897 11.4021 13.3998 12.1462 12.773 12.773C12.1462 13.3998 11.4021 13.897 10.5831 14.2362C9.76417 14.5754 8.88642 14.75 8 14.75C7.11358 14.75 6.23583 14.5754 5.41689 14.2362C4.59794 13.897 3.85382 13.3998 3.22703 12.773C2.60023 12.1462 2.10303 11.4021 1.76381 10.5831C1.42459 9.76417 1.25 8.88642 1.25 8C1.25 6.20979 1.96116 4.4929 3.22703 3.22703C4.4929 1.96116 6.20979 1.25 8 1.25C9.79021 1.25 11.5071 1.96116 12.773 3.22703C14.0388 4.4929 14.75 6.20979 14.75 8Z" stroke="#1D9CD3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <button class="bg-transparent p-0 body-small reg primary border-0 d-flex align-items-center" data-bs-toggle="modal" data-bs-target="#tagSlide">
+                            <svg class="me-2" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M11.6346 3.66891C11.6349 4.04299 11.5611 4.41343 11.4175 4.75885C11.2739 5.10427 11.0633 5.41782 10.7979 5.68141L9.25021 7.22907C8.71699 7.76172 7.99413 8.06091 7.24045 8.06091C6.48676 8.06091 5.7639 7.76172 5.23068 7.22907C5.18676 7.18927 5.15139 7.14097 5.1267 7.08709C5.10201 7.03321 5.08853 6.97487 5.08707 6.91563C5.08561 6.85638 5.09621 6.79745 5.11821 6.74242C5.14022 6.68739 5.17317 6.63741 5.21508 6.5955C5.25699 6.55359 5.30697 6.52063 5.362 6.49863C5.41703 6.47663 5.47596 6.46603 5.53521 6.46749C5.59446 6.46895 5.65279 6.48243 5.70667 6.50712C5.76055 6.5318 5.80886 6.56718 5.84865 6.6111C6.21854 6.97878 6.7189 7.18516 7.24045 7.18516C7.76199 7.18516 8.26235 6.97878 8.63224 6.6111L10.1799 5.06344C10.3692 4.88213 10.5203 4.66485 10.6245 4.42436C10.7287 4.18386 10.7838 3.92498 10.7866 3.66291C10.7894 3.40083 10.7398 3.14084 10.6408 2.89816C10.5418 2.65549 10.3954 2.43502 10.21 2.2497C10.0247 2.06437 9.80426 1.91792 9.56158 1.81892C9.31891 1.71992 9.05891 1.67037 8.79684 1.67318C8.53476 1.67599 8.27589 1.73109 8.03539 1.83527C7.79489 1.93945 7.57762 2.09059 7.39631 2.27985L6.31349 3.36266C6.23027 3.43807 6.12124 3.47858 6.00896 3.47582C5.89669 3.47305 5.78979 3.42722 5.71037 3.34781C5.63096 3.2684 5.58513 3.16149 5.58237 3.04922C5.5796 2.93695 5.62012 2.82791 5.69552 2.74469L6.77834 1.66188C7.17674 1.26648 7.68305 0.997563 8.23373 0.888881C8.78441 0.780199 9.35493 0.836593 9.87368 1.05099C10.3924 1.26538 10.8363 1.62822 11.1496 2.09396C11.4628 2.55971 11.6316 3.10761 11.6346 3.66891V3.66891ZM6.31349 8.92985L5.23068 10.0127C4.85892 10.3688 4.36243 10.5652 3.84762 10.5597C3.33281 10.5542 2.84064 10.3472 2.4766 9.98315C2.11255 9.61911 1.90559 9.12694 1.90008 8.61213C1.89456 8.09732 2.09092 7.60083 2.44709 7.22907L3.99474 5.68141C4.36464 5.31373 4.86499 5.10735 5.38654 5.10735C5.90809 5.10735 6.40844 5.31373 6.77834 5.68141C6.86156 5.75682 6.9706 5.79733 7.08287 5.79457C7.19514 5.7918 7.30205 5.74597 7.38146 5.66656C7.46087 5.58715 7.5067 5.48024 7.50946 5.36797C7.51223 5.2557 7.47171 5.14666 7.39631 5.06344C6.86309 4.53079 6.14023 4.23159 5.38654 4.23159C4.63285 4.23159 3.90999 4.53079 3.37677 5.06344L1.82912 6.6111C1.55089 6.87175 1.3279 7.18569 1.17343 7.53424C1.01897 7.8828 0.93616 8.25886 0.929944 8.64006C0.923727 9.02126 0.994226 9.39982 1.13725 9.75323C1.28027 10.1066 1.49289 10.4277 1.76248 10.6973C2.03207 10.9669 2.35311 11.1795 2.70652 11.3225C3.05993 11.4655 3.43848 11.536 3.81969 11.5298C4.20089 11.5236 4.57695 11.4408 4.9255 11.2863C5.27406 11.1318 5.588 10.9089 5.84865 10.6306L6.93146 9.54782C7.00687 9.46459 7.04738 9.35556 7.04462 9.24329C7.04186 9.13102 6.99602 9.02411 6.91661 8.9447C6.8372 8.86529 6.73029 8.81945 6.61802 8.81669C6.50575 8.81393 6.39672 8.85444 6.31349 8.92985V8.92985Z" fill="#1D9CD3"/>
                                 </svg>
                                 
-                            Tags
+                                
+                                Attach files
                         </button>
                         <div class="d-flex align-items-center">
-                            <button class="bg-transparent p-0 body-normal med primary border-0 me-3">Add Contact</button>
-                            <button class="primaryBG py-2 px-3 body-medium2 med grey0 border-0 rounded">Save</button>
+                            <button class="primaryBG py-2 px-3 body-medium2 med grey0 border-0 rounded">Post Message</button>
                         </div>
                     </div>
                 </div>
