@@ -158,12 +158,12 @@ select.crmTopFilter::after{
     position: relative;
 }
 
-.list-info-item .list-info-itemControl{
-    opacity: 0;
+.list-info-itemControl{
+    visibility: hidden;
 }
 
-.list-info-item:hover .list-info-itemControl{
-    opacity: 1;
+.list-info-item:hover .list-info-itemControl, .box-contentsItemLabel:hover .list-info-itemControl{
+    visibility: visible;
 }
 
 .list-view-info.pagination{
