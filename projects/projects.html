@@ -29,7 +29,7 @@
                             </svg>
                             
                     </li>
-                    <li class="h-100 d-flex align-items-center"><a href="/crm/deal-list.html" class="body-normal reg black80 h-100 d-flex align-items-center mx-2 active">Projects</a></li>
+                    <li class="h-100 d-flex align-items-center"><a href="/projects/projects.html" class="body-normal reg black80 h-100 d-flex align-items-center mx-2 active">Projects</a></li>
                     <li class="h-100 d-flex align-items-center"><a href="/crm/action.html" class="body-normal reg black80 h-100 d-flex align-items-center mx-2">Progress</a></li>
                     <li class="h-100 d-flex align-items-center"><a href="/crm/contact.html" class="body-normal reg black80 h-100 d-flex align-items-center mx-2">All Tasks</a></li>
                 </ul>
@@ -393,7 +393,7 @@
                             </div>
                         </div>
                         
-                        <button class="addDealsBTN p-0 d-flex align-items-center justify-content-center border-0 rounded" data-bs-toggle="modal" data-bs-target="#addDealPopup">
+                        <button class="addDealsBTN p-0 d-flex align-items-center justify-content-center border-0 rounded" data-bs-toggle="modal" data-bs-target="#addProjectPopup">
                             <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M6 6H1.5Z" fill="white"/>
                                 <path d="M6 1.5V6M6 6V10.5M6 6H10.5M6 6H1.5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -844,20 +844,308 @@
                                             <input type="checkbox" id="bulkCheck" class="bulkCheck">
                                         </td>
                                         <td class="list-info-item body-normal black80 m-0"> 
-                                            <a href="/projects/edit-project.html" class="black80 d-block w-100">
-                                                <div class="d-flex align-items-center">
-                                                    <div class="ownerAvatar me-2">SM</div>
-                                                    Test
+                                            <div class="d-flex align-items-center w-100 flex-wrap">
+                                                
+                                                <a href="/projects/edit-project.html" class="m-0 black20 d-flex align-items-center">
+                                                    <div class="insightsdropdown">
+                                                        <div class="ownerAvatar me-2">SM</div>
+                                                        <div class="insightsdropdownCont bg-transparent border-0 rounded-0 pt-2">
+                                                            <div class="border rounded p-3 bg-white">
+                                                                <div class="mb-2 d-flex align-items-center justify-content-between">
+                                                                    <p class="d-flex align-items-center mb-0 body-small reg primary">
+                                                                        <svg class="me-2" width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                            <path d="M0.177002 12.5636V11.2969L1.24843 10.2969V12.5636H0.177002ZM3.12343 12.5636V8.63027L4.19486 7.63027V12.5636H3.12343ZM6.06986 12.5636V7.63027L7.14129 8.64693V12.5636H6.06986ZM9.01629 12.5636V8.64693L10.0877 7.64693V12.5636H9.01629ZM11.9627 12.5636V5.9636L13.0341 4.9636V12.5636H11.9627ZM0.177002 8.63027V7.2136L5.177 2.58027L8.03414 5.24693L13.0341 0.563599V1.98027L8.03414 6.6636L5.177 3.99693L0.177002 8.63027Z" fill="#1D9CD3"></path>
+                                                                            </svg>
+                                                                            Insights
+                                                                    </p>
+                                                                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                        <path d="M4.72323 3.73027V1.0636M10.0566 3.73027V1.0636M4.05656 6.39693H10.7232M2.72323 13.0636H12.0566C12.4102 13.0636 12.7493 12.9231 12.9994 12.6731C13.2494 12.423 13.3899 12.0839 13.3899 11.7303V3.73027C13.3899 3.37664 13.2494 3.0375 12.9994 2.78746C12.7493 2.53741 12.4102 2.39693 12.0566 2.39693H2.72323C2.3696 2.39693 2.03047 2.53741 1.78042 2.78746C1.53037 3.0375 1.38989 3.37664 1.38989 3.73027V11.7303C1.38989 12.0839 1.53037 12.423 1.78042 12.6731C2.03047 12.9231 2.3696 13.0636 2.72323 13.0636Z" stroke="#383637" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                                        </svg>
+                                                                        
+                                                                </div>
+                                                                <div class="mt-1">
+                                                                    <div class="d-flex align-items-center justify-content-between">
+                                                                        <p class="body-tiny reg black80 mb-0">Meeting</p>
+                                                                        <p class="body-tiny reg black80 mb-0">Open Tasks</p>
+                                                                    </div>
+                                                                    <div class="d-flex align-items-center justify-content-between pb-1">
+                                                                        <p class="body-tiny reg black80 mb-0">0</p>
+                                                                        <p class="body-tiny reg black80 mb-0">29</p>
+                                                                    </div>
+                                                                    <div class="w-100 rounded" style="background-color: #F7941E; height: 2px;"></div>
+                                                                </div>
+                                                                <div class="mt-1">
+                                                                    <div class="d-flex align-items-center justify-content-between">
+                                                                        <p class="body-tiny reg black80 mb-0">Meeting</p>
+                                                                        <p class="body-tiny reg black80 mb-0">Open Tasks</p>
+                                                                    </div>
+                                                                    <div class="d-flex align-items-center justify-content-between pb-1">
+                                                                        <p class="body-tiny reg black80 mb-0">0</p>
+                                                                        <p class="body-tiny reg black80 mb-0">29</p>
+                                                                    </div>
+                                                                    <div class="w-100 rounded" style="background-color: #F7941E; height: 2px;"></div>
+                                                                </div>
+                                                                <div class="mt-1">
+                                                                    <div class="d-flex align-items-center justify-content-between">
+                                                                        <p class="body-tiny reg black80 mb-0">Meeting</p>
+                                                                        <p class="body-tiny reg black80 mb-0">Open Tasks</p>
+                                                                    </div>
+                                                                    <div class="d-flex align-items-center justify-content-between pb-1">
+                                                                        <p class="body-tiny reg black80 mb-0">0</p>
+                                                                        <p class="body-tiny reg black80 mb-0">29</p>
+                                                                    </div>
+                                                                    <div class="w-100 rounded" style="background-color: #F7941E; height: 2px;"></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    Task
+                                                </a>
+                                                <div class="ms-3 d-flex align-items-center list-info-itemControl">
+                                                    <div class="dropdown">
+                                                        <button class="border-0 p-0 bg-transparent d-flex align-items-center body-medium sb black80" type="button" id="dropdownMenuClickableInside" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+                                                            <svg width="10" height="11" viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M7.42338 1.28385C7.55253 1.15013 7.70701 1.04348 7.87782 0.970107C8.04862 0.896734 8.23233 0.858114 8.41822 0.856498C8.60411 0.854883 8.78846 0.890305 8.96052 0.960698C9.13257 1.03109 9.28889 1.13505 9.42034 1.2665C9.55179 1.39795 9.65574 1.55426 9.72613 1.72631C9.79653 1.89837 9.83195 2.08272 9.83033 2.26861C9.82872 2.4545 9.7901 2.63821 9.71673 2.80902C9.64335 2.97982 9.5367 3.1343 9.40298 3.26345L8.84788 3.81855L6.86828 1.83895L7.42338 1.28385ZM5.87848 2.82875L0.0131836 8.69405V10.6736H1.99278L7.85878 4.80835L5.87778 2.82875H5.87848Z" fill="#383637"></path>
+                                                            </svg> 
+                                                        </button>
+                                                        <div id="dealSearchSelect" class="dropdown-menu more-options p-0 dropdown-menu-right" aria-labelledby="dropdownMenuClickableInside" style="">
+                                                            <p class="body-small reg black90 p-2 text-center mb-0 blue20bg">Rename</p>
+                                                            <div class="px-2 py-3">
+                                                                <form>
+                                                                    <input type="text" class="p-2 border-0 border-bottom body-tiny reg black90 w-100 h-auto" placeholder="Name">
+                                                                </form>
+                                                            </div>
+                                                            <div class="filterBTN bg-light p-2 m-0 d-flex justify-content-between"> 
+                                                                <button class="body-normal med primary border-0 bg-transparent p-0 filterCancel">Cancel</button>
+                                                                <button class="body-normal med grey0 border-0 rounded p-2">Save</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <button class="border-0 p-0 bg-transparent d-flex align-items-center body-medium sb black80 ms-2" type="button">
+                                                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M3.57967 2.85677V7.52344C3.57967 7.83286 3.70259 8.1296 3.92138 8.34839C4.14017 8.56719 4.43692 8.6901 4.74634 8.6901H8.24634M3.57967 2.85677V1.6901C3.57967 1.38068 3.70259 1.08394 3.92138 0.865146C4.14017 0.646354 4.43692 0.523438 4.74634 0.523438H7.42151C7.5762 0.523471 7.72455 0.58495 7.83392 0.694354L10.4088 3.26919C10.5182 3.37856 10.5796 3.52691 10.5797 3.6816V7.52344C10.5797 7.83286 10.4568 8.1296 10.238 8.34839C10.0192 8.56719 9.72242 8.6901 9.41301 8.6901H8.24634M3.57967 2.85677H2.413C2.10359 2.85677 1.80684 2.97969 1.58805 3.19848C1.36925 3.41727 1.24634 3.71402 1.24634 4.02344V9.85677C1.24634 10.1662 1.36925 10.4629 1.58805 10.6817C1.80684 10.9005 2.10359 11.0234 2.413 11.0234H7.07967C7.38909 11.0234 7.68584 10.9005 7.90463 10.6817C8.12342 10.4629 8.24634 10.1662 8.24634 9.85677V8.6901" stroke="#646364" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                        </svg>
+                                                    </button>
                                                 </div>
-                                            </a>
+                                            </div>
                                         </td>
-                                        <td class="list-info-item body-normal black80 m-0"><a href="/projects/edit-project.html" class="black80 d-block w-100">Unknown</a></td>
-                                        <td class="list-info-item body-normal black80 m-0"><a href="/projects/edit-project.html" class="black80 d-block w-100">Walmart</a></td>
-                                        <td class="list-info-item body-normal black80 m-0"><a href="/projects/edit-project.html" class="black80 d-block w-100">Tag 1</a></td>
-                                        <td class="list-info-item body-normal black80 m-0"><a href="/projects/edit-project.html" class="black80 d-block w-100">0</a></td>
-                                        <td class="list-info-item body-normal black80 m-0"><a href="/projects/edit-project.html" class="black80 d-block w-100">0</a></td>
-                                        <td class="list-info-item body-normal black80 m-0"><a href="/projects/edit-project.html" class="black80 d-block w-100">0</a></td>
-                                        <td class="list-info-item body-normal black80 m-0"><a href="/projects/edit-project.html" class="black80 d-block w-100">3 days</a></td>
+                                        <td class="list-info-item body-normal black80 m-0">
+                                            <div class="d-flex align-items-center w-100 flex-wrap">
+                                                <a href="/projects/edit-project.html" class="m-0 black20">Unknown</a>
+                                                <div class="ms-3 d-flex align-items-center list-info-itemControl">
+                                                    <div class="dropdown">
+                                                        <button class="border-0 p-0 bg-transparent d-flex align-items-center body-medium sb black80" type="button" id="dropdownMenuClickableInside" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+                                                            <svg width="10" height="11" viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M7.42338 1.28385C7.55253 1.15013 7.70701 1.04348 7.87782 0.970107C8.04862 0.896734 8.23233 0.858114 8.41822 0.856498C8.60411 0.854883 8.78846 0.890305 8.96052 0.960698C9.13257 1.03109 9.28889 1.13505 9.42034 1.2665C9.55179 1.39795 9.65574 1.55426 9.72613 1.72631C9.79653 1.89837 9.83195 2.08272 9.83033 2.26861C9.82872 2.4545 9.7901 2.63821 9.71673 2.80902C9.64335 2.97982 9.5367 3.1343 9.40298 3.26345L8.84788 3.81855L6.86828 1.83895L7.42338 1.28385ZM5.87848 2.82875L0.0131836 8.69405V10.6736H1.99278L7.85878 4.80835L5.87778 2.82875H5.87848Z" fill="#383637"></path>
+                                                            </svg> 
+                                                        </button>
+                                                        <div id="dealSearchSelect" class="dropdown-menu more-options p-0 dropdown-menu-right" aria-labelledby="dropdownMenuClickableInside" style="">
+                                                            <p class="body-small reg black90 p-2 text-center mb-0 blue20bg">Update Status</p>
+                                                            <div class="px-2 py-3">
+                                                                <form>
+                                                                    <input type="text" class="p-2 border-0 border-bottom body-tiny reg black90 w-100 h-auto" placeholder="Name">
+                                                                </form>
+                                                            </div>
+                                                            <div class="filterBTN bg-light p-2 m-0 d-flex justify-content-between"> 
+                                                                <button class="body-normal med primary border-0 bg-transparent p-0 filterCancel">Cancel</button>
+                                                                <button class="body-normal med grey0 border-0 rounded p-2">Save</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <button class="border-0 p-0 bg-transparent d-flex align-items-center body-medium sb black80 ms-2" type="button">
+                                                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M3.57967 2.85677V7.52344C3.57967 7.83286 3.70259 8.1296 3.92138 8.34839C4.14017 8.56719 4.43692 8.6901 4.74634 8.6901H8.24634M3.57967 2.85677V1.6901C3.57967 1.38068 3.70259 1.08394 3.92138 0.865146C4.14017 0.646354 4.43692 0.523438 4.74634 0.523438H7.42151C7.5762 0.523471 7.72455 0.58495 7.83392 0.694354L10.4088 3.26919C10.5182 3.37856 10.5796 3.52691 10.5797 3.6816V7.52344C10.5797 7.83286 10.4568 8.1296 10.238 8.34839C10.0192 8.56719 9.72242 8.6901 9.41301 8.6901H8.24634M3.57967 2.85677H2.413C2.10359 2.85677 1.80684 2.97969 1.58805 3.19848C1.36925 3.41727 1.24634 3.71402 1.24634 4.02344V9.85677C1.24634 10.1662 1.36925 10.4629 1.58805 10.6817C1.80684 10.9005 2.10359 11.0234 2.413 11.0234H7.07967C7.38909 11.0234 7.68584 10.9005 7.90463 10.6817C8.12342 10.4629 8.24634 10.1662 8.24634 9.85677V8.6901" stroke="#646364" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="list-info-item body-normal black80 m-0">
+                                            <div class="d-flex align-items-center w-100 flex-wrap">
+                                                <a href="/projects/edit-project.html" class="m-0 black20">Walmart</a>
+                                                <div class="ms-3 d-flex align-items-center list-info-itemControl">
+                                                    <div class="dropdown">
+                                                        <button class="border-0 p-0 bg-transparent d-flex align-items-center body-medium sb black80" type="button" id="dropdownMenuClickableInside" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+                                                            <svg width="10" height="11" viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M7.42338 1.28385C7.55253 1.15013 7.70701 1.04348 7.87782 0.970107C8.04862 0.896734 8.23233 0.858114 8.41822 0.856498C8.60411 0.854883 8.78846 0.890305 8.96052 0.960698C9.13257 1.03109 9.28889 1.13505 9.42034 1.2665C9.55179 1.39795 9.65574 1.55426 9.72613 1.72631C9.79653 1.89837 9.83195 2.08272 9.83033 2.26861C9.82872 2.4545 9.7901 2.63821 9.71673 2.80902C9.64335 2.97982 9.5367 3.1343 9.40298 3.26345L8.84788 3.81855L6.86828 1.83895L7.42338 1.28385ZM5.87848 2.82875L0.0131836 8.69405V10.6736H1.99278L7.85878 4.80835L5.87778 2.82875H5.87848Z" fill="#383637"></path>
+                                                            </svg> 
+                                                        </button>
+                                                        <div id="dealSearchSelect" class="dropdown-menu more-options p-0 dropdown-menu-right" aria-labelledby="dropdownMenuClickableInside" style="">
+                                                            <p class="body-small reg black90 p-2 text-center mb-0 blue20bg">Client Name</p>
+                                                            <div class="px-2 py-3">
+                                                                <form>
+                                                                    <input type="text" class="p-2 border-0 border-bottom body-tiny reg black90 w-100 h-auto" placeholder="Name">
+                                                                </form>
+                                                            </div>
+                                                            <div class="filterBTN bg-light p-2 m-0 d-flex justify-content-between"> 
+                                                                <button class="body-normal med primary border-0 bg-transparent p-0 filterCancel">Cancel</button>
+                                                                <button class="body-normal med grey0 border-0 rounded p-2">Save</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <button class="border-0 p-0 bg-transparent d-flex align-items-center body-medium sb black80 ms-2" type="button">
+                                                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M3.57967 2.85677V7.52344C3.57967 7.83286 3.70259 8.1296 3.92138 8.34839C4.14017 8.56719 4.43692 8.6901 4.74634 8.6901H8.24634M3.57967 2.85677V1.6901C3.57967 1.38068 3.70259 1.08394 3.92138 0.865146C4.14017 0.646354 4.43692 0.523438 4.74634 0.523438H7.42151C7.5762 0.523471 7.72455 0.58495 7.83392 0.694354L10.4088 3.26919C10.5182 3.37856 10.5796 3.52691 10.5797 3.6816V7.52344C10.5797 7.83286 10.4568 8.1296 10.238 8.34839C10.0192 8.56719 9.72242 8.6901 9.41301 8.6901H8.24634M3.57967 2.85677H2.413C2.10359 2.85677 1.80684 2.97969 1.58805 3.19848C1.36925 3.41727 1.24634 3.71402 1.24634 4.02344V9.85677C1.24634 10.1662 1.36925 10.4629 1.58805 10.6817C1.80684 10.9005 2.10359 11.0234 2.413 11.0234H7.07967C7.38909 11.0234 7.68584 10.9005 7.90463 10.6817C8.12342 10.4629 8.24634 10.1662 8.24634 9.85677V8.6901" stroke="#646364" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="list-info-item body-normal black80 m-0">
+                                            <div class="d-flex align-items-center w-100 flex-wrap">
+                                                <a href="/projects/edit-project.html" class="m-0 black20">Tag 1</a>
+                                                <div class="ms-3 d-flex align-items-center list-info-itemControl">
+                                                    <div class="dropdown">
+                                                        <button class="border-0 p-0 bg-transparent d-flex align-items-center body-medium sb black80" type="button" id="dropdownMenuClickableInside" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+                                                            <svg width="10" height="11" viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M7.42338 1.28385C7.55253 1.15013 7.70701 1.04348 7.87782 0.970107C8.04862 0.896734 8.23233 0.858114 8.41822 0.856498C8.60411 0.854883 8.78846 0.890305 8.96052 0.960698C9.13257 1.03109 9.28889 1.13505 9.42034 1.2665C9.55179 1.39795 9.65574 1.55426 9.72613 1.72631C9.79653 1.89837 9.83195 2.08272 9.83033 2.26861C9.82872 2.4545 9.7901 2.63821 9.71673 2.80902C9.64335 2.97982 9.5367 3.1343 9.40298 3.26345L8.84788 3.81855L6.86828 1.83895L7.42338 1.28385ZM5.87848 2.82875L0.0131836 8.69405V10.6736H1.99278L7.85878 4.80835L5.87778 2.82875H5.87848Z" fill="#383637"></path>
+                                                            </svg> 
+                                                        </button>
+                                                        <div id="dealSearchSelect" class="dropdown-menu more-options p-0 dropdown-menu-right" aria-labelledby="dropdownMenuClickableInside" style="">
+                                                            <p class="body-small reg black90 p-2 text-center mb-0 blue20bg">Change Tag</p>
+                                                            <div class="px-2 py-3">
+                                                                <form>
+                                                                    <input type="text" class="p-2 border-0 border-bottom body-tiny reg black90 w-100 h-auto" placeholder="Name">
+                                                                </form>
+                                                            </div>
+                                                            <div class="filterBTN bg-light p-2 m-0 d-flex justify-content-between"> 
+                                                                <button class="body-normal med primary border-0 bg-transparent p-0 filterCancel">Cancel</button>
+                                                                <button class="body-normal med grey0 border-0 rounded p-2">Save</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <button class="border-0 p-0 bg-transparent d-flex align-items-center body-medium sb black80 ms-2" type="button">
+                                                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M3.57967 2.85677V7.52344C3.57967 7.83286 3.70259 8.1296 3.92138 8.34839C4.14017 8.56719 4.43692 8.6901 4.74634 8.6901H8.24634M3.57967 2.85677V1.6901C3.57967 1.38068 3.70259 1.08394 3.92138 0.865146C4.14017 0.646354 4.43692 0.523438 4.74634 0.523438H7.42151C7.5762 0.523471 7.72455 0.58495 7.83392 0.694354L10.4088 3.26919C10.5182 3.37856 10.5796 3.52691 10.5797 3.6816V7.52344C10.5797 7.83286 10.4568 8.1296 10.238 8.34839C10.0192 8.56719 9.72242 8.6901 9.41301 8.6901H8.24634M3.57967 2.85677H2.413C2.10359 2.85677 1.80684 2.97969 1.58805 3.19848C1.36925 3.41727 1.24634 3.71402 1.24634 4.02344V9.85677C1.24634 10.1662 1.36925 10.4629 1.58805 10.6817C1.80684 10.9005 2.10359 11.0234 2.413 11.0234H7.07967C7.38909 11.0234 7.68584 10.9005 7.90463 10.6817C8.12342 10.4629 8.24634 10.1662 8.24634 9.85677V8.6901" stroke="#646364" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="list-info-item body-normal black80 m-0">
+                                            <div class="d-flex align-items-center w-100 flex-wrap">
+                                                <a href="/projects/edit-project.html" class="m-0 black20">0</a>
+                                                <div class="ms-3 d-flex align-items-center list-info-itemControl">
+                                                    <div class="dropdown">
+                                                        <button class="border-0 p-0 bg-transparent d-flex align-items-center body-medium sb black80" type="button" id="dropdownMenuClickableInside" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+                                                            <svg width="10" height="11" viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M7.42338 1.28385C7.55253 1.15013 7.70701 1.04348 7.87782 0.970107C8.04862 0.896734 8.23233 0.858114 8.41822 0.856498C8.60411 0.854883 8.78846 0.890305 8.96052 0.960698C9.13257 1.03109 9.28889 1.13505 9.42034 1.2665C9.55179 1.39795 9.65574 1.55426 9.72613 1.72631C9.79653 1.89837 9.83195 2.08272 9.83033 2.26861C9.82872 2.4545 9.7901 2.63821 9.71673 2.80902C9.64335 2.97982 9.5367 3.1343 9.40298 3.26345L8.84788 3.81855L6.86828 1.83895L7.42338 1.28385ZM5.87848 2.82875L0.0131836 8.69405V10.6736H1.99278L7.85878 4.80835L5.87778 2.82875H5.87848Z" fill="#383637"></path>
+                                                            </svg> 
+                                                        </button>
+                                                        <div id="dealSearchSelect" class="dropdown-menu more-options p-0 dropdown-menu-right" aria-labelledby="dropdownMenuClickableInside" style="">
+                                                            <p class="body-small reg black90 p-2 text-center mb-0 blue20bg">Events</p>
+                                                            <div class="px-2 py-3">
+                                                                <form>
+                                                                    <input type="text" class="p-2 border-0 border-bottom body-tiny reg black90 w-100 h-auto" placeholder="Name">
+                                                                </form>
+                                                            </div>
+                                                            <div class="filterBTN bg-light p-2 m-0 d-flex justify-content-between"> 
+                                                                <button class="body-normal med primary border-0 bg-transparent p-0 filterCancel">Cancel</button>
+                                                                <button class="body-normal med grey0 border-0 rounded p-2">Save</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <button class="border-0 p-0 bg-transparent d-flex align-items-center body-medium sb black80 ms-2" type="button">
+                                                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M3.57967 2.85677V7.52344C3.57967 7.83286 3.70259 8.1296 3.92138 8.34839C4.14017 8.56719 4.43692 8.6901 4.74634 8.6901H8.24634M3.57967 2.85677V1.6901C3.57967 1.38068 3.70259 1.08394 3.92138 0.865146C4.14017 0.646354 4.43692 0.523438 4.74634 0.523438H7.42151C7.5762 0.523471 7.72455 0.58495 7.83392 0.694354L10.4088 3.26919C10.5182 3.37856 10.5796 3.52691 10.5797 3.6816V7.52344C10.5797 7.83286 10.4568 8.1296 10.238 8.34839C10.0192 8.56719 9.72242 8.6901 9.41301 8.6901H8.24634M3.57967 2.85677H2.413C2.10359 2.85677 1.80684 2.97969 1.58805 3.19848C1.36925 3.41727 1.24634 3.71402 1.24634 4.02344V9.85677C1.24634 10.1662 1.36925 10.4629 1.58805 10.6817C1.80684 10.9005 2.10359 11.0234 2.413 11.0234H7.07967C7.38909 11.0234 7.68584 10.9005 7.90463 10.6817C8.12342 10.4629 8.24634 10.1662 8.24634 9.85677V8.6901" stroke="#646364" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="list-info-item body-normal black80 m-0">
+                                            <div class="d-flex align-items-center w-100 flex-wrap">
+                                                <a href="/projects/edit-project.html" class="m-0 black20">0</a>
+                                                <div class="ms-3 d-flex align-items-center list-info-itemControl">
+                                                    <div class="dropdown">
+                                                        <button class="border-0 p-0 bg-transparent d-flex align-items-center body-medium sb black80" type="button" id="dropdownMenuClickableInside" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+                                                            <svg width="10" height="11" viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M7.42338 1.28385C7.55253 1.15013 7.70701 1.04348 7.87782 0.970107C8.04862 0.896734 8.23233 0.858114 8.41822 0.856498C8.60411 0.854883 8.78846 0.890305 8.96052 0.960698C9.13257 1.03109 9.28889 1.13505 9.42034 1.2665C9.55179 1.39795 9.65574 1.55426 9.72613 1.72631C9.79653 1.89837 9.83195 2.08272 9.83033 2.26861C9.82872 2.4545 9.7901 2.63821 9.71673 2.80902C9.64335 2.97982 9.5367 3.1343 9.40298 3.26345L8.84788 3.81855L6.86828 1.83895L7.42338 1.28385ZM5.87848 2.82875L0.0131836 8.69405V10.6736H1.99278L7.85878 4.80835L5.87778 2.82875H5.87848Z" fill="#383637"></path>
+                                                            </svg> 
+                                                        </button>
+                                                        <div id="dealSearchSelect" class="dropdown-menu more-options p-0 dropdown-menu-right" aria-labelledby="dropdownMenuClickableInside" style="">
+                                                            <p class="body-small reg black90 p-2 text-center mb-0 blue20bg">Milestone</p>
+                                                            <div class="px-2 py-3">
+                                                                <form>
+                                                                    <input type="text" class="p-2 border-0 border-bottom body-tiny reg black90 w-100 h-auto" placeholder="Name">
+                                                                </form>
+                                                            </div>
+                                                            <div class="filterBTN bg-light p-2 m-0 d-flex justify-content-between"> 
+                                                                <button class="body-normal med primary border-0 bg-transparent p-0 filterCancel">Cancel</button>
+                                                                <button class="body-normal med grey0 border-0 rounded p-2">Save</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <button class="border-0 p-0 bg-transparent d-flex align-items-center body-medium sb black80 ms-2" type="button">
+                                                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M3.57967 2.85677V7.52344C3.57967 7.83286 3.70259 8.1296 3.92138 8.34839C4.14017 8.56719 4.43692 8.6901 4.74634 8.6901H8.24634M3.57967 2.85677V1.6901C3.57967 1.38068 3.70259 1.08394 3.92138 0.865146C4.14017 0.646354 4.43692 0.523438 4.74634 0.523438H7.42151C7.5762 0.523471 7.72455 0.58495 7.83392 0.694354L10.4088 3.26919C10.5182 3.37856 10.5796 3.52691 10.5797 3.6816V7.52344C10.5797 7.83286 10.4568 8.1296 10.238 8.34839C10.0192 8.56719 9.72242 8.6901 9.41301 8.6901H8.24634M3.57967 2.85677H2.413C2.10359 2.85677 1.80684 2.97969 1.58805 3.19848C1.36925 3.41727 1.24634 3.71402 1.24634 4.02344V9.85677C1.24634 10.1662 1.36925 10.4629 1.58805 10.6817C1.80684 10.9005 2.10359 11.0234 2.413 11.0234H7.07967C7.38909 11.0234 7.68584 10.9005 7.90463 10.6817C8.12342 10.4629 8.24634 10.1662 8.24634 9.85677V8.6901" stroke="#646364" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="list-info-item body-normal black80 m-0">
+                                            <div class="d-flex align-items-center w-100 flex-wrap">
+                                                <a href="/projects/edit-project.html" class="m-0 black20">0</a>
+                                                <div class="ms-3 d-flex align-items-center list-info-itemControl">
+                                                    <div class="dropdown">
+                                                        <button class="border-0 p-0 bg-transparent d-flex align-items-center body-medium sb black80" type="button" id="dropdownMenuClickableInside" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+                                                            <svg width="10" height="11" viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M7.42338 1.28385C7.55253 1.15013 7.70701 1.04348 7.87782 0.970107C8.04862 0.896734 8.23233 0.858114 8.41822 0.856498C8.60411 0.854883 8.78846 0.890305 8.96052 0.960698C9.13257 1.03109 9.28889 1.13505 9.42034 1.2665C9.55179 1.39795 9.65574 1.55426 9.72613 1.72631C9.79653 1.89837 9.83195 2.08272 9.83033 2.26861C9.82872 2.4545 9.7901 2.63821 9.71673 2.80902C9.64335 2.97982 9.5367 3.1343 9.40298 3.26345L8.84788 3.81855L6.86828 1.83895L7.42338 1.28385ZM5.87848 2.82875L0.0131836 8.69405V10.6736H1.99278L7.85878 4.80835L5.87778 2.82875H5.87848Z" fill="#383637"></path>
+                                                            </svg> 
+                                                        </button>
+                                                        <div id="dealSearchSelect" class="dropdown-menu more-options p-0 dropdown-menu-right" aria-labelledby="dropdownMenuClickableInside" style="">
+                                                            <p class="body-small reg black90 p-2 text-center mb-0 blue20bg">People</p>
+                                                            <div class="px-2 py-3">
+                                                                <form>
+                                                                    <input type="text" class="p-2 border-0 border-bottom body-tiny reg black90 w-100 h-auto" placeholder="Name">
+                                                                </form>
+                                                            </div>
+                                                            <div class="filterBTN bg-light p-2 m-0 d-flex justify-content-between"> 
+                                                                <button class="body-normal med primary border-0 bg-transparent p-0 filterCancel">Cancel</button>
+                                                                <button class="body-normal med grey0 border-0 rounded p-2">Save</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <button class="border-0 p-0 bg-transparent d-flex align-items-center body-medium sb black80 ms-2" type="button">
+                                                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M3.57967 2.85677V7.52344C3.57967 7.83286 3.70259 8.1296 3.92138 8.34839C4.14017 8.56719 4.43692 8.6901 4.74634 8.6901H8.24634M3.57967 2.85677V1.6901C3.57967 1.38068 3.70259 1.08394 3.92138 0.865146C4.14017 0.646354 4.43692 0.523438 4.74634 0.523438H7.42151C7.5762 0.523471 7.72455 0.58495 7.83392 0.694354L10.4088 3.26919C10.5182 3.37856 10.5796 3.52691 10.5797 3.6816V7.52344C10.5797 7.83286 10.4568 8.1296 10.238 8.34839C10.0192 8.56719 9.72242 8.6901 9.41301 8.6901H8.24634M3.57967 2.85677H2.413C2.10359 2.85677 1.80684 2.97969 1.58805 3.19848C1.36925 3.41727 1.24634 3.71402 1.24634 4.02344V9.85677C1.24634 10.1662 1.36925 10.4629 1.58805 10.6817C1.80684 10.9005 2.10359 11.0234 2.413 11.0234H7.07967C7.38909 11.0234 7.68584 10.9005 7.90463 10.6817C8.12342 10.4629 8.24634 10.1662 8.24634 9.85677V8.6901" stroke="#646364" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="list-info-item body-normal black80 m-0">
+                                            <div class="d-flex align-items-center w-100 flex-wrap">
+                                                <a href="/projects/edit-project.html" class="m-0 black20">3 days</a>
+                                                <div class="ms-3 d-flex align-items-center list-info-itemControl">
+                                                    <div class="dropdown">
+                                                        <button class="border-0 p-0 bg-transparent d-flex align-items-center body-medium sb black80" type="button" id="dropdownMenuClickableInside" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+                                                            <svg width="10" height="11" viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M7.42338 1.28385C7.55253 1.15013 7.70701 1.04348 7.87782 0.970107C8.04862 0.896734 8.23233 0.858114 8.41822 0.856498C8.60411 0.854883 8.78846 0.890305 8.96052 0.960698C9.13257 1.03109 9.28889 1.13505 9.42034 1.2665C9.55179 1.39795 9.65574 1.55426 9.72613 1.72631C9.79653 1.89837 9.83195 2.08272 9.83033 2.26861C9.82872 2.4545 9.7901 2.63821 9.71673 2.80902C9.64335 2.97982 9.5367 3.1343 9.40298 3.26345L8.84788 3.81855L6.86828 1.83895L7.42338 1.28385ZM5.87848 2.82875L0.0131836 8.69405V10.6736H1.99278L7.85878 4.80835L5.87778 2.82875H5.87848Z" fill="#383637"></path>
+                                                            </svg> 
+                                                        </button>
+                                                        <div id="dealSearchSelect" class="dropdown-menu more-options p-0 dropdown-menu-right" aria-labelledby="dropdownMenuClickableInside" style="">
+                                                            <p class="body-small reg black90 p-2 text-center mb-0 blue20bg">Last Updated</p>
+                                                            <div class="px-2 py-3">
+                                                                <form>
+                                                                    <input type="text" class="p-2 border-0 border-bottom body-tiny reg black90 w-100 h-auto" placeholder="Name">
+                                                                </form>
+                                                            </div>
+                                                            <div class="filterBTN bg-light p-2 m-0 d-flex justify-content-between"> 
+                                                                <button class="body-normal med primary border-0 bg-transparent p-0 filterCancel">Cancel</button>
+                                                                <button class="body-normal med grey0 border-0 rounded p-2">Save</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <button class="border-0 p-0 bg-transparent d-flex align-items-center body-medium sb black80 ms-2" type="button">
+                                                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M3.57967 2.85677V7.52344C3.57967 7.83286 3.70259 8.1296 3.92138 8.34839C4.14017 8.56719 4.43692 8.6901 4.74634 8.6901H8.24634M3.57967 2.85677V1.6901C3.57967 1.38068 3.70259 1.08394 3.92138 0.865146C4.14017 0.646354 4.43692 0.523438 4.74634 0.523438H7.42151C7.5762 0.523471 7.72455 0.58495 7.83392 0.694354L10.4088 3.26919C10.5182 3.37856 10.5796 3.52691 10.5797 3.6816V7.52344C10.5797 7.83286 10.4568 8.1296 10.238 8.34839C10.0192 8.56719 9.72242 8.6901 9.41301 8.6901H8.24634M3.57967 2.85677H2.413C2.10359 2.85677 1.80684 2.97969 1.58805 3.19848C1.36925 3.41727 1.24634 3.71402 1.24634 4.02344V9.85677C1.24634 10.1662 1.36925 10.4629 1.58805 10.6817C1.80684 10.9005 2.10359 11.0234 2.413 11.0234H7.07967C7.38909 11.0234 7.68584 10.9005 7.90463 10.6817C8.12342 10.4629 8.24634 10.1662 8.24634 9.85677V8.6901" stroke="#646364" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -913,7 +1201,7 @@
                 <label for="type" class="body-small reg black80 mb-2">Stage</label>
                 <div>
                     <select class="bulkOption body-small reg black80 py-2 border-0 border-bottom" id="roleStage">
-                    <option selected disabled>Select</option>
+                    <option selected disableds>Select</option>
                     <option value="11">One</option>
                     <option value="22">Two</option>
                     <option value="33">Three</option>
@@ -1005,87 +1293,21 @@
     </div>
 
 
-    <!-- Add Deal Popup -->
-    <div class="modal fade" id="addDealPopup" tabindex="-1" aria-labelledby="addDealPopup" aria-hidden="true">
+    <!-- Add Project Popup -->
+    <div class="modal fade show" id="addProjectPopup" tabindex="-1" aria-labelledby="addProjectPopup" aria-hidden="true" style="display: block;">
         <div class="modal-dialog modal-dialog-centered rounded">
-            <div class="modal-content p-4 border-0 rounded">
+            <div class="modal-content p-4 border rounded bg-white">
 
-                <div class="d-flex align-items-center justify-content-between">
-                    <div class="d-flex align-items-center">
-                        <p class="body-medium sb text-dark mb-0 me-2">Add Deal</p>
+                <div class="d-flex align-items-center">
+                    <div class="projectImage">
+                        <img src="/assets/images/placeholder.png" alt="" width="60px" height="60px" class="rounded-circle">
+                        <input type="file" type="file" id="imageUpload" name="imageUpload" accept="image/*">
                     </div>
-                    <button class="border-0 bg-transparent py-1 px-2" data-bs-dismiss="modal">
-                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M1.4 14L0 12.6L5.6 7L0 1.4L1.4 0L7 5.6L12.6 0L14 1.4L8.4 7L14 12.6L12.6 14L7 8.4L1.4 14Z" fill="#383637"/>
-                        </svg>
-                    </button>
-                </div>
-                <div class="row mt-3">
-                    <div class="col-12 d-flex flex-column">
-                        <label for="" class="body-small reg black50 mt-3">Deal Title</label>
-                        <input type="text" class="body-small reg black80 py-2 border-0 border-bottom">
-                    </div>
-                    <div class="col-md-6 d-flex flex-column">
-                        <label for="" class="body-small reg black50 mt-3">Deal Value</label>
-                        <input type="text" class="body-small reg black80 py-2 border-0 border-bottom">
-                        <div class="d-flex justify-content-end pt-1">
-                            <!-- <button class="bg-transparent border-0 p-0 primary body-small med" data-bs-toggle="modal" data-bs-target="#attachProductPopup">Attach Product</button> -->
-                            <button id="attachProductBtn" class="bg-transparent border-0 p-0 primary body-small med">Attach Product</button>
-                        </div>
-                    </div>
-                    <div class="col-md-6 d-flex flex-column">
-                        <label for="" class="body-small reg black50 mt-3">Currency</label>
-                        <select name="" id="" class="currencySelect body-small reg black80 py-2 border-0 border-bottom">
-                            <option value="" selected disabled>Currency</option>
-                            <option value="">Option 1</option>
-                            <option value="">Option 2</option>
-                            <option value="">Option 3</option>
-                        </select>
-                    </div>
-                    <div class="col-12 d-flex flex-column">
-                        <label for="" class="body-small reg black50 mt-3">Pipeline</label>
-                        <select name="" id="" class="addDealPipeline body-small reg black80 py-2 border-0 border-bottom">
-                            <option value="" selected disabled>Pipeline</option>
-                            <option value="">Option 1</option>
-                            <option value="">Option 2</option>
-                            <option value="">Option 3</option>
-                        </select>
-                    </div>
-                    <div class="col-12">
-                        <label for="" class="body-small reg black50 mt-3">PIPELINE STAGE</label>
-                        <div class="position-relative mt-3">
-                            <div class="difficulty-levels">
-                                <div class="pipelineCircle rounded-circle position-relative"></div>
-                                <div class="pipelineCircle rounded-circle position-relative"></div>
-                                <div class="pipelineCircle rounded-circle position-relative"></div>
-                                <div class="pipelineCircle rounded-circle position-relative"></div>
-                                <div class="pipelineCircle rounded-circle position-relative"></div>
-                            </div>
-                            <div class="pipelineStageLine position-absolute top-50 start-0 w-100">
-                                <div class="stageLine"></div>
-                            </div>
-                        </div>
-                          
+                    <div>
 
                     </div>
-                    <div class="col-12 d-flex flex-column">
-                        <label for="" class="body-small reg black50 mt-3">Expected close date</label>
-                        <input type="date" class="body-small reg black80 py-2 border-0 border-bottom">
-                    </div>
                 </div>
-                <div class="d-flex align-items-center justify-content-between mt-3">
-                    <button class="bg-transparent p-0 body-normal med primary border-0 d-flex align-items-center" data-bs-toggle="modal" data-bs-target="#tagSlide">
-                        <svg class="me-2" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M8 5.75V8M8 8V10.25M8 8H10.25M8 8H5.75M14.75 8C14.75 8.88642 14.5754 9.76417 14.2362 10.5831C13.897 11.4021 13.3998 12.1462 12.773 12.773C12.1462 13.3998 11.4021 13.897 10.5831 14.2362C9.76417 14.5754 8.88642 14.75 8 14.75C7.11358 14.75 6.23583 14.5754 5.41689 14.2362C4.59794 13.897 3.85382 13.3998 3.22703 12.773C2.60023 12.1462 2.10303 11.4021 1.76381 10.5831C1.42459 9.76417 1.25 8.88642 1.25 8C1.25 6.20979 1.96116 4.4929 3.22703 3.22703C4.4929 1.96116 6.20979 1.25 8 1.25C9.79021 1.25 11.5071 1.96116 12.773 3.22703C14.0388 4.4929 14.75 6.20979 14.75 8Z" stroke="#1D9CD3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                            
-                        Tags
-                    </button>
-                    <div class="d-flex align-items-center">
-                        <button class="bg-transparent p-0 body-normal med primary border-0 me-3">Add Contact</button>
-                        <button class="primaryBG py-2 px-3 body-medium2 med grey0 border-0 rounded">Save</button>
-                    </div>
-                </div>
+                
             </div>
         </div>
     </div>
@@ -1350,7 +1572,7 @@
 
 
         <!-- Attach Photo Popup -->
-        <div class="modal fade" id="attachProductPopup" tabindex="-1" aria-labelledby="attachProductPopup" aria-hidden="true">
+        <div class="modal fade" id="permissionPopup" tabindex="-1" aria-labelledby="permissionPopup" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered rounded">
                 <div class="modal-content p-4 border rounded position-relative mx-auto" style="max-width: 80%;">
                     <div class="d-flex align-items-center justify-content-end">
@@ -1587,21 +1809,7 @@
             source: dInput,
             appendTo: '#scheduleActivity'
         });
-        $( "#attachProductSearch" ).autocomplete({
-            source: attachProduct,
-            appendTo: '#attachProductPopup',
-            select: function(event, ui) {
-                // Get the selected value from the UI object
-                let selectedValue = ui.item.value;
-                
-                // Open the Bootstrap modal
-                $("#productPricing").modal("show");
-                
-                // Prevent the default behavior of the Autocomplete widget
-                return false;
-            }
-        });
-
+        
         } );
     
         
@@ -1618,9 +1826,9 @@
         // Event listener to second modal button
         document.getElementById('attachProductBtn').addEventListener('click', function() {
         // Add class to first modal that prevents it from closing
-        document.getElementById('addDealPopup').classList.add('modal-open');
+        document.getElementById('addProjectPopup').classList.add('modal-open');
         // Show second modal
-        $('#attachProductPopup').modal('show');
+        $('#permissionPopup').modal('show');
         });
 
 
