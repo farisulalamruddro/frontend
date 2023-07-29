@@ -1294,20 +1294,144 @@
 
 
     <!-- Add Project Popup -->
-    <div class="modal fade show" id="addProjectPopup" tabindex="-1" aria-labelledby="addProjectPopup" aria-hidden="true" style="display: block;">
+    <div class="modal fade" id="addProjectPopup" tabindex="-1" aria-labelledby="addProjectPopup" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered rounded">
             <div class="modal-content p-4 border rounded bg-white">
 
-                <div class="d-flex align-items-center">
-                    <div class="projectImage">
+                <div class="d-flex">
+                    <div class="projectImage position-relative">
                         <img src="/assets/images/placeholder.png" alt="" width="60px" height="60px" class="rounded-circle">
-                        <input type="file" type="file" id="imageUpload" name="imageUpload" accept="image/*">
+                        <input type="file" type="file" id="imageUpload" name="imageUpload" accept="image/*" class="uploadImageInput position-absolute">
                     </div>
-                    <div>
-
+                    <div class="ms-3 w-100">
+                        <div class="mb-3">
+                            <p class="body-tiny med mb-0">Project Name</p>
+                            <input type="text" class="body-small reg black80 py-1 border-0 border-bottom w-100">
+                        </div>
+                        <div>
+                            <p class="body-small med mb-2">Choose your View</p>
+                            <div class="d-flex align-items-center">
+                                <div class="form-check d-flex align-items-center me-3">
+                                    <input class="form-check-input my-0 me-2" type="radio" name="chooseView" id="chooseViewList">
+                                    <label class="form-check-label body-small reg" for="chooseViewList">
+                                        List
+                                    </label>
+                                </div>
+                                <div class="form-check d-flex align-items-center">
+                                    <input class="form-check-input my-0 me-2" type="radio" name="chooseView" id="chooseViewBoard" checked>
+                                    <label class="form-check-label body-small reg" for="chooseViewBoard">
+                                    Board
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                
+
+                <div class="addProjectTabs projectsTab mt-3">
+                    <div class="projectTabBTN d-flex align-items-center justify-content-between pb-3 mb-3 border-bottom" id="pills-tab" role="tablist">
+                        <div role="presentation">
+                            <button class="active body-small med" id="pills-Description-tab" data-bs-toggle="pill" data-bs-target="#pills-Description" type="button" role="tab" aria-controls="pills-Description" aria-selected="true">Description</button>
+                        </div>
+                        <div role="presentation">
+                            <button class="body-small med" id="pills-myTeam-tab" data-bs-toggle="pill" data-bs-target="#pills-myTeam" type="button" role="tab" aria-controls="pills-myTeam" aria-selected="false" tabindex="-1">My Team</button>
+                        </div>
+                        <div role="presentation">
+                            <button class="body-small med" id="pills-Company-tab" data-bs-toggle="pill" data-bs-target="#pills-Company" type="button" role="tab" aria-controls="pills-Company" aria-selected="false" tabindex="-1">Company</button>
+                        </div>
+                        <div role="presentation">
+                            <button class="body-small med" id="pills-Advanced-tab" data-bs-toggle="pill" data-bs-target="#pills-Advanced" type="button" role="tab" aria-controls="pills-Advanced" aria-selected="false" tabindex="-1">Advanced</button>
+                        </div>
+                    </div>
+                    <div class="tab-content" id="pills-tabContent">
+                        <div  class="tab-pane fade p-2" id="pills-Description" role="tabpanel" aria-labelledby="pills-Description-tab" tabindex="0">
+                            <div>
+                                <p class="body-small reg mb-2">Add Description or Additional Details</p>
+                                <textarea name="" id="" rows="6" class="w-100 border rounded p-2"></textarea>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="pills-myTeam" role="tabpanel" aria-labelledby="pills-myTeam-tab" tabindex="0">
+                            <div class="mb-4">
+                                <p class="body-small reg mb-2">Who should be addded to this project?</p>
+                                <div class="d-flex align-items-center">
+
+                                    <select name="" id="" class="body-small reg black80 py-2 border-0 border-bottom">
+                                        <option value="">Option 1</option>
+                                        <option value="">Option 2</option>
+                                        <option value="">Option 3</option>
+                                    </select>
+                                    
+                                    <button class="primaryBG py-2 px-3 body-medium2 med grey0 border-0 rounded ms-3">Everyone</button>
+                                    
+                                </div>
+                            </div>
+                            <div>
+                                <p class="body-small reg mb-2">Add Personal Note</p>
+                                <textarea name="" id="" rows="6" class="w-100 border rounded p-2"></textarea>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade show active" id="pills-Company" role="tabpanel" aria-labelledby="pills-Company-tab" tabindex="0">
+                            <div>
+                                <p class="body-small reg mb-2">Add Personal Note</p>
+                                <select name="" id="" class="body-small reg black80 py-2 border-0 border-bottom">
+                                    <option value="">No, this project is for our company.</option>
+                                    <option value="">No, this project is for  our company</option>
+                                    <option value="">Yes, this project involves another company</option>
+                                </select>
+                            </div>
+                            <div class="my-3">
+                                <p class="body-small reg mb-2">This Project Involves our</p>
+                                <select name="" id="" class="body-small reg black80 py-2 border-0 border-bottom">
+                                    <option value="">Client</option>
+                                    <option value="">Vendor</option>
+                                    <option value="">Partner</option>
+                                </select>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-6">
+                                    <p class="body-small reg mb-2">Company</p>
+                                    <input type="text" class="body-small reg black80 py-1 border-0 border-bottom w-100">
+                                </div>
+                                <div class="col-6">
+                                    <p class="body-small reg mb-2">Email</p>
+                                    <input type="text" class="body-small reg black80 py-1 border-0 border-bottom w-100">
+                                </div>
+                            </div>
+
+                            <div class="my-2">
+                                <button class="body-small med bg-transparent p-0 border-0 primary dealAddBTN">Add Personal Note</button>
+                                <textarea name="" id="" rows="6" class="dealAddElementOption w-100 border rounded p-2 mt-2"></textarea>
+                            </div>
+
+                            <div class="d-flex align-items-center">
+                                <p class="body-small reg m-0 me-2">Invite the external company for collaboration?</p>
+                                <div class="d-flex align-items-center">
+                                    <div class="form-check d-flex align-items-center me-3">
+                                        <input class="form-check-input my-0 me-2" type="radio" name="collaborationToggle" id="collaborationToggleYes">
+                                        <label class="form-check-label body-small reg" for="collaborationToggleYes">
+                                            Yes
+                                        </label>
+                                    </div>
+                                    <div class="form-check d-flex align-items-center">
+                                        <input class="form-check-input my-0 me-2" type="radio" name="collaborationToggle" id="collaborationToggleNo" checked>
+                                        <label class="form-check-label body-small reg" for="collaborationToggleNo">
+                                        No
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="tab-pane fade" id="pills-Advanced" role="tabpanel" aria-labelledby="pills-Advanced-tab" tabindex="0">
+                            D
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex align-items-center justify-content-end mt-3">
+                    <button class="bg-transparent py-2 px-3 me-3 body-medium2 med primary border-0 rounded" data-bs-dismiss="modal">Cancel</button>
+                    <button class="primaryBG py-2 px-3 body-medium2 med grey0 border-0 rounded">Save</button>
+                </div>
             </div>
         </div>
     </div>
@@ -1575,19 +1699,24 @@
         <div class="modal fade" id="permissionPopup" tabindex="-1" aria-labelledby="permissionPopup" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered rounded">
                 <div class="modal-content p-4 border rounded position-relative mx-auto" style="max-width: 80%;">
-                    <div class="d-flex align-items-center justify-content-end">
-                            <button class="border-0 bg-transparent" data-bs-dismiss="modal">
-                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M1.4 14L0 12.6L5.6 7L0 1.4L1.4 0L7 5.6L12.6 0L14 1.4L8.4 7L14 12.6L12.6 14L7 8.4L1.4 14Z" fill="#383637"/>
-                                </svg>
-                            </button>
-                    </div>
-                    <p class="black20 body-medium sb mb-3">Attach Products</p>
-                    <div class="text-center">
-                        <div class="search-input-box px-2">
-                            <img src="../assets/images/search-icon.svg" alt="">
-                            <input id="attachProductSearch" type="text" class="w-100 border-0 py-2 black40 body-normal reg" placeholder="Search your product name here">
+                    <p class="body-tiny med m-0 black60">Permission</p>
+                    <div class="d-flex align-items-center mt-2">
+                        <div class="form-check d-flex align-items-center me-3">
+                            <input class="form-check-input my-0 me-2" type="radio" name="permissionToggle" id="permissionToggleFA">
+                            <label class="form-check-label body-small reg black90" for="permissionToggleFA">
+                                Full Access
+                            </label>
                         </div>
+                        <div class="form-check d-flex align-items-center">
+                            <input class="form-check-input my-0 me-2" type="radio" name="permissionToggle" id="permissionToggleUA">
+                            <label class="form-check-label body-small reg black90" for="permissionToggleUA">
+                                Unlimited Access
+                            </label>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-end mt-3">
+                        <button class="bg-transparent py-2 px-3 me-3 body-medium2 med primary border-0 rounded" data-bs-dismiss="modal" id="cancelPermission">Cancel</button>
+                        <button class="primaryBG py-2 px-3 body-medium2 med grey0 border-0 rounded" data-bs-dismiss="modal" id="savePermission">Save</button>
                     </div>
                 </div>
             </div>
@@ -1824,15 +1953,22 @@
         
 
         // Event listener to second modal button
-        document.getElementById('attachProductBtn').addEventListener('click', function() {
+        document.getElementById('collaborationToggleYes').addEventListener('click', function() {
         // Add class to first modal that prevents it from closing
         document.getElementById('addProjectPopup').classList.add('modal-open');
         // Show second modal
         $('#permissionPopup').modal('show');
         });
 
-
-
+        // Event listener for the "Cancel" button in the #permissionPopup modal
+        document.getElementById('cancelPermission').addEventListener('click', function() {
+            // Switch the "Yes" radio button to "No"
+            document.getElementById('collaborationToggleNo').checked = true;
+        });
+        document.getElementById('savePermission').addEventListener('click', function() {
+            // Switch the "Yes" radio button to "No"
+            document.getElementById('collaborationToggleYes').checked = true;
+        });
     </script>
     
 </body>
