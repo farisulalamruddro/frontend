@@ -945,7 +945,11 @@ grid-gap: 26px;
     cursor: pointer;
 }
 
-.createTag.inactive {
+.changeTag.active, .createTag.inactive {
+    display: block;
+}
+
+.changeTag.inactive, .createTag.inactive {
     display: none;
 }
 
