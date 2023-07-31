@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
     <title>Projects</title>
 </head>
-<body class="body">
+<body id="projectsPage" class="body">
 
     <!-- Header -->
     
@@ -1367,15 +1367,55 @@
                                                             </svg> 
                                                         </button>
                                                         <div id="dealSearchSelect" class="dropdown-menu more-options p-0 dropdown-menu-right" aria-labelledby="dropdownMenuClickableInside" style="">
-                                                            <p class="body-small reg black90 p-2 text-center mb-0 blue20bg">Change Tag</p>
-                                                            <div class="px-2 py-3">
-                                                                <form>
-                                                                    <input type="text" class="p-2 border-0 border-bottom body-tiny reg black90 w-100 h-auto" placeholder="Name">
-                                                                </form>
-                                                            </div>
-                                                            <div class="filterBTN bg-light p-2 m-0 d-flex justify-content-between"> 
-                                                                <button class="body-normal med primary border-0 bg-transparent p-0 filterCancel">Cancel</button>
-                                                                <button class="body-normal med grey0 border-0 rounded p-2">Save</button>
+                                                            <div class="d-flex align-items-center overflow-hidden">
+                                                                <div id="changeTag" class="changeTag active w-100">
+                                                                    <div class="p-2 blue20bg">
+                                                                        <p class="body-small reg black90 mb-0 text-center">Change tag</p>
+                                                                    </div>
+                                                                    <div class="p-2">
+                                                                        <select name="" id="" class="body-small reg black80 py-2 border-0 border-bottom w-100">
+                                                                            <option value="">Tag 1</option>
+                                                                            <option value="">Tag 2</option>
+                                                                            <option value="">Tag 3</option>
+                                                                        </select>
+                                                                    </div>
+                                                                    <div class="bg-light p-2 d-flex justify-content-between"> 
+                                                                        <button class="createNew body-tiny med primary border-0 bg-transparent p-0">Create new</button>
+                                                                        <button class="body-tiny med grey0 border-0 rounded py-1 px-2 primaryBG">Save</button>
+                                                                    </div>
+                                                                </div>
+                                                                <div id="createTag" class="createTag inactive w-100">
+                                                                    <div class="p-2 blue20bg position-relative">
+                                                                        <button class="backToChangeTag bg-transparent p-0 border-0 position-absolute left-0">
+                                                                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M5.39514 10.2948C5.26387 10.4261 5.08586 10.4998 4.90024 10.4998C4.71463 10.4998 4.53661 10.4261 4.40534 10.2948L1.60534 7.49484C1.47411 7.36357 1.40039 7.18556 1.40039 6.99994C1.40039 6.81433 1.47411 6.63631 1.60534 6.50504L4.40534 3.70504C4.53736 3.57753 4.71418 3.50698 4.89772 3.50857C5.08126 3.51017 5.25683 3.58378 5.38661 3.71357C5.5164 3.84336 5.59002 4.01892 5.59161 4.20246C5.59321 4.386 5.52265 4.56282 5.39514 4.69484L3.79004 6.29994H11.9002C12.0859 6.29994 12.2639 6.37369 12.3952 6.50497C12.5265 6.63624 12.6002 6.81429 12.6002 6.99994C12.6002 7.18559 12.5265 7.36364 12.3952 7.49492C12.2639 7.62619 12.0859 7.69994 11.9002 7.69994H3.79004L5.39514 9.30504C5.52637 9.43631 5.60009 9.61433 5.60009 9.79994C5.60009 9.98556 5.52637 10.1636 5.39514 10.2948Z" fill="#646364"/>
+                                                                                </svg>        
+                                                                        </button>
+                                                                        <p class="body-small reg black90 mb-0 text-center">Create tag</p>
+                                                                    </div>
+                                                                    <div class="p-2">
+                                                                        
+                                                                        <input type="text" class="body-small reg black80 py-1 mb-2 border-0 border-bottom w-100" placeholder="Tag name">
+        
+                                                                        <div>
+                                                                            <p class="body-tiny med mb-1">Select color</p>
+                                                                            <div class="selectTagColor pt-1">
+                                                                                <button class="p-2 rounded-circle border-0" style="background-color: #0A4E6B;"></button>
+                                                                                <button class="p-2 rounded-circle border-0" style="background-color: #CE7204;"></button>
+                                                                                <button class="p-2 rounded-circle border-0" style="background-color: #15803D;"></button>
+                                                                                <button class="p-2 rounded-circle border-0" style="background-color: #D5F0FC;"></button>
+                                                                                <button class="p-2 rounded-circle border-0" style="background-color: #C73C10;"></button>
+                                                                                <button class="p-2 rounded-circle border-0" style="background-color: #36B4EB;"></button>
+                                                                                <button class="p-2 rounded-circle border-0" style="background-color: #F8AF59;"></button>
+                                                                                <button class="p-2 rounded-circle border-0" style="background-color: #86EFAC;"></button>
+                                                                            </div>
+                                                                        </div>
+                                                                        
+                                                                    </div>
+                                                                    <div class="bg-light p-2 d-flex justify-content-end">
+                                                                        <button class="body-tiny med grey0 border-0 rounded py-1 px-2 primaryBG">Create</button>
+                                                                    </div>
+                                                                </div>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -1709,13 +1749,13 @@
                         </div>
                     </div>
                     <div class="tab-content" id="pills-tabContent">
-                        <div  class="tab-pane fade p-2" id="pills-Description" role="tabpanel" aria-labelledby="pills-Description-tab" tabindex="0">
+                        <div  class="tab-pane fade p-2 show active" id="pills-Description" role="tabpanel" aria-labelledby="pills-Description-tab" tabindex="0">
                             <div>
                                 <p class="body-small reg mb-2">Add Description or Additional Details</p>
                                 <textarea name="" id="" rows="6" class="w-100 border rounded p-2"></textarea>
                             </div>
                         </div>
-                        <div class="tab-pane fade" id="pills-myTeam" role="tabpanel" aria-labelledby="pills-myTeam-tab" tabindex="0">
+                        <div class="tab-pane fade p-2" id="pills-myTeam" role="tabpanel" aria-labelledby="pills-myTeam-tab" tabindex="0">
                             <div class="mb-4">
                                 <p class="body-small reg mb-2">Who should be addded to this project?</p>
                                 <div class="d-flex align-items-center">
@@ -1735,7 +1775,7 @@
                                 <textarea name="" id="" rows="6" class="w-100 border rounded p-2"></textarea>
                             </div>
                         </div>
-                        <div class="tab-pane fade show active" id="pills-Company" role="tabpanel" aria-labelledby="pills-Company-tab" tabindex="0">
+                        <div class="tab-pane fade p-2" id="pills-Company" role="tabpanel" aria-labelledby="pills-Company-tab" tabindex="0">
                             <div>
                                 <p class="body-small reg mb-2">Add Personal Note</p>
                                 <select name="" id="" class="body-small reg black80 py-2 border-0 border-bottom">
@@ -1788,8 +1828,115 @@
                             </div>
 
                         </div>
-                        <div class="tab-pane fade" id="pills-Advanced" role="tabpanel" aria-labelledby="pills-Advanced-tab" tabindex="0">
-                            D
+                        <div class="tab-pane fade p-2" id="pills-Advanced" role="tabpanel" aria-labelledby="pills-Advanced-tab" tabindex="0">
+                            <div class="row">
+                                <div class="col-6 my-1">
+                                    <p class="body-small reg mb-2">Start Date</p>
+                                    <input type="text" class="datepicker body-small reg black80 py-1 border-0 border-bottom w-100">
+                                </div>
+                                <div class="col-6 my-1">
+                                    <p class="body-small reg mb-2">End Date</p>
+                                    <input type="text" class="datepicker body-small reg black80 py-1 border-0 border-bottom w-100">
+                                </div>
+                                <div class="col-6 my-1">
+                                    <p class="body-small reg mb-2">Priority</p>
+                                    <select name="" id="" class="body-small reg black80 py-2 border-0 border-bottom">
+                                        <option value="">Option 1</option>
+                                        <option value="">Option 2</option>
+                                        <option value="">Option 3</option>
+                                    </select>
+                                </div>
+                                <div class="col-6 my-1">
+                                    <p class="body-small reg mb-2">Estimated Time (Hrs)</p>
+                                    <input type="text" class="body-small reg black80 py-1 border-0 border-bottom w-100">
+                                </div>
+                                <div class="col-6 my-1">
+                                    <p class="body-small reg mb-2">Estimated Cost</p>
+                                    <input type="text" class="body-small reg black80 py-1 border-0 border-bottom w-100">
+                                </div>
+                                <div class="col-6 my-1">
+                                    <p class="body-small reg mb-2">Currency</p>
+                                    <select name="" id="" class="body-small reg black80 py-2 border-0 border-bottom">
+                                        <option value="">USD</option>
+                                        <option value="">AUD</option>
+                                        <option value="">AED</option>
+                                    </select>
+                                </div>
+                                <div class="col-12 my-1">
+                                    <p class="body-small reg mb-2">Tags</p>
+                                    
+                                    <div class="d-flex align-items-center">
+                                        <p class="d-flex align-items-center body-tiny reg py-1 px-2 border rounded-pill m-0 me-2">
+                                            <span class="tagCircle rounded-circle me-1" style="background-color: #1D9CD3;"></span>
+                                            Tag 1
+                                        </p>
+                                        <p class="d-flex align-items-center body-tiny reg py-1 px-2 border rounded-pill m-0 me-2">
+                                            <span class="tagCircle rounded-circle me-1" style="background-color: #A41DD3;"></span>
+                                            Tag 2
+                                        </p>
+                                        <div>
+                                                <button id="dropdownMenuClickableInside" class="d-flex align-items-center body-small reg black70 bg-transparent border-0 p-0" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+                                                    <svg class="me-1" width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M10.7812 7.97144V10.9714M10.7812 10.9714V13.9714M10.7812 10.9714H13.7812M10.7812 10.9714H7.78125M19.7812 10.9714C19.7813 12.1533 19.5485 13.3237 19.0962 14.4156C18.6439 15.5075 17.9809 16.4997 17.1452 17.3354C16.3095 18.1711 15.3173 18.8341 14.2254 19.2864C13.1335 19.7386 11.9631 19.9714 10.7812 19.9714C9.59935 19.9714 8.42903 19.7386 7.3371 19.2864C6.24517 18.8341 5.25302 18.1711 4.41729 17.3354C3.58156 16.4997 2.91863 15.5075 2.46633 14.4156C2.01404 13.3237 1.78125 12.1533 1.78125 10.9714C1.78125 8.58449 2.72946 6.2953 4.41729 4.60747C6.10512 2.91965 8.3943 1.97144 10.7812 1.97144C13.1682 1.97144 15.4574 2.91965 17.1452 4.60747C18.833 6.2953 19.7812 8.58449 19.7812 10.9714Z" stroke="#1D9CD3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    </svg>
+                                                    <p class="body-normal med m-0 primary">Add Tags</p>
+                                                </button>
+                                                <div class="dropdown-menu p-0 border" style="width: 212px;" aria-labelledby="dropdownMenuClickableInside">
+                                                    <div class="d-flex align-items-center">
+                                                        <div id="changeTag" class="changeTag active w-100">
+                                                            <div class="p-2 blue20bg">
+                                                                <p class="body-small reg black90 mb-0 text-center">Change tag</p>
+                                                            </div>
+                                                            <div class="p-2">
+                                                                <select name="" id="" class="body-small reg black80 py-2 border-0 border-bottom">
+                                                                    <option value="">Tag 1</option>
+                                                                    <option value="">Tag 2</option>
+                                                                    <option value="">Tag 3</option>
+                                                                </select>
+                                                            </div>
+                                                            <div class="bg-light p-2 d-flex justify-content-between"> 
+                                                                <button class="createNew body-tiny med primary border-0 bg-transparent p-0">Create new</button>
+                                                                <button class="body-tiny med grey0 border-0 rounded py-1 px-2 primaryBG">Save</button>
+                                                            </div>
+                                                        </div>
+                                                        <div id="createTag" class="createTag inactive w-100">
+                                                            <div class="p-2 blue20bg position-relative">
+                                                                <button class="backToChangeTag bg-transparent p-0 border-0 position-absolute left-0 top-0">
+                                                                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M5.39514 10.2948C5.26387 10.4261 5.08586 10.4998 4.90024 10.4998C4.71463 10.4998 4.53661 10.4261 4.40534 10.2948L1.60534 7.49484C1.47411 7.36357 1.40039 7.18556 1.40039 6.99994C1.40039 6.81433 1.47411 6.63631 1.60534 6.50504L4.40534 3.70504C4.53736 3.57753 4.71418 3.50698 4.89772 3.50857C5.08126 3.51017 5.25683 3.58378 5.38661 3.71357C5.5164 3.84336 5.59002 4.01892 5.59161 4.20246C5.59321 4.386 5.52265 4.56282 5.39514 4.69484L3.79004 6.29994H11.9002C12.0859 6.29994 12.2639 6.37369 12.3952 6.50497C12.5265 6.63624 12.6002 6.81429 12.6002 6.99994C12.6002 7.18559 12.5265 7.36364 12.3952 7.49492C12.2639 7.62619 12.0859 7.69994 11.9002 7.69994H3.79004L5.39514 9.30504C5.52637 9.43631 5.60009 9.61433 5.60009 9.79994C5.60009 9.98556 5.52637 10.1636 5.39514 10.2948Z" fill="#646364"/>
+                                                                        </svg>        
+                                                                </button>
+                                                                <p class="body-small reg black90 mb-0 text-center">Create tag</p>
+                                                            </div>
+                                                            <div class="p-2">
+                                                                
+                                                                <input type="text" class="body-small reg black80 py-1 mb-2 border-0 border-bottom w-100" placeholder="Tag name">
+
+                                                                <div>
+                                                                    <p class="body-tiny med mb-1">Select color</p>
+                                                                    <div class="selectTagColor pt-1">
+                                                                        <button class="p-2 rounded-circle border-0" style="background-color: #0A4E6B;"></button>
+                                                                        <button class="p-2 rounded-circle border-0" style="background-color: #CE7204;"></button>
+                                                                        <button class="p-2 rounded-circle border-0" style="background-color: #15803D;"></button>
+                                                                        <button class="p-2 rounded-circle border-0" style="background-color: #D5F0FC;"></button>
+                                                                        <button class="p-2 rounded-circle border-0" style="background-color: #C73C10;"></button>
+                                                                        <button class="p-2 rounded-circle border-0" style="background-color: #36B4EB;"></button>
+                                                                        <button class="p-2 rounded-circle border-0" style="background-color: #F8AF59;"></button>
+                                                                        <button class="p-2 rounded-circle border-0" style="background-color: #86EFAC;"></button>
+                                                                    </div>
+                                                                </div>
+                                                                
+                                                            </div>
+                                                            <div class="bg-light p-2 d-flex justify-content-end">
+                                                                <button class="body-tiny med grey0 border-0 rounded py-1 px-2 primaryBG">Create</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -2334,6 +2481,32 @@
             // Switch the "Yes" radio button to "No"
             document.getElementById('collaborationToggleYes').checked = true;
         });
+
+
+        $( function() {
+            $( ".datepicker" ).datepicker();
+        } );
+
+
+        $(document).ready(function() {
+        $(document).on("click", ".createNew", function() {
+            var parentDiv = $(this).closest(".changeTag");
+            var createTagDiv = parentDiv.next(".createTag");
+
+            parentDiv.removeClass("active").addClass("inactive").hide("slide", { direction: "left" }, 500);
+            createTagDiv.removeClass("inactive").addClass("active").show("slide", { direction: "right" }, 500);
+        });
+
+        $(document).on("click", ".backToChangeTag", function() {
+            var createTagDiv = $(this).closest(".createTag");
+            var parentDiv = createTagDiv.prev(".changeTag");
+
+            createTagDiv.removeClass("active").addClass("inactive").hide("slide", { direction: "right" }, 500);
+            parentDiv.removeClass("inactive").addClass("active").show("slide", { direction: "left" }, 500);
+        });
+    });
+        
+
     </script>
     
 </body>

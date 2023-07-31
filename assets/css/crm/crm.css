@@ -944,6 +944,15 @@ grid-gap: 26px;
     opacity: 0;
 }
 
+.createTag.inactive {
+    display: none;
+}
+
+#backToChangeTag{
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
 @media (max-width: 800px) {
     .crmNavList a:hover, .crmNavList a.active {
         padding: 5px 0px;

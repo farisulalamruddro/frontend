@@ -475,6 +475,23 @@ a:hover{
     display: none;
 }
 
+.tagCircle{
+    display: block;
+    width: 10px;
+    height: 10px;
+}
+
+.selectTagColor{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    row-gap: 5px;
+    justify-content: flex-start;
+}
+
+.selectTagColor button{
+    width: fit-content;
+}
+
 @media (min-width: 576px) {
 
     #scheduleActivity .modal-dialog, #editActivity .modal-dialog{
