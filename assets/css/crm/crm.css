@@ -964,6 +964,18 @@ grid-gap: 26px;
     cursor: pointer;
 }
 
+.tasksRightColumn{
+    background-color: #F2F4F5;
+}
+
+.viewTaskTabs button{
+    background: transparent;
+}
+.viewTaskTabs button.active{
+    color: #fff;
+    background: #1D9CD3;
+}
+
 @media (max-width: 800px) {
     .crmNavList a:hover, .crmNavList a.active {
         padding: 5px 0px;
