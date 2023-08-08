@@ -298,7 +298,7 @@
                         </div>
                     </div>
                     <div class="tab-content" id="pills-tabContent">
-                        <div class="tab-pane fade show active" id="pills-Timeline" role="tabpanel" aria-labelledby="pills-Timeline-tab" tabindex="0">
+                        <div class="tab-pane fade" id="pills-Timeline" role="tabpanel" aria-labelledby="pills-Timeline-tab" tabindex="0">
                             <div class="row">
                                 <div class="col-md-7">
                                     <div class="details px-2 py-3 border rounded">
@@ -554,7 +554,7 @@
                             </div>
                             
                         </div>
-                        <div class="tab-pane fade" id="pills-Tasks" role="tabpanel" aria-labelledby="pills-Tasks-tab" tabindex="0">
+                        <div class="tab-pane fade show active" id="pills-Tasks" role="tabpanel" aria-labelledby="pills-Tasks-tab" tabindex="0">
                             <div class="details px-2 py-3 border rounded">
                                 <div class="border-bottom d-flex align-items-center justify-content-between pb-3">
                                     <p class="body-normal med black20 mb-0">Discussion</p>
@@ -603,7 +603,7 @@
                                 <div class="p-3 ">
 
                                     <!-- Empty Task View -->
-                                    <div class="text-center p-5">
+                                    <!-- <div class="text-center p-5">
                                         <svg width="171" height="153" viewBox="0 0 171 153" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M23.4711 76.3278H147.857M23.4711 76.3278C18.7583 76.3278 14.2386 74.4557 10.9062 71.1233C7.57379 67.7909 5.70166 63.2712 5.70166 58.5584V23.0196C5.70166 18.3069 7.57379 13.7872 10.9062 10.4548C14.2386 7.12237 18.7583 5.25024 23.4711 5.25024H147.857C152.57 5.25024 157.089 7.12237 160.422 10.4548C163.754 13.7872 165.626 18.3069 165.626 23.0196V58.5584C165.626 63.2712 163.754 67.7909 160.422 71.1233C157.089 74.4557 152.57 76.3278 147.857 76.3278M23.4711 76.3278C18.7583 76.3278 14.2386 78.2 10.9062 81.5324C7.57379 84.8648 5.70166 89.3845 5.70166 94.0972V129.636C5.70166 134.349 7.57379 138.868 10.9062 142.201C14.2386 145.533 18.7583 147.405 23.4711 147.405H147.857C152.57 147.405 157.089 145.533 160.422 142.201C163.754 138.868 165.626 134.349 165.626 129.636V94.0972C165.626 89.3845 163.754 84.8648 160.422 81.5324C157.089 78.2 152.57 76.3278 147.857 76.3278M130.087 40.789H130.176M130.087 111.867H130.176" stroke="#CDCFD0" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
                                             </svg>
@@ -612,9 +612,254 @@
                                         <p class="body-normal reg black80 mb-0 mx-auto" style="max-width: 515px;">Stay ahead of that ever growing list of tasks. Manage them easily by grouping
                                             them as lists. You can also associate them with milestones to keep track of 
                                             progress.</p>
+                                    </div> -->
+
+                                    <!-- <div class="row position-relative pe-5">
+                                        <div class="col-md-3">
+                                            <p class="body-small med black20 mb-2">Planned</p>
+                                            <div class="dropdown">
+                                                <button id="dropdownMenuClickableInside" class="w-100 border-0 bg-transparent p-0" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+                                                    <div class="w-100 p-4 d-flex align-items-center justify-content-center rounded" style="background-color:#EFFAFF;">
+                                                        <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M4.9165 0.790527V8.5202" stroke="#232123" stroke-linecap="round"/>
+                                                            <path d="M8.78149 4.6554L1.05182 4.6554" stroke="#232123" stroke-linecap="round"/>
+                                                        </svg>                                                            
+                                                    </div>  
+                                                </button>
+                                                <div id="dealSearchSelect" class="dropdown-menu more-options p-0 dropdown-menu-right" aria-labelledby="dropdownMenuClickableInside">
+                                                    <div class="p-2">
+                                                        <input type="text" placeholder="Task Title" class="body-tiny reg black60 rounded border p-2 w-100">
+                                                        <div class="dropdown">
+                                                            <button id="dropdownMenuClickableInside" class="border-0 bg-transparent p-0 body-tiny med black80  dropdown-toggle" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+                                                                Anytime  
+                                                            </button>
+                                                            <div id="dealSearchSelect" class="dropdown-menu more-options p-0 dropdown-menu-right" aria-labelledby="dropdownMenuClickableInside">
+                                                                <div class="tags-filter bg-white px-3">
+                                                                    <ul class="list-unstyled m-0">
+                                                                        <li class="py-2 border-bottom"><a href="#" class="black90 body-normal reg">Newest</a></li>
+                                                                        <li class="py-2 border-bottom"><a href="#" class="black90 body-normal reg">Oldest</a></li>
+                                                                        <li class="py-2 border-bottom"><a href="#" class="black90 body-normal reg">Name(A to Z)</a></li>
+                                                                        <li class="py-2 border-bottom"><a href="#" class="black90 body-normal reg">Name(Z-A)</a></li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                    
+                                                    <div class="filterBTN bg-light p-2 m-0 d-flex justify-content-between"> 
+                                                        <button class="body-normal med primary border-0 bg-transparent p-0 filterCancel">Cancel</button>
+                                                        <button class="body-normal med grey0 border-0 rounded p-2">Save</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <p class="body-small med black20 mb-2">To Do</p>
+                                            <div class="dropdown">
+                                                <button id="dropdownMenuClickableInside" class="w-100 border-0 bg-transparent p-0" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+                                                    <div class="w-100 p-4 d-flex align-items-center justify-content-center rounded" style="background-color:#FFDFDF;">
+                                                        <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M4.9165 0.790527V8.5202" stroke="#232123" stroke-linecap="round"/>
+                                                            <path d="M8.78149 4.6554L1.05182 4.6554" stroke="#232123" stroke-linecap="round"/>
+                                                        </svg>                                                            
+                                                    </div>  
+                                                </button>
+                                                <div id="dealSearchSelect" class="dropdown-menu more-options p-0 dropdown-menu-right" aria-labelledby="dropdownMenuClickableInside">
+                                                    <div class="p-2">
+                                                        <input type="text" placeholder="Task Title" class="body-tiny reg black60 rounded border p-2 w-100">
+                                                        <div class="dropdown">
+                                                            <button id="dropdownMenuClickableInside" class="border-0 bg-transparent p-0 body-tiny med black80  dropdown-toggle" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+                                                                Anytime  
+                                                            </button>
+                                                            <div id="dealSearchSelect" class="dropdown-menu more-options p-0 dropdown-menu-right" aria-labelledby="dropdownMenuClickableInside">
+                                                                <div class="tags-filter bg-white px-3">
+                                                                    <ul class="list-unstyled m-0">
+                                                                        <li class="py-2 border-bottom"><a href="#" class="black90 body-normal reg">Newest</a></li>
+                                                                        <li class="py-2 border-bottom"><a href="#" class="black90 body-normal reg">Oldest</a></li>
+                                                                        <li class="py-2 border-bottom"><a href="#" class="black90 body-normal reg">Name(A to Z)</a></li>
+                                                                        <li class="py-2 border-bottom"><a href="#" class="black90 body-normal reg">Name(Z-A)</a></li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                    
+                                                    <div class="filterBTN bg-light p-2 m-0 d-flex justify-content-between"> 
+                                                        <button class="body-normal med primary border-0 bg-transparent p-0 filterCancel">Cancel</button>
+                                                        <button class="body-normal med grey0 border-0 rounded p-2">Save</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <p class="body-small med black20 mb-2">In Progress</p>
+                                            <div class="dropdown">
+                                                <button id="dropdownMenuClickableInside" class="w-100 border-0 bg-transparent p-0" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+                                                    <div class="w-100 p-4 d-flex align-items-center justify-content-center rounded" style="background-color:#FDF2E6;">
+                                                        <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M4.9165 0.790527V8.5202" stroke="#232123" stroke-linecap="round"/>
+                                                            <path d="M8.78149 4.6554L1.05182 4.6554" stroke="#232123" stroke-linecap="round"/>
+                                                        </svg>                                                            
+                                                    </div>  
+                                                </button>
+                                                <div id="dealSearchSelect" class="dropdown-menu more-options p-0 dropdown-menu-right" aria-labelledby="dropdownMenuClickableInside">
+                                                    <div class="p-2">
+                                                        <input type="text" placeholder="Task Title" class="body-tiny reg black60 rounded border p-2 w-100">
+                                                        <div class="dropdown">
+                                                            <button id="dropdownMenuClickableInside" class="border-0 bg-transparent p-0 body-tiny med black80  dropdown-toggle" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+                                                                Anytime  
+                                                            </button>
+                                                            <div id="dealSearchSelect" class="dropdown-menu more-options p-0 dropdown-menu-right" aria-labelledby="dropdownMenuClickableInside">
+                                                                <div class="tags-filter bg-white px-3">
+                                                                    <ul class="list-unstyled m-0">
+                                                                        <li class="py-2 border-bottom"><a href="#" class="black90 body-normal reg">Newest</a></li>
+                                                                        <li class="py-2 border-bottom"><a href="#" class="black90 body-normal reg">Oldest</a></li>
+                                                                        <li class="py-2 border-bottom"><a href="#" class="black90 body-normal reg">Name(A to Z)</a></li>
+                                                                        <li class="py-2 border-bottom"><a href="#" class="black90 body-normal reg">Name(Z-A)</a></li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                    
+                                                    <div class="filterBTN bg-light p-2 m-0 d-flex justify-content-between"> 
+                                                        <button class="body-normal med primary border-0 bg-transparent p-0 filterCancel">Cancel</button>
+                                                        <button class="body-normal med grey0 border-0 rounded p-2">Save</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <p class="body-small med black20 mb-2">Completed</p>
+                                            <div class="dropdown">
+                                                <button id="dropdownMenuClickableInside" class="w-100 border-0 bg-transparent p-0" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+                                                    <div class="w-100 p-4 d-flex align-items-center justify-content-center rounded" style="background-color:#DCFCE7;">
+                                                        <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M4.9165 0.790527V8.5202" stroke="#232123" stroke-linecap="round"/>
+                                                            <path d="M8.78149 4.6554L1.05182 4.6554" stroke="#232123" stroke-linecap="round"/>
+                                                        </svg>                                                            
+                                                    </div>  
+                                                </button>
+                                                <div id="dealSearchSelect" class="dropdown-menu more-options p-0 dropdown-menu-right" aria-labelledby="dropdownMenuClickableInside">
+                                                    <div class="p-2">
+                                                        <input type="text" placeholder="Task Title" class="body-tiny reg black60 rounded border p-2 w-100">
+                                                        <div class="dropdown">
+                                                            <button id="dropdownMenuClickableInside" class="border-0 bg-transparent p-0 body-tiny med black80  dropdown-toggle" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+                                                                Anytime  
+                                                            </button>
+                                                            <div id="dealSearchSelect" class="dropdown-menu more-options p-0 dropdown-menu-right" aria-labelledby="dropdownMenuClickableInside">
+                                                                <div class="tags-filter bg-white px-3">
+                                                                    <ul class="list-unstyled m-0">
+                                                                        <li class="py-2 border-bottom"><a href="#" class="black90 body-normal reg">Newest</a></li>
+                                                                        <li class="py-2 border-bottom"><a href="#" class="black90 body-normal reg">Oldest</a></li>
+                                                                        <li class="py-2 border-bottom"><a href="#" class="black90 body-normal reg">Name(A to Z)</a></li>
+                                                                        <li class="py-2 border-bottom"><a href="#" class="black90 body-normal reg">Name(Z-A)</a></li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                    
+                                                    <div class="filterBTN bg-light p-2 m-0 d-flex justify-content-between"> 
+                                                        <button class="body-normal med primary border-0 bg-transparent p-0 filterCancel">Cancel</button>
+                                                        <button class="body-normal med grey0 border-0 rounded p-2">Save</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="dropdown bg-transparent p-0 border-0 position-absolute bottom-0 end-0 mb-4 w-auto">
+                                            <button id="dropdownMenuClickableInside" class="w-100 border-0 bg-transparent p-0" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+                                                <svg width="16" height="11" viewBox="0 0 16 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M6.69466 10.5203V9.27026H10.028V10.5203H6.69466ZM3.36133 6.14526V4.89526H13.3613V6.14526H3.36133ZM0.861328 1.77026V0.520264H15.8613V1.77026H0.861328Z" fill="#4E4D4D"/>
+                                                    </svg>  
+                                            </button>
+                                            <div id="dealSearchSelect" class="dropdown-menu more-options p-0 dropdown-menu-right" aria-labelledby="dropdownMenuClickableInside" style="width: 351px;">
+                                                <div class="p-3">
+                                                    <div class="py-2">
+                                                        <p class="body-tiny med black60 mb-0">Search</p>
+                                                        <input type="text" class="body-small reg black80 py-2 border-0 border-bottom w-100">
+                                                    </div>
+                                                    <div class="py-2">
+                                                        <p class="body-small reg black80 mb-2">Who can view the discussion?</p>
+                                                        <div class="d-flex align-items-center">
+                                                            <div class="form-check d-flex align-items-center p-0">
+                                                                <input class="form-check-input m-0 me-2" type="radio" name="discussionPrivate" id="discussionEveryone" checked>
+                                                                <label class="body-small reg black60" for="discussionEveryone">
+                                                                    Everyone
+                                                                </label>
+                                                            </div>
+                                                            <div class="form-check d-flex align-items-center p-0 ms-4">
+                                                                <input class="form-check-input m-0 me-2" type="radio" name="discussionPrivate" id="discussionPrivate">
+                                                                <label class="body-small reg black60 m-0" for="discussionPrivate">
+                                                                    Private
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-6">
+                                                            <p class="body-tiny med black60 mb-0">Assigned</p>
+                                                            <select name="" id="" class="dealSelect p-2 border body-tiny reg black90 w-100 h-auto">
+                                                                <option value="Option 1">Option 1</option>
+                                                                <option value="Option 2">Option 2</option>
+                                                                <option value="Option 3">Option 3</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <p class="body-tiny med black60 mb-0">Due</p>
+                                                            <select name="" id="" class="dealSelect p-2 border body-tiny reg black90 w-100 h-auto">
+                                                                <option value="Option 1">Option 1</option>
+                                                                <option value="Option 2">Option 2</option>
+                                                                <option value="Option 3">Option 3</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="col-12">
+                                                            <div class="d-flex align-items-center mt-3">
+                                                                <div class="form-check d-flex align-items-center p-0">
+                                                                    <input class="form-check-input m-0 me-2" type="radio" name="discussionInComplete" id="discussionComplete" checked>
+                                                                    <label class="body-small reg black60" for="discussionComplete">
+                                                                        Complete
+                                                                    </label>
+                                                                </div>
+                                                                <div class="form-check d-flex align-items-center p-0 ms-4">
+                                                                    <input class="form-check-input m-0 me-2" type="radio" name="discussionInComplete" id="discussionInComplete">
+                                                                    <label class="body-small reg black60 m-0" for="discussionInComplete">
+                                                                        In Complete
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                
+                                                <div class="filterBTN bg-light p-2 m-0 d-flex justify-content-between"> 
+                                                    <button class="body-normal med primary border-0 bg-transparent p-0">Reset</button>
+                                                    <button class="body-normal med grey0 border-0 rounded p-2">Save</button>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
+                                    <div class="row position-relative pe-5">
+                                        <div class="col-md-3">
+                                            <div class="d-flex align-items-center p-3 border my-3">
+                                                <div class="ownerAvatar">SM</div>
+                                                <p class="ms-2 body-small med black20 m-0">Task Title</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3">
 
+                                        </div>
+                                        <div class="col-md-3">
 
+                                        </div>
+                                        <div class="col-md-3">
+
+                                        </div>
+                                    </div> -->
 
                                   
 
