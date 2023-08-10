@@ -259,17 +259,17 @@
                 <div class="projectsTab mt-4">
                     <div class="projectTabBTN d-flex align-items-center mb-3" id="pills-tab" role="tablist">
                         <div role="presentation">
-                            <button class="active body-small med" id="pills-General-tab" data-bs-toggle="pill" data-bs-target="#pills-General" type="button" role="tab" aria-controls="pills-General" aria-selected="true">General</button>
+                            <button class="body-small med" id="pills-General-tab" data-bs-toggle="pill" data-bs-target="#pills-General" type="button" role="tab" aria-controls="pills-General" aria-selected="true">General</button>
                         </div>
                         <div role="presentation">
                             <button class="body-small med" id="pills-ourTeam-tab" data-bs-toggle="pill" data-bs-target="#pills-ourTeam" type="button" role="tab" aria-controls="pills-ourTeam" aria-selected="false">Our Team</button>
                         </div>
                         <div role="presentation">
-                            <button class="body-small med" id="pills-clientVendor-tab" data-bs-toggle="pill" data-bs-target="#pills-clientVendor" type="button" role="tab" aria-controls="pills-clientVendor" aria-selected="false">Client/Vendor</button>
+                            <button class="active body-small med" id="pills-clientVendor-tab" data-bs-toggle="pill" data-bs-target="#pills-clientVendor" type="button" role="tab" aria-controls="pills-clientVendor" aria-selected="false">Client/Vendor</button>
                         </div>
                     </div>
                     <div class="tab-content" id="pills-tabContent">
-                        <div class="tab-pane fade show active" id="pills-General" role="tabpanel" aria-labelledby="pills-General-tab" tabindex="0">
+                        <div class="tab-pane fade" id="pills-General" role="tabpanel" aria-labelledby="pills-General-tab" tabindex="0">
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="h-100 p-3 border rounded">
@@ -476,7 +476,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="tab-pane fade" id="pills-clientVendor" role="tabpanel" aria-labelledby="pills-clientVendor-tab" tabindex="0">
+                        <div class="tab-pane fade show active" id="pills-clientVendor" role="tabpanel" aria-labelledby="pills-clientVendor-tab" tabindex="0">
                             <div class="p-3 border rounded">
                                 <div class="d-flex align-items-center justify-content-between pb-3 border-bottom mb-3">
                                     <p class="body-medium sb black20 m-0">
@@ -485,55 +485,38 @@
                                     <div class="d-flex align-items-center">
                                         <p class="body-normal med black80 m-0 me-3">Vendor</p>
                                         <div class="vendorPagination">
-                                            <a href="/projects/edit-project__configuration.html" class="body-normal med primary mx-2">1</a>
+                                            <a href="/projects/edit-project__configuration.html" class="body-normal med black80 mx-2">1</a>
                                             <a href="/projects/edit-project__configuration_vendor2.html" class="body-normal med black80 mx-2">2</a>
-                                            <a href="/projects/edit-project__configuration_vendor3.html" class="body-normal med black80 mx-2">3</a>
+                                            <a href="/projects/edit-project__configuration_vendor3.html" class="body-normal med primary mx-2">3</a>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="col-md-6 border-end">
-                                        <div class="row">
-                                            <div class="col-12 py-2">
-                                                <p class="body-normal med black80 mb-2">Relationship</p>
-                                                <select name="" id="" class="body-small reg black80 py-2 border-0 border-bottom">
-                                                    <option value="" selected disabled>Select</option>
-                                                    <option value="opt1">Option 1</option>
-                                                    <option value="opt2">Option 2</option>
-                                                    <option value="opt3">Option 3</option>
-                                                </select>
+                                        <div class="py-4">
+                                            <div class="d-flex align-items-center py-2">
+                                                <p class="body-normal med black80 m-0 w-25">Relationship</p>
+                                                <p class="body-normal med black80 m-0">:</p>
                                             </div>
-                                            <div class="col-md-6 py-2">
-                                                <p class="body-normal med black80 mb-2">Company</p>
-                                                <input type="text" class="body-small reg black80 py-2 border-0 border-bottom w-100" placeholder="placeholder">
+                                            <div class="d-flex align-items-center py-2">
+                                                <p class="body-normal med black80 m-0 w-25">Email</p>
+                                                <p class="body-normal med black80 m-0">:</p>
                                             </div>
-                                            <div class="col-md-6 py-2">
-                                                <p class="body-normal med black80 mb-2">Email</p>
-                                                <input type="email" class="body-small reg black80 py-2 border-0 border-bottom w-100" placeholder="placeholder">
+                                            <div class="d-flex align-items-center py-2">
+                                                <p class="body-normal med black80 m-0 w-25">Organization</p>
+                                                <p class="body-normal med black80 m-0">:</p>
                                             </div>
-                                            <div class="col-12 py-2">
-                                                <p class="body-normal med black80 mb-2">Collaboration</p>
-                                                <div class="d-flex align-items-center">
-                                                    <div class="form-check">
-                                                        <input class="form-check-input" type="radio" name="vendorCollaboration" id="vendorCollaboration1">
-                                                        <label class="form-check-label body-normal med black90" for="vendorCollaboration1">
-                                                            Send Invitation
-                                                        </label>
-                                                    </div>
-                                                    <div class="form-check ms-3">
-                                                        <input class="form-check-input" type="radio" name="vendorCollaboration" id="vendorCollaboration2" checked>
-                                                        <label class="form-check-label body-normal med black90" for="vendorCollaboration2">
-                                                            Do not Invite
-                                                        </label>
-                                                    </div>
-                                                </div>
+                                            <div class="d-flex align-items-center py-2">
+                                                <p class="body-normal med black80 m-0 w-25">Collaboration</p>
+                                                <p class="body-normal med black80 m-0">:</p>
                                             </div>
-                                            <div class="col-12 py-2 text-end">
+                                            <div class="pt-3 d-flex align-items-center justify-content-end">
                                                 <button class="body-medium2 med grey0 primaryBG border-0 py-2 px-3 rounded"> 
                                                     Save
                                                 </button>
                                             </div>
                                         </div>
+                                        
                                     </div>
 
                                     <div class="col-md-6">
