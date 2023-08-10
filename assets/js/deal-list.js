@@ -366,7 +366,7 @@ if(dashCheckBox != null){
 // Searchable Input
 
 
-$("select:not(.bulkOption)").chosen({no_results_text: "Nothing found with:"});
+$("select:not(.bulkOption, .estimateCost)").chosen({no_results_text: "Nothing found with:"});
 
 
 

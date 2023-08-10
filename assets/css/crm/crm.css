@@ -976,6 +976,11 @@ grid-gap: 26px;
     background: #1D9CD3;
 }
 
+.deleteProject{
+    background: #EFFAFF;
+}
+
+
 @media (max-width: 800px) {
     .crmNavList a:hover, .crmNavList a.active {
         padding: 5px 0px;

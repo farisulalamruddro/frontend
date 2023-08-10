@@ -294,7 +294,9 @@
                             <button class="body-small med" id="pills-Notes-tab" data-bs-toggle="pill" data-bs-target="#pills-Notes" type="button" role="tab" aria-controls="pills-Notes" aria-selected="false">Notes</button>
                         </div>
                         <div role="presentation">
-                            <button class="body-small med" id="pills-Configuration-tab" data-bs-toggle="pill" data-bs-target="#pills-Configuration" type="button" role="tab" aria-controls="pills-Configuration" aria-selected="false">Configuration</button>
+                            <a href="/projects/edit-project__configuration.html">
+                                <button class="body-small med" id="pills-Configuration-tab" data-bs-toggle="pill" data-bs-target="#pills-Configuration" type="button" role="tab" aria-controls="pills-Configuration" aria-selected="false">Configuration</button>
+                            </a>
                         </div>
                     </div>
                     <div class="tab-content" id="pills-tabContent">
@@ -1798,21 +1800,13 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="dropdown ms-3">
-                                <button id="dropdownMenuClickableInside" class="border-0 bg-transparent p-0 body-medium2 med black80 d-flex align-items-center justify-content-between" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+                            <div class="ms-3">
+                                <button id="timeLogBtn" class="bg-transparent border-0 p-0">
                                     <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M9.27862 16.2009C8.2731 16.2009 7.32533 16.0107 6.43531 15.6302C5.54528 15.2498 4.77076 14.73 4.11174 14.071C3.45271 13.412 2.92957 12.6374 2.54231 11.7474C2.15505 10.8574 1.96142 9.90465 1.96142 8.88917C1.96142 7.87369 2.15505 6.92252 2.54231 6.03567C2.92957 5.14881 3.45271 4.37248 4.11174 3.70666C4.77076 3.04084 5.54528 2.5177 6.43531 2.13723C7.32533 1.75677 8.2731 1.56653 9.27862 1.56653C10.2841 1.56653 11.2319 1.75677 12.1219 2.13723C13.012 2.5177 13.7899 3.04084 14.4557 3.70666C15.1215 4.37248 15.6446 5.14881 16.0251 6.03567C16.4056 6.92252 16.5958 7.87369 16.5958 8.88917C16.5958 9.90465 16.4056 10.8574 16.0251 11.7474C15.6446 12.6374 15.1215 13.412 14.4557 14.071C13.7899 14.73 13.012 15.2498 12.1219 15.6302C11.2319 16.0107 10.2841 16.2009 9.27862 16.2009ZM11.7449 12.206L12.6009 11.35L9.95123 8.70029V4.82768H8.7283V9.18946L11.7449 12.206ZM3.87734 0.200928L4.73339 1.05698L1.39072 4.27736L0.534668 3.42131L3.87734 0.200928ZM14.6799 0.200928L18.0226 3.42131L17.1665 4.27736L13.8238 1.05698L14.6799 0.200928ZM9.27949 14.978C10.9774 14.978 12.4175 14.3866 13.5996 13.2039C14.7818 12.0211 15.3729 10.5808 15.3729 8.88285C15.3729 7.18492 14.7815 5.74488 13.5988 4.56271C12.416 3.38055 10.9757 2.78946 9.27774 2.78946C7.57981 2.78946 6.13976 3.38084 4.9576 4.56359C3.77543 5.74634 3.18435 7.18668 3.18435 8.88461C3.18435 10.5825 3.77572 12.0226 4.95847 13.2048C6.14122 14.3869 7.58156 14.978 9.27949 14.978Z" fill="#4E4D4D"/>
                                         </svg>
                                         
                                 </button>
-                                <div class="dropdown-menu bg-transparent border-0 rounded-0 p-0" aria-labelledby="dropdownMenuClickableInside" style="">
-                                    <div class="tags-filter bg-white px-3">
-                                        <ul class="list-unstyled m-0">
-                                            <li class="py-2 border-bottom"><a href="#" class="black90 body-normal reg">Attach Form</a></li>
-                                            <li class="py-2 border-bottom"><a href="#" class="primary body-normal reg">Computer</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
                             </div>
                             <div class="ms-3">
                                 <button class="bg-transparent border-0 p-0">
@@ -1990,6 +1984,73 @@
     </div>
 
 
+        <!-- Tag Slide Popup -->
+        <div class="modal fade" id="timeLogPopup" tabindex="-1" aria-labelledby="timeLogPopup" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered rounded">
+                <div class="modal-content p-4 border-0 rounded position-relative mx-auto" style="max-width: 400px;">
+                    <div class="d-flex align-items-center justify-content-between pb-3 border-bottom">
+                        <div class="d-flex align-items-center">
+                            <p class="body-medium med black20 mb-0">Edit Time Log</p>
+                        </div>
+                        <div class="text-end">
+                            <button class="border-0 bg-transparent" data-bs-dismiss="modal">
+                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1.4 14L0 12.6L5.6 7L0 1.4L1.4 0L7 5.6L12.6 0L14 1.4L8.4 7L14 12.6L12.6 14L7 8.4L1.4 14Z" fill="#383637"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="row align-items-center py-3">
+                        <div class="col-md-6">
+                            <div class="p-3 border rounded d-flex flex-column align-items-center justify-content-center">
+                                <p class="body-normal reg black80 mb-3">Logged Time</p>
+                                <input type="time" class="body-normal reg black80 border-0 p-0">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="p-3 border rounded d-flex flex-column align-items-center justify-content-center">
+                                <p class="body-normal reg black80 mb-3">Estimated Time</p>
+                                <input type="time" class="body-normal reg black80 border-0 p-0">
+                            </div>
+                        </div>
+                        <div class="col-md-6 py-2">
+                            <p class="body-normal reg black80 mb-3">Notes</p>
+                            <input type="text" class="body-small reg black80 py-2 border-0 border-bottom w-100" placeholder="Placeholder">
+                        </div>
+                        <div class="col-md-6"></div>
+                        <div class="col-md-6 py-2">
+                            <p class="body-normal reg black80 mb-3">Date</p>
+                            <input type="text" class="body-small reg black80 py-2 border-0 border-bottom w-100" placeholder="Placeholder">
+                        </div>
+                        <div class="col-md-6 py-2">
+                            <p class="body-normal reg black80 mb-3">Time</p>
+                            <input type="time" class="body-small reg black80 py-2 border-0 border-bottom w-100" placeholder="Placeholder">
+                        </div>
+                        <div class="col-md-6 py-2">
+                            <p class="body-normal reg black80 mb-3">User</p>
+                            <select name="" id="" class="dealSelect p-2 border body-tiny reg black90 w-100 h-auto">
+                                <option value="USD">USD</option>
+                                <option value="AUD">AUD</option>
+                                <option value="AED">AED</option>
+                            </select>
+                        </div>
+                        <div class="col-md-6 py-2">
+                           <div class="d-flex align-items-center">
+                                <input type="checkbox" name="" id="">
+                                <p class="body-normal reg black80 mb-0 ms-2">Billable Time</p>
+                           </div>
+                        </div>
+                    </div>
+
+                    <div class="d-flex align-items-center justify-content-end mt-3">
+                        <button class="primaryBG py-2 px-3 body-medium2 med grey0 border-0 rounded">Save</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
     
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="/assets/js/popper.min.js"></script>
@@ -2066,6 +2127,14 @@
     } );
 
 
+
+        // Event listener to second modal button
+        document.getElementById('timeLogBtn').addEventListener('click', function() {
+        // Add class to first modal that prevents it from closing
+        document.getElementById('editTaskPopup').classList.add('modal-open');
+        // Show second modal
+        $('#timeLogPopup').modal('show');
+        });
     
 </script>
 
