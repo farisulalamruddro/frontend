@@ -516,10 +516,14 @@ for(var i = 0; i < createTagBackBTN.length; i++){
 };
 
 
+
+function addTaskList(){
+    
 const addTaskBtn = document.getElementById("addTaskBtn");
 const taskListContainer = document.getElementById("tasksList");
 let addTaskFormAdded = false;
 
+if(addTaskBtn != null){
 
 addTaskBtn.addEventListener("click", function(){
     if(!addTaskFormAdded){
@@ -578,4 +582,7 @@ addTaskBtn.addEventListener("click", function(){
     };
 });
 
+}
+};
 
+addTaskList();
