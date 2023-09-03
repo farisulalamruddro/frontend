@@ -242,7 +242,7 @@
                     <div class="projectsTab mt-4">
                         <div class="projectTabBTN d-flex align-items-center mb-3" id="pills-tab" role="tablist">
                             <div role="presentation">
-                                <button class="active body-small med" id="pills-Timeline-tab" data-bs-toggle="pill" data-bs-target="#pills-Timeline" type="button" role="tab" aria-controls="pills-Timeline" aria-selected="true">Timeline</button>
+                                <button class="body-small med" id="pills-Timeline-tab" data-bs-toggle="pill" data-bs-target="#pills-Timeline" type="button" role="tab" aria-controls="pills-Timeline" aria-selected="true">Timeline</button>
                             </div>
                             <div role="presentation">
                                 <button class="body-small med" id="pills-Discussions-tab" data-bs-toggle="pill" data-bs-target="#pills-Discussions" type="button" role="tab" aria-controls="pills-Discussions" aria-selected="false">Discussions</button>
@@ -251,7 +251,7 @@
                                 <button class="body-small med" id="pills-Tasks-tab" data-bs-toggle="pill" data-bs-target="#pills-Tasks" type="button" role="tab" aria-controls="pills-Tasks" aria-selected="false">Tasks</button>
                             </div>
                             <div role="presentation">
-                                <button class="body-small med" id="pills-Files-tab" data-bs-toggle="pill" data-bs-target="#pills-Files" type="button" role="tab" aria-controls="pills-Files" aria-selected="false">Files</button>
+                                <button class="active body-small med" id="pills-Files-tab" data-bs-toggle="pill" data-bs-target="#pills-Files" type="button" role="tab" aria-controls="pills-Files" aria-selected="false">Files</button>
                             </div>
                             <div role="presentation">
                                 <button class="body-small med" id="pills-Notes-tab" data-bs-toggle="pill" data-bs-target="#pills-Notes" type="button" role="tab" aria-controls="pills-Notes" aria-selected="false">Notes</button>
@@ -263,7 +263,7 @@
                             </div>
                         </div>
                         <div class="tab-content" id="pills-tabContent">
-                            <div class="tab-pane fade show active" id="pills-Timeline" role="tabpanel" aria-labelledby="pills-Timeline-tab" tabindex="0">
+                            <div class="tab-pane fade" id="pills-Timeline" role="tabpanel" aria-labelledby="pills-Timeline-tab" tabindex="0">
                                 <div class="row">
                                     <div class="col-md-7">
                                         <div class="details px-2 py-3 border rounded">
@@ -868,306 +868,10 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="tab-pane fade" id="pills-Files" role="tabpanel" aria-labelledby="pills-Files-tab" tabindex="0">
+                            <div class="tab-pane fade show active" id="pills-Files" role="tabpanel" aria-labelledby="pills-Files-tab" tabindex="0">
                                 <div class="details px-2 py-3 border rounded">
-                                    <!-- Files tab Header -->
-                                    <div class="border-bottom d-flex align-items-center justify-content-between pb-3">
-                                        <p class="body-normal med black20 mb-0">Files</p>
-                                        <div class="d-flex align-items-center">
-                                            <div class="projectsFile d-flex align-items-center me-4" id="pills-tab" role="tablist">
-                                                <div role="presentation" class="me-3">
-                                                    <button class="active bg-transparent border-0 p-0" id="pills-fileGrid-tab" data-bs-toggle="pill" data-bs-target="#pills-fileGrid" type="button" role="tab" aria-controls="pills-fileGrid" aria-selected="true">
-                                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                            <path d="M1.58579 1.58579C1.21071 1.96086 1 2.46957 1 3V5C1 5.53043 1.21071 6.03914 1.58579 6.41421C1.96086 6.78929 2.46957 7 3 7H5C5.53043 7 6.03914 6.78929 6.41421 6.41421C6.78929 6.03914 7 5.53043 7 5V3C7 2.46957 6.78929 1.96086 6.41421 1.58579C6.03914 1.21071 5.53043 1 5 1H3C2.46957 1 1.96086 1.21071 1.58579 1.58579Z" stroke="#383637" stroke-linecap="round" stroke-linejoin="round" />
-                                                            <path d="M11.5858 1.58579C11.2107 1.96086 11 2.46957 11 3V5C11 5.53043 11.2107 6.03914 11.5858 6.41421C11.9609 6.78929 12.4696 7 13 7H15C15.5304 7 16.0391 6.78929 16.4142 6.41421C16.7893 6.03914 17 5.53043 17 5V3C17 2.46957 16.7893 1.96086 16.4142 1.58579C16.0391 1.21071 15.5304 1 15 1H13C12.4696 1 11.9609 1.21071 11.5858 1.58579Z" stroke="#383637" stroke-linecap="round" stroke-linejoin="round" />
-                                                            <path d="M1.58579 11.5858C1.21071 11.9609 1 12.4696 1 13V15C1 15.5304 1.21071 16.0391 1.58579 16.4142C1.96086 16.7893 2.46957 17 3 17H5C5.53043 17 6.03914 16.7893 6.41421 16.4142C6.78929 16.0391 7 15.5304 7 15V13C7 12.4696 6.78929 11.9609 6.41421 11.5858C6.03914 11.2107 5.53043 11 5 11H3C2.46957 11 1.96086 11.2107 1.58579 11.5858Z" stroke="#383637" stroke-linecap="round" stroke-linejoin="round" />
-                                                            <path d="M11.5858 11.5858C11.2107 11.9609 11 12.4696 11 13V15C11 15.5304 11.2107 16.0391 11.5858 16.4142C11.9609 16.7893 12.4696 17 13 17H15C15.5304 17 16.0391 16.7893 16.4142 16.4142C16.7893 16.0391 17 15.5304 17 15V13C17 12.4696 16.7893 11.9609 16.4142 11.5858C16.0391 11.2107 15.5304 11 15 11H13C12.4696 11 11.9609 11.2107 11.5858 11.5858Z" stroke="#383637" stroke-linecap="round" stroke-linejoin="round" />
-                                                        </svg>
-                                                    </button>
-                                                </div>
-                                                <div role="presentation">
-                                                    <button class="bg-transparent border-0 p-0" id="pills-fileList-tab" data-bs-toggle="pill" data-bs-target="#pills-fileList" type="button" role="tab" aria-controls="pills-fileList" aria-selected="false">
-                                                        <svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                            <path d="M1 13H17M1 1H17H1ZM1 7H17H1Z" stroke="#383637" stroke-linecap="round" stroke-linejoin="round" />
-                                                        </svg>
-                                                    </button>
-                                                </div>
-                                            </div>
-
-                                            <button id="addFiles" class="primaryBG border-0 body-medium2 med grey0 py-2 px-4 rounded"> Add Files </button>
-                                            
-                                            <!-- <a href="/projects/edit-project__addFiles.html">
-                                                <button class="primaryBG border-0 body-medium2 med grey0 py-2 px-4 rounded"> Add Files </button>
-                                            </a> -->
-                                        </div>
-                                    </div>
                                     
-                                    <!-- Files tab empty view -->
-                                    <!-- <div id="filesNull" class="emptyFiles text-center p-5">
-                                        <svg width="157" height="173" viewBox="0 0 157 173" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M37.8752 119C29.8722 119.009 22.1472 116.065 16.1804 110.731C10.2135 105.398 6.42423 98.0506 5.53857 90.0967C4.65291 82.1429 6.73311 74.1419 11.3806 67.6266C16.0282 61.1113 22.9162 56.5399 30.7252 54.7882C28.4658 44.2508 30.4849 33.2474 36.3383 24.1988C42.1917 15.1501 51.4 8.79725 61.9374 6.53785C72.4747 4.27846 83.4781 6.29756 92.5268 12.151C101.575 18.0044 107.928 27.2127 110.188 37.75H111C121.075 37.7399 130.794 41.4736 138.27 48.2262C145.747 54.9788 150.448 64.2687 151.46 74.2923C152.473 84.3159 149.725 94.3581 143.75 102.47C137.774 110.581 128.998 116.183 119.125 118.188M102.875 94.6251L78.5002 70.25M78.5002 70.25L54.1252 94.6251M78.5002 70.25V167.75" stroke="#CDCFD0" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" />
-                                        </svg>
-                                        <p class="body-large med black80 mt-3 mb-2">Upload files relevant to this project an share them with every participant</p>
-                                        <p class="body-normal reg black80 mb-0 mx-auto">Mockups,screenshots,images,documents,audio,video-ou name i.</p>
-                                    </div> -->
                                     
-                                    <!-- Upload Files Container -->
-                                    <div id="uploadFiles" class="text-center p-5" style="display: none;">
-                                        <p class="body-medium med primary m-0">Drag Files Here</p>
-                                        <p class="body-normal med black80 my-3">or</p>
-                                        <div>
-                                            <input id="filesUploadInput" type="file" name="file" class="d-none">
-                                            <button id="filesUploadBTN" class="body-medium2 med grey0 py-2 px-4 rounded primaryBG border-0">choose file to Upload</button>
-                                        </div>
-                                        <div class="d-flex align-items-center justify-content-center mt-3">
-                                            <button class="p-0 bg-transparent border-0 d-flex align-items-center mx-2">
-                                                <svg width="25px" height="25px" viewBox="0 -13.5 256 256" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <path d="M19.3542312,196.033928 L30.644172,215.534816 C32.9900287,219.64014 36.3622164,222.86588 40.3210929,225.211737 C51.6602421,210.818376 59.5534225,199.772864 64.000634,192.075201 C68.5137119,184.263529 74.0609657,172.045039 80.6423954,155.41973 C62.9064315,153.085282 49.4659974,151.918058 40.3210929,151.918058 C31.545465,151.918058 18.1051007,153.085282 0,155.41973 C0,159.964996 1.17298825,164.510261 3.51893479,168.615586 L19.3542312,196.033928 Z" fill="#0066DA"> </path> <path d="M215.681443,225.211737 C219.64032,222.86588 223.012507,219.64014 225.358364,215.534816 L230.050377,207.470615 L252.483511,168.615586 C254.829368,164.510261 256.002446,159.964996 256.002446,155.41973 C237.79254,153.085282 224.376613,151.918058 215.754667,151.918058 C206.488712,151.918058 193.072785,153.085282 175.506888,155.41973 C182.010479,172.136093 187.484394,184.354584 191.928633,192.075201 C196.412073,199.863919 204.329677,210.909431 215.681443,225.211737 Z" fill="#EA4335"> </path> <path d="M128.001268,73.3111515 C141.121182,57.4655263 150.162898,45.2470011 155.126415,36.6555757 C159.123121,29.7376196 163.521739,18.6920726 168.322271,3.51893479 C164.363395,1.1729583 159.818129,0 155.126415,0 L100.876121,0 C96.1841079,0 91.638842,1.31958557 87.6799655,3.51893479 C93.7861943,20.9210065 98.9675428,33.3058067 103.224011,40.6733354 C107.927832,48.8151881 116.186918,59.6944602 128.001268,73.3111515 Z" fill="#00832D"> </path> <path d="M175.360141,155.41973 L80.6420959,155.41973 L40.3210929,225.211737 C44.2799694,227.557893 48.8252352,228.730672 53.5172481,228.730672 L202.485288,228.730672 C207.177301,228.730672 211.722567,227.411146 215.681443,225.211737 L175.360141,155.41973 Z" fill="#2684FC"> </path> <path d="M128.001268,73.3111515 L87.680265,3.51893479 C83.7213885,5.86488134 80.3489013,9.09044179 78.0030446,13.1960654 L3.51893479,142.223575 C1.17298825,146.329198 0,150.874464 0,155.41973 L80.6423954,155.41973 L128.001268,73.3111515 Z" fill="#00AC47"> </path> <path d="M215.241501,77.7099697 L177.999492,13.1960654 C175.653635,9.09044179 172.281148,5.86488134 168.322271,3.51893479 L128.001268,73.3111515 L175.360141,155.41973 L255.855999,155.41973 C255.855999,150.874464 254.682921,146.329198 252.337064,142.223575 L215.241501,77.7099697 Z" fill="#FFBA00"> </path> </g> </g></svg>
-                                            </button>
-                                            <button class="p-0 bg-transparent border-0 d-flex align-items-center mx-2">
-                                                <svg width="25px" height="25px" viewBox="0 -1.5 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>Dropbox-color</title> <desc>Created with Sketch.</desc> <defs> </defs> <g id="Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <g id="Color-" transform="translate(-800.000000, -363.000000)" fill="#0F82E2"> <path d="M824,389.033255 L814.1195,397.34573 L800,388.053538 L809.7635,380.17347 L823.999971,389.033238 L838.2362,380.172109 L847.9997,388.05369 L833.8802,397.345881 L823.9997,389.033406 Z M814.1198,363 L800.0003,372.292191 L809.7638,380.17226 L824.0003,371.312475 L814.1198,363 Z M824.02895,390.821692 L814.11995,399.109976 L809.87945,396.318993 L809.87945,399.447132 L824.02895,408 L838.17845,399.447132 L838.17845,396.318993 L833.93795,399.109976 L824.02895,390.821692 Z M848,372.292343 L833.8805,363.000151 L824,371.312626 L838.2365,380.172411 L848,372.292343 Z" id="Dropbox"> </path> </g> </g> </g></svg>
-                                            </button>
-                                        </div>
-                                    </div>
-
-                                    <!-- Uploaded Files -->
-                                    <div id="filesUploaded" class="filesUploaded py-3 tab-content" id="pills-tabContent">
-                                        <div class="tab-pane fade show active" id="pills-fileGrid" role="tabpanel" aria-labelledby="pills-fileGrid-tab" tabindex="0">
-                                            <div class="uploadedFilesGrid d-flex flex-wrap">
-                                                <div class="d-flex flex-column align-items-center justify-content-center m-2">
-                                                    <svg width="34" height="27" viewBox="0 0 34 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M1 22.3333V4.55556C1 3.61256 1.3746 2.70819 2.0414 2.0414C2.70819 1.3746 3.61256 1 4.55556 1H15.2222L18.7778 4.55556H29.4444C30.3874 4.55556 31.2918 4.93016 31.9586 5.59695C32.6254 6.26375 33 7.16812 33 8.11111V22.3333C33 23.2763 32.6254 24.1807 31.9586 24.8475C31.2918 25.5143 30.3874 25.8889 29.4444 25.8889H4.55556C3.61256 25.8889 2.70819 25.5143 2.0414 24.8475C1.3746 24.1807 1 23.2763 1 22.3333Z" stroke="#919090" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                                        </svg>
-                                                    <p class="fileName body-normal med black70 mt-1">File name<p>                                                        
-                                                </div>
-                                                <div class="d-flex flex-column align-items-center justify-content-center m-2">
-                                                    <svg width="34" height="27" viewBox="0 0 34 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M1 22.3333V4.55556C1 3.61256 1.3746 2.70819 2.0414 2.0414C2.70819 1.3746 3.61256 1 4.55556 1H15.2222L18.7778 4.55556H29.4444C30.3874 4.55556 31.2918 4.93016 31.9586 5.59695C32.6254 6.26375 33 7.16812 33 8.11111V22.3333C33 23.2763 32.6254 24.1807 31.9586 24.8475C31.2918 25.5143 30.3874 25.8889 29.4444 25.8889H4.55556C3.61256 25.8889 2.70819 25.5143 2.0414 24.8475C1.3746 24.1807 1 23.2763 1 22.3333Z" stroke="#919090" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                                        </svg>
-                                                    <p class="fileName body-normal med black70 mt-1">File name<p>                                                        
-                                                </div>
-                                                <div class="d-flex flex-column align-items-center justify-content-center m-2">
-                                                    <svg width="34" height="27" viewBox="0 0 34 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M1 22.3333V4.55556C1 3.61256 1.3746 2.70819 2.0414 2.0414C2.70819 1.3746 3.61256 1 4.55556 1H15.2222L18.7778 4.55556H29.4444C30.3874 4.55556 31.2918 4.93016 31.9586 5.59695C32.6254 6.26375 33 7.16812 33 8.11111V22.3333C33 23.2763 32.6254 24.1807 31.9586 24.8475C31.2918 25.5143 30.3874 25.8889 29.4444 25.8889H4.55556C3.61256 25.8889 2.70819 25.5143 2.0414 24.8475C1.3746 24.1807 1 23.2763 1 22.3333Z" stroke="#919090" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                                        </svg>
-                                                    <p class="fileName body-normal med black70 mt-1">File name<p>                                                        
-                                                </div>
-                                                <div class="d-flex flex-column align-items-center justify-content-center m-2">
-                                                    <svg width="34" height="27" viewBox="0 0 34 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M1 22.3333V4.55556C1 3.61256 1.3746 2.70819 2.0414 2.0414C2.70819 1.3746 3.61256 1 4.55556 1H15.2222L18.7778 4.55556H29.4444C30.3874 4.55556 31.2918 4.93016 31.9586 5.59695C32.6254 6.26375 33 7.16812 33 8.11111V22.3333C33 23.2763 32.6254 24.1807 31.9586 24.8475C31.2918 25.5143 30.3874 25.8889 29.4444 25.8889H4.55556C3.61256 25.8889 2.70819 25.5143 2.0414 24.8475C1.3746 24.1807 1 23.2763 1 22.3333Z" stroke="#919090" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                                        </svg>
-                                                    <p class="fileName body-normal med black70 mt-1">File name<p>                                                        
-                                                </div>
-                                                <div class="d-flex flex-column align-items-center justify-content-center m-2">
-                                                    <svg width="34" height="27" viewBox="0 0 34 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M1 22.3333V4.55556C1 3.61256 1.3746 2.70819 2.0414 2.0414C2.70819 1.3746 3.61256 1 4.55556 1H15.2222L18.7778 4.55556H29.4444C30.3874 4.55556 31.2918 4.93016 31.9586 5.59695C32.6254 6.26375 33 7.16812 33 8.11111V22.3333C33 23.2763 32.6254 24.1807 31.9586 24.8475C31.2918 25.5143 30.3874 25.8889 29.4444 25.8889H4.55556C3.61256 25.8889 2.70819 25.5143 2.0414 24.8475C1.3746 24.1807 1 23.2763 1 22.3333Z" stroke="#919090" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                                        </svg>
-                                                    <p class="fileName body-normal med black70 mt-1">File name<p>                                                        
-                                                </div>
-                                                <div class="d-flex flex-column align-items-center justify-content-center m-2">
-                                                    <svg width="34" height="27" viewBox="0 0 34 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M1 22.3333V4.55556C1 3.61256 1.3746 2.70819 2.0414 2.0414C2.70819 1.3746 3.61256 1 4.55556 1H15.2222L18.7778 4.55556H29.4444C30.3874 4.55556 31.2918 4.93016 31.9586 5.59695C32.6254 6.26375 33 7.16812 33 8.11111V22.3333C33 23.2763 32.6254 24.1807 31.9586 24.8475C31.2918 25.5143 30.3874 25.8889 29.4444 25.8889H4.55556C3.61256 25.8889 2.70819 25.5143 2.0414 24.8475C1.3746 24.1807 1 23.2763 1 22.3333Z" stroke="#919090" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                                        </svg>
-                                                    <p class="fileName body-normal med black70 mt-1">File name<p>                                                        
-                                                </div>
-                                                <div class="d-flex flex-column align-items-center justify-content-center m-2">
-                                                    <svg width="34" height="27" viewBox="0 0 34 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M1 22.3333V4.55556C1 3.61256 1.3746 2.70819 2.0414 2.0414C2.70819 1.3746 3.61256 1 4.55556 1H15.2222L18.7778 4.55556H29.4444C30.3874 4.55556 31.2918 4.93016 31.9586 5.59695C32.6254 6.26375 33 7.16812 33 8.11111V22.3333C33 23.2763 32.6254 24.1807 31.9586 24.8475C31.2918 25.5143 30.3874 25.8889 29.4444 25.8889H4.55556C3.61256 25.8889 2.70819 25.5143 2.0414 24.8475C1.3746 24.1807 1 23.2763 1 22.3333Z" stroke="#919090" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                                        </svg>
-                                                    <p class="fileName body-normal med black70 mt-1">File name<p>                                                        
-                                                </div>
-                                                <div class="d-flex flex-column align-items-center justify-content-center m-2">
-                                                    <svg width="34" height="27" viewBox="0 0 34 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M1 22.3333V4.55556C1 3.61256 1.3746 2.70819 2.0414 2.0414C2.70819 1.3746 3.61256 1 4.55556 1H15.2222L18.7778 4.55556H29.4444C30.3874 4.55556 31.2918 4.93016 31.9586 5.59695C32.6254 6.26375 33 7.16812 33 8.11111V22.3333C33 23.2763 32.6254 24.1807 31.9586 24.8475C31.2918 25.5143 30.3874 25.8889 29.4444 25.8889H4.55556C3.61256 25.8889 2.70819 25.5143 2.0414 24.8475C1.3746 24.1807 1 23.2763 1 22.3333Z" stroke="#919090" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                                        </svg>
-                                                    <p class="fileName body-normal med black70 mt-1">File name<p>                                                        
-                                                </div>
-                                                <div class="d-flex flex-column align-items-center justify-content-center m-2">
-                                                    <svg width="34" height="27" viewBox="0 0 34 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M1 22.3333V4.55556C1 3.61256 1.3746 2.70819 2.0414 2.0414C2.70819 1.3746 3.61256 1 4.55556 1H15.2222L18.7778 4.55556H29.4444C30.3874 4.55556 31.2918 4.93016 31.9586 5.59695C32.6254 6.26375 33 7.16812 33 8.11111V22.3333C33 23.2763 32.6254 24.1807 31.9586 24.8475C31.2918 25.5143 30.3874 25.8889 29.4444 25.8889H4.55556C3.61256 25.8889 2.70819 25.5143 2.0414 24.8475C1.3746 24.1807 1 23.2763 1 22.3333Z" stroke="#919090" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                                        </svg>
-                                                    <p class="fileName body-normal med black70 mt-1">File name<p>                                                        
-                                                </div>
-                                                <div class="d-flex flex-column align-items-center justify-content-center m-2">
-                                                    <svg width="34" height="27" viewBox="0 0 34 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M1 22.3333V4.55556C1 3.61256 1.3746 2.70819 2.0414 2.0414C2.70819 1.3746 3.61256 1 4.55556 1H15.2222L18.7778 4.55556H29.4444C30.3874 4.55556 31.2918 4.93016 31.9586 5.59695C32.6254 6.26375 33 7.16812 33 8.11111V22.3333C33 23.2763 32.6254 24.1807 31.9586 24.8475C31.2918 25.5143 30.3874 25.8889 29.4444 25.8889H4.55556C3.61256 25.8889 2.70819 25.5143 2.0414 24.8475C1.3746 24.1807 1 23.2763 1 22.3333Z" stroke="#919090" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                                        </svg>
-                                                    <p class="fileName body-normal med black70 mt-1">File name<p>                                                        
-                                                </div>
-                                                <div class="d-flex flex-column align-items-center justify-content-center m-2">
-                                                    <svg width="34" height="27" viewBox="0 0 34 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M1 22.3333V4.55556C1 3.61256 1.3746 2.70819 2.0414 2.0414C2.70819 1.3746 3.61256 1 4.55556 1H15.2222L18.7778 4.55556H29.4444C30.3874 4.55556 31.2918 4.93016 31.9586 5.59695C32.6254 6.26375 33 7.16812 33 8.11111V22.3333C33 23.2763 32.6254 24.1807 31.9586 24.8475C31.2918 25.5143 30.3874 25.8889 29.4444 25.8889H4.55556C3.61256 25.8889 2.70819 25.5143 2.0414 24.8475C1.3746 24.1807 1 23.2763 1 22.3333Z" stroke="#919090" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                                        </svg>
-                                                    <p class="fileName body-normal med black70 mt-1">File name<p>                                                        
-                                                </div>
-                                                <div class="d-flex flex-column align-items-center justify-content-center m-2">
-                                                    <svg width="34" height="27" viewBox="0 0 34 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M1 22.3333V4.55556C1 3.61256 1.3746 2.70819 2.0414 2.0414C2.70819 1.3746 3.61256 1 4.55556 1H15.2222L18.7778 4.55556H29.4444C30.3874 4.55556 31.2918 4.93016 31.9586 5.59695C32.6254 6.26375 33 7.16812 33 8.11111V22.3333C33 23.2763 32.6254 24.1807 31.9586 24.8475C31.2918 25.5143 30.3874 25.8889 29.4444 25.8889H4.55556C3.61256 25.8889 2.70819 25.5143 2.0414 24.8475C1.3746 24.1807 1 23.2763 1 22.3333Z" stroke="#919090" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                                        </svg>
-                                                    <p class="fileName body-normal med black70 mt-1">File name<p>                                                        
-                                                </div>
-                                                <div class="d-flex flex-column align-items-center justify-content-center m-2">
-                                                    <svg width="34" height="27" viewBox="0 0 34 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M1 22.3333V4.55556C1 3.61256 1.3746 2.70819 2.0414 2.0414C2.70819 1.3746 3.61256 1 4.55556 1H15.2222L18.7778 4.55556H29.4444C30.3874 4.55556 31.2918 4.93016 31.9586 5.59695C32.6254 6.26375 33 7.16812 33 8.11111V22.3333C33 23.2763 32.6254 24.1807 31.9586 24.8475C31.2918 25.5143 30.3874 25.8889 29.4444 25.8889H4.55556C3.61256 25.8889 2.70819 25.5143 2.0414 24.8475C1.3746 24.1807 1 23.2763 1 22.3333Z" stroke="#919090" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                                        </svg>
-                                                    <p class="fileName body-normal med black70 mt-1">File name<p>                                                        
-                                                </div>
-                                                <div class="d-flex flex-column align-items-center justify-content-center m-2">
-                                                    <svg width="34" height="27" viewBox="0 0 34 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M1 22.3333V4.55556C1 3.61256 1.3746 2.70819 2.0414 2.0414C2.70819 1.3746 3.61256 1 4.55556 1H15.2222L18.7778 4.55556H29.4444C30.3874 4.55556 31.2918 4.93016 31.9586 5.59695C32.6254 6.26375 33 7.16812 33 8.11111V22.3333C33 23.2763 32.6254 24.1807 31.9586 24.8475C31.2918 25.5143 30.3874 25.8889 29.4444 25.8889H4.55556C3.61256 25.8889 2.70819 25.5143 2.0414 24.8475C1.3746 24.1807 1 23.2763 1 22.3333Z" stroke="#919090" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                                        </svg>
-                                                    <p class="fileName body-normal med black70 mt-1">File name<p>                                                        
-                                                </div>
-                                                <div class="d-flex flex-column align-items-center justify-content-center m-2">
-                                                    <svg width="34" height="27" viewBox="0 0 34 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M1 22.3333V4.55556C1 3.61256 1.3746 2.70819 2.0414 2.0414C2.70819 1.3746 3.61256 1 4.55556 1H15.2222L18.7778 4.55556H29.4444C30.3874 4.55556 31.2918 4.93016 31.9586 5.59695C32.6254 6.26375 33 7.16812 33 8.11111V22.3333C33 23.2763 32.6254 24.1807 31.9586 24.8475C31.2918 25.5143 30.3874 25.8889 29.4444 25.8889H4.55556C3.61256 25.8889 2.70819 25.5143 2.0414 24.8475C1.3746 24.1807 1 23.2763 1 22.3333Z" stroke="#919090" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                                        </svg>
-                                                    <p class="fileName body-normal med black70 mt-1">File name<p>                                                        
-                                                </div>
-                                                <div class="d-flex flex-column align-items-center justify-content-center m-2">
-                                                    <svg width="34" height="27" viewBox="0 0 34 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M1 22.3333V4.55556C1 3.61256 1.3746 2.70819 2.0414 2.0414C2.70819 1.3746 3.61256 1 4.55556 1H15.2222L18.7778 4.55556H29.4444C30.3874 4.55556 31.2918 4.93016 31.9586 5.59695C32.6254 6.26375 33 7.16812 33 8.11111V22.3333C33 23.2763 32.6254 24.1807 31.9586 24.8475C31.2918 25.5143 30.3874 25.8889 29.4444 25.8889H4.55556C3.61256 25.8889 2.70819 25.5143 2.0414 24.8475C1.3746 24.1807 1 23.2763 1 22.3333Z" stroke="#919090" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                                        </svg>
-                                                    <p class="fileName body-normal med black70 mt-1">File name<p>                                                        
-                                                </div>
-                                                <div class="d-flex flex-column align-items-center justify-content-center m-2">
-                                                    <svg width="34" height="27" viewBox="0 0 34 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M1 22.3333V4.55556C1 3.61256 1.3746 2.70819 2.0414 2.0414C2.70819 1.3746 3.61256 1 4.55556 1H15.2222L18.7778 4.55556H29.4444C30.3874 4.55556 31.2918 4.93016 31.9586 5.59695C32.6254 6.26375 33 7.16812 33 8.11111V22.3333C33 23.2763 32.6254 24.1807 31.9586 24.8475C31.2918 25.5143 30.3874 25.8889 29.4444 25.8889H4.55556C3.61256 25.8889 2.70819 25.5143 2.0414 24.8475C1.3746 24.1807 1 23.2763 1 22.3333Z" stroke="#919090" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                                        </svg>
-                                                    <p class="fileName body-normal med black70 mt-1">File name<p>                                                        
-                                                </div>
-                                                <div class="d-flex flex-column align-items-center justify-content-center m-2">
-                                                    <svg width="34" height="27" viewBox="0 0 34 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M1 22.3333V4.55556C1 3.61256 1.3746 2.70819 2.0414 2.0414C2.70819 1.3746 3.61256 1 4.55556 1H15.2222L18.7778 4.55556H29.4444C30.3874 4.55556 31.2918 4.93016 31.9586 5.59695C32.6254 6.26375 33 7.16812 33 8.11111V22.3333C33 23.2763 32.6254 24.1807 31.9586 24.8475C31.2918 25.5143 30.3874 25.8889 29.4444 25.8889H4.55556C3.61256 25.8889 2.70819 25.5143 2.0414 24.8475C1.3746 24.1807 1 23.2763 1 22.3333Z" stroke="#919090" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                                        </svg>
-                                                    <p class="fileName body-normal med black70 mt-1">File name<p>                                                        
-                                                </div>
-                                                <div class="d-flex flex-column align-items-center justify-content-center m-2">
-                                                    <svg width="34" height="27" viewBox="0 0 34 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M1 22.3333V4.55556C1 3.61256 1.3746 2.70819 2.0414 2.0414C2.70819 1.3746 3.61256 1 4.55556 1H15.2222L18.7778 4.55556H29.4444C30.3874 4.55556 31.2918 4.93016 31.9586 5.59695C32.6254 6.26375 33 7.16812 33 8.11111V22.3333C33 23.2763 32.6254 24.1807 31.9586 24.8475C31.2918 25.5143 30.3874 25.8889 29.4444 25.8889H4.55556C3.61256 25.8889 2.70819 25.5143 2.0414 24.8475C1.3746 24.1807 1 23.2763 1 22.3333Z" stroke="#919090" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                                        </svg>
-                                                    <p class="fileName body-normal med black70 mt-1">File name<p>                                                        
-                                                </div>
-                                                <div class="d-flex flex-column align-items-center justify-content-center m-2">
-                                                    <svg width="34" height="27" viewBox="0 0 34 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M1 22.3333V4.55556C1 3.61256 1.3746 2.70819 2.0414 2.0414C2.70819 1.3746 3.61256 1 4.55556 1H15.2222L18.7778 4.55556H29.4444C30.3874 4.55556 31.2918 4.93016 31.9586 5.59695C32.6254 6.26375 33 7.16812 33 8.11111V22.3333C33 23.2763 32.6254 24.1807 31.9586 24.8475C31.2918 25.5143 30.3874 25.8889 29.4444 25.8889H4.55556C3.61256 25.8889 2.70819 25.5143 2.0414 24.8475C1.3746 24.1807 1 23.2763 1 22.3333Z" stroke="#919090" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                                        </svg>
-                                                    <p class="fileName body-normal med black70 mt-1">File name<p>                                                        
-                                                </div>
-                                                <div class="d-flex flex-column align-items-center justify-content-center m-2">
-                                                    <svg width="34" height="27" viewBox="0 0 34 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M1 22.3333V4.55556C1 3.61256 1.3746 2.70819 2.0414 2.0414C2.70819 1.3746 3.61256 1 4.55556 1H15.2222L18.7778 4.55556H29.4444C30.3874 4.55556 31.2918 4.93016 31.9586 5.59695C32.6254 6.26375 33 7.16812 33 8.11111V22.3333C33 23.2763 32.6254 24.1807 31.9586 24.8475C31.2918 25.5143 30.3874 25.8889 29.4444 25.8889H4.55556C3.61256 25.8889 2.70819 25.5143 2.0414 24.8475C1.3746 24.1807 1 23.2763 1 22.3333Z" stroke="#919090" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                                        </svg>
-                                                    <p class="fileName body-normal med black70 mt-1">File name<p>                                                        
-                                                </div>
-                                                <div class="d-flex flex-column align-items-center justify-content-center m-2">
-                                                    <svg width="34" height="27" viewBox="0 0 34 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M1 22.3333V4.55556C1 3.61256 1.3746 2.70819 2.0414 2.0414C2.70819 1.3746 3.61256 1 4.55556 1H15.2222L18.7778 4.55556H29.4444C30.3874 4.55556 31.2918 4.93016 31.9586 5.59695C32.6254 6.26375 33 7.16812 33 8.11111V22.3333C33 23.2763 32.6254 24.1807 31.9586 24.8475C31.2918 25.5143 30.3874 25.8889 29.4444 25.8889H4.55556C3.61256 25.8889 2.70819 25.5143 2.0414 24.8475C1.3746 24.1807 1 23.2763 1 22.3333Z" stroke="#919090" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                                        </svg>
-                                                    <p class="fileName body-normal med black70 mt-1">File name<p>                                                        
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="tab-pane fade" id="pills-fileList" role="tabpanel" aria-labelledby="pills-fileList-tab" tabindex="0">
-                                            <div class=" table-responsive-lg pt-3">
-                                                <table class="table w-100 list-view-table m-0">
-                                                    <thead class="list-info-head-row">
-                                                        <th class="list-info-head"></th>
-                                                        <th class="list-info-head body-normal reg black90 m-0" scope="col">
-                                                            File Name
-                                                        </th>
-                                                        <th class="list-info-head body-normal reg black90 m-0" scope="col">
-                                                            User Name
-                                                        </th>
-                                                        <th class="list-info-head body-normal reg black90 m-0" scope="col">
-                                                            File Size
-                                                        </th>
-                                                        <th class="list-info-head body-normal reg black90 m-0" scope="col">
-                                                            More
-                                                        </th>
-                                                        
-                                                    </thead>
-                                                    <tbody>
-                                                        <tr class="list-info-row filesInfo">
-                                                            <td class="list-info-item inputWidth">
-                                                                <input type="checkbox" id="bulkCheck" class="bulkCheck">
-                                                            </td>
-                                                            <td class="list-info-item body-normal black80 m-0 wideWidth"> 
-                                                                <div class="d-flex align-items-center w-100 flex-wrap">
-                                                                    <svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                        <path d="M1 11.6667V2.77778C1 2.30628 1.1873 1.8541 1.5207 1.5207C1.8541 1.1873 2.30628 1 2.77778 1H8.11111L9.88889 2.77778H15.2222C15.6937 2.77778 16.1459 2.96508 16.4793 3.29848C16.8127 3.63187 17 4.08406 17 4.55556V11.6667C17 12.1382 16.8127 12.5903 16.4793 12.9237C16.1459 13.2571 15.6937 13.4444 15.2222 13.4444H2.77778C2.30628 13.4444 1.8541 13.2571 1.5207 12.9237C1.1873 12.5903 1 12.1382 1 11.6667Z" stroke="#919090" stroke-linecap="round" stroke-linejoin="round"/>
-                                                                        </svg>
-                                                                        
-                                                                    <p class="body-tiny reg black70 m-0 ms-2">File-01</p>
-                                                                </div>
-                                                            </td>
-                                                            <td class="list-info-item body-normal black80 m-0 narrowWidth"> 
-                                                                <div class="d-flex align-items-center w-100 flex-wrap">
-                                                                    <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                        <circle cx="12" cy="12.9365" r="12" fill="#E9E9E9"/>
-                                                                        <path d="M16.8703 16.874C16.1706 15.6686 15.0506 14.7639 13.725 14.3334C14.3604 13.9555 14.8542 13.3795 15.1305 12.6939C15.4067 12.0082 15.4503 11.2508 15.2543 10.538C15.0584 9.82521 14.6339 9.19645 14.046 8.74833C13.4581 8.3002 12.7393 8.0575 12 8.0575C11.2608 8.0575 10.542 8.3002 9.95409 8.74833C9.36618 9.19645 8.94165 9.82521 8.74573 10.538C8.5498 11.2508 8.59333 12.0082 8.86961 12.6939C9.14589 13.3795 9.63965 13.9555 10.275 14.3334C8.94945 14.7639 7.82944 15.6686 7.12972 16.874C7.10037 16.9166 7.08015 16.9647 7.07032 17.0155C7.06048 17.0663 7.06126 17.1185 7.07259 17.169C7.08393 17.2194 7.10557 17.267 7.13617 17.3087C7.16677 17.3504 7.20566 17.3853 7.2504 17.4112C7.29514 17.4372 7.34476 17.4536 7.39614 17.4594C7.44752 17.4652 7.49956 17.4604 7.54898 17.4452C7.59839 17.4299 7.64412 17.4046 7.68329 17.3709C7.72247 17.3371 7.75423 17.2956 7.7766 17.249C8.20521 16.5083 8.82106 15.8934 9.56235 15.466C10.3036 15.0385 11.1443 14.8135 12 14.8135C12.8558 14.8135 13.6964 15.0385 14.4377 15.466C15.179 15.8934 15.7949 16.5083 16.2235 17.249C16.2458 17.2956 16.2776 17.3371 16.3168 17.3709C16.3559 17.4046 16.4017 17.4299 16.4511 17.4452C16.5005 17.4604 16.5525 17.4652 16.6039 17.4594C16.6553 17.4536 16.7049 17.4372 16.7497 17.4112C16.7944 17.3853 16.8333 17.3504 16.8639 17.3087C16.8945 17.267 16.9161 17.2194 16.9275 17.169C16.9388 17.1185 16.9396 17.0663 16.9298 17.0155C16.9199 16.9647 16.8997 16.9166 16.8703 16.874ZM9.37503 11.4365C9.37503 10.9173 9.52899 10.4098 9.81743 9.97811C10.1059 9.54643 10.5158 9.20998 10.9955 9.0113C11.4751 8.81262 12.0029 8.76063 12.5121 8.86192C13.0213 8.96321 13.4891 9.21321 13.8562 9.58033C14.2233 9.94744 14.4733 10.4152 14.5746 10.9244C14.6759 11.4336 14.6239 11.9614 14.4252 12.441C14.2265 12.9207 13.8901 13.3307 13.4584 13.6191C13.0267 13.9075 12.5192 14.0615 12 14.0615C11.3038 14.0615 10.6362 13.7849 10.1439 13.2926C9.6516 12.8004 9.37503 12.1327 9.37503 11.4365Z" fill="#383637"/>
-                                                                        </svg>        
-                                                                    <p class="body-tiny reg black70 m-0 ms-2">User Name</p>
-                                                                </div>
-                                                            </td>
-                                                            <td class="list-info-item body-normal black80 m-0 narrowWidth"> 
-                                                                <p class="body-tiny reg black70 m-0">File Size</p>
-                                                            </td>
-                                                            <td class="list-info-item body-normal black80 m-0 narrowWidth"> 
-                                                                <div class="dropdown more-option-toggle">
-                                                                    <button class="border-0 p-0 bg-transparent" type="button" id="more-option1" data-bs-toggle="dropdown" aria-expanded="false">
-                                                                        <svg width="17" height="5" viewBox="0 0 17 5" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                            <path d="M0.972656 2.40735C0.972656 1.85735 1.16832 1.38668 1.55966 0.995348C1.95166 0.603348 2.42266 0.407348 2.97266 0.407348C3.52266 0.407348 3.99366 0.603348 4.38566 0.995348C4.77699 1.38668 4.97266 1.85735 4.97266 2.40735C4.97266 2.95735 4.77699 3.42835 4.38566 3.82035C3.99366 4.21168 3.52266 4.40735 2.97266 4.40735C2.42266 4.40735 1.95166 4.21168 1.55966 3.82035C1.16832 3.42835 0.972656 2.95735 0.972656 2.40735ZM6.97266 2.40735C6.97266 1.85735 7.16866 1.38668 7.56066 0.995349C7.95199 0.603349 8.42266 0.407348 8.97266 0.407348C9.52266 0.407348 9.99366 0.603349 10.3857 0.995349C10.777 1.38668 10.9727 1.85735 10.9727 2.40735C10.9727 2.95735 10.777 3.42835 10.3857 3.82035C9.99366 4.21168 9.52266 4.40735 8.97266 4.40735C8.42266 4.40735 7.95199 4.21168 7.56066 3.82035C7.16866 3.42835 6.97266 2.95735 6.97266 2.40735ZM12.9727 2.40735C12.9727 1.85735 13.1687 1.38668 13.5607 0.995349C13.952 0.603349 14.4227 0.407349 14.9727 0.407349C15.5227 0.407349 15.9933 0.603349 16.3847 0.995349C16.7767 1.38668 16.9727 1.85735 16.9727 2.40735C16.9727 2.95735 16.7767 3.42835 16.3847 3.82035C15.9933 4.21168 15.5227 4.40735 14.9727 4.40735C14.4227 4.40735 13.952 4.21168 13.5607 3.82035C13.1687 3.42835 12.9727 2.95735 12.9727 2.40735Z" fill="#646364" />
-                                                                        </svg>
-                                                                    </button>
-                                                                    <ul class="dropdown-menu text-center p-2" aria-labelledby="more-option1" style="min-width: inherit;">
-                                                                        <li>
-                                                                            <button type="button" class="dropdown-item border-0 body-normal reg black80 p-2" data-bs-toggle="modal" data-bs-target="#projectAddNote">
-                                                                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                                    <path d="M5.513 8.95281C5.6645 8.64981 5.75 8.30781 5.75 7.94631C5.75 7.58481 5.6645 7.24281 5.513 6.93981M5.513 8.95281C5.28628 9.40611 4.91315 9.76958 4.45407 9.98434C3.99499 10.1991 3.47685 10.2526 2.98358 10.1361C2.49032 10.0196 2.05083 9.74 1.73631 9.34257C1.42179 8.94513 1.25067 8.45314 1.25067 7.94631C1.25067 7.43948 1.42179 6.9475 1.73631 6.55006C2.05083 6.15262 2.49032 5.87302 2.98358 5.75654C3.47685 5.64006 3.99499 5.69353 4.45407 5.90829C4.91315 6.12305 5.28628 6.48652 5.513 6.93981M5.513 8.95281L10.487 11.4398M5.513 6.93981L10.487 4.45281M10.487 11.4398C10.2201 11.9737 10.1761 12.5918 10.3649 13.158C10.5536 13.7243 10.9596 14.1924 11.4935 14.4593C12.0274 14.7263 12.6454 14.7702 13.2117 14.5814C13.778 14.3927 14.2461 13.9867 14.513 13.4528C14.7799 12.9189 14.8239 12.3009 14.6351 11.7346C14.4464 11.1683 14.0404 10.7003 13.5065 10.4333C13.2421 10.3011 12.9544 10.2223 12.6595 10.2014C12.3647 10.1804 12.0687 10.2177 11.7883 10.3112C11.222 10.5 10.7539 10.9059 10.487 11.4398ZM10.487 4.45281C10.6192 4.71712 10.8021 4.9528 11.0254 5.1464C11.2486 5.34 11.5078 5.48773 11.7882 5.58116C12.0685 5.67459 12.3645 5.71188 12.6593 5.69091C12.9541 5.66994 13.2418 5.59111 13.5061 5.45894C13.7704 5.32676 14.0061 5.14382 14.1997 4.92057C14.3933 4.69731 14.541 4.4381 14.6345 4.15775C14.7279 3.8774 14.7652 3.58139 14.7442 3.28663C14.7232 2.99186 14.6444 2.70412 14.5122 2.43981C14.2453 1.90603 13.7773 1.50016 13.2111 1.31147C12.6449 1.12279 12.0269 1.16675 11.4931 1.43369C10.9593 1.70063 10.5535 2.16868 10.3648 2.73488C10.1761 3.30107 10.2201 3.91903 10.487 4.45281Z" stroke="#383637" stroke-linecap="round" stroke-linejoin="round"/>
-                                                                                    </svg>
-                                                                                    
-                                                                            </button>
-                                                                        </li>
-                                                                        <li>
-                                                                            <button type="button" class="dropdown-item border-0 body-normal reg black80 p-2" data-bs-toggle="modal" data-bs-target="#delete">
-                                                                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                                    <path d="M1 10.0625V10.8125C1 11.4092 1.23705 11.9815 1.65901 12.4035C2.08097 12.8254 2.65326 13.0625 3.25 13.0625H10.75C11.3467 13.0625 11.919 12.8254 12.341 12.4035C12.7629 11.9815 13 11.4092 13 10.8125V10.0625M10 7.0625L7 10.0625M7 10.0625L4 7.0625M7 10.0625V1.0625" stroke="#4E4D4D" stroke-linecap="round" stroke-linejoin="round"/>
-                                                                                    </svg>
-                                                                                    
-                                                                            </button>
-                                                                        </li>
-                                                                        <li>
-                                                                            <button type="button" class="dropdown-item border-0 body-normal reg black80 p-2" data-bs-toggle="modal" data-bs-target="#delete">
-                                                                                <svg width="16" height="19" viewBox="0 0 16 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                                    <path d="M6.125 8.67859V14.3036M9.875 8.67859V14.3036M0.5 4.92859H15.5M14.5625 4.92859L13.7497 16.3117C13.716 16.7848 13.5043 17.2275 13.1573 17.5507C12.8102 17.8739 12.3536 18.0536 11.8794 18.0536H4.12062C3.64638 18.0536 3.18975 17.8739 2.8427 17.5507C2.49566 17.2275 2.28398 16.7848 2.25031 16.3117L1.4375 4.92859H14.5625ZM10.8125 4.92859V2.11609C10.8125 1.86745 10.7137 1.62899 10.5379 1.45318C10.3621 1.27736 10.1236 1.17859 9.875 1.17859H6.125C5.87636 1.17859 5.6379 1.27736 5.46209 1.45318C5.28627 1.62899 5.1875 1.86745 5.1875 2.11609V4.92859H10.8125Z" stroke="#C73C10" stroke-linecap="round" stroke-linejoin="round"/>
-                                                                                    </svg>
-                                                                                    
-                                                                            </button>
-                                                                        </li>
-                                                                    </ul>
-                                                                </div>
-                                                            </td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table>
-                                
-                                
-                                                <!-- Pagination -->
-                                
-                                                <div class="list-view-info pagination d-flex align-items-center justify-content-end">
-                                                    <div class="previous">
-                                                        <img src="../assets/images/pagination-prev.svg" alt="">
-                                                    </div>
-                                                    <p class="page-number body-normal black80 mb-0 mx-3">
-                                                        1 to 8 of 20
-                                                    </p>
-                                                    <div class="next">
-                                                        <img src="../assets/images/pagination-next.svg" alt="">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
                                 </div>
                             </div>
                             <div class="tab-pane fade" id="pills-Notes" role="tabpanel" aria-labelledby="pills-Notes-tab" tabindex="0">
@@ -1985,20 +1689,6 @@
                     cancel: ".sortable li:first-child"
                 }).disableSelection();
             });
-
-            $("#addFiles").on("click", function(){
-                $("#filesNull, #filesUploaded").hide();
-                $("#uploadFiles").show();
-            });
-
-            $(document).ready(function() {
-                $("#filesUploadBTN").on("click", function(event) {
-                    event.preventDefault();
-                    $("#filesUploadInput").click();
-                });
-            });
-
-            
         </script>
     </body>
 </html>
