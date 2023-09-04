@@ -263,7 +263,7 @@
                             </div>
                         </div>
                         <div class="tab-content" id="pills-tabContent">
-                            <div class="tab-pane fade show active" id="pills-Timeline" role="tabpanel" aria-labelledby="pills-Timeline-tab" tabindex="0">
+                            <div class="tab-pane fade" id="pills-Timeline" role="tabpanel" aria-labelledby="pills-Timeline-tab" tabindex="0">
                                 <div class="row">
                                     <div class="col-md-7">
                                         <div class="details px-2 py-3 border rounded">
@@ -513,7 +513,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="tab-pane fade" id="pills-Tasks" role="tabpanel" aria-labelledby="pills-Tasks-tab" tabindex="0">
+                            <div class="tab-pane fade show active" id="pills-Tasks" role="tabpanel" aria-labelledby="pills-Tasks-tab" tabindex="0">
                                 <div class="details px-2 py-3 border rounded">
                                     <div class="border-bottom d-flex align-items-center justify-content-between pb-3">
                                         <p class="body-normal med black20 mb-0">Discussion</p>
@@ -584,9 +584,43 @@
                                         <div class="row position-relative pe-5">
                                             <div class="col-md-3">
                                                 <ul id="plannedColumn" class="sortable list-unstyled py-3 m-0">
-                                                    <li>
-                                                        <div>
-                                                            <p class="body-small med black20 mb-2">Planned</p>
+                                                    <li class="pb-3">
+                                                        <div class="position-relative">
+                                                            <div class="taskColumn d-flex align-items-center justify-content-between mb-2">
+                                                                <p class="body-small med black20 m-0">Planned</p>
+                                                                <div class="taskMoreOptions dropdown dropstart more-option-toggle text-end">
+                                                                    <button class="border-0 p-0 bg-transparent" type="button" id="more-option1" data-bs-toggle="dropdown" aria-expanded="false">
+                                                                        <svg width="4" height="16" viewBox="0 0 4 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                            <path d="M2 16C1.45 16 0.979334 15.8043 0.588 15.413C0.196 15.021 0 14.55 0 14C0 13.45 0.196 12.979 0.588 12.587C0.979334 12.1957 1.45 12 2 12C2.55 12 3.021 12.1957 3.413 12.587C3.80433 12.979 4 13.45 4 14C4 14.55 3.80433 15.021 3.413 15.413C3.021 15.8043 2.55 16 2 16ZM2 10C1.45 10 0.979334 9.804 0.588 9.412C0.196 9.02067 0 8.55 0 8C0 7.45 0.196 6.979 0.588 6.587C0.979334 6.19567 1.45 6 2 6C2.55 6 3.021 6.19567 3.413 6.587C3.80433 6.979 4 7.45 4 8C4 8.55 3.80433 9.02067 3.413 9.412C3.021 9.804 2.55 10 2 10ZM2 4C1.45 4 0.979334 3.804 0.588 3.412C0.196 3.02067 0 2.55 0 2C0 1.45 0.196 0.979333 0.588 0.588C0.979334 0.196 1.45 0 2 0C2.55 0 3.021 0.196 3.413 0.588C3.80433 0.979333 4 1.45 4 2C4 2.55 3.80433 3.02067 3.413 3.412C3.021 3.804 2.55 4 2 4Z" fill="#7A797A"></path>
+                                                                            </svg>
+                                                                    </button>
+                                                                    <ul class="dropdown-menu more-options p-0" aria-labelledby="more-option1">
+                                                                        <li>
+                                                                            <button type="button" class="copyTaskBtn dropdown-item body-normal reg black80 p-2">
+                                                                                Copy Column
+                                                                            </button>
+                                                                        </li>
+                                                                        <li>
+                                                                            <button type="button" class="dropdown-item body-normal reg alert-red p-2" data-bs-toggle="modal" data-bs-target="#delete">
+                                                                            Delete
+                                                                            </button>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                            <div class="copyTaskInfo border rounded w-100">
+                                                                <div class="p-2">
+                                                                    <p class="body-tiny med black80 m-1">
+                                                                        Name  
+                                                                        <span class="alert-red">*</span>
+                                                                    </p>
+                                                                    <input type="text" placeholder="Task Title" class="body-tiny reg black60 rounded border p-2 w-100">
+                                                                </div>
+                                                                <div class="filterBTN bg-light p-2 m-0 d-flex justify-content-between">
+                                                                    <button id="cancel" class="body-normal med primary border-0 bg-transparent p-0 filterCancel">Cancel</button>
+                                                                    <button class="body-normal med grey0 border-0 rounded p-2">Save</button>
+                                                                </div>
+                                                            </div>
                                                             <div class="dropdown">
                                                                 <button id="dropdownMenuClickableInside" class="w-100 border-0 bg-transparent p-0" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
                                                                     <div class="w-100 p-4 d-flex align-items-center justify-content-center rounded" style="background-color:#EFFAFF;">
@@ -639,9 +673,43 @@
                                             </div>
                                             <div class="col-md-3">
                                                 <ul id="todoColumn" class="sortable list-unstyled py-3 m-0">
-                                                    <li>
-                                                        <div>
-                                                            <p class="body-small med black20 mb-2">To Do</p>
+                                                    <li class="pb-3">
+                                                        <div class="position-relative">
+                                                            <div class="taskColumn d-flex align-items-center justify-content-between mb-2">
+                                                                <p class="body-small med black20 m-0">To Di</p>
+                                                                <div class="taskMoreOptions dropdown dropstart more-option-toggle text-end">
+                                                                    <button class="border-0 p-0 bg-transparent" type="button" id="more-option1" data-bs-toggle="dropdown" aria-expanded="false">
+                                                                        <svg width="4" height="16" viewBox="0 0 4 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                            <path d="M2 16C1.45 16 0.979334 15.8043 0.588 15.413C0.196 15.021 0 14.55 0 14C0 13.45 0.196 12.979 0.588 12.587C0.979334 12.1957 1.45 12 2 12C2.55 12 3.021 12.1957 3.413 12.587C3.80433 12.979 4 13.45 4 14C4 14.55 3.80433 15.021 3.413 15.413C3.021 15.8043 2.55 16 2 16ZM2 10C1.45 10 0.979334 9.804 0.588 9.412C0.196 9.02067 0 8.55 0 8C0 7.45 0.196 6.979 0.588 6.587C0.979334 6.19567 1.45 6 2 6C2.55 6 3.021 6.19567 3.413 6.587C3.80433 6.979 4 7.45 4 8C4 8.55 3.80433 9.02067 3.413 9.412C3.021 9.804 2.55 10 2 10ZM2 4C1.45 4 0.979334 3.804 0.588 3.412C0.196 3.02067 0 2.55 0 2C0 1.45 0.196 0.979333 0.588 0.588C0.979334 0.196 1.45 0 2 0C2.55 0 3.021 0.196 3.413 0.588C3.80433 0.979333 4 1.45 4 2C4 2.55 3.80433 3.02067 3.413 3.412C3.021 3.804 2.55 4 2 4Z" fill="#7A797A"></path>
+                                                                            </svg>
+                                                                    </button>
+                                                                    <ul class="dropdown-menu more-options p-0" aria-labelledby="more-option1">
+                                                                        <li>
+                                                                            <button type="button" class="copyTaskBtn dropdown-item body-normal reg black80 p-2">
+                                                                                Copy Column
+                                                                            </button>
+                                                                        </li>
+                                                                        <li>
+                                                                            <button type="button" class="dropdown-item body-normal reg alert-red p-2" data-bs-toggle="modal" data-bs-target="#delete">
+                                                                            Delete
+                                                                            </button>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                            <div class="copyTaskInfo border rounded w-100">
+                                                                <div class="p-2">
+                                                                    <p class="body-tiny med black80 m-1">
+                                                                        Name  
+                                                                        <span class="alert-red">*</span>
+                                                                    </p>
+                                                                    <input type="text" placeholder="Task Title" class="body-tiny reg black60 rounded border p-2 w-100">
+                                                                </div>
+                                                                <div class="filterBTN bg-light p-2 m-0 d-flex justify-content-between">
+                                                                    <button id="cancel" class="body-normal med primary border-0 bg-transparent p-0 filterCancel">Cancel</button>
+                                                                    <button class="body-normal med grey0 border-0 rounded p-2">Save</button>
+                                                                </div>
+                                                            </div>
                                                             <div class="dropdown">
                                                                 <button id="dropdownMenuClickableInside" class="w-100 border-0 bg-transparent p-0" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
                                                                     <div class="w-100 p-4 d-flex align-items-center justify-content-center rounded" style="background-color:#FFDFDF;">
@@ -694,9 +762,43 @@
                                             </div>
                                             <div class="col-md-3">
                                                 <ul id="inProgressColumn" class="sortable list-unstyled py-3 m-0">
-                                                    <li>
-                                                        <div>
-                                                            <p class="body-small med black20 mb-2">In Progress</p>
+                                                    <li class="pb-3">
+                                                        <div class="position-relative">
+                                                            <div class="taskColumn d-flex align-items-center justify-content-between mb-2">
+                                                                <p class="body-small med black20 m-0">In Progress</p>
+                                                                <div class="taskMoreOptions dropdown dropstart more-option-toggle text-end">
+                                                                    <button class="border-0 p-0 bg-transparent" type="button" id="more-option1" data-bs-toggle="dropdown" aria-expanded="false">
+                                                                        <svg width="4" height="16" viewBox="0 0 4 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                            <path d="M2 16C1.45 16 0.979334 15.8043 0.588 15.413C0.196 15.021 0 14.55 0 14C0 13.45 0.196 12.979 0.588 12.587C0.979334 12.1957 1.45 12 2 12C2.55 12 3.021 12.1957 3.413 12.587C3.80433 12.979 4 13.45 4 14C4 14.55 3.80433 15.021 3.413 15.413C3.021 15.8043 2.55 16 2 16ZM2 10C1.45 10 0.979334 9.804 0.588 9.412C0.196 9.02067 0 8.55 0 8C0 7.45 0.196 6.979 0.588 6.587C0.979334 6.19567 1.45 6 2 6C2.55 6 3.021 6.19567 3.413 6.587C3.80433 6.979 4 7.45 4 8C4 8.55 3.80433 9.02067 3.413 9.412C3.021 9.804 2.55 10 2 10ZM2 4C1.45 4 0.979334 3.804 0.588 3.412C0.196 3.02067 0 2.55 0 2C0 1.45 0.196 0.979333 0.588 0.588C0.979334 0.196 1.45 0 2 0C2.55 0 3.021 0.196 3.413 0.588C3.80433 0.979333 4 1.45 4 2C4 2.55 3.80433 3.02067 3.413 3.412C3.021 3.804 2.55 4 2 4Z" fill="#7A797A"></path>
+                                                                            </svg>
+                                                                    </button>
+                                                                    <ul class="dropdown-menu more-options p-0" aria-labelledby="more-option1">
+                                                                        <li>
+                                                                            <button type="button" class="copyTaskBtn dropdown-item body-normal reg black80 p-2">
+                                                                                Copy Column
+                                                                            </button>
+                                                                        </li>
+                                                                        <li>
+                                                                            <button type="button" class="dropdown-item body-normal reg alert-red p-2" data-bs-toggle="modal" data-bs-target="#delete">
+                                                                            Delete
+                                                                            </button>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                            <div class="copyTaskInfo border rounded w-100">
+                                                                <div class="p-2">
+                                                                    <p class="body-tiny med black80 m-1">
+                                                                        Name  
+                                                                        <span class="alert-red">*</span>
+                                                                    </p>
+                                                                    <input type="text" placeholder="Task Title" class="body-tiny reg black60 rounded border p-2 w-100">
+                                                                </div>
+                                                                <div class="filterBTN bg-light p-2 m-0 d-flex justify-content-between">
+                                                                    <button id="cancel" class="body-normal med primary border-0 bg-transparent p-0 filterCancel">Cancel</button>
+                                                                    <button class="body-normal med grey0 border-0 rounded p-2">Save</button>
+                                                                </div>
+                                                            </div>
                                                             <div class="dropdown">
                                                                 <button id="dropdownMenuClickableInside" class="w-100 border-0 bg-transparent p-0" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
                                                                     <div class="w-100 p-4 d-flex align-items-center justify-content-center rounded" style="background-color:#FDF2E6;">
@@ -749,9 +851,43 @@
                                             </div>
                                             <div class="col-md-3">
                                                 <ul id="completedColumn" class="sortable list-unstyled py-3 m-0">
-                                                    <li>
-                                                        <div>
-                                                            <p class="body-small med black20 mb-2">Completed</p>
+                                                    <li class="pb-3">
+                                                        <div class="position-relative">
+                                                            <div class="taskColumn d-flex align-items-center justify-content-between mb-2">
+                                                                <p class="body-small med black20 m-0">Completed</p>
+                                                                <div class="taskMoreOptions dropdown dropstart more-option-toggle text-end">
+                                                                    <button class="border-0 bg-transparent" type="button" id="more-option1" data-bs-toggle="dropdown" aria-expanded="false">
+                                                                        <svg width="4" height="16" viewBox="0 0 4 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                            <path d="M2 16C1.45 16 0.979334 15.8043 0.588 15.413C0.196 15.021 0 14.55 0 14C0 13.45 0.196 12.979 0.588 12.587C0.979334 12.1957 1.45 12 2 12C2.55 12 3.021 12.1957 3.413 12.587C3.80433 12.979 4 13.45 4 14C4 14.55 3.80433 15.021 3.413 15.413C3.021 15.8043 2.55 16 2 16ZM2 10C1.45 10 0.979334 9.804 0.588 9.412C0.196 9.02067 0 8.55 0 8C0 7.45 0.196 6.979 0.588 6.587C0.979334 6.19567 1.45 6 2 6C2.55 6 3.021 6.19567 3.413 6.587C3.80433 6.979 4 7.45 4 8C4 8.55 3.80433 9.02067 3.413 9.412C3.021 9.804 2.55 10 2 10ZM2 4C1.45 4 0.979334 3.804 0.588 3.412C0.196 3.02067 0 2.55 0 2C0 1.45 0.196 0.979333 0.588 0.588C0.979334 0.196 1.45 0 2 0C2.55 0 3.021 0.196 3.413 0.588C3.80433 0.979333 4 1.45 4 2C4 2.55 3.80433 3.02067 3.413 3.412C3.021 3.804 2.55 4 2 4Z" fill="#7A797A"></path>
+                                                                            </svg>
+                                                                    </button>
+                                                                    <ul class="dropdown-menu more-options p-0" aria-labelledby="more-option1">
+                                                                        <li>
+                                                                            <button type="button" class="copyTaskBtn dropdown-item body-normal reg black80 p-2">
+                                                                                Copy Column
+                                                                            </button>
+                                                                        </li>
+                                                                        <li>
+                                                                            <button type="button" class="dropdown-item body-normal reg alert-red p-2" data-bs-toggle="modal" data-bs-target="#delete">
+                                                                            Delete
+                                                                            </button>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                            <div class="copyTaskInfo border rounded w-100">
+                                                                <div class="p-2">
+                                                                    <p class="body-tiny med black80 m-1">
+                                                                        Name  
+                                                                        <span class="alert-red">*</span>
+                                                                    </p>
+                                                                    <input type="text" placeholder="Task Title" class="body-tiny reg black60 rounded border p-2 w-100">
+                                                                </div>
+                                                                <div class="filterBTN bg-light p-2 m-0 d-flex justify-content-between">
+                                                                    <button id="cancel" class="body-normal med primary border-0 bg-transparent p-0 filterCancel">Cancel</button>
+                                                                    <button class="body-normal med grey0 border-0 rounded p-2">Save</button>
+                                                                </div>
+                                                            </div>
                                                             <div class="dropdown">
                                                                 <button id="dropdownMenuClickableInside" class="w-100 border-0 bg-transparent p-0" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
                                                                     <div class="w-100 p-4 d-flex align-items-center justify-content-center rounded" style="background-color:#DCFCE7;">
@@ -1962,7 +2098,10 @@
             });
         </script>
         <script>
-            $(function() {
+            
+
+            $(document).ready(function() {
+                $(function() {
                 var organization = ["Opt 1", "Opt 2", "Opt 3", "Opt 4", "Opt 5", ];
                 var contP = ["Opt 11", "Opt 22", "Opt 33", "Opt 44", "Opt 55", ];
                 var dInput = ["Opt 111", "Opt 222", "Opt 333", "Opt 444", "Opt 555", ];
@@ -1991,12 +2130,28 @@
                 $("#uploadFiles").show();
             });
 
-            $(document).ready(function() {
-                $("#filesUploadBTN").on("click", function(event) {
+            $("#filesUploadBTN").on("click", function(event) {
                     event.preventDefault();
                     $("#filesUploadInput").click();
                 });
+
+                // Attach the click event handler to all elements with class "copyTaskBtn"
+                $(".copyTaskBtn").on("click", function() {
+                    // Find the corresponding "copyTaskInfo" element using the index
+                    var index = $(".copyTaskBtn").index(this);
+                    var $copyTaskInfo = $(".copyTaskInfo").eq(index);
+                    
+                    // Show the corresponding "copyTaskInfo" element
+                    $copyTaskInfo.show();
+                });
+
+                // Attach the click event handler to all elements with id "cancel"
+                $("#cancel").on("click", function() {
+                    // Hide all elements with class "copyTaskInfo"
+                    $(".copyTaskInfo").hide();
+                });
             });
+
 
             
         </script>

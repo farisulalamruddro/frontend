@@ -987,6 +987,24 @@ grid-gap: 26px;
     background: #EFFAFF;
 }
 
+.taskColumn{
+    height: 24px;
+}
+
+.taskMoreOptions{
+    display: none;
+}
+
+.taskColumn:hover .taskMoreOptions{
+    display: block;
+}
+
+.copyTaskInfo{
+    position: absolute;
+    z-index: 1;
+    background-color: #fff;
+    display: none;
+}
 
 @media (max-width: 800px) {
     .crmNavList a:hover, .crmNavList a.active {
