@@ -586,3 +586,30 @@ addTaskBtn.addEventListener("click", function(){
 };
 
 addTaskList();
+
+
+
+function copyTaskFunc(){
+    let taskColumns =  document.querySelectorAll(".taskColumn");
+
+    taskColumns.forEach((taskColumn, index)=>{
+        let copyTaskBtn = taskColumn.querySelectorAll(".copyTaskBtn");
+        let copyTaskInfo = taskColumn.querySelectorAll(".copyTaskInfo");
+        let cancelBtn = taskColumn.querySelectorAll(".cancel");
+
+        copyTaskBtn.forEach((btn)=>{
+            btn.addEventListener("click", ()=>{
+                copyTaskInfo.forEach((copyTaskCont)=>{copyTaskCont.style.display = "block"});
+            });
+        });
+
+        cancelBtn.forEach((cancel)=>{
+            cancel.addEventListener("click", ()=>{
+                copyTaskInfo.forEach((copyTaskCont)=>{copyTaskCont.style.display = "none"});
+            });
+        });
+
+    });
+};
+
+copyTaskFunc();
