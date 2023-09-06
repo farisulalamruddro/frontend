@@ -594,18 +594,32 @@ function copyTaskFunc(){
 
     taskColumns.forEach((taskColumn, index)=>{
         let copyTaskBtn = taskColumn.querySelectorAll(".copyTaskBtn");
+        let moveTaskBtn = taskColumn.querySelectorAll(".moveTaskBtn");
         let copyTaskInfo = taskColumn.querySelectorAll(".copyTaskInfo");
+        let moveTaskInfo = taskColumn.querySelectorAll(".moveTaskInfo");
         let cancelBtn = taskColumn.querySelectorAll(".cancel");
+        let mCancelBtn = taskColumn.querySelectorAll(".mcancel");
 
         copyTaskBtn.forEach((btn)=>{
             btn.addEventListener("click", ()=>{
                 copyTaskInfo.forEach((copyTaskCont)=>{copyTaskCont.style.display = "block"});
             });
         });
+        
+        moveTaskBtn.forEach((mbtn)=>{
+            mbtn.addEventListener("click", ()=>{
+                moveTaskInfo.forEach((moveTaskCont)=>{moveTaskCont.style.display = "block"});
+            });
+        });
 
         cancelBtn.forEach((cancel)=>{
             cancel.addEventListener("click", ()=>{
                 copyTaskInfo.forEach((copyTaskCont)=>{copyTaskCont.style.display = "none"});
+            });
+        });
+        mCancelBtn.forEach((mcancel)=>{
+            mcancel.addEventListener("click", ()=>{
+                moveTaskInfo.forEach((moveTaskCont)=>{moveTaskCont.style.display = "none"});
             });
         });
 

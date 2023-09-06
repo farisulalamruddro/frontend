@@ -263,7 +263,7 @@
                             </div>
                         </div>
                         <div class="tab-content" id="pills-tabContent">
-                            <div class="tab-pane fade" id="pills-Timeline" role="tabpanel" aria-labelledby="pills-Timeline-tab" tabindex="0">
+                            <div class="tab-pane fade show active" id="pills-Timeline" role="tabpanel" aria-labelledby="pills-Timeline-tab" tabindex="0">
                                 <div class="row">
                                     <div class="col-md-7">
                                         <div class="details px-2 py-3 border rounded">
@@ -513,7 +513,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="tab-pane fade show active" id="pills-Tasks" role="tabpanel" aria-labelledby="pills-Tasks-tab" tabindex="0">
+                            <div class="tab-pane fade" id="pills-Tasks" role="tabpanel" aria-labelledby="pills-Tasks-tab" tabindex="0">
                                 <div class="details px-2 py-3 border rounded">
                                     <div class="border-bottom d-flex align-items-center justify-content-between pb-3">
                                         <p class="body-normal med black20 mb-0">Discussion</p>
@@ -601,6 +601,11 @@
                                                                             </button>
                                                                         </li>
                                                                         <li>
+                                                                            <button type="button" class="moveTaskBtn dropdown-item body-normal reg black80 p-2">
+                                                                                Move Task
+                                                                            </button>
+                                                                        </li>
+                                                                        <li>
                                                                             <button type="button" class="dropdown-item body-normal reg alert-red p-2" data-bs-toggle="modal" data-bs-target="#delete">
                                                                             Delete
                                                                             </button>
@@ -620,6 +625,24 @@
                                                                         <button class="body-normal med grey0 border-0 rounded p-2">Save</button>
                                                                     </div>
                                                                 </div>
+                                                                <div class="moveTaskInfo border rounded w-100">
+                                                                    <div class="p-2">
+                                                                        <p class="body-tiny med black80 mb-1">
+                                                                            Select Destination Column  
+                                                                            <span class="alert-red">*</span>
+                                                                        </p>
+                                                                        <select name="" id="" class="body-tiny reg black60 rounded border p-2 w-100">
+                                                                            <option value="" selected disabled>--Select Column--</option>
+                                                                            <option value="">To Do</option>
+                                                                            <option value="">In Progress</option>
+                                                                            <option value="">Completed</option>
+                                                                        </select>
+                                                                    </div>
+                                                                    <div class="filterBTN bg-light p-2 m-0 d-flex justify-content-between">
+                                                                        <button class="mcancel body-normal med primary border-0 bg-transparent p-0 filterCancel">Cancel</button>
+                                                                        <button class="body-normal med grey0 border-0 rounded p-2">Save</button>
+                                                                    </div>
+                                                                </div>
                                                             </div>
                                                             <div class="dropdown">
                                                                 <button id="dropdownMenuClickableInside" class="w-100 border-0 bg-transparent p-0" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
@@ -630,7 +653,7 @@
                                                                         </svg>
                                                                     </div>
                                                                 </button>
-                                                                <div id="dealSearchSelect" class="dropdown-menu more-options p-0 dropdown-menu-right" aria-labelledby="dropdownMenuClickableInside">
+                                                                <div id="dealSearchSelect" class="w-100 dropdown-menu more-options p-0 dropdown-menu-right" aria-labelledby="dropdownMenuClickableInside">
                                                                     <div class="p-2">
                                                                         <input type="text" placeholder="Task Title" class="body-tiny reg black60 rounded border p-2 w-100">
                                                                         <div class="dropdown">
@@ -654,6 +677,11 @@
                                                                                 </div>
                                                                             </div>
                                                                         </div>
+                                                                        <div class="p-1 border rounded d-flex align-items-center" style="width: fit-content;">
+                                                                            <p class="body-tiny med black80 m-0">Unassigned</p>
+                                                                            <p class="body-tiny med black80 m-0 mx-2">&#149;</p>
+                                                                            <p class="body-tiny med black80 m-0">No due date</p>
+                                                                        </div>
                                                                     </div>
                                                                     <div class="filterBTN bg-light p-2 m-0 d-flex justify-content-between">
                                                                         <button class="body-normal med primary border-0 bg-transparent p-0 filterCancel">Cancel</button>
@@ -664,9 +692,14 @@
                                                         </div>
                                                     </li>
                                                     <li>
-                                                        <div class="d-flex align-items-center p-3 border my-3">
-                                                            <div class="ownerAvatar">SM</div>
-                                                            <p class="ms-2 body-small med black20 m-0">Task Title</p>
+                                                        <div class="taskContainer position-relative my-4">
+                                                            <div class="d-flex align-items-center p-3 border bg-white">
+                                                                <div class="ownerAvatar">SM</div>
+                                                                <p class="ms-2 body-small med black20 m-0">Task Title</p>
+                                                            </div>
+                                                            <div class="p-1 border border-top-0 text-end taskCompleteCont position-absolute w-100">
+                                                                <button class="body-tiny med black60 bg-transparent p-0 border-0">Mark As Complete</button>
+                                                            </div>
                                                         </div>
                                                     </li>
                                                 </ul>
@@ -690,6 +723,11 @@
                                                                             </button>
                                                                         </li>
                                                                         <li>
+                                                                            <button type="button" class="moveTaskBtn dropdown-item body-normal reg black80 p-2">
+                                                                                Move Task
+                                                                            </button>
+                                                                        </li>
+                                                                        <li>
                                                                             <button type="button" class="dropdown-item body-normal reg alert-red p-2" data-bs-toggle="modal" data-bs-target="#delete">
                                                                             Delete
                                                                             </button>
@@ -710,6 +748,24 @@
                                                                         <button class="body-normal med grey0 border-0 rounded p-2">Save</button>
                                                                     </div>
                                                                 </div>
+                                                                <div class="moveTaskInfo border rounded w-100">
+                                                                    <div class="p-2">
+                                                                        <p class="body-tiny med black80 mb-1">
+                                                                            Select Destination Column  
+                                                                            <span class="alert-red">*</span>
+                                                                        </p>
+                                                                        <select name="" id="" class="body-tiny reg black60 rounded border p-2 w-100">
+                                                                            <option value="" selected disabled>--Select Column--</option>
+                                                                            <option value="">To Do</option>
+                                                                            <option value="">In Progress</option>
+                                                                            <option value="">Completed</option>
+                                                                        </select>
+                                                                    </div>
+                                                                    <div class="filterBTN bg-light p-2 m-0 d-flex justify-content-between">
+                                                                        <button class="mcancel body-normal med primary border-0 bg-transparent p-0 filterCancel">Cancel</button>
+                                                                        <button class="body-normal med grey0 border-0 rounded p-2">Save</button>
+                                                                    </div>
+                                                                </div>
                                                             </div>
                                                             <div class="dropdown">
                                                                 <button id="dropdownMenuClickableInside" class="w-100 border-0 bg-transparent p-0" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
@@ -720,7 +776,7 @@
                                                                         </svg>
                                                                     </div>
                                                                 </button>
-                                                                <div id="dealSearchSelect" class="dropdown-menu more-options p-0 dropdown-menu-right" aria-labelledby="dropdownMenuClickableInside">
+                                                                <div id="dealSearchSelect" class="w-100 dropdown-menu more-options p-0 dropdown-menu-right" aria-labelledby="dropdownMenuClickableInside">
                                                                     <div class="p-2">
                                                                         <input type="text" placeholder="Task Title" class="body-tiny reg black60 rounded border p-2 w-100">
                                                                         <div class="dropdown">
@@ -744,6 +800,11 @@
                                                                                 </div>
                                                                             </div>
                                                                         </div>
+                                                                        <div class="p-1 border rounded d-flex align-items-center" style="width: fit-content;">
+                                                                            <p class="body-tiny med black80 m-0">Unassigned</p>
+                                                                            <p class="body-tiny med black80 m-0 mx-2">&#149;</p>
+                                                                            <p class="body-tiny med black80 m-0">No due date</p>
+                                                                        </div>
                                                                     </div>
                                                                     <div class="filterBTN bg-light p-2 m-0 d-flex justify-content-between">
                                                                         <button class="body-normal med primary border-0 bg-transparent p-0 filterCancel">Cancel</button>
@@ -754,9 +815,14 @@
                                                         </div>
                                                     </li>
                                                     <li>
-                                                        <div class="d-flex align-items-center p-3 border my-3">
-                                                            <div class="ownerAvatar">SM</div>
-                                                            <p class="ms-2 body-small med black20 m-0">Task Title</p>
+                                                        <div class="taskContainer position-relative my-4">
+                                                            <div class="d-flex align-items-center p-3 border bg-white">
+                                                                <div class="ownerAvatar">SM</div>
+                                                                <p class="ms-2 body-small med black20 m-0">Task Title</p>
+                                                            </div>
+                                                            <div class="p-1 border border-top-0 text-end taskCompleteCont position-absolute w-100">
+                                                                <button class="body-tiny med black60 bg-transparent p-0 border-0">Mark As Complete</button>
+                                                            </div>
                                                         </div>
                                                     </li>
                                                 </ul>
@@ -780,6 +846,11 @@
                                                                             </button>
                                                                         </li>
                                                                         <li>
+                                                                            <button type="button" class="moveTaskBtn dropdown-item body-normal reg black80 p-2">
+                                                                                Move Task
+                                                                            </button>
+                                                                        </li>
+                                                                        <li>
                                                                             <button type="button" class="dropdown-item body-normal reg alert-red p-2" data-bs-toggle="modal" data-bs-target="#delete">
                                                                             Delete
                                                                             </button>
@@ -799,6 +870,24 @@
                                                                         <button class="body-normal med grey0 border-0 rounded p-2">Save</button>
                                                                     </div>
                                                                 </div>
+                                                                <div class="moveTaskInfo border rounded w-100">
+                                                                    <div class="p-2">
+                                                                        <p class="body-tiny med black80 mb-1">
+                                                                            Select Destination Column  
+                                                                            <span class="alert-red">*</span>
+                                                                        </p>
+                                                                        <select name="" id="" class="body-tiny reg black60 rounded border p-2 w-100">
+                                                                            <option value="" selected disabled>--Select Column--</option>
+                                                                            <option value="">To Do</option>
+                                                                            <option value="">In Progress</option>
+                                                                            <option value="">Completed</option>
+                                                                        </select>
+                                                                    </div>
+                                                                    <div class="filterBTN bg-light p-2 m-0 d-flex justify-content-between">
+                                                                        <button class="mcancel body-normal med primary border-0 bg-transparent p-0 filterCancel">Cancel</button>
+                                                                        <button class="body-normal med grey0 border-0 rounded p-2">Save</button>
+                                                                    </div>
+                                                                </div>
                                                             </div>
                                                             <div class="dropdown">
                                                                 <button id="dropdownMenuClickableInside" class="w-100 border-0 bg-transparent p-0" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
@@ -809,7 +898,7 @@
                                                                         </svg>
                                                                     </div>
                                                                 </button>
-                                                                <div id="dealSearchSelect" class="dropdown-menu more-options p-0 dropdown-menu-right" aria-labelledby="dropdownMenuClickableInside">
+                                                                <div id="dealSearchSelect" class="w-100 dropdown-menu more-options p-0 dropdown-menu-right" aria-labelledby="dropdownMenuClickableInside">
                                                                     <div class="p-2">
                                                                         <input type="text" placeholder="Task Title" class="body-tiny reg black60 rounded border p-2 w-100">
                                                                         <div class="dropdown">
@@ -833,6 +922,11 @@
                                                                                 </div>
                                                                             </div>
                                                                         </div>
+                                                                        <div class="p-1 border rounded d-flex align-items-center" style="width: fit-content;">
+                                                                            <p class="body-tiny med black80 m-0">Unassigned</p>
+                                                                            <p class="body-tiny med black80 m-0 mx-2">&#149;</p>
+                                                                            <p class="body-tiny med black80 m-0">No due date</p>
+                                                                        </div>
                                                                     </div>
                                                                     <div class="filterBTN bg-light p-2 m-0 d-flex justify-content-between">
                                                                         <button class="body-normal med primary border-0 bg-transparent p-0 filterCancel">Cancel</button>
@@ -843,9 +937,14 @@
                                                         </div>
                                                     </li>
                                                     <li>
-                                                        <div class="d-flex align-items-center p-3 border my-3">
-                                                            <div class="ownerAvatar">SM</div>
-                                                            <p class="ms-2 body-small med black20 m-0">Task Title</p>
+                                                        <div class="taskContainer position-relative my-4">
+                                                            <div class="d-flex align-items-center p-3 border bg-white">
+                                                                <div class="ownerAvatar">SM</div>
+                                                                <p class="ms-2 body-small med black20 m-0">Task Title</p>
+                                                            </div>
+                                                            <div class="p-1 border border-top-0 text-end taskCompleteCont position-absolute w-100">
+                                                                <button class="body-tiny med black60 bg-transparent p-0 border-0">Mark As Complete</button>
+                                                            </div>
                                                         </div>
                                                     </li>
                                                 </ul>
@@ -869,6 +968,11 @@
                                                                             </button>
                                                                         </li>
                                                                         <li>
+                                                                            <button type="button" class="moveTaskBtn dropdown-item body-normal reg black80 p-2">
+                                                                                Move Task
+                                                                            </button>
+                                                                        </li>
+                                                                        <li>
                                                                             <button type="button" class="dropdown-item body-normal reg alert-red p-2" data-bs-toggle="modal" data-bs-target="#delete">
                                                                             Delete
                                                                             </button>
@@ -888,6 +992,24 @@
                                                                         <button class="body-normal med grey0 border-0 rounded p-2">Save</button>
                                                                     </div>
                                                                 </div>
+                                                                <div class="moveTaskInfo border rounded w-100">
+                                                                    <div class="p-2">
+                                                                        <p class="body-tiny med black80 mb-1">
+                                                                            Select Destination Column  
+                                                                            <span class="alert-red">*</span>
+                                                                        </p>
+                                                                        <select name="" id="" class="body-tiny reg black60 rounded border p-2 w-100">
+                                                                            <option value="" selected disabled>--Select Column--</option>
+                                                                            <option value="">To Do</option>
+                                                                            <option value="">In Progress</option>
+                                                                            <option value="">Completed</option>
+                                                                        </select>
+                                                                    </div>
+                                                                    <div class="filterBTN bg-light p-2 m-0 d-flex justify-content-between">
+                                                                        <button class="mcancel body-normal med primary border-0 bg-transparent p-0 filterCancel">Cancel</button>
+                                                                        <button class="body-normal med grey0 border-0 rounded p-2">Save</button>
+                                                                    </div>
+                                                                </div>
                                                             </div>
                                                             <div class="dropdown">
                                                                 <button id="dropdownMenuClickableInside" class="w-100 border-0 bg-transparent p-0" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
@@ -898,7 +1020,7 @@
                                                                         </svg>
                                                                     </div>
                                                                 </button>
-                                                                <div id="dealSearchSelect" class="dropdown-menu more-options p-0 dropdown-menu-right" aria-labelledby="dropdownMenuClickableInside">
+                                                                <div id="dealSearchSelect" class="w-100 dropdown-menu more-options p-0 dropdown-menu-right" aria-labelledby="dropdownMenuClickableInside">
                                                                     <div class="p-2">
                                                                         <input type="text" placeholder="Task Title" class="body-tiny reg black60 rounded border p-2 w-100">
                                                                         <div class="dropdown">
@@ -922,6 +1044,11 @@
                                                                                 </div>
                                                                             </div>
                                                                         </div>
+                                                                        <div class="p-1 border rounded d-flex align-items-center" style="width: fit-content;">
+                                                                            <p class="body-tiny med black80 m-0">Unassigned</p>
+                                                                            <p class="body-tiny med black80 m-0 mx-2">&#149;</p>
+                                                                            <p class="body-tiny med black80 m-0">No due date</p>
+                                                                        </div>
                                                                     </div>
                                                                     <div class="filterBTN bg-light p-2 m-0 d-flex justify-content-between">
                                                                         <button class="body-normal med primary border-0 bg-transparent p-0 filterCancel">Cancel</button>
@@ -932,9 +1059,14 @@
                                                         </div>
                                                     </li>
                                                     <li>
-                                                        <div class="d-flex align-items-center p-3 border my-3">
-                                                            <div class="ownerAvatar">SM</div>
-                                                            <p class="ms-2 body-small med black20 m-0">Task Title</p>
+                                                        <div class="taskContainer position-relative my-4">
+                                                            <div class="d-flex align-items-center p-3 border bg-white">
+                                                                <div class="ownerAvatar">SM</div>
+                                                                <p class="ms-2 body-small med black20 m-0">Task Title</p>
+                                                            </div>
+                                                            <div class="p-1 border border-top-0 text-end taskCompleteCont position-absolute w-100">
+                                                                <button class="body-tiny med black60 bg-transparent p-0 border-0">Mark As Complete</button>
+                                                            </div>
                                                         </div>
                                                     </li>
                                                 </ul>

@@ -999,12 +999,20 @@ grid-gap: 26px;
     display: block;
 }
 
-.copyTaskInfo{
+.copyTaskInfo, .moveTaskInfo{
     position: absolute;
     z-index: 2;
     background-color: #fff;
     top: 30px;
     display: none;
+}
+
+.taskCompleteCont{
+    display: none;
+}
+
+.taskContainer:hover .taskCompleteCont{
+    display: block;
 }
 
 @media (max-width: 800px) {
