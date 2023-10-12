@@ -27,6 +27,19 @@ function ham() {
  }
 
 
+ let crmHamBurger = document.getElementById("crmHamBurger");
+let crmNavList = document.querySelector(".crmNavList");
+crmHamBurger.addEventListener("click", function(){
+    
+    crmHamBurger.classList.toggle("active");
+    
+    crmNavList.classList.toggle("active");
+
+
+});
+
+
+
 // Modal / Popup
 
   var modalBtns = document.querySelectorAll(".modal-open");
