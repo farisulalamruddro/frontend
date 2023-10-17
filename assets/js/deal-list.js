@@ -361,30 +361,6 @@ $("select:not(.bulkOption, .estimateCost)").chosen({no_results_text: "Nothing fo
 
 
 
-// const addButton = document.querySelector('#addMoreUnitPriceBTN');
-// addButton.addEventListener('click', addProductUnit);
-
-
-
-//   function addProductUnit() {
-//     const addProductUnitCurr = document.querySelector('.addProductUnitCurr');
-//     const newAddProductUnit = addProductUnitCurr.cloneNode(true);
-    
-//     // Add a "Remove" button to the duplicated div
-//     const removeButton = document.createElement('button');
-//     removeButton.type = 'button';
-//     removeButton.innerHTML = 'Remove';
-//     removeButton.classList.add("text-danger", "border-0", "bg-transparent", "p-0", "body-small", "med");
-
-//     removeButton.addEventListener('click', function() {
-//       newAddProductUnit.remove();
-//     });
-//     newAddProductUnit.appendChild(removeButton);
-    
-//     addProductUnitCurr.after(newAddProductUnit);
-//   }
-  
-
 
   const addMoreRowsBTN = document.querySelectorAll("[duplicateTrigger]");
 
