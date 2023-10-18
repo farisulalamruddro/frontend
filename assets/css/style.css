@@ -504,6 +504,17 @@ a:hover {
   width: fit-content;
 }
 
+.static-info{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.editinfo{
+  display: none;
+}
+
+
 @media (min-width: 576px) {
   #scheduleActivity .modal-dialog,
   #editActivity .modal-dialog {

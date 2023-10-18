@@ -130,11 +130,7 @@
     color: #646364;
 }
  
-.static-info{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
+
 
 .detail-tabs .nav-tabs .nav-link:focus, .detail-tabs .nav-tabs .nav-link:focus .view-toggle-icon, .detail-tabs .nav-tabs .nav-link:hover, .detail-tabs .nav-tabs .nav-item.show .nav-link, .detail-tabs .nav-tabs .nav-link.active{
     color: #FFFFFF;
@@ -159,9 +155,6 @@
 } */
 
 
-.editinfo{
-    display: none;
-}
 
 .edit-profile-info{
     position: relative;

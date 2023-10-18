@@ -42,40 +42,25 @@ if (crmHamBurger != null) {
 }
 
 
+// Filter Cancel
 
+const filterCancel = document.querySelectorAll(".filterCancel");
 
-// Modal / Popup
+if (filterCancel != null) {
+  
+  for(var i = 0; i < filterCancel.length; i++){
+      filterCancel[i].addEventListener("click", cancel);
+  }
 
-  var modalBtns = document.querySelectorAll(".modal-open");
+  function cancel(){
+      const filterPanel = document.querySelectorAll(".dropdown-menu");
 
-  modalBtns.forEach(function(btn){
-      btn.onclick = function(){
-          var modal = btn.getAttribute("data-modal");
-
-          document.getElementById(modal).style.display = "block";
+      for(var i = 0; i < filterPanel.length; i++){
+          filterPanel[i].classList.remove("show");
       }
-  });
+  }
 
-  var closeBtns = document.querySelectorAll('.modal-close');
-
-  closeBtns.forEach(function(btn){
-      btn.onclick = function(){
-          var modal = (btn.closest('.modal').style.display = "none");
-      }
-  });
-
-
-  var overlay = document.querySelectorAll('.overlay');
-
-  overlay.forEach(function(btn){
-      btn.onclick = function(){
-          var modal = (btn.closest('.modal').style.display = "none");
-      }
-  });
-
-
-
-
+}
 // Info inline edit
 
 

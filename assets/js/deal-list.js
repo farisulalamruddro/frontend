@@ -1,18 +1,4 @@
 
-// Filter Cancel
-
-const filterCancel = document.querySelectorAll(".filterCancel");
-for(var i = 0; i < filterCancel.length; i++){
-    filterCancel[i].addEventListener("click", cancel);
-}
-
-function cancel(){
-    const filterPanel = document.querySelectorAll(".dropdown-menu");
-
-    for(var i = 0; i < filterPanel.length; i++){
-        filterPanel[i].classList.remove("show");
-    }
-}
 
 
 
