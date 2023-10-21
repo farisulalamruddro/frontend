@@ -15,10 +15,10 @@
     />
     <!-- Text Editor -->
     <script src="../assets/js/tinymce/tinymce.min.js"></script>
-    <title>Edit Purcahse Request</title>
+    <title>Add Purchase Order</title>
   </head>
 
-  <body id="salesPage" class="body">
+  <body class="body">
     <section class="mainBody">
       <!-- Sidebar Menu -->
       <div id="sidebar" class="sidebar">
@@ -189,9 +189,9 @@
         <div class="content-wrapper p-4">
           <div class="d-flex align-items-center mb-4">
             <a
-              href="/purchase/purchase-request.html"
+              href="/purchase/purchase-order.html"
               class="heading-four sb m-0 primary"
-              >Purchase Request (PR)</a
+              >Purchase Order</a
             >
             <span class="mx-2">
               <svg
@@ -211,28 +211,25 @@
               </svg>
             </span>
             <a
-              href="/purchase/edit-purchase-request.html"
+              href="/purchase/add-purchase-order.html"
               class="heading-four sb m-0 primary"
-              >Edit Purchase Request</a
+              >Add Purchase Order</a
             >
           </div>
           <div>
-            <div class="purchaseOrderDetails mb-3">
-              <p class="body-large med primary mb-3">
-                Purchase Request Details
-              </p>
+            <div class="salesOrderDetails mb-3">
+              <p class="body-large med primary mb-3">Purchase Order Details</p>
               <div class="row">
                 <div class="col-md-6 py-3">
                   <div class="d-flex align-items-center">
                     <div
                       class="d-flex align-items-center justify-content-between me-3"
-                      style="width: 230px"
+                      style="width: 200px"
                     >
                       <label
                         for=""
                         class="body-normal reg black70 d-flex align-items-center"
-                        >Purchase Request No
-                        <span class="text-danger mx-2">*</span></label
+                        >Bill to <span class="text-danger mx-2">*</span></label
                       >
                       <span>:</span>
                     </div>
@@ -247,12 +244,13 @@
                   <div class="d-flex align-items-center">
                     <div
                       class="d-flex align-items-center justify-content-between me-3"
-                      style="width: 230px"
+                      style="width: 200px"
                     >
                       <label
                         for=""
                         class="body-normal reg black70 d-flex align-items-center"
-                        >PR Date <span class="text-danger mx-2">*</span></label
+                        >PR Date :
+                        <span class="text-danger mx-2">*</span></label
                       >
                       <span>:</span>
                     </div>
@@ -288,7 +286,7 @@
                   <div class="d-flex align-items-center">
                     <div
                       class="d-flex align-items-center justify-content-between me-3"
-                      style="width: 230px"
+                      style="width: 200px"
                     >
                       <label
                         for=""
@@ -313,7 +311,7 @@
                   <div class="d-flex align-items-center">
                     <div
                       class="d-flex align-items-center justify-content-between me-3"
-                      style="width: 230px"
+                      style="width: 200px"
                     >
                       <label
                         for=""
@@ -337,7 +335,7 @@
                   <div class="d-flex align-items-baseline">
                     <div
                       class="d-flex align-items-center justify-content-between me-3"
-                      style="width: 230px"
+                      style="width: 200px"
                     >
                       <label
                         for=""
@@ -360,7 +358,7 @@
                   <div class="d-flex align-items-baseline">
                     <div
                       class="d-flex align-items-center justify-content-between me-3"
-                      style="width: 230px"
+                      style="width: 200px"
                     >
                       <label
                         for=""
@@ -405,7 +403,7 @@
                         Product Description
                       </th>
                       <th class="body-normal med black90 text-center py-3">
-                        HSN Code
+                        Vendor
                       </th>
                       <th class="body-normal med black90 text-center py-3">
                         Qty
@@ -416,12 +414,6 @@
                       <th class="body-normal med black90 text-center py-3">
                         Amount
                       </th>
-                      <th class="body-normal med black90 text-center py-3">
-                        Tax
-                      </th>
-                      <th class="body-normal med black90 text-center py-3">
-                        Tax Amount
-                      </th>
                       <th></th>
                     </tr>
                   </thead>
@@ -429,20 +421,6 @@
                     <tr class="productInfoRow">
                       <td class="align-middle">
                         <input type="checkbox" name="" id="" />
-                      </td>
-                      <td class="align-middle">
-                        <input
-                          type="text"
-                          class="body-normal reg black40 p-2 border rounded w-100"
-                          placeholder="Placeholder"
-                        />
-                      </td>
-                      <td class="align-middle">
-                        <input
-                          type="text"
-                          class="body-normal reg black40 p-2 border rounded w-100"
-                          placeholder="Placeholder"
-                        />
                       </td>
                       <td class="align-middle">
                         <input
@@ -515,8 +493,8 @@
               </div>
             </div>
 
-            <div class="aboutInformation">
-              <p class="body-large med primary mb-3">About Information</p>
+            <div class="amountInformation">
+              <p class="body-large med primary mb-3">Amount Information</p>
               <div class="row">
                 <div class="col-md-6 ms-auto">
                   <div class="row">
@@ -597,7 +575,7 @@
                         ></textarea>
                       </div>
                       <div class="mb-3">
-                        <p class="body-large med primary mb-3">Sales Notes</p>
+                        <p class="body-large med primary mb-3">PR Notes</p>
                         <textarea
                           id="descTEXTAREA"
                           name=""
@@ -613,7 +591,7 @@
               </div>
             </div>
             <div class="d-flex align-items-center justify-content-end mt-4">
-              <a href="/sales/view-sales-order.html"
+              <a href="/purchase/purchase-request.html"
                 ><button
                   class="body-medium med primary bg-transparent border-0 p-0"
                 >
@@ -621,11 +599,9 @@
                 </button></a
               >
               <button
-                class="body-medium2 med grey0 bg-success border-0 rounded py-2 px-3 ms-3"
-                data-bs-toggle="modal"
-                data-bs-target="#updateData"
+                class="body-medium2 med grey0 primaryBG border-0 rounded py-2 px-3 ms-3"
               >
-                Update
+                Save
               </button>
             </div>
           </div>
@@ -676,32 +652,6 @@
             </button>
             <button class="modal-close proceeddlt body-normal med grey0 mx-2">
               Delete
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Update Popup -->
-    <div
-      class="modal fade"
-      id="updateData"
-      tabindex="-1"
-      aria-labelledby="updateData"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog modal-dialog-centered rounded">
-        <div
-          class="modal-content dlt-employee-cont py-4 px-3 mx-auto text-center"
-        >
-          <p class="body-medium med black90 mb-3">
-            Record updated Successfully
-          </p>
-          <div class="buttons d-flex align-items-center justify-content-center">
-            <button
-              class="modal-close canceldlt bg-success body-normal med grey0 mx-auto"
-              data-bs-dismiss="modal"
-            >
-              OK
             </button>
           </div>
         </div>
