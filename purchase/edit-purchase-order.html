@@ -15,7 +15,7 @@
     />
     <!-- Text Editor -->
     <script src="../assets/js/tinymce/tinymce.min.js"></script>
-    <title>Add Purchase Order</title>
+    <title>Edit Purchase Order</title>
   </head>
 
   <body class="body">
@@ -187,34 +187,41 @@
 
       <div class="crmContent">
         <div class="content-wrapper p-4">
-          <div class="d-flex align-items-center mb-4">
-            <a
-              href="/purchase/purchase-order.html"
-              class="heading-four sb m-0 primary"
-              >Purchase Order</a
-            >
-            <span class="mx-2">
-              <svg
-                width="5"
-                height="9"
-                viewBox="0 0 5 9"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
+          <div class="d-flex align-items-center justify-content-between mb-4">
+            <div class="d-flex align-items-center">
+              <a
+                href="/purchase/purchase-order.html"
+                class="heading-four sb m-0 primary"
+                >Purchase Order</a
               >
-                <path
-                  d="M1 1L4 4.5L1 8"
-                  stroke="#1D9CD3"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </svg>
-            </span>
-            <a
-              href="/purchase/add-purchase-order.html"
-              class="heading-four sb m-0 primary"
-              >Add Purchase Order</a
+              <span class="mx-2">
+                <svg
+                  width="5"
+                  height="9"
+                  viewBox="0 0 5 9"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M1 1L4 4.5L1 8"
+                    stroke="#1D9CD3"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </span>
+              <a
+                href="/purchase/edit-purchase-order.html"
+                class="heading-four sb m-0 primary"
+                >Edit Purchase Order</a
+              >
+            </div>
+            <button
+              class="border-0 primaryBG grey0 rounded py-2 px-3 body-medium2 med"
             >
+              Convert to MI
+            </button>
           </div>
           <div>
             <div class="salesOrderDetails mb-3">
@@ -892,9 +899,9 @@
                 </button></a
               >
               <button
-                class="body-medium2 med grey0 primaryBG border-0 rounded py-2 px-3 ms-3"
+                class="body-medium2 med grey0 bg-success border-0 rounded py-2 px-3 ms-3"
               >
-                Save
+                Update
               </button>
             </div>
           </div>
