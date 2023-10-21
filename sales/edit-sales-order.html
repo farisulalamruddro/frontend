@@ -490,7 +490,8 @@
                 <p class="body-large med primary mb-0">Product Information</p>
                 <button
                   class="body-large med primary border-0 p-0 pb-2 bg-transparent"
-                  data-DuplicateTrigger="productInfo"
+                  data-bs-toggle="modal"
+                  data-bs-target="#addProductPop"
                 >
                   Add Product
                 </button>
@@ -1062,6 +1063,64 @@
               data-bs-dismiss="modal"
             >
               OK
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Add Product Popup -->
+    <div
+      class="modal fade"
+      id="addProductPop"
+      tabindex="-1"
+      aria-labelledby="addProductPop"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered rounded">
+        <div class="modal-content py-4 px-3 mx-auto">
+          <div class="d-flex align-items-center justify-content-between mb-3">
+            <p class="body-medium sb black20 m-0">Select the Product</p>
+            <button class="p-0 border-0 bg-transparent" data-bs-dismiss="modal">
+              <svg
+                width="12"
+                height="13"
+                viewBox="0 0 12 13"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M1.2 12.5L0 11.3L4.8 6.5L0 1.7L1.2 0.5L6 5.3L10.8 0.5L12 1.7L7.2 6.5L12 11.3L10.8 12.5L6 7.7L1.2 12.5Z"
+                  fill="#383638"
+                />
+              </svg>
+            </button>
+          </div>
+
+          <div>
+            <input
+              type="text"
+              class="body-normal reg black40 py-2 border-0 border-bottom w-100 mb-2"
+              placeholder="Search"
+            />
+            <div class="d-flex align-items-center">
+              <input type="checkbox" />
+              <p class="body-normal reg black80 m-0 ms-2">Product 01</p>
+            </div>
+            <div class="d-flex align-items-center mt-2">
+              <input type="checkbox" />
+              <p class="body-normal reg black80 m-0 ms-2">Product 02</p>
+            </div>
+          </div>
+
+          <div
+            class="buttons d-flex align-items-center justify-content-end mt-4"
+          >
+            <button
+              class="border-0 primaryBG rounded body-normal med grey0 py-2 px-3"
+              data-bs-dismiss="modal"
+            >
+              Select
             </button>
           </div>
         </div>

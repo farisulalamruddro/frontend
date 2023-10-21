@@ -219,6 +219,8 @@
             </div>
             <button
               class="border-0 primaryBG grey0 rounded py-2 px-3 body-medium2 med"
+              data-bs-toggle="modal"
+              data-bs-target="#convertMi"
             >
               Convert to MI
             </button>
@@ -579,7 +581,8 @@
                 <p class="body-large med primary mb-0">Product Information</p>
                 <button
                   class="body-large med primary border-0 p-0 pb-2 bg-transparent"
-                  data-DuplicateTrigger="productInfo"
+                  data-bs-toggle="modal"
+                  data-bs-target="#addProductPop"
                 >
                   Add Product
                 </button>
@@ -952,6 +955,336 @@
             </button>
             <button class="modal-close proceeddlt body-normal med grey0 mx-2">
               Delete
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- convertMi Popup -->
+    <div
+      class="modal fade"
+      id="convertMi"
+      tabindex="-1"
+      aria-labelledby="convertMi"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered rounded">
+        <div
+          class="modal-content dlt-employee-cont py-4 px-3 mx-auto text-center"
+        >
+          <div>
+            <svg
+              width="29"
+              height="29"
+              viewBox="0 0 29 29"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M8.99917 10.125C9.79979 8.42604 11.9596 7.20833 14.5 7.20833C17.7229 7.20833 20.3333 9.16688 20.3333 11.5833C20.3333 13.625 18.4696 15.3385 15.9496 15.8227C15.1592 15.9744 14.5 16.6102 14.5 17.4167M14.5 21.7917H14.5146M27.625 14.5C27.625 16.2236 27.2855 17.9303 26.6259 19.5227C25.9663 21.1151 24.9995 22.562 23.7808 23.7808C22.562 24.9995 21.1151 25.9663 19.5227 26.6259C17.9303 27.2855 16.2236 27.625 14.5 27.625C12.7764 27.625 11.0697 27.2855 9.47728 26.6259C7.88488 25.9663 6.43799 24.9995 5.21922 23.7808C4.00045 22.562 3.03367 21.1151 2.37408 19.5227C1.71449 17.9303 1.375 16.2236 1.375 14.5C1.375 11.019 2.75781 7.68064 5.21922 5.21922C7.68064 2.75781 11.019 1.375 14.5 1.375C17.981 1.375 21.3194 2.75781 23.7808 5.21922C26.2422 7.68064 27.625 11.019 27.625 14.5Z"
+                stroke="#4E4D4D"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </div>
+          <p class="body-large sb black90 my-2">Confirmation</p>
+          <p class="body-medium reg black90 text-center mb-4">
+            On Click of "Convert" button the selected PO will be converted to
+            MI. Do you continue the Action?
+          </p>
+          <div class="buttons d-flex align-items-center justify-content-center">
+            <button
+              class="border-0 body-normal med black20 rounded py-2 px-3 mx-2"
+              data-bs-dismiss="modal"
+            >
+              Cancel
+            </button>
+            <button
+              class="border-0 bg-success rounded body-normal med grey0 py-2 px-3 mx-2"
+              data-bs-toggle="modal"
+              data-bs-target="#convertMiData"
+            >
+              Okay
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- convertMi Data Popup -->
+    <div
+      class="modal fade"
+      id="convertMiData"
+      tabindex="-1"
+      aria-labelledby="convertMiData"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered rounded">
+        <div class="modal-content py-4 px-3 mx-auto text-center">
+          <div class="d-flex align-items-center justify-content-end">
+            <button class="p-0 border-0 bg-transparent" data-bs-dismiss="modal">
+              <svg
+                width="12"
+                height="13"
+                viewBox="0 0 12 13"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M1.2 12.5L0 11.3L4.8 6.5L0 1.7L1.2 0.5L6 5.3L10.8 0.5L12 1.7L7.2 6.5L12 11.3L10.8 12.5L6 7.7L1.2 12.5Z"
+                  fill="#383638"
+                />
+              </svg>
+            </button>
+          </div>
+          <div class="row">
+            <div class="col-12 py-3">
+              <div class="d-flex align-items-center">
+                <div
+                  class="d-flex align-items-center justify-content-between me-3"
+                  style="width: 250px"
+                >
+                  <label
+                    for=""
+                    class="body-normal reg black70 d-flex align-items-center"
+                    >MI No <span class="text-danger mx-2">*</span></label
+                  >
+                  <span>:</span>
+                </div>
+                <input
+                  type="text"
+                  class="body-normal reg black40 py-2 border-0 border-bottom w-100"
+                  placeholder="Auto Generate"
+                />
+              </div>
+            </div>
+            <div class="col-12 py-3">
+              <div class="d-flex align-items-center">
+                <div
+                  class="d-flex align-items-center justify-content-between me-3"
+                  style="width: 250px"
+                >
+                  <label
+                    for=""
+                    class="body-normal reg black70 d-flex align-items-center"
+                    >Date <span class="text-danger mx-2">*</span></label
+                  >
+                  <span>:</span>
+                </div>
+                <div class="position-relative w-100">
+                  <input
+                    type="text"
+                    class="datepicker body-normal reg black40 py-2 border-0 border-bottom w-100"
+                    placeholder="Select Date"
+                  />
+                  <div
+                    class="position-absolute top-50 end-0 translate-middle-y"
+                  >
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M6 5V1M14 5V1M5 9H15M3 19H17C17.5304 19 18.0391 18.7893 18.4142 18.4142C18.7893 18.0391 19 17.5304 19 17V5C19 4.46957 18.7893 3.96086 18.4142 3.58579C18.0391 3.21071 17.5304 3 17 3H3C2.46957 3 1.96086 3.21071 1.58579 3.58579C1.21071 3.96086 1 4.46957 1 5V17C1 17.5304 1.21071 18.0391 1.58579 18.4142C1.96086 18.7893 2.46957 19 3 19Z"
+                        stroke="#383638"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 py-3">
+              <div class="d-flex align-items-center">
+                <div
+                  class="d-flex align-items-center justify-content-between me-3"
+                  style="width: 250px"
+                >
+                  <label
+                    for=""
+                    class="body-normal reg black70 d-flex align-items-center"
+                    >People <span class="text-danger mx-2">*</span></label
+                  >
+                  <span>:</span>
+                </div>
+                <select
+                  name=""
+                  id=""
+                  class="body-normal reg black40 py-2 border-0 border-bottom w-75"
+                >
+                  <option value="">Option 1</option>
+                  <option value="">Option 2</option>
+                  <option value="">Option 3</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-12 py-3">
+              <div class="d-flex align-items-center">
+                <div
+                  class="d-flex align-items-center justify-content-between me-3"
+                  style="width: 250px"
+                >
+                  <label
+                    for=""
+                    class="body-normal reg black70 d-flex align-items-center"
+                    >Due Date <span class="text-danger mx-2">*</span></label
+                  >
+                  <span>:</span>
+                </div>
+                <div class="position-relative w-100">
+                  <input
+                    type="text"
+                    class="datepicker body-normal reg black40 py-2 border-0 border-bottom w-100"
+                    placeholder="Select Date"
+                  />
+                  <div
+                    class="position-absolute top-50 end-0 translate-middle-y"
+                  >
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M6 5V1M14 5V1M5 9H15M3 19H17C17.5304 19 18.0391 18.7893 18.4142 18.4142C18.7893 18.0391 19 17.5304 19 17V5C19 4.46957 18.7893 3.96086 18.4142 3.58579C18.0391 3.21071 17.5304 3 17 3H3C2.46957 3 1.96086 3.21071 1.58579 3.58579C1.21071 3.96086 1 4.46957 1 5V17C1 17.5304 1.21071 18.0391 1.58579 18.4142C1.96086 18.7893 2.46957 19 3 19Z"
+                        stroke="#383638"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="buttons d-flex align-items-center justify-content-center mt-4"
+          >
+            <button
+              class="border-0 body-normal med black20 rounded py-2 px-3 mx-2"
+              data-bs-dismiss="modal"
+            >
+              Cancel
+            </button>
+            <button
+              class="border-0 bg-success rounded body-normal med grey0 py-2 px-3 mx-2"
+              data-bs-toggle="modal"
+              data-bs-target="#convertMiSaved"
+            >
+              Okay
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- convertMi Success Popup -->
+    <div
+      class="modal fade"
+      id="convertMiSaved"
+      tabindex="-1"
+      aria-labelledby="convertMiSaved"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered rounded">
+        <div
+          class="modal-content dlt-employee-cont py-4 px-3 mx-auto text-center"
+        >
+          <div>
+            <svg
+              width="37"
+              height="37"
+              viewBox="0 0 37 37"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M12.6667 18.5L16.5556 22.3889L24.3333 14.6111M36 18.5C36 20.7981 35.5474 23.0738 34.6679 25.197C33.7884 27.3202 32.4994 29.2493 30.8744 30.8744C29.2493 32.4994 27.3202 33.7884 25.197 34.6679C23.0738 35.5474 20.7981 36 18.5 36C16.2019 36 13.9262 35.5474 11.803 34.6679C9.67984 33.7884 7.75066 32.4994 6.12563 30.8744C4.50061 29.2493 3.21157 27.3202 2.33211 25.197C1.45265 23.0738 1 20.7981 1 18.5C1 13.8587 2.84374 9.40752 6.12563 6.12563C9.40752 2.84374 13.8587 1 18.5 1C23.1413 1 27.5925 2.84374 30.8744 6.12563C34.1563 9.40752 36 13.8587 36 18.5Z"
+                stroke="#249D29"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </div>
+          <p class="body-large sb text-success my-2">Saved Successfully</p>
+          <p class="body-medium reg black90 text-center mb-4">
+            Your purchase order "PO-11230" has been saved successfully.
+          </p>
+          <div class="buttons d-flex align-items-center justify-content-center">
+            <button
+              class="border-0 bg-success rounded body-normal med grey0 py-2 px-3 mx-2"
+              data-bs-dismiss="modal"
+            >
+              Okay
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Add Product Popup -->
+    <div
+      class="modal fade"
+      id="addProductPop"
+      tabindex="-1"
+      aria-labelledby="addProductPop"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered rounded">
+        <div class="modal-content py-4 px-3 mx-auto">
+          <div class="d-flex align-items-center justify-content-between mb-3">
+            <p class="body-medium sb black20 m-0">Select the Product</p>
+            <button class="p-0 border-0 bg-transparent" data-bs-dismiss="modal">
+              <svg
+                width="12"
+                height="13"
+                viewBox="0 0 12 13"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M1.2 12.5L0 11.3L4.8 6.5L0 1.7L1.2 0.5L6 5.3L10.8 0.5L12 1.7L7.2 6.5L12 11.3L10.8 12.5L6 7.7L1.2 12.5Z"
+                  fill="#383638"
+                />
+              </svg>
+            </button>
+          </div>
+
+          <div>
+            <input
+              type="text"
+              class="body-normal reg black40 py-2 border-0 border-bottom w-100 mb-2"
+              placeholder="Search"
+            />
+            <div class="d-flex align-items-center">
+              <input type="checkbox" />
+              <p class="body-normal reg black80 m-0 ms-2">Product 01</p>
+            </div>
+            <div class="d-flex align-items-center mt-2">
+              <input type="checkbox" />
+              <p class="body-normal reg black80 m-0 ms-2">Product 02</p>
+            </div>
+          </div>
+
+          <div
+            class="buttons d-flex align-items-center justify-content-end mt-4"
+          >
+            <button
+              class="border-0 primaryBG rounded body-normal med grey0 py-2 px-3"
+              data-bs-dismiss="modal"
+            >
+              Select
             </button>
           </div>
         </div>
