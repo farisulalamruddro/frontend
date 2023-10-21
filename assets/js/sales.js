@@ -24,23 +24,20 @@ function cloneRow() {
                         input.value = "";
                     });
 
-                    let removeBtn = clonedRow.querySelector(".deleteRow");
-
-                    if (removeBtn != null) {
-                        removeBtn.addEventListener("click", () => {
-                            clonedRow.remove()
-                        });
-                    } else {
+                    
+                    
+                    if (duplicatableValue !== "productInfo") {
                         let newRmvBtn = document.createElement("button");
                         newRmvBtn.type = "button";
                         newRmvBtn.innerHTML = "Remove";
-                        newRmvBtn.classList.add("body-small", "med", "text-danger", "bg-transparent", "border-0", "p-0")
+                        newRmvBtn.classList.add("body-small", "med", "text-danger", "bg-transparent", "border-0", "p-0");
                         clonedRow.appendChild(newRmvBtn);
 
                         newRmvBtn.addEventListener("click", () => {
                             clonedRow.remove() 
                         });
-                    }
+                        
+                    } 
                     
                 }
             }

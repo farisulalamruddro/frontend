@@ -13,10 +13,10 @@
   <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css" />
   <!-- Text Editor -->
   <script src="../assets/js/tinymce/tinymce.min.js"></script>
-  <title>Edit Sales Order</title>
+  <title>Add Purchase Request</title>
 </head>
 
-<body id="salesPage" class="body">
+<body class="body">
   
   <section class="mainBody">
     <!-- Sidebar Menu -->
@@ -117,22 +117,22 @@
     <div class="crmContent">
       <div class="content-wrapper p-4">
         <div class="d-flex align-items-center mb-4">
-          <a href="/sales/all-sales-order.html" class="heading-four sb m-0">Sales Order</a>
+          <a href="/purchase/add-purchase-request.html" class="heading-four sb m-0">Purchase Request (PR)</a>
           <span class="mx-2">
             <svg width="5" height="9" viewBox="0 0 5 9" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M1 1L4 4.5L1 8" stroke="#1D9CD3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
           </span>
-          <a href="/sales/edit-sales-order.html" class="heading-four sb m-0">Edit Sales Order</a>
+          <a href="/purchase/add-purchase-request.html" class="heading-four sb m-0">Add Purchase Request</a>
         </div>
         <div>
-          <div class="purchaseOrderDetails mb-3">
-            <p class="body-large med primary mb-3">Sales Order Detials </p>
+          <div class="salesOrderDetails mb-3">
+            <p class="body-large med primary mb-3">Purchase Request Details  </p>
             <div class="row">
               <div class="col-md-6 py-3">
                 <div class="d-flex align-items-center">
                   <div class="d-flex align-items-center justify-content-between me-3" style="width: 200px;">
-                    <label for="" class="body-normal reg black70 d-flex align-items-center">Customer PO No <span class="text-danger mx-2">*</span></label>
+                    <label for="" class="body-normal reg black70 d-flex align-items-center">Purchase Request No <span class="text-danger mx-2">*</span></label>
                     <span>:</span>
                   </div>
                   <input type="text" class="body-normal reg black40 py-2 border-0 border-bottom w-100" placeholder="Auto Generate">
@@ -141,7 +141,8 @@
               <div class="col-md-6 py-3">
                 <div class="d-flex align-items-center">
                   <div class="d-flex align-items-center justify-content-between me-3" style="width: 200px;">
-                    <label for="" class="body-normal reg black70 d-flex align-items-center">Customer PO Date <span class="text-danger mx-2">*</span></label>
+                    <label for="" class="body-normal reg black70 d-flex align-items-center">PR Date
+                      : <span class="text-danger mx-2">*</span></label>
                     <span>:</span>
                   </div>
                   <div class="position-relative w-100">
@@ -198,47 +199,6 @@
                   <textarea name="" id="" cols="30" rows="4" class="body-normal reg black40 p-2 border rounded w-100"></textarea>
                 </div>
               </div>
-              <div class="col-md-6 py-3">
-                <div class="d-flex align-items-center">
-                  <div class="d-flex align-items-center justify-content-between me-3" style="width: 200px;">
-                    <label for="" class="body-normal reg black70 d-flex align-items-center">Due Date <span class="text-danger mx-2">*</span></label>
-                    <span>:</span>
-                  </div>
-                  <div class="position-relative w-100">
-                    <input type="text" class="datepicker body-normal reg black40 py-2 border-0 border-bottom w-100" placeholder="Select Date">
-                    <div class="position-absolute top-50 end-0 translate-middle-y">
-                      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M6 5V1M14 5V1M5 9H15M3 19H17C17.5304 19 18.0391 18.7893 18.4142 18.4142C18.7893 18.0391 19 17.5304 19 17V5C19 4.46957 18.7893 3.96086 18.4142 3.58579C18.0391 3.21071 17.5304 3 17 3H3C2.46957 3 1.96086 3.21071 1.58579 3.58579C1.21071 3.96086 1 4.46957 1 5V17C1 17.5304 1.21071 18.0391 1.58579 18.4142C1.96086 18.7893 2.46957 19 3 19Z" stroke="#383638" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                      </svg>                        
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6 py-3">
-                <div class="d-flex align-items-center">
-                  <div class="d-flex align-items-center justify-content-between me-3" style="width: 200px;">
-                    <label for="" class="body-normal reg black70 d-flex align-items-center">Old PO Date <span class="text-danger mx-2">*</span></label>
-                    <span>:</span>
-                  </div>
-                  <div class="position-relative w-100">
-                    <input type="text" class="datepicker body-normal reg black40 py-2 border-0 border-bottom w-100" placeholder="Select Date">
-                    <div class="position-absolute top-50 end-0 translate-middle-y">
-                      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M6 5V1M14 5V1M5 9H15M3 19H17C17.5304 19 18.0391 18.7893 18.4142 18.4142C18.7893 18.0391 19 17.5304 19 17V5C19 4.46957 18.7893 3.96086 18.4142 3.58579C18.0391 3.21071 17.5304 3 17 3H3C2.46957 3 1.96086 3.21071 1.58579 3.58579C1.21071 3.96086 1 4.46957 1 5V17C1 17.5304 1.21071 18.0391 1.58579 18.4142C1.96086 18.7893 2.46957 19 3 19Z" stroke="#383638" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                      </svg>                        
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6 py-3">
-                <div class="d-flex align-items-center">
-                  <div class="d-flex align-items-center justify-content-between me-3" style="width: 200px;">
-                    <label for="" class="body-normal reg black70 d-flex align-items-center">Old PO No</label>
-                    <span>:</span>
-                  </div>
-                  <input type="text" class="body-normal reg black40 py-2 border-0 border-bottom w-100" placeholder="Add text">
-                </div>
-              </div>
             </div>
           </div>
           <div class="productInformation mb-3">
@@ -253,12 +213,10 @@
                     <th class="p-2"></th>
                     <th class="body-normal med black90 text-center py-3">Product</th>
                     <th class="body-normal med black90 text-center py-3">Product Description</th>
-                    <th class="body-normal med black90 text-center py-3">HSN Code</th>
+                    <th class="body-normal med black90 text-center py-3">Vendor</th>
                     <th class="body-normal med black90 text-center py-3">Qty</th>
                     <th class="body-normal med black90 text-center py-3">Rate/Unit</th>
                     <th class="body-normal med black90 text-center py-3">Amount</th>
-                    <th class="body-normal med black90 text-center py-3">Tax</th>
-                    <th class="body-normal med black90 text-center py-3">Tax Amount</th>
                     <th></th>
                   </tr>
                 </thead>
@@ -266,12 +224,6 @@
                   <tr class="productInfoRow">
                     <td class="align-middle">
                       <input type="checkbox" name="" id=""> 
-                    </td>
-                    <td class="align-middle">
-                      <input type="text" class="body-normal reg black40 p-2 border rounded w-100" placeholder="Placeholder">
-                    </td>
-                    <td class="align-middle">
-                      <input type="text" class="body-normal reg black40 p-2 border rounded w-100" placeholder="Placeholder">
                     </td>
                     <td class="align-middle">
                       <input type="text" class="body-normal reg black40 p-2 border rounded w-100" placeholder="Placeholder">
@@ -304,71 +256,13 @@
             </div>
           </div>
 
-          <div class="aboutInformation">
-            <p class="body-large med primary mb-3">About Information</p>
+          <div class="amountInformation">
+            <p class="body-large med primary mb-3">Amount Information</p>
             <div class="row">
               <div class="col-md-6 ms-auto">
                 <div class="row">
                   <div class="col-12 d-flex align-items-center justify-content-between py-2">
-                    <p class="body-normal med black90 mb-0">Sub Amount</p>
-                    <div class="position-relative">
-                      <span class="position-absolute top-50 translate-middle-y" style="left: 5px">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16px" height="26px" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M6 3h12"></path> <path d="M6 8h12"></path> <path d="M6 13l8.5 8"></path> <path d="M6 13h3"></path> <path d="M9 13c6.667 0 6.667-10 0-10"></path> </g></svg>
-                      </span>
-                      <input type="text" class="body-normal reg black40 py-2 ps-4 border rounded" placeholder="0.00" step="width: 160px">
-                    </div>
-                  </div>
-                  <div class="col-12 d-flex align-items-center justify-content-between py-2">
-                    <p class="body-normal med black90 mb-0">Tax Amount</p>
-                    <div class="position-relative">
-                      <span class="position-absolute top-50 translate-middle-y" style="left: 5px">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16px" height="26px" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M6 3h12"></path> <path d="M6 8h12"></path> <path d="M6 13l8.5 8"></path> <path d="M6 13h3"></path> <path d="M9 13c6.667 0 6.667-10 0-10"></path> </g></svg>
-                      </span>
-                      <input type="text" class="body-normal reg black40 py-2 ps-4 border rounded" placeholder="0.00" step="width: 160px">
-                    </div>
-                  </div>
-                  <div class="col-12 d-flex align-items-center justify-content-between py-2">
-                    <p class="body-normal med black90 mb-0 d-flex flex-column">Amount <span class="body-tiny reg black40">(Sub Amount + Tax Amount)</span></p>
-                    <div class="position-relative">
-                      <span class="position-absolute top-50 translate-middle-y" style="left: 5px">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16px" height="26px" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M6 3h12"></path> <path d="M6 8h12"></path> <path d="M6 13l8.5 8"></path> <path d="M6 13h3"></path> <path d="M9 13c6.667 0 6.667-10 0-10"></path> </g></svg>
-                      </span>
-                      <input type="text" class="body-normal reg black40 py-2 ps-4 border rounded" placeholder="0.00" step="width: 160px">
-                    </div>
-                  </div>
-                  <div class="col-12 d-flex align-items-center justify-content-between py-2">
-                    <div class="d-flex align-items-center justify-content-center">
-                      <p class="body-normal med black90 mb-0">Tax Amount</p>
-                      <input type="text" class="body-normal reg black40 p-2 border rounded ms-3" placeholder="% Tax" style="width: 120px">
-                    </div>
-                    <div class="position-relative">
-                      <span class="position-absolute top-50 translate-middle-y" style="left: 5px">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16px" height="26px" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M6 3h12"></path> <path d="M6 8h12"></path> <path d="M6 13l8.5 8"></path> <path d="M6 13h3"></path> <path d="M9 13c6.667 0 6.667-10 0-10"></path> </g></svg>
-                      </span>
-                      <input type="text" class="body-normal reg black40 py-2 ps-4 border rounded" placeholder="0.00" step="width: 160px">
-                    </div>
-                  </div>
-                  <div class="col-12 d-flex justify-content-between py-2" style="align-items: flex-start;">
-                    <div class="d-flex justify-content-center">
-                      <div class="text-end py-2">
-                        <p class="body-normal med black90 mb-0">Other Charges</p>
-                        <button class="body-small med primary bg-transparent border-0 p-0" data-DuplicateTrigger="otherCharges">Add</button>
-                      </div>
-                      <div id="otherCharges">
-                        <div class="otherChargesRow">
-                          <input type="text" class="body-normal reg black40 p-2 border rounded ms-3 my-2" placeholder="0.00" style="width: 120px">
-                        </div>
-                      </div>
-                    </div>
-                    <div class="position-relative my-2">
-                      <span class="position-absolute top-50 translate-middle-y" style="left: 5px">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16px" height="26px" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M6 3h12"></path> <path d="M6 8h12"></path> <path d="M6 13l8.5 8"></path> <path d="M6 13h3"></path> <path d="M9 13c6.667 0 6.667-10 0-10"></path> </g></svg>
-                      </span>
-                      <input type="text" class="body-normal reg black40 py-2 ps-4 border rounded" placeholder="0.00" step="width: 160px">
-                    </div>
-                  </div>
-                  <div class="col-12 d-flex align-items-center justify-content-between py-2">
-                    <p class="body-normal med black90 mb-0 d-flex flex-column">Total Amount <span class="body-tiny reg black40">(Amount + other Charges)-Discount</span></p>
+                    <p class="body-normal med black90 mb-0 d-flex flex-column">Total Amount</p>
                     <div class="position-relative">
                       <span class="position-absolute top-50 translate-middle-y" style="left: 5px">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16px" height="26px" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M6 3h12"></path> <path d="M6 8h12"></path> <path d="M6 13l8.5 8"></path> <path d="M6 13h3"></path> <path d="M9 13c6.667 0 6.667-10 0-10"></path> </g></svg>
@@ -390,7 +284,7 @@
                       <textarea id="descTEXTAREA" name="" id="" cols="30" rows="10" class="p-2"></textarea>
                     </div>
                     <div class="mb-3">
-                      <p class="body-large med primary mb-3">Sales Notes</p>
+                      <p class="body-large med primary mb-3">PR Notes</p>
                       <textarea id="descTEXTAREA" name="" id="" cols="30" rows="10" class="p-2"></textarea>
                     </div>
                   </div>
@@ -399,8 +293,8 @@
             </div>
           </div>
           <div class="d-flex align-items-center justify-content-end mt-4">
-            <a href="/sales/view-sales-order.html"><button class="body-medium med primary bg-transparent border-0 p-0">Cancel</button></a>
-            <button class="body-medium2 med grey0 bg-success border-0 rounded py-2 px-3 ms-3" data-bs-toggle="modal" data-bs-target="#updateData">Update</button>
+            <a href="/purchase/purchase-request.html"><button class="body-medium med primary bg-transparent border-0 p-0">Cancel</button></a>
+            <button class="body-medium2 med grey0 primaryBG border-0 rounded py-2 px-3 ms-3">Save</button>
           </div>
         </div>
       </div>
@@ -408,38 +302,26 @@
   </section>
 
 
-  
-          <!-- Delete Popup -->
-          <div class="modal fade" id="delete" tabindex="-1" aria-labelledby="aeLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered rounded">
-                <div class="modal-content dlt-employee-cont py-4 px-3 mx-auto text-center">
-                    <div>
-                      <svg width="26" height="29" viewBox="0 0 26 29" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M10 13V22M16 13V22M1 7H25M23.5 7L22.1995 25.213C22.1456 25.9699 21.8069 26.6782 21.2517 27.1954C20.6964 27.7125 19.9658 28 19.207 28H6.793C6.03421 28 5.3036 27.7125 4.74833 27.1954C4.19306 26.6782 3.85437 25.9699 3.8005 25.213L2.5 7H23.5ZM17.5 7V2.5C17.5 2.10218 17.342 1.72064 17.0607 1.43934C16.7794 1.15804 16.3978 1 16 1H10C9.60218 1 9.22064 1.15804 8.93934 1.43934C8.65804 1.72064 8.5 2.10218 8.5 2.5V7H17.5Z" stroke="#C73C10" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                      </svg>                        
-                    </div>
-                    <p class="body-large sb black90 my-2">Are you Sure ?</p>
-                    <p class="body-medium reg black90 mb-4">Do you really want to delete the selected Product? This process cannot be undone</p>
-                    <div class="buttons d-flex align-items-center justify-content-center">
-                        <button class="modal-close canceldlt body-normal med black20 mx-2" data-bs-dismiss="modal">Cancel</button>
-                        <button class="modal-close proceeddlt body-normal med grey0 mx-2">Delete</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-          <!-- Update Popup -->
-          <div class="modal fade" id="updateData" tabindex="-1" aria-labelledby="updateData" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered rounded">
-                <div class="modal-content dlt-employee-cont py-4 px-3 mx-auto text-center">
-                    <p class="body-medium med black90 mb-3">Record updated Successfully</p>
-                    <div class="buttons d-flex align-items-center justify-content-center">
-                        <button class="modal-close canceldlt bg-success body-normal med grey0 mx-auto" data-bs-dismiss="modal">OK</button>
-                    </div>
-                </div>
-            </div>
-        </div>
 
 
+         <!-- Delete Popup -->
+         <div class="modal fade" id="delete" tabindex="-1" aria-labelledby="aeLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered rounded">
+              <div class="modal-content dlt-employee-cont py-4 px-3 mx-auto text-center">
+                  <div>
+                    <svg width="26" height="29" viewBox="0 0 26 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M10 13V22M16 13V22M1 7H25M23.5 7L22.1995 25.213C22.1456 25.9699 21.8069 26.6782 21.2517 27.1954C20.6964 27.7125 19.9658 28 19.207 28H6.793C6.03421 28 5.3036 27.7125 4.74833 27.1954C4.19306 26.6782 3.85437 25.9699 3.8005 25.213L2.5 7H23.5ZM17.5 7V2.5C17.5 2.10218 17.342 1.72064 17.0607 1.43934C16.7794 1.15804 16.3978 1 16 1H10C9.60218 1 9.22064 1.15804 8.93934 1.43934C8.65804 1.72064 8.5 2.10218 8.5 2.5V7H17.5Z" stroke="#C73C10" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>                        
+                  </div>
+                  <p class="body-large sb black90 my-2">Are you Sure ?</p>
+                  <p class="body-medium reg black90 mb-4">Do you really want to delete the selected Product? This process cannot be undone</p>
+                  <div class="buttons d-flex align-items-center justify-content-center">
+                      <button class="modal-close canceldlt body-normal med black20 mx-2" data-bs-dismiss="modal">Cancel</button>
+                      <button class="modal-close proceeddlt body-normal med grey0 mx-2">Delete</button>
+                  </div>
+              </div>
+          </div>
+      </div>
 
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="/assets/js/popper.min.js"></script>
