@@ -271,7 +271,7 @@
                     </div>
                     <div class="w-100">
                       <div
-                        id="prn"
+                        id="pod_bt"
                         class="static-info align-items-center justify-content-start"
                       >
                         <p class="body-normal reg black70 mb-0">
@@ -279,27 +279,27 @@
                         </p>
                         <button
                           id="penIcon"
-                          data-modal="prn"
-                          open-input="prNumber"
+                          data-modal="pod_bt"
+                          open-input="pod_btNumber"
                           class="edit ms-2 bg-transparent border-0 p-0"
                         >
                           <img src="../assets/images/edit-pen.svg" alt="" />
                         </button>
                       </div>
-                      <div id="prNumber" class="editinfo">
+                      <div id="pod_btNumber" class="editinfo">
                         <div class="d-flex">
-                          <input
-                            type="text"
-                            class="body-normal reg black40 py-2 border-0 border-bottom w-100"
-                            placeholder="Auto Generate"
-                          />
+                          <select name="" id="" class="body-normal reg black40 py-2 border-0 border-bottom w-75" style="display: none;">
+                            <option value="">Option 1</option>
+                            <option value="">Option 2</option>
+                            <option value="">Option 3</option>
+                          </select>
                           <div
                             class="editBtns d-flex align-items-center justify-content-between ms-3"
                           >
                             <button
                               class="closeSave p-0 border-0 bg-transparent"
-                              data-modal="prn"
-                              close-input="prNumber"
+                              data-modal="pod_bt"
+                              close-input="pod_btNumber"
                             >
                               <svg
                                 width="32"
@@ -359,7 +359,197 @@
                       <label
                         for=""
                         class="body-normal reg black70 d-flex align-items-center"
-                        >PR Date <span class="text-danger mx-2">*</span></label
+                        >PO NO <span class="text-danger mx-2">*</span></label
+                      >
+                      <span>:</span>
+                    </div>
+                    <div class="w-100">
+                      <div
+                        id="pod_pn"
+                        class="static-info align-items-center justify-content-start"
+                      >
+                        <p class="body-normal reg black70 mb-0">
+                          1052331
+                        </p>
+                        <button
+                          id="penIcon"
+                          data-modal="pod_pn"
+                          open-input="pod_pnNumber"
+                          class="edit ms-2 bg-transparent border-0 p-0"
+                        >
+                          <img src="../assets/images/edit-pen.svg" alt="" />
+                        </button>
+                      </div>
+                      <div id="pod_pnNumber" class="editinfo">
+                        <div class="d-flex">
+                          <input type="text" class="body-normal reg black40 py-2 border-0 border-bottom w-100" placeholder="Auto Generate">
+                          <div
+                            class="editBtns d-flex align-items-center justify-content-between ms-3"
+                          >
+                            <button
+                              class="closeSave p-0 border-0 bg-transparent"
+                              data-modal="pod_pn"
+                              close-input="pod_pnNumber"
+                            >
+                              <svg
+                                width="32"
+                                height="32"
+                                viewBox="0 0 32 32"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <circle
+                                  cx="15.9667"
+                                  cy="15.6063"
+                                  r="15.6063"
+                                  fill="#C73C10"
+                                />
+                                <path
+                                  d="M10.3668 22.6062L8.9668 21.2062L14.5668 15.6062L8.9668 10.0062L10.3668 8.6062L15.9668 14.2062L21.5668 8.6062L22.9668 10.0062L17.3668 15.6062L22.9668 21.2062L21.5668 22.6062L15.9668 17.0062L10.3668 22.6062Z"
+                                  fill="white"
+                                />
+                              </svg>
+                            </button>
+                            <button
+                              class="saveInfo p-0 border-0 bg-transparent ms-2"
+                              save-modal="pod_pn"
+                              save-input="pod_pnNumber"
+                            >
+                              <svg
+                                width="32"
+                                height="32"
+                                viewBox="0 0 32 32"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <circle
+                                  cx="15.6063"
+                                  cy="15.6063"
+                                  r="15.6063"
+                                  fill="#4ADE80"
+                                />
+                                <path
+                                  d="M13.1515 21.2893L7.73438 15.8722L8.77427 14.8323L13.1515 19.2096L22.4379 9.9231L23.4778 10.963L13.1515 21.2893Z"
+                                  fill="white"
+                                />
+                              </svg>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 py-3">
+                  <div class="d-flex align-items-center">
+                    <div
+                      class="d-flex align-items-center justify-content-between me-3"
+                      style="width: 250px"
+                    >
+                      <label
+                        for=""
+                        class="body-normal reg black70 d-flex align-items-center"
+                        >Vendor
+                        <span class="text-danger mx-2">*</span></label
+                      >
+                      <span>:</span>
+                    </div>
+                    <div class="w-100">
+                      <div
+                        id="pod_vendor"
+                        class="static-info align-items-center justify-content-start"
+                      >
+                        <p class="body-normal reg black70 mb-0">
+                          Atrity Info Solutions Pvt Ltd
+                        </p>
+                        <button
+                          id="penIcon"
+                          data-modal="pod_vendor"
+                          open-input="pod_vendor-data"
+                          class="edit ms-2 bg-transparent border-0 p-0"
+                        >
+                          <img src="../assets/images/edit-pen.svg" alt="" />
+                        </button>
+                      </div>
+                      <div id="pod_vendor-data" class="editinfo">
+                        <div class="d-flex">
+                          <select
+                            name=""
+                            id=""
+                            class="body-normal reg black40 py-2 border-0 border-bottom w-75"
+                          >
+                            <option value="">Option 1</option>
+                            <option value="">Option 2</option>
+                            <option value="">Option 3</option>
+                          </select>
+                          <div
+                            class="editBtns d-flex align-items-center justify-content-between ms-3"
+                          >
+                            <button
+                              class="closeSave p-0 border-0 bg-transparent"
+                              data-modal="pod_vendor"
+                              close-input="pod_vendor-data"
+                            >
+                              <svg
+                                width="32"
+                                height="32"
+                                viewBox="0 0 32 32"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <circle
+                                  cx="15.9667"
+                                  cy="15.6063"
+                                  r="15.6063"
+                                  fill="#C73C10"
+                                />
+                                <path
+                                  d="M10.3668 22.6062L8.9668 21.2062L14.5668 15.6062L8.9668 10.0062L10.3668 8.6062L15.9668 14.2062L21.5668 8.6062L22.9668 10.0062L17.3668 15.6062L22.9668 21.2062L21.5668 22.6062L15.9668 17.0062L10.3668 22.6062Z"
+                                  fill="white"
+                                />
+                              </svg>
+                            </button>
+                            <button
+                              class="saveInfo p-0 border-0 bg-transparent ms-2"
+                              save-modal="pod_vendor"
+                              save-input="pod_vendor-data"
+                            >
+                              <svg
+                                width="32"
+                                height="32"
+                                viewBox="0 0 32 32"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <circle
+                                  cx="15.6063"
+                                  cy="15.6063"
+                                  r="15.6063"
+                                  fill="#4ADE80"
+                                />
+                                <path
+                                  d="M13.1515 21.2893L7.73438 15.8722L8.77427 14.8323L13.1515 19.2096L22.4379 9.9231L23.4778 10.963L13.1515 21.2893Z"
+                                  fill="white"
+                                />
+                              </svg>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 py-3">
+                  <div class="d-flex align-items-center">
+                    <div
+                      class="d-flex align-items-center justify-content-between me-3"
+                      style="width: 250px"
+                    >
+                      <label
+                        for=""
+                        class="body-normal reg black70 d-flex align-items-center"
+                        >Customer PO Date
+                        <span class="text-danger mx-2">*</span></label
                       >
                       <span>:</span>
                     </div>
@@ -421,14 +611,14 @@
                       <label
                         for=""
                         class="body-normal reg black70 d-flex align-items-center"
-                        >Organization
+                        >Ship To
                         <span class="text-danger mx-2">*</span></label
                       >
                       <span>:</span>
                     </div>
                     <div class="w-100">
                       <div
-                        id="prd_organization"
+                        id="pod_shipTo"
                         class="static-info align-items-center justify-content-start"
                       >
                         <p class="body-normal reg black70 mb-0">
@@ -436,14 +626,14 @@
                         </p>
                         <button
                           id="penIcon"
-                          data-modal="prd_organization"
-                          open-input="prd_organization-data"
+                          data-modal="pod_shipTo"
+                          open-input="pod_shipTo-data"
                           class="edit ms-2 bg-transparent border-0 p-0"
                         >
                           <img src="../assets/images/edit-pen.svg" alt="" />
                         </button>
                       </div>
-                      <div id="prd_organization-data" class="editinfo">
+                      <div id="pod_shipTo-data" class="editinfo">
                         <div class="d-flex">
                           <select
                             name=""
@@ -459,8 +649,8 @@
                           >
                             <button
                               class="closeSave p-0 border-0 bg-transparent"
-                              data-modal="prd_organization"
-                              close-input="prd_organization-data"
+                              data-modal="pod_shipTo"
+                              close-input="pod_shipTo-data"
                             >
                               <svg
                                 width="32"
@@ -483,8 +673,8 @@
                             </button>
                             <button
                               class="saveInfo p-0 border-0 bg-transparent ms-2"
-                              save-modal="prd_organization"
-                              save-input="prd_organization-data"
+                              save-modal="pod_shipTo"
+                              save-input="pod_shipTo-data"
                             >
                               <svg
                                 width="32"
@@ -520,13 +710,14 @@
                       <label
                         for=""
                         class="body-normal reg black70 d-flex align-items-center"
-                        >People <span class="text-danger mx-2">*</span></label
+                        >Shipping Method
+                        <span class="text-danger mx-2">*</span></label
                       >
                       <span>:</span>
                     </div>
                     <div class="w-100">
                       <div
-                        id="prd_people"
+                        id="pod_shippingMethod"
                         class="static-info align-items-center justify-content-start"
                       >
                         <p class="body-normal reg black70 mb-0">
@@ -534,14 +725,14 @@
                         </p>
                         <button
                           id="penIcon"
-                          data-modal="prd_people"
-                          open-input="prd_people-data"
+                          data-modal="pod_shippingMethod"
+                          open-input="pod_shippingMethod-data"
                           class="edit ms-2 bg-transparent border-0 p-0"
                         >
                           <img src="../assets/images/edit-pen.svg" alt="" />
                         </button>
                       </div>
-                      <div id="prd_people-data" class="editinfo">
+                      <div id="pod_shippingMethod-data" class="editinfo">
                         <div class="d-flex">
                           <select
                             name=""
@@ -557,8 +748,8 @@
                           >
                             <button
                               class="closeSave p-0 border-0 bg-transparent"
-                              data-modal="prd_people"
-                              close-input="prd_people-data"
+                              data-modal="pod_shippingMethod"
+                              close-input="pod_shippingMethod-data"
                             >
                               <svg
                                 width="32"
@@ -581,8 +772,8 @@
                             </button>
                             <button
                               class="saveInfo p-0 border-0 bg-transparent ms-2"
-                              save-modal="prd_people"
-                              save-input="prd_people-data"
+                              save-modal="pod_shippingMethod"
+                              save-input="pod_shippingMethod-data"
                             >
                               <svg
                                 width="32"
@@ -807,6 +998,445 @@
                     </div>
                   </div>
                 </div>
+                <div class="col-md-6 py-3">
+                        <div class="d-flex align-items-center">
+                          <div
+                            class="d-flex align-items-center justify-content-between me-3"
+                            style="width: 250px"
+                          >
+                            <label
+                              for=""
+                              class="body-normal reg black70 d-flex align-items-center"
+                              >Payment Terms <span class="text-danger mx-2">*</span></label
+                            >
+                            <span>:</span>
+                          </div>
+                          <div class="w-100">
+                            <div
+                              id="pod_PT"
+                              class="static-info align-items-center justify-content-start"
+                            >
+                              <p class="body-normal reg black70 mb-0">
+                                Payment Terms
+                              </p>
+                              <button
+                                id="penIcon"
+                                data-modal="pod_PT"
+                                open-input="pod_PT-data"
+                                class="edit ms-2 bg-transparent border-0 p-0"
+                              >
+                                <img src="../assets/images/edit-pen.svg" alt="" />
+                              </button>
+                            </div>
+                            <div id="pod_PT-data" class="editinfo">
+                              <div class="d-flex">
+                                <select name="" id="" class="body-normal reg black40 py-2 border-0 border-bottom w-75" style="display: none;">
+                                  <option value="">Option 1</option>
+                                  <option value="">Option 2</option>
+                                  <option value="">Option 3</option>
+                                </select>
+                                <div
+                                  class="editBtns d-flex align-items-center justify-content-between ms-3"
+                                >
+                                  <button
+                                    class="closeSave p-0 border-0 bg-transparent"
+                                    data-modal="pod_PT"
+                                    close-input="pod_PT-data"
+                                  >
+                                    <svg
+                                      width="32"
+                                      height="32"
+                                      viewBox="0 0 32 32"
+                                      fill="none"
+                                      xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                      <circle
+                                        cx="15.9667"
+                                        cy="15.6063"
+                                        r="15.6063"
+                                        fill="#C73C10"
+                                      />
+                                      <path
+                                        d="M10.3668 22.6062L8.9668 21.2062L14.5668 15.6062L8.9668 10.0062L10.3668 8.6062L15.9668 14.2062L21.5668 8.6062L22.9668 10.0062L17.3668 15.6062L22.9668 21.2062L21.5668 22.6062L15.9668 17.0062L10.3668 22.6062Z"
+                                        fill="white"
+                                      />
+                                    </svg>
+                                  </button>
+                                  <button
+                                    class="saveInfo p-0 border-0 bg-transparent ms-2"
+                                    save-modal="pod_PT"
+                                    save-input="pod_PT-data"
+                                  >
+                                    <svg
+                                      width="32"
+                                      height="32"
+                                      viewBox="0 0 32 32"
+                                      fill="none"
+                                      xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                      <circle
+                                        cx="15.6063"
+                                        cy="15.6063"
+                                        r="15.6063"
+                                        fill="#4ADE80"
+                                      />
+                                      <path
+                                        d="M13.1515 21.2893L7.73438 15.8722L8.77427 14.8323L13.1515 19.2096L22.4379 9.9231L23.4778 10.963L13.1515 21.2893Z"
+                                        fill="white"
+                                      />
+                                    </svg>
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                </div>
+                <div class="col-md-6 py-3">
+                  <div class="d-flex align-items-center">
+                    <div
+                      class="d-flex align-items-center justify-content-between me-3"
+                      style="width: 250px"
+                    >
+                      <label
+                        for=""
+                        class="body-normal reg black70 d-flex align-items-center"
+                        >PO Status <span class="text-danger mx-2">*</span></label
+                      >
+                      <span>:</span>
+                    </div>
+                    <div class="w-100">
+                      <div
+                        id="pod_PS"
+                        class="static-info align-items-center justify-content-start"
+                      >
+                        <p class="body-normal reg black70 mb-0">
+                          PO Status
+                        </p>
+                        <button
+                          id="penIcon"
+                          data-modal="pod_PS"
+                          open-input="pod_PS-data"
+                          class="edit ms-2 bg-transparent border-0 p-0"
+                        >
+                          <img src="../assets/images/edit-pen.svg" alt="" />
+                        </button>
+                      </div>
+                      <div id="pod_PS-data" class="editinfo">
+                        <div class="d-flex">
+                          <select name="" id="" class="body-normal reg black40 py-2 border-0 border-bottom w-75" style="display: none;">
+                            <option value="">Option 1</option>
+                            <option value="">Option 2</option>
+                            <option value="">Option 3</option>
+                          </select>
+                          <div
+                            class="editBtns d-flex align-items-center justify-content-between ms-3"
+                          >
+                            <button
+                              class="closeSave p-0 border-0 bg-transparent"
+                              data-modal="pod_PS"
+                              close-input="pod_PS-data"
+                            >
+                              <svg
+                                width="32"
+                                height="32"
+                                viewBox="0 0 32 32"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <circle
+                                  cx="15.9667"
+                                  cy="15.6063"
+                                  r="15.6063"
+                                  fill="#C73C10"
+                                />
+                                <path
+                                  d="M10.3668 22.6062L8.9668 21.2062L14.5668 15.6062L8.9668 10.0062L10.3668 8.6062L15.9668 14.2062L21.5668 8.6062L22.9668 10.0062L17.3668 15.6062L22.9668 21.2062L21.5668 22.6062L15.9668 17.0062L10.3668 22.6062Z"
+                                  fill="white"
+                                />
+                              </svg>
+                            </button>
+                            <button
+                              class="saveInfo p-0 border-0 bg-transparent ms-2"
+                              save-modal="pod_PS"
+                              save-input="pod_PS-data"
+                            >
+                              <svg
+                                width="32"
+                                height="32"
+                                viewBox="0 0 32 32"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <circle
+                                  cx="15.6063"
+                                  cy="15.6063"
+                                  r="15.6063"
+                                  fill="#4ADE80"
+                                />
+                                <path
+                                  d="M13.1515 21.2893L7.73438 15.8722L8.77427 14.8323L13.1515 19.2096L22.4379 9.9231L23.4778 10.963L13.1515 21.2893Z"
+                                  fill="white"
+                                />
+                              </svg>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 py-3">
+                  <div class="d-flex align-items-center">
+                    <div
+                      class="d-flex align-items-center justify-content-between me-3"
+                      style="width: 250px"
+                    >
+                      <label
+                        for=""
+                        class="body-normal reg black70 d-flex align-items-center"
+                        >Shipping Terms <span class="text-danger mx-2">*</span></label
+                      >
+                      <span>:</span>
+                    </div>
+                    <div class="w-100">
+                      <div
+                        id="pod_shippingTerms"
+                        class="static-info align-items-center justify-content-start"
+                      >
+                        <p class="body-normal reg black70 mb-0">
+                          Shipping Terms
+                        </p>
+                        <button
+                          id="penIcon"
+                          data-modal="pod_shippingTerms"
+                          open-input="pod_shippingTerms-data"
+                          class="edit ms-2 bg-transparent border-0 p-0"
+                        >
+                          <img src="../assets/images/edit-pen.svg" alt="" />
+                        </button>
+                      </div>
+                      <div id="pod_shippingTerms-data" class="editinfo">
+                        <div class="d-flex">
+                          <select name="" id="" class="body-normal reg black40 py-2 border-0 border-bottom w-75" style="display: none;">
+                            <option value="">Option 1</option>
+                            <option value="">Option 2</option>
+                            <option value="">Option 3</option>
+                          </select>
+                          <div
+                            class="editBtns d-flex align-items-center justify-content-between ms-3"
+                          >
+                            <button
+                              class="closeSave p-0 border-0 bg-transparent"
+                              data-modal="pod_shippingTerms"
+                              close-input="pod_shippingTerms-data"
+                            >
+                              <svg
+                                width="32"
+                                height="32"
+                                viewBox="0 0 32 32"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <circle
+                                  cx="15.9667"
+                                  cy="15.6063"
+                                  r="15.6063"
+                                  fill="#C73C10"
+                                />
+                                <path
+                                  d="M10.3668 22.6062L8.9668 21.2062L14.5668 15.6062L8.9668 10.0062L10.3668 8.6062L15.9668 14.2062L21.5668 8.6062L22.9668 10.0062L17.3668 15.6062L22.9668 21.2062L21.5668 22.6062L15.9668 17.0062L10.3668 22.6062Z"
+                                  fill="white"
+                                />
+                              </svg>
+                            </button>
+                            <button
+                              class="saveInfo p-0 border-0 bg-transparent ms-2"
+                              save-modal="pod_shippingTerms"
+                              save-input="pod_shippingTerms-data"
+                            >
+                              <svg
+                                width="32"
+                                height="32"
+                                viewBox="0 0 32 32"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <circle
+                                  cx="15.6063"
+                                  cy="15.6063"
+                                  r="15.6063"
+                                  fill="#4ADE80"
+                                />
+                                <path
+                                  d="M13.1515 21.2893L7.73438 15.8722L8.77427 14.8323L13.1515 19.2096L22.4379 9.9231L23.4778 10.963L13.1515 21.2893Z"
+                                  fill="white"
+                                />
+                              </svg>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 py-3">
+                  <div class="d-flex align-items-center">
+                    <div
+                      class="d-flex align-items-center justify-content-between me-3"
+                      style="width: 250px"
+                    >
+                      <label
+                        for=""
+                        class="body-normal reg black70 d-flex align-items-center"
+                        >Promise Date
+                        <span class="text-danger mx-2">*</span></label
+                      >
+                      <span>:</span>
+                    </div>
+                    <div
+                      class="d-flex align-items-center justify-content-start w-100"
+                    >
+                      <p class="body-normal reg black70 mb-0">06-05-2023</p>
+                      <div class="ms-2 d-flex align-items-center">
+                        <button
+                          id="dropdownMenuClickableInside"
+                          class="d-flex align-items-center bg-transparent border-0 p-0"
+                          data-bs-toggle="dropdown"
+                          data-bs-auto-close="outside"
+                          aria-expanded="false"
+                        >
+                          <img
+                            id="penIcon"
+                            src="../assets/images/edit-pen.svg"
+                            alt=""
+                          />
+                        </button>
+                        <div
+                          class="dropdown-menu p-0 border"
+                          style="width: 212px"
+                          aria-labelledby="dropdownMenuClickableInside"
+                        >
+                          <p
+                            class="body-small reg black90 mb-0 p-2 blue20bg text-center"
+                          >
+                            Customer PO Date
+                          </p>
+
+                          <div class="datepicker"></div>
+                          <div
+                            class="bg-light p-2 d-flex justify-content-between"
+                          >
+                            <button
+                              class="body-tiny med primary border-0 bg-transparent p-0 filterCancel"
+                            >
+                              Cancel
+                            </button>
+                            <button
+                              class="body-tiny med grey0 border-0 rounded py-1 px-2 primaryBG"
+                            >
+                              Save
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 py-3">
+                  <div class="d-flex align-items-center">
+                    <div
+                      class="d-flex align-items-center justify-content-between me-3"
+                      style="width: 250px"
+                    >
+                      <label
+                        for=""
+                        class="body-normal reg black70 d-flex align-items-center"
+                        >Purchase Request No <span class="text-danger mx-2">*</span></label
+                      >
+                      <span>:</span>
+                    </div>
+                    <div class="w-100">
+                      <div
+                        id="pod_PurchaseRN"
+                        class="static-info align-items-center justify-content-start"
+                      >
+                        <p class="body-normal reg black70 mb-0">
+                          Request No
+                        </p>
+                        <button
+                          id="penIcon"
+                          data-modal="pod_PurchaseRN"
+                          open-input="pod_PurchaseRN-data"
+                          class="edit ms-2 bg-transparent border-0 p-0"
+                        >
+                          <img src="../assets/images/edit-pen.svg" alt="" />
+                        </button>
+                      </div>
+                      <div id="pod_PurchaseRN-data" class="editinfo">
+                        <div class="d-flex">
+                          <select name="" id="" class="body-normal reg black40 py-2 border-0 border-bottom w-75" style="display: none;">
+                            <option value="">Option 1</option>
+                            <option value="">Option 2</option>
+                            <option value="">Option 3</option>
+                          </select>
+                          <div
+                            class="editBtns d-flex align-items-center justify-content-between ms-3"
+                          >
+                            <button
+                              class="closeSave p-0 border-0 bg-transparent"
+                              data-modal="pod_PurchaseRN"
+                              close-input="pod_PurchaseRN-data"
+                            >
+                              <svg
+                                width="32"
+                                height="32"
+                                viewBox="0 0 32 32"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <circle
+                                  cx="15.9667"
+                                  cy="15.6063"
+                                  r="15.6063"
+                                  fill="#C73C10"
+                                />
+                                <path
+                                  d="M10.3668 22.6062L8.9668 21.2062L14.5668 15.6062L8.9668 10.0062L10.3668 8.6062L15.9668 14.2062L21.5668 8.6062L22.9668 10.0062L17.3668 15.6062L22.9668 21.2062L21.5668 22.6062L15.9668 17.0062L10.3668 22.6062Z"
+                                  fill="white"
+                                />
+                              </svg>
+                            </button>
+                            <button
+                              class="saveInfo p-0 border-0 bg-transparent ms-2"
+                              save-modal="pod_PurchaseRN"
+                              save-input="pod_PurchaseRN-data"
+                            >
+                              <svg
+                                width="32"
+                                height="32"
+                                viewBox="0 0 32 32"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <circle
+                                  cx="15.6063"
+                                  cy="15.6063"
+                                  r="15.6063"
+                                  fill="#4ADE80"
+                                />
+                                <path
+                                  d="M13.1515 21.2893L7.73438 15.8722L8.77427 14.8323L13.1515 19.2096L22.4379 9.9231L23.4778 10.963L13.1515 21.2893Z"
+                                  fill="white"
+                                />
+                              </svg>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
             <div class="productInformation mb-3">
@@ -834,9 +1464,6 @@
                         Product Description
                       </th>
                       <th class="body-normal med black90 text-center py-3">
-                        HSN Code
-                      </th>
-                      <th class="body-normal med black90 text-center py-3">
                         Qty
                       </th>
                       <th class="body-normal med black90 text-center py-3">
@@ -858,13 +1485,6 @@
                     <tr class="productInfoRow">
                       <td class="align-middle">
                         <input type="checkbox" name="" id="" />
-                      </td>
-                      <td class="align-middle">
-                        <input
-                          type="text"
-                          class="body-normal reg black40 p-2 border rounded w-100"
-                          placeholder="Placeholder"
-                        />
                       </td>
                       <td class="align-middle">
                         <input
@@ -944,7 +1564,7 @@
               </div>
             </div>
 
-            <div class="aboutInformation">
+            <div class="amountInformation">
               <p class="body-large med primary mb-3">About Information</p>
               <div class="row">
                 <div class="col-md-6 ms-auto">
@@ -955,7 +1575,104 @@
                       <p
                         class="body-normal med black90 mb-0 d-flex flex-column"
                       >
+                        Sub Amount
+                      </p>
+                      <div class="position-relative">
+                        <span
+                          class="position-absolute top-50 translate-middle-y"
+                          style="left: 5px"
+                        >
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="16px"
+                            height="26px"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="#000000"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          >
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                            <g
+                              id="SVGRepo_tracerCarrier"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            ></g>
+                            <g id="SVGRepo_iconCarrier">
+                              <path d="M6 3h12"></path>
+                              <path d="M6 8h12"></path>
+                              <path d="M6 13l8.5 8"></path>
+                              <path d="M6 13h3"></path>
+                              <path d="M9 13c6.667 0 6.667-10 0-10"></path>
+                            </g>
+                          </svg>
+                        </span>
+                        <input
+                          type="text"
+                          class="body-normal reg black40 py-2 ps-4 border rounded"
+                          placeholder="0.00"
+                          step="width: 160px"
+                        />
+                      </div>
+                    </div>
+                    <div
+                      class="col-12 d-flex align-items-center justify-content-between py-2"
+                    >
+                      <p
+                        class="body-normal med black90 mb-0 d-flex flex-column"
+                      >
+                        Total Tax
+                      </p>
+                      <div class="position-relative">
+                        <span
+                          class="position-absolute top-50 translate-middle-y"
+                          style="left: 5px"
+                        >
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="16px"
+                            height="26px"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="#000000"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          >
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                            <g
+                              id="SVGRepo_tracerCarrier"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            ></g>
+                            <g id="SVGRepo_iconCarrier">
+                              <path d="M6 3h12"></path>
+                              <path d="M6 8h12"></path>
+                              <path d="M6 13l8.5 8"></path>
+                              <path d="M6 13h3"></path>
+                              <path d="M9 13c6.667 0 6.667-10 0-10"></path>
+                            </g>
+                          </svg>
+                        </span>
+                        <input
+                          type="text"
+                          class="body-normal reg black40 py-2 ps-4 border rounded"
+                          placeholder="0.00"
+                          step="width: 160px"
+                        />
+                      </div>
+                    </div>
+                    <div
+                      class="col-12 d-flex align-items-center justify-content-between py-2"
+                    >
+                      <p
+                        class="body-normal med black90 mb-0 d-flex flex-column"
+                      >
                         Total Amount
+                        <span class="body-tiny reg black40"
+                          >(Sub Amount + Tax Amount)</span
+                        >
                       </p>
                       <div class="position-relative">
                         <span
