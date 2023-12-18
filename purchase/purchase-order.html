@@ -756,8 +756,8 @@
         <div class="row">
           <div class="col-md-9">
             <div class="tab-content" id="pills-tabContent">
-              <div class="tab-pane fade show active" id="pills-Pipeline" role="tabpanel"
-                aria-labelledby="pills-Pipeline-tab" tabindex="0">
+              <div class="tab-pane fade" id="pills-Pipeline" role="tabpanel" aria-labelledby="pills-Pipeline-tab"
+                tabindex="0">
                 <div class="row">
                   <div class="col-md-4">
                     <div class="p-2 border rounded">
@@ -842,7 +842,8 @@
                   </div>
                 </div>
               </div>
-              <div class="tab-pane fade" id="pills-List" role="tabpanel" aria-labelledby="pills-List-tab" tabindex="0">
+              <div class="tab-pane fade show active" id="pills-List" role="tabpanel" aria-labelledby="pills-List-tab"
+                tabindex="0">
                 <div class="table-responsive">
                   <table class="table w-100 list-view-table m-0">
                     <thead class="list-info-head-row">
@@ -1011,11 +1012,22 @@
                         </td>
                         <td class="list-info-item body-normal black80 m-0">
                           <div class="d-flex align-items-center">
-                            <div class="me-3">
-                              <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path d="M0 12V7H1V10.3L10.3 1H7V0H12V5H11V1.7L1.7 11H5V12H0Z" fill="#4E4D4D" />
-                              </svg>
+                            <div class="dropdown salesExpandedAction text-end me-3">
+                              <button class="border-0 p-0 bg-transparent" type="button" id="expandAction"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                                  xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M0 12V7H1V10.3L10.3 1H7V0H12V5H11V1.7L1.7 11H5V12H0Z" fill="#4E4D4D" />
+                                </svg>
+                              </button>
+                              <ul class="dropdown-menu show more-options p-0" aria-labelledby="expandAction">
+                                <li>
+                                  <button class="dropdown-item body-normal reg black80 p-2" data-bs-target="#delete"
+                                    data-bs-toggle="modal">
+                                    Delete
+                                  </button>
+                                </li>
+                              </ul>
                             </div>
                             <div class="dropdown dropstart more-option-toggle text-end">
                               <button class="border-0 p-0 bg-transparent" type="button" id="more-option1"
