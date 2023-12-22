@@ -856,8 +856,8 @@
                       <th class="list-info-head body-medium med black90 m-0" scope="col">PO Status</th>
                       <th class="list-info-head body-medium med black90 m-0" scope="col">Action</th>
                     </thead>
-                    <tbody>
-                      <tr class="list-info-row">
+                    <tbody class="position-relative">
+                      <tr class="list-info-row position-relative">
                         <td class="list-info-item">
                           <input type="checkbox" id="bulkCheck" class="bulkCheck">
                         </td>
@@ -1012,22 +1012,16 @@
                         </td>
                         <td class="list-info-item body-normal black80 m-0">
                           <div class="d-flex align-items-center">
-                            <div class="dropdown salesExpandedAction text-end me-3">
-                              <button class="border-0 p-0 bg-transparent" type="button" id="expandAction"
-                                data-bs-toggle="dropdown" aria-expanded="false">
+                            <div class="text-end me-3">
+                              <button
+                                class="salesExpandedAction body-tiny border-0 p-0 bg-transparent d-flex flex-column align-items-center justify-content-center"
+                                type="button">
                                 <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
                                   xmlns="http://www.w3.org/2000/svg">
                                   <path d="M0 12V7H1V10.3L10.3 1H7V0H12V5H11V1.7L1.7 11H5V12H0Z" fill="#4E4D4D" />
                                 </svg>
+                                <span class="salesExpandedActionText mt-2"> Expand</span>
                               </button>
-                              <ul class="dropdown-menu show more-options p-0" aria-labelledby="expandAction">
-                                <li>
-                                  <button class="dropdown-item body-normal reg black80 p-2" data-bs-target="#delete"
-                                    data-bs-toggle="modal">
-                                    Delete
-                                  </button>
-                                </li>
-                              </ul>
                             </div>
                             <div class="dropdown dropstart more-option-toggle text-end">
                               <button class="border-0 p-0 bg-transparent" type="button" id="more-option1"
@@ -1048,6 +1042,15 @@
                                 </li>
                               </ul>
                             </div>
+                        </td>
+                        <td class="expandedDiv border-0 p-0 position-absolute start-0">
+                          <div class="p-2 bg-white">
+
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi sequi magni eum
+                              aspernatur fugiat aliquid aut quis quod placeat, accusantium tempora nobis odio eaque
+                              dolore
+                              expedita necessitatibus quos eveniet non.</p>
+                          </div>
                         </td>
                       </tr>
                     </tbody>
