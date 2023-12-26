@@ -683,7 +683,7 @@
             </button>
             <div class="d-flex align-items-center crmTabTrigger mx-3" id="pills-tab" role="tablist">
               <div role="presentation">
-                <button class="active border-0 p-0" id="pills-Pipeline-tab" data-bs-toggle="pill"
+                <button class="border-0 p-0" id="pills-Pipeline-tab" data-bs-toggle="pill"
                   data-bs-target="#pills-Pipeline" type="button" role="tab" aria-controls="pills-Pipeline"
                   aria-selected="true">
                   <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -694,8 +694,9 @@
                 </button>
               </div>
               <div role="presentation" class="ms-2">
-                <button class="border-0 p-0" id="pills-List-tab" data-bs-toggle="pill" data-bs-target="#pills-List"
-                  type="button" role="tab" aria-controls="pills-List" aria-selected="false">
+                <button class="active border-0 p-0" id="pills-List-tab" data-bs-toggle="pill"
+                  data-bs-target="#pills-List" type="button" role="tab" aria-controls="pills-List"
+                  aria-selected="false">
                   <svg width="21" height="21" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd"
                       d="M0.600098 1.80001C0.600098 1.48175 0.726526 1.17652 0.951569 0.951478C1.17661 0.726434 1.48184 0.600006 1.8001 0.600006H16.2001C16.5184 0.600006 16.8236 0.726434 17.0486 0.951478C17.2737 1.17652 17.4001 1.48175 17.4001 1.80001C17.4001 2.11827 17.2737 2.42349 17.0486 2.64853C16.8236 2.87358 16.5184 3.00001 16.2001 3.00001H1.8001C1.48184 3.00001 1.17661 2.87358 0.951569 2.64853C0.726526 2.42349 0.600098 2.11827 0.600098 1.80001ZM0.600098 6.60001C0.600098 6.28175 0.726526 5.97652 0.951569 5.75148C1.17661 5.52643 1.48184 5.40001 1.8001 5.40001H16.2001C16.5184 5.40001 16.8236 5.52643 17.0486 5.75148C17.2737 5.97652 17.4001 6.28175 17.4001 6.60001C17.4001 6.91827 17.2737 7.22349 17.0486 7.44853C16.8236 7.67358 16.5184 7.80001 16.2001 7.80001H1.8001C1.48184 7.80001 1.17661 7.67358 0.951569 7.44853C0.726526 7.22349 0.600098 6.91827 0.600098 6.60001V6.60001ZM0.600098 11.4C0.600098 11.0817 0.726526 10.7765 0.951569 10.5515C1.17661 10.3264 1.48184 10.2 1.8001 10.2H16.2001C16.5184 10.2 16.8236 10.3264 17.0486 10.5515C17.2737 10.7765 17.4001 11.0817 17.4001 11.4C17.4001 11.7183 17.2737 12.0235 17.0486 12.2485C16.8236 12.4736 16.5184 12.6 16.2001 12.6H1.8001C1.48184 12.6 1.17661 12.4736 0.951569 12.2485C0.726526 12.0235 0.600098 11.7183 0.600098 11.4ZM0.600098 16.2C0.600098 15.8817 0.726526 15.5765 0.951569 15.3515C1.17661 15.1264 1.48184 15 1.8001 15H16.2001C16.5184 15 16.8236 15.1264 17.0486 15.3515C17.2737 15.5765 17.4001 15.8817 17.4001 16.2C17.4001 16.5183 17.2737 16.8235 17.0486 17.0485C16.8236 17.2736 16.5184 17.4 16.2001 17.4H1.8001C1.48184 17.4 1.17661 17.2736 0.951569 17.0485C0.726526 16.8235 0.600098 16.5183 0.600098 16.2Z"
@@ -760,90 +761,39 @@
                 tabindex="0">
                 <div class="row">
                   <div class="col-md-4">
-                    <div class="p-2 border rounded">
-                      <div class="d-flex justify-content-between">
-                        <div class="d-flex align-items-center">
-                          <p class="body-small med primary m-0">
-                            Sales Order No:
+                    <a href="/purchase/view-purchase-order.html">
+                      <div class="p-2 border rounded">
+                        <div class="d-flex justify-content-between">
+                          <div class="d-flex align-items-center">
+                            <p class="body-small med primary m-0">
+                              Sales Order No:
+                            </p>
+                            <p class="body-small reg black90 mb-0 ms-2">1234</p>
+                          </div>
+                          <p class="body-tiny med black80 mb-0">
+                            Direct so/<br />
+                            Converted from Deal
                           </p>
-                          <p class="body-small reg black90 mb-0 ms-2">1234</p>
                         </div>
-                        <p class="body-tiny med black80 mb-0">
-                          Direct so/<br />
-                          Converted from Deal
-                        </p>
-                      </div>
-                      <p class="body-small med black20 my-3">Date:</p>
-                      <div class="d-flex justify-content-between">
-                        <p class="body-small med black20 m-0">
-                          No of line items:
-                        </p>
-                        <p class="body-small med black20 m-0 d-flex align-items-center">
-                          <span class="approval">Approval</span>
-                          <span class="mx-2 primary">|</span>
-                          <span class="status">Status</span>
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-4">
-                    <div class="p-2 border rounded">
-                      <div class="d-flex justify-content-between">
-                        <div class="d-flex align-items-center">
-                          <p class="body-small med primary m-0">
-                            Sales Order No:
+                        <p class="body-small med black20 my-3">Date:</p>
+                        <div class="d-flex justify-content-between">
+                          <p class="body-small med black20 m-0">
+                            No of line items:
                           </p>
-                          <p class="body-small reg black90 mb-0 ms-2">1234</p>
-                        </div>
-                        <p class="body-tiny med black80 mb-0">
-                          Direct so/<br />
-                          Converted from Deal
-                        </p>
-                      </div>
-                      <p class="body-small med black20 my-3">Date:</p>
-                      <div class="d-flex justify-content-between">
-                        <p class="body-small med black20 m-0">
-                          No of line items:
-                        </p>
-                        <p class="body-small med black20 m-0 d-flex align-items-center">
-                          <span class="approval">Approval</span>
-                          <span class="mx-2 primary">|</span>
-                          <span class="status">Status</span>
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-4">
-                    <div class="p-2 border rounded">
-                      <div class="d-flex justify-content-between">
-                        <div class="d-flex align-items-center">
-                          <p class="body-small med primary m-0">
-                            Sales Order No:
+                          <p class="body-small med black20 m-0 d-flex align-items-center">
+                            <span class="approval">Approval</span>
+                            <span class="mx-2 primary">|</span>
+                            <span class="status">Status</span>
                           </p>
-                          <p class="body-small reg black90 mb-0 ms-2">1234</p>
                         </div>
-                        <p class="body-tiny med black80 mb-0">
-                          Direct so/<br />
-                          Converted from Deal
-                        </p>
                       </div>
-                      <p class="body-small med black20 my-3">Date:</p>
-                      <div class="d-flex justify-content-between">
-                        <p class="body-small med black20 m-0">
-                          No of line items:
-                        </p>
-                        <p class="body-small med black20 m-0 d-flex align-items-center">
-                          <span class="approval">Approval</span>
-                          <span class="mx-2 primary">|</span>
-                          <span class="status">Status</span>
-                        </p>
-                      </div>
-                    </div>
+                    </a>
                   </div>
                 </div>
               </div>
               <div class="tab-pane fade show active" id="pills-List" role="tabpanel" aria-labelledby="pills-List-tab"
                 tabindex="0">
+
                 <div class="table-responsive">
                   <table class="table w-100 list-view-table m-0">
                     <thead class="list-info-head-row">
@@ -857,6 +807,7 @@
                       <th class="list-info-head body-medium med black90 m-0" scope="col">Action</th>
                     </thead>
                     <tbody class="position-relative">
+
                       <tr class="list-info-row position-relative">
                         <td class="list-info-item">
                           <input type="checkbox" id="bulkCheck" class="bulkCheck">
@@ -1012,7 +963,7 @@
                         </td>
                         <td class="list-info-item body-normal black80 m-0">
                           <div class="d-flex align-items-center">
-                            <div class="text-end me-3">
+                            <div class="me-3">
                               <button
                                 class="salesExpandedAction body-tiny border-0 p-0 bg-transparent d-flex flex-column align-items-center justify-content-center"
                                 type="button">
@@ -1022,6 +973,57 @@
                                 </svg>
                                 <span class="salesExpandedActionText mt-2"> Expand</span>
                               </button>
+                              <div class="expandedDiv bg-white table-responsive border">
+                                <table class="table w-100 list-view-table m-0">
+                                  <thead class="list-info-head-row">
+                                    <th class="list-info-head body-small med black90 m-0 p-2" scope="col">#</th>
+                                    <th class="list-info-head body-small med black90 m-0 p-2" scope="col">SKU</th>
+                                    <th class="list-info-head body-small med black90 m-0 p-2" scope="col">Name</th>
+                                    <th class="list-info-head body-small med black90 m-0 p-2" scope="col">Price</th>
+                                    <th class="list-info-head body-small med black90 m-0 p-2" scope="col">Qty</th>
+                                    <th class="list-info-head body-small med black90 m-0 p-2" scope="col">Total</th>
+                                    <th class="list-info-head body-small med black90 m-0 p-2" scope="col">PO Status
+                                    </th>
+                                  </thead>
+                                  <tbody class="position-relative">
+                                    <tr class="list-info-row position-relative">
+                                      <td class="list-info-item">
+                                        <img src="/assets/images/placeholder.png" alt="" height="30px">
+                                      </td>
+                                      <td class="list-info-item body-normal black80 m-0 p-1">
+                                        <p class="d-flex body-small align-items-center w-100 flex-wrap m-0">
+                                          AR2498242
+                                        </p>
+                                      </td>
+                                      <td class="list-info-item body-normal black80 m-0 p-1">
+                                        <p class="d-flex body-small align-items-center w-100 flex-wrap m-0">
+                                          AR2498242
+                                        </p>
+                                      </td>
+                                      <td class="list-info-item body-normal black80 m-0 p-1">
+                                        <p class="d-flex body-small align-items-center w-100 flex-wrap m-0">
+                                          AR2498242
+                                        </p>
+                                      </td>
+                                      <td class="list-info-item body-normal black80 m-0 p-1">
+                                        <p class="d-flex body-small align-items-center w-100 flex-wrap m-0">
+                                          AR2498242
+                                        </p>
+                                      </td>
+                                      <td class="list-info-item body-normal black80 m-0 p-1">
+                                        <p class="d-flex body-small align-items-center w-100 flex-wrap m-0">
+                                          AR2498242
+                                        </p>
+                                      </td>
+                                      <td class="list-info-item body-normal black80 m-0 p-1">
+                                        <p class="d-flex body-small align-items-center w-100 flex-wrap m-0">
+                                          AR2498242
+                                        </p>
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </div>
                             </div>
                             <div class="dropdown dropstart more-option-toggle text-end">
                               <button class="border-0 p-0 bg-transparent" type="button" id="more-option1"
@@ -1042,15 +1044,728 @@
                                 </li>
                               </ul>
                             </div>
-                        </td>
-                        <td class="expandedDiv border-0 p-0 position-absolute start-0">
-                          <div class="p-2 bg-white">
 
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi sequi magni eum
-                              aspernatur fugiat aliquid aut quis quod placeat, accusantium tempora nobis odio eaque
-                              dolore
-                              expedita necessitatibus quos eveniet non.</p>
+
+                        </td>
+                      </tr>
+                      <tr class="list-info-row position-relative">
+                        <td class="list-info-item">
+                          <input type="checkbox" id="bulkCheck" class="bulkCheck">
+                        </td>
+                        <td class="list-info-item body-normal black80 m-0">
+                          <div class="d-flex align-items-center w-100 flex-wrap">
+                            <a href="/purchase/view-purchase-order.html" class="m-0 black20">AA1</a>
+                            <div class="ms-3 d-flex align-items-center list-info-itemControl">
+                              <div class="dropdown">
+                                <button
+                                  class="border-0 p-0 bg-transparent d-flex align-items-center body-medium sb black80"
+                                  type="button" id="dropdownMenuClickableInside" data-bs-toggle="dropdown"
+                                  data-bs-auto-close="outside" aria-expanded="false">
+                                  <svg width="10" height="11" viewBox="0 0 10 11" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                      d="M7.42338 1.28385C7.55253 1.15013 7.70701 1.04348 7.87782 0.970107C8.04862 0.896734 8.23233 0.858114 8.41822 0.856498C8.60411 0.854883 8.78846 0.890305 8.96052 0.960698C9.13257 1.03109 9.28889 1.13505 9.42034 1.2665C9.55179 1.39795 9.65574 1.55426 9.72613 1.72631C9.79653 1.89837 9.83195 2.08272 9.83033 2.26861C9.82872 2.4545 9.7901 2.63821 9.71673 2.80902C9.64335 2.97982 9.5367 3.1343 9.40298 3.26345L8.84788 3.81855L6.86828 1.83895L7.42338 1.28385ZM5.87848 2.82875L0.0131836 8.69405V10.6736H1.99278L7.85878 4.80835L5.87778 2.82875H5.87848Z"
+                                      fill="#383637"></path>
+                                  </svg>
+                                </button>
+                                <div id="dealSearchSelect" class="dropdown-menu more-options p-0 dropdown-menu-right"
+                                  aria-labelledby="dropdownMenuClickableInside">
+                                  <p class="body-small reg black90 p-2 text-center mb-0 blue20bg">Order No</p>
+                                  <div class="px-2 py-3">
+                                    <form>
+                                      <input type="text"
+                                        class="p-2 border-0 border-bottom body-tiny reg black90 w-100 h-auto"
+                                        placeholder="AA1">
+                                    </form>
+                                  </div>
+                                  <div class="filterBTN bg-light p-2 m-0 d-flex justify-content-between">
+                                    <button
+                                      class="body-normal med primary border-0 bg-transparent p-0 filterCancel">Cancel</button>
+                                    <button class="body-normal med grey0 border-0 rounded p-2">Save</button>
+                                  </div>
+                                </div>
+                              </div>
+                              <button
+                                class="border-0 p-0 bg-transparent d-flex align-items-center body-medium sb black80 ms-2"
+                                type="button">
+                                <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                                  xmlns="http://www.w3.org/2000/svg">
+                                  <path
+                                    d="M3.57967 2.85677V7.52344C3.57967 7.83286 3.70259 8.1296 3.92138 8.34839C4.14017 8.56719 4.43692 8.6901 4.74634 8.6901H8.24634M3.57967 2.85677V1.6901C3.57967 1.38068 3.70259 1.08394 3.92138 0.865146C4.14017 0.646354 4.43692 0.523438 4.74634 0.523438H7.42151C7.5762 0.523471 7.72455 0.58495 7.83392 0.694354L10.4088 3.26919C10.5182 3.37856 10.5796 3.52691 10.5797 3.6816V7.52344C10.5797 7.83286 10.4568 8.1296 10.238 8.34839C10.0192 8.56719 9.72242 8.6901 9.41301 8.6901H8.24634M3.57967 2.85677H2.413C2.10359 2.85677 1.80684 2.97969 1.58805 3.19848C1.36925 3.41727 1.24634 3.71402 1.24634 4.02344V9.85677C1.24634 10.1662 1.36925 10.4629 1.58805 10.6817C1.80684 10.9005 2.10359 11.0234 2.413 11.0234H7.07967C7.38909 11.0234 7.68584 10.9005 7.90463 10.6817C8.12342 10.4629 8.24634 10.1662 8.24634 9.85677V8.6901"
+                                    stroke="#646364" stroke-linecap="round" stroke-linejoin="round"></path>
+                                </svg>
+                              </button>
+                            </div>
                           </div>
+                        </td>
+                        <td class="list-info-item body-normal black80 m-0">
+                          <div class="d-flex align-items-center w-100 flex-wrap">
+                            <a href="/purchase/view-purchase-order.html" class="m-0 black20">Direct</a>
+                          </div>
+                        </td>
+                        <td class="list-info-item body-normal black80 m-0">
+                          <div class="d-flex align-items-center w-100 flex-wrap">
+                            <a href="/purchase/view-purchase-order.html" class="m-0 black20">1234</a>
+                            <div class="ms-3 d-flex align-items-center list-info-itemControl">
+                              <div class="dropdown">
+                                <button
+                                  class="border-0 p-0 bg-transparent d-flex align-items-center body-medium sb black80"
+                                  type="button" id="dropdownMenuClickableInside" data-bs-toggle="dropdown"
+                                  data-bs-auto-close="outside" aria-expanded="false">
+                                  <svg width="10" height="11" viewBox="0 0 10 11" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                      d="M7.42338 1.28385C7.55253 1.15013 7.70701 1.04348 7.87782 0.970107C8.04862 0.896734 8.23233 0.858114 8.41822 0.856498C8.60411 0.854883 8.78846 0.890305 8.96052 0.960698C9.13257 1.03109 9.28889 1.13505 9.42034 1.2665C9.55179 1.39795 9.65574 1.55426 9.72613 1.72631C9.79653 1.89837 9.83195 2.08272 9.83033 2.26861C9.82872 2.4545 9.7901 2.63821 9.71673 2.80902C9.64335 2.97982 9.5367 3.1343 9.40298 3.26345L8.84788 3.81855L6.86828 1.83895L7.42338 1.28385ZM5.87848 2.82875L0.0131836 8.69405V10.6736H1.99278L7.85878 4.80835L5.87778 2.82875H5.87848Z"
+                                      fill="#383637"></path>
+                                  </svg>
+                                </button>
+                                <div id="dealSearchSelect" class="dropdown-menu more-options p-0 dropdown-menu-right"
+                                  aria-labelledby="dropdownMenuClickableInside">
+                                  <p class="body-small reg black90 p-2 text-center mb-0 blue20bg">Quote</p>
+                                  <div class="px-2 py-3">
+                                    <form>
+                                      <input type="text"
+                                        class="p-2 border-0 border-bottom body-tiny reg black90 w-100 h-auto"
+                                        placeholder="1234">
+                                    </form>
+                                  </div>
+                                  <div class="filterBTN bg-light p-2 m-0 d-flex justify-content-between">
+                                    <button
+                                      class="body-normal med primary border-0 bg-transparent p-0 filterCancel">Cancel</button>
+                                    <button class="body-normal med grey0 border-0 rounded p-2">Save</button>
+                                  </div>
+                                </div>
+                              </div>
+                              <button
+                                class="border-0 p-0 bg-transparent d-flex align-items-center body-medium sb black80 ms-2"
+                                type="button">
+                                <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                                  xmlns="http://www.w3.org/2000/svg">
+                                  <path
+                                    d="M3.57967 2.85677V7.52344C3.57967 7.83286 3.70259 8.1296 3.92138 8.34839C4.14017 8.56719 4.43692 8.6901 4.74634 8.6901H8.24634M3.57967 2.85677V1.6901C3.57967 1.38068 3.70259 1.08394 3.92138 0.865146C4.14017 0.646354 4.43692 0.523438 4.74634 0.523438H7.42151C7.5762 0.523471 7.72455 0.58495 7.83392 0.694354L10.4088 3.26919C10.5182 3.37856 10.5796 3.52691 10.5797 3.6816V7.52344C10.5797 7.83286 10.4568 8.1296 10.238 8.34839C10.0192 8.56719 9.72242 8.6901 9.41301 8.6901H8.24634M3.57967 2.85677H2.413C2.10359 2.85677 1.80684 2.97969 1.58805 3.19848C1.36925 3.41727 1.24634 3.71402 1.24634 4.02344V9.85677C1.24634 10.1662 1.36925 10.4629 1.58805 10.6817C1.80684 10.9005 2.10359 11.0234 2.413 11.0234H7.07967C7.38909 11.0234 7.68584 10.9005 7.90463 10.6817C8.12342 10.4629 8.24634 10.1662 8.24634 9.85677V8.6901"
+                                    stroke="#646364" stroke-linecap="round" stroke-linejoin="round"></path>
+                                </svg>
+                              </button>
+                            </div>
+                          </div>
+                        </td>
+                        <td class="list-info-item body-normal black80 m-0">
+                          <div class="d-flex align-items-center w-100 flex-wrap">
+                            <a href="/purchase/view-purchase-order.html" class="m-0 black20">02-01-2023</a>
+                            <div class="ms-3 d-flex align-items-center list-info-itemControl">
+                              <div class="dropdown">
+                                <button
+                                  class="border-0 p-0 bg-transparent d-flex align-items-center body-medium sb black80"
+                                  type="button" id="dropdownMenuClickableInside" data-bs-toggle="dropdown"
+                                  data-bs-auto-close="outside" aria-expanded="false">
+                                  <svg width="10" height="11" viewBox="0 0 10 11" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                      d="M7.42338 1.28385C7.55253 1.15013 7.70701 1.04348 7.87782 0.970107C8.04862 0.896734 8.23233 0.858114 8.41822 0.856498C8.60411 0.854883 8.78846 0.890305 8.96052 0.960698C9.13257 1.03109 9.28889 1.13505 9.42034 1.2665C9.55179 1.39795 9.65574 1.55426 9.72613 1.72631C9.79653 1.89837 9.83195 2.08272 9.83033 2.26861C9.82872 2.4545 9.7901 2.63821 9.71673 2.80902C9.64335 2.97982 9.5367 3.1343 9.40298 3.26345L8.84788 3.81855L6.86828 1.83895L7.42338 1.28385ZM5.87848 2.82875L0.0131836 8.69405V10.6736H1.99278L7.85878 4.80835L5.87778 2.82875H5.87848Z"
+                                      fill="#383637"></path>
+                                  </svg>
+                                </button>
+                                <div id="dealSearchSelect" class="dropdown-menu more-options p-0 dropdown-menu-right"
+                                  aria-labelledby="dropdownMenuClickableInside">
+                                  <p class="body-small reg black90 p-2 text-center mb-0 blue20bg">Events</p>
+                                  <div class="px-2 py-0">
+                                    <div class="datepicker"></div>
+                                  </div>
+                                  <div class="filterBTN bg-light p-2 m-0 d-flex justify-content-between">
+                                    <button
+                                      class="body-normal med primary border-0 bg-transparent p-0 filterCancel">Cancel</button>
+                                    <button class="body-normal med grey0 border-0 rounded p-2">Save</button>
+                                  </div>
+                                </div>
+                              </div>
+                              <button
+                                class="border-0 p-0 bg-transparent d-flex align-items-center body-medium sb black80 ms-2"
+                                type="button">
+                                <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                                  xmlns="http://www.w3.org/2000/svg">
+                                  <path
+                                    d="M3.57967 2.85677V7.52344C3.57967 7.83286 3.70259 8.1296 3.92138 8.34839C4.14017 8.56719 4.43692 8.6901 4.74634 8.6901H8.24634M3.57967 2.85677V1.6901C3.57967 1.38068 3.70259 1.08394 3.92138 0.865146C4.14017 0.646354 4.43692 0.523438 4.74634 0.523438H7.42151C7.5762 0.523471 7.72455 0.58495 7.83392 0.694354L10.4088 3.26919C10.5182 3.37856 10.5796 3.52691 10.5797 3.6816V7.52344C10.5797 7.83286 10.4568 8.1296 10.238 8.34839C10.0192 8.56719 9.72242 8.6901 9.41301 8.6901H8.24634M3.57967 2.85677H2.413C2.10359 2.85677 1.80684 2.97969 1.58805 3.19848C1.36925 3.41727 1.24634 3.71402 1.24634 4.02344V9.85677C1.24634 10.1662 1.36925 10.4629 1.58805 10.6817C1.80684 10.9005 2.10359 11.0234 2.413 11.0234H7.07967C7.38909 11.0234 7.68584 10.9005 7.90463 10.6817C8.12342 10.4629 8.24634 10.1662 8.24634 9.85677V8.6901"
+                                    stroke="#646364" stroke-linecap="round" stroke-linejoin="round"></path>
+                                </svg>
+                              </button>
+                            </div>
+                          </div>
+                        </td>
+                        <td class="list-info-item body-normal black80 m-0">
+                          <div class="d-flex align-items-center w-100 flex-wrap">
+                            <a href="/purchase/view-purchase-order.html" class="m-0 black20">Delivered</a>
+                          </div>
+                        </td>
+                        <td class="list-info-item body-normal black80 m-0">
+                          <div class="d-flex align-items-center w-100 flex-wrap">
+                            <a href="/purchase/view-purchase-order.html" class="m-0 black20">Delivered</a>
+                          </div>
+                        </td>
+                        <td class="list-info-item body-normal black80 m-0">
+                          <div class="d-flex align-items-center">
+                            <div class="me-3">
+                              <button
+                                class="salesExpandedAction body-tiny border-0 p-0 bg-transparent d-flex flex-column align-items-center justify-content-center"
+                                type="button">
+                                <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                                  xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M0 12V7H1V10.3L10.3 1H7V0H12V5H11V1.7L1.7 11H5V12H0Z" fill="#4E4D4D" />
+                                </svg>
+                                <span class="salesExpandedActionText mt-2"> Expand</span>
+                              </button>
+                              <div class="expandedDiv bg-white table-responsive border">
+                                <table class="table w-100 list-view-table m-0">
+                                  <thead class="list-info-head-row">
+                                    <th class="list-info-head body-small med black90 m-0 p-2" scope="col">#</th>
+                                    <th class="list-info-head body-small med black90 m-0 p-2" scope="col">SKU</th>
+                                    <th class="list-info-head body-small med black90 m-0 p-2" scope="col">Name</th>
+                                    <th class="list-info-head body-small med black90 m-0 p-2" scope="col">Price</th>
+                                    <th class="list-info-head body-small med black90 m-0 p-2" scope="col">Qty</th>
+                                    <th class="list-info-head body-small med black90 m-0 p-2" scope="col">Total</th>
+                                    <th class="list-info-head body-small med black90 m-0 p-2" scope="col">PO Status
+                                    </th>
+                                  </thead>
+                                  <tbody class="position-relative">
+                                    <tr class="list-info-row position-relative">
+                                      <td class="list-info-item">
+                                        <img src="/assets/images/placeholder.png" alt="" height="30px">
+                                      </td>
+                                      <td class="list-info-item body-normal black80 m-0 p-1">
+                                        <p class="d-flex body-small align-items-center w-100 flex-wrap m-0">
+                                          AR2498242
+                                        </p>
+                                      </td>
+                                      <td class="list-info-item body-normal black80 m-0 p-1">
+                                        <p class="d-flex body-small align-items-center w-100 flex-wrap m-0">
+                                          AR2498242
+                                        </p>
+                                      </td>
+                                      <td class="list-info-item body-normal black80 m-0 p-1">
+                                        <p class="d-flex body-small align-items-center w-100 flex-wrap m-0">
+                                          AR2498242
+                                        </p>
+                                      </td>
+                                      <td class="list-info-item body-normal black80 m-0 p-1">
+                                        <p class="d-flex body-small align-items-center w-100 flex-wrap m-0">
+                                          AR2498242
+                                        </p>
+                                      </td>
+                                      <td class="list-info-item body-normal black80 m-0 p-1">
+                                        <p class="d-flex body-small align-items-center w-100 flex-wrap m-0">
+                                          AR2498242
+                                        </p>
+                                      </td>
+                                      <td class="list-info-item body-normal black80 m-0 p-1">
+                                        <p class="d-flex body-small align-items-center w-100 flex-wrap m-0">
+                                          AR2498242
+                                        </p>
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </div>
+                            </div>
+                            <div class="dropdown dropstart more-option-toggle text-end">
+                              <button class="border-0 p-0 bg-transparent" type="button" id="more-option1"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <svg width="12" height="12" viewBox="0 0 11 6" fill="none"
+                                  xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M9.41992 1.00049L5.41992 5.00049L1.41992 1.00049" stroke="#646364"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+
+                              </button>
+                              <ul class="dropdown-menu more-options p-0" aria-labelledby="more-option1">
+                                <li>
+                                  <button class="dropdown-item body-normal reg black80 p-2" data-bs-target="#delete"
+                                    data-bs-toggle="modal">
+                                    Delete
+                                  </button>
+                                </li>
+                              </ul>
+                            </div>
+
+
+                        </td>
+                      </tr>
+                      <tr class="list-info-row position-relative">
+                        <td class="list-info-item">
+                          <input type="checkbox" id="bulkCheck" class="bulkCheck">
+                        </td>
+                        <td class="list-info-item body-normal black80 m-0">
+                          <div class="d-flex align-items-center w-100 flex-wrap">
+                            <a href="/purchase/view-purchase-order.html" class="m-0 black20">AA1</a>
+                            <div class="ms-3 d-flex align-items-center list-info-itemControl">
+                              <div class="dropdown">
+                                <button
+                                  class="border-0 p-0 bg-transparent d-flex align-items-center body-medium sb black80"
+                                  type="button" id="dropdownMenuClickableInside" data-bs-toggle="dropdown"
+                                  data-bs-auto-close="outside" aria-expanded="false">
+                                  <svg width="10" height="11" viewBox="0 0 10 11" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                      d="M7.42338 1.28385C7.55253 1.15013 7.70701 1.04348 7.87782 0.970107C8.04862 0.896734 8.23233 0.858114 8.41822 0.856498C8.60411 0.854883 8.78846 0.890305 8.96052 0.960698C9.13257 1.03109 9.28889 1.13505 9.42034 1.2665C9.55179 1.39795 9.65574 1.55426 9.72613 1.72631C9.79653 1.89837 9.83195 2.08272 9.83033 2.26861C9.82872 2.4545 9.7901 2.63821 9.71673 2.80902C9.64335 2.97982 9.5367 3.1343 9.40298 3.26345L8.84788 3.81855L6.86828 1.83895L7.42338 1.28385ZM5.87848 2.82875L0.0131836 8.69405V10.6736H1.99278L7.85878 4.80835L5.87778 2.82875H5.87848Z"
+                                      fill="#383637"></path>
+                                  </svg>
+                                </button>
+                                <div id="dealSearchSelect" class="dropdown-menu more-options p-0 dropdown-menu-right"
+                                  aria-labelledby="dropdownMenuClickableInside">
+                                  <p class="body-small reg black90 p-2 text-center mb-0 blue20bg">Order No</p>
+                                  <div class="px-2 py-3">
+                                    <form>
+                                      <input type="text"
+                                        class="p-2 border-0 border-bottom body-tiny reg black90 w-100 h-auto"
+                                        placeholder="AA1">
+                                    </form>
+                                  </div>
+                                  <div class="filterBTN bg-light p-2 m-0 d-flex justify-content-between">
+                                    <button
+                                      class="body-normal med primary border-0 bg-transparent p-0 filterCancel">Cancel</button>
+                                    <button class="body-normal med grey0 border-0 rounded p-2">Save</button>
+                                  </div>
+                                </div>
+                              </div>
+                              <button
+                                class="border-0 p-0 bg-transparent d-flex align-items-center body-medium sb black80 ms-2"
+                                type="button">
+                                <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                                  xmlns="http://www.w3.org/2000/svg">
+                                  <path
+                                    d="M3.57967 2.85677V7.52344C3.57967 7.83286 3.70259 8.1296 3.92138 8.34839C4.14017 8.56719 4.43692 8.6901 4.74634 8.6901H8.24634M3.57967 2.85677V1.6901C3.57967 1.38068 3.70259 1.08394 3.92138 0.865146C4.14017 0.646354 4.43692 0.523438 4.74634 0.523438H7.42151C7.5762 0.523471 7.72455 0.58495 7.83392 0.694354L10.4088 3.26919C10.5182 3.37856 10.5796 3.52691 10.5797 3.6816V7.52344C10.5797 7.83286 10.4568 8.1296 10.238 8.34839C10.0192 8.56719 9.72242 8.6901 9.41301 8.6901H8.24634M3.57967 2.85677H2.413C2.10359 2.85677 1.80684 2.97969 1.58805 3.19848C1.36925 3.41727 1.24634 3.71402 1.24634 4.02344V9.85677C1.24634 10.1662 1.36925 10.4629 1.58805 10.6817C1.80684 10.9005 2.10359 11.0234 2.413 11.0234H7.07967C7.38909 11.0234 7.68584 10.9005 7.90463 10.6817C8.12342 10.4629 8.24634 10.1662 8.24634 9.85677V8.6901"
+                                    stroke="#646364" stroke-linecap="round" stroke-linejoin="round"></path>
+                                </svg>
+                              </button>
+                            </div>
+                          </div>
+                        </td>
+                        <td class="list-info-item body-normal black80 m-0">
+                          <div class="d-flex align-items-center w-100 flex-wrap">
+                            <a href="/purchase/view-purchase-order.html" class="m-0 black20">Direct</a>
+                          </div>
+                        </td>
+                        <td class="list-info-item body-normal black80 m-0">
+                          <div class="d-flex align-items-center w-100 flex-wrap">
+                            <a href="/purchase/view-purchase-order.html" class="m-0 black20">1234</a>
+                            <div class="ms-3 d-flex align-items-center list-info-itemControl">
+                              <div class="dropdown">
+                                <button
+                                  class="border-0 p-0 bg-transparent d-flex align-items-center body-medium sb black80"
+                                  type="button" id="dropdownMenuClickableInside" data-bs-toggle="dropdown"
+                                  data-bs-auto-close="outside" aria-expanded="false">
+                                  <svg width="10" height="11" viewBox="0 0 10 11" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                      d="M7.42338 1.28385C7.55253 1.15013 7.70701 1.04348 7.87782 0.970107C8.04862 0.896734 8.23233 0.858114 8.41822 0.856498C8.60411 0.854883 8.78846 0.890305 8.96052 0.960698C9.13257 1.03109 9.28889 1.13505 9.42034 1.2665C9.55179 1.39795 9.65574 1.55426 9.72613 1.72631C9.79653 1.89837 9.83195 2.08272 9.83033 2.26861C9.82872 2.4545 9.7901 2.63821 9.71673 2.80902C9.64335 2.97982 9.5367 3.1343 9.40298 3.26345L8.84788 3.81855L6.86828 1.83895L7.42338 1.28385ZM5.87848 2.82875L0.0131836 8.69405V10.6736H1.99278L7.85878 4.80835L5.87778 2.82875H5.87848Z"
+                                      fill="#383637"></path>
+                                  </svg>
+                                </button>
+                                <div id="dealSearchSelect" class="dropdown-menu more-options p-0 dropdown-menu-right"
+                                  aria-labelledby="dropdownMenuClickableInside">
+                                  <p class="body-small reg black90 p-2 text-center mb-0 blue20bg">Quote</p>
+                                  <div class="px-2 py-3">
+                                    <form>
+                                      <input type="text"
+                                        class="p-2 border-0 border-bottom body-tiny reg black90 w-100 h-auto"
+                                        placeholder="1234">
+                                    </form>
+                                  </div>
+                                  <div class="filterBTN bg-light p-2 m-0 d-flex justify-content-between">
+                                    <button
+                                      class="body-normal med primary border-0 bg-transparent p-0 filterCancel">Cancel</button>
+                                    <button class="body-normal med grey0 border-0 rounded p-2">Save</button>
+                                  </div>
+                                </div>
+                              </div>
+                              <button
+                                class="border-0 p-0 bg-transparent d-flex align-items-center body-medium sb black80 ms-2"
+                                type="button">
+                                <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                                  xmlns="http://www.w3.org/2000/svg">
+                                  <path
+                                    d="M3.57967 2.85677V7.52344C3.57967 7.83286 3.70259 8.1296 3.92138 8.34839C4.14017 8.56719 4.43692 8.6901 4.74634 8.6901H8.24634M3.57967 2.85677V1.6901C3.57967 1.38068 3.70259 1.08394 3.92138 0.865146C4.14017 0.646354 4.43692 0.523438 4.74634 0.523438H7.42151C7.5762 0.523471 7.72455 0.58495 7.83392 0.694354L10.4088 3.26919C10.5182 3.37856 10.5796 3.52691 10.5797 3.6816V7.52344C10.5797 7.83286 10.4568 8.1296 10.238 8.34839C10.0192 8.56719 9.72242 8.6901 9.41301 8.6901H8.24634M3.57967 2.85677H2.413C2.10359 2.85677 1.80684 2.97969 1.58805 3.19848C1.36925 3.41727 1.24634 3.71402 1.24634 4.02344V9.85677C1.24634 10.1662 1.36925 10.4629 1.58805 10.6817C1.80684 10.9005 2.10359 11.0234 2.413 11.0234H7.07967C7.38909 11.0234 7.68584 10.9005 7.90463 10.6817C8.12342 10.4629 8.24634 10.1662 8.24634 9.85677V8.6901"
+                                    stroke="#646364" stroke-linecap="round" stroke-linejoin="round"></path>
+                                </svg>
+                              </button>
+                            </div>
+                          </div>
+                        </td>
+                        <td class="list-info-item body-normal black80 m-0">
+                          <div class="d-flex align-items-center w-100 flex-wrap">
+                            <a href="/purchase/view-purchase-order.html" class="m-0 black20">02-01-2023</a>
+                            <div class="ms-3 d-flex align-items-center list-info-itemControl">
+                              <div class="dropdown">
+                                <button
+                                  class="border-0 p-0 bg-transparent d-flex align-items-center body-medium sb black80"
+                                  type="button" id="dropdownMenuClickableInside" data-bs-toggle="dropdown"
+                                  data-bs-auto-close="outside" aria-expanded="false">
+                                  <svg width="10" height="11" viewBox="0 0 10 11" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                      d="M7.42338 1.28385C7.55253 1.15013 7.70701 1.04348 7.87782 0.970107C8.04862 0.896734 8.23233 0.858114 8.41822 0.856498C8.60411 0.854883 8.78846 0.890305 8.96052 0.960698C9.13257 1.03109 9.28889 1.13505 9.42034 1.2665C9.55179 1.39795 9.65574 1.55426 9.72613 1.72631C9.79653 1.89837 9.83195 2.08272 9.83033 2.26861C9.82872 2.4545 9.7901 2.63821 9.71673 2.80902C9.64335 2.97982 9.5367 3.1343 9.40298 3.26345L8.84788 3.81855L6.86828 1.83895L7.42338 1.28385ZM5.87848 2.82875L0.0131836 8.69405V10.6736H1.99278L7.85878 4.80835L5.87778 2.82875H5.87848Z"
+                                      fill="#383637"></path>
+                                  </svg>
+                                </button>
+                                <div id="dealSearchSelect" class="dropdown-menu more-options p-0 dropdown-menu-right"
+                                  aria-labelledby="dropdownMenuClickableInside">
+                                  <p class="body-small reg black90 p-2 text-center mb-0 blue20bg">Events</p>
+                                  <div class="px-2 py-0">
+                                    <div class="datepicker"></div>
+                                  </div>
+                                  <div class="filterBTN bg-light p-2 m-0 d-flex justify-content-between">
+                                    <button
+                                      class="body-normal med primary border-0 bg-transparent p-0 filterCancel">Cancel</button>
+                                    <button class="body-normal med grey0 border-0 rounded p-2">Save</button>
+                                  </div>
+                                </div>
+                              </div>
+                              <button
+                                class="border-0 p-0 bg-transparent d-flex align-items-center body-medium sb black80 ms-2"
+                                type="button">
+                                <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                                  xmlns="http://www.w3.org/2000/svg">
+                                  <path
+                                    d="M3.57967 2.85677V7.52344C3.57967 7.83286 3.70259 8.1296 3.92138 8.34839C4.14017 8.56719 4.43692 8.6901 4.74634 8.6901H8.24634M3.57967 2.85677V1.6901C3.57967 1.38068 3.70259 1.08394 3.92138 0.865146C4.14017 0.646354 4.43692 0.523438 4.74634 0.523438H7.42151C7.5762 0.523471 7.72455 0.58495 7.83392 0.694354L10.4088 3.26919C10.5182 3.37856 10.5796 3.52691 10.5797 3.6816V7.52344C10.5797 7.83286 10.4568 8.1296 10.238 8.34839C10.0192 8.56719 9.72242 8.6901 9.41301 8.6901H8.24634M3.57967 2.85677H2.413C2.10359 2.85677 1.80684 2.97969 1.58805 3.19848C1.36925 3.41727 1.24634 3.71402 1.24634 4.02344V9.85677C1.24634 10.1662 1.36925 10.4629 1.58805 10.6817C1.80684 10.9005 2.10359 11.0234 2.413 11.0234H7.07967C7.38909 11.0234 7.68584 10.9005 7.90463 10.6817C8.12342 10.4629 8.24634 10.1662 8.24634 9.85677V8.6901"
+                                    stroke="#646364" stroke-linecap="round" stroke-linejoin="round"></path>
+                                </svg>
+                              </button>
+                            </div>
+                          </div>
+                        </td>
+                        <td class="list-info-item body-normal black80 m-0">
+                          <div class="d-flex align-items-center w-100 flex-wrap">
+                            <a href="/purchase/view-purchase-order.html" class="m-0 black20">Delivered</a>
+                          </div>
+                        </td>
+                        <td class="list-info-item body-normal black80 m-0">
+                          <div class="d-flex align-items-center w-100 flex-wrap">
+                            <a href="/purchase/view-purchase-order.html" class="m-0 black20">Delivered</a>
+                          </div>
+                        </td>
+                        <td class="list-info-item body-normal black80 m-0">
+                          <div class="d-flex align-items-center">
+                            <div class="me-3">
+                              <button
+                                class="salesExpandedAction body-tiny border-0 p-0 bg-transparent d-flex flex-column align-items-center justify-content-center"
+                                type="button">
+                                <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                                  xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M0 12V7H1V10.3L10.3 1H7V0H12V5H11V1.7L1.7 11H5V12H0Z" fill="#4E4D4D" />
+                                </svg>
+                                <span class="salesExpandedActionText mt-2"> Expand</span>
+                              </button>
+                              <div class="expandedDiv bg-white table-responsive border">
+                                <table class="table w-100 list-view-table m-0">
+                                  <thead class="list-info-head-row">
+                                    <th class="list-info-head body-small med black90 m-0 p-2" scope="col">#</th>
+                                    <th class="list-info-head body-small med black90 m-0 p-2" scope="col">SKU</th>
+                                    <th class="list-info-head body-small med black90 m-0 p-2" scope="col">Name</th>
+                                    <th class="list-info-head body-small med black90 m-0 p-2" scope="col">Price</th>
+                                    <th class="list-info-head body-small med black90 m-0 p-2" scope="col">Qty</th>
+                                    <th class="list-info-head body-small med black90 m-0 p-2" scope="col">Total</th>
+                                    <th class="list-info-head body-small med black90 m-0 p-2" scope="col">PO Status
+                                    </th>
+                                  </thead>
+                                  <tbody class="position-relative">
+                                    <tr class="list-info-row position-relative">
+                                      <td class="list-info-item">
+                                        <img src="/assets/images/placeholder.png" alt="" height="30px">
+                                      </td>
+                                      <td class="list-info-item body-normal black80 m-0 p-1">
+                                        <p class="d-flex body-small align-items-center w-100 flex-wrap m-0">
+                                          AR2498242
+                                        </p>
+                                      </td>
+                                      <td class="list-info-item body-normal black80 m-0 p-1">
+                                        <p class="d-flex body-small align-items-center w-100 flex-wrap m-0">
+                                          AR2498242
+                                        </p>
+                                      </td>
+                                      <td class="list-info-item body-normal black80 m-0 p-1">
+                                        <p class="d-flex body-small align-items-center w-100 flex-wrap m-0">
+                                          AR2498242
+                                        </p>
+                                      </td>
+                                      <td class="list-info-item body-normal black80 m-0 p-1">
+                                        <p class="d-flex body-small align-items-center w-100 flex-wrap m-0">
+                                          AR2498242
+                                        </p>
+                                      </td>
+                                      <td class="list-info-item body-normal black80 m-0 p-1">
+                                        <p class="d-flex body-small align-items-center w-100 flex-wrap m-0">
+                                          AR2498242
+                                        </p>
+                                      </td>
+                                      <td class="list-info-item body-normal black80 m-0 p-1">
+                                        <p class="d-flex body-small align-items-center w-100 flex-wrap m-0">
+                                          AR2498242
+                                        </p>
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </div>
+                            </div>
+                            <div class="dropdown dropstart more-option-toggle text-end">
+                              <button class="border-0 p-0 bg-transparent" type="button" id="more-option1"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <svg width="12" height="12" viewBox="0 0 11 6" fill="none"
+                                  xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M9.41992 1.00049L5.41992 5.00049L1.41992 1.00049" stroke="#646364"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+
+                              </button>
+                              <ul class="dropdown-menu more-options p-0" aria-labelledby="more-option1">
+                                <li>
+                                  <button class="dropdown-item body-normal reg black80 p-2" data-bs-target="#delete"
+                                    data-bs-toggle="modal">
+                                    Delete
+                                  </button>
+                                </li>
+                              </ul>
+                            </div>
+
+
+                        </td>
+                      </tr>
+                      <tr class="list-info-row position-relative">
+                        <td class="list-info-item">
+                          <input type="checkbox" id="bulkCheck" class="bulkCheck">
+                        </td>
+                        <td class="list-info-item body-normal black80 m-0">
+                          <div class="d-flex align-items-center w-100 flex-wrap">
+                            <a href="/purchase/view-purchase-order.html" class="m-0 black20">AA1</a>
+                            <div class="ms-3 d-flex align-items-center list-info-itemControl">
+                              <div class="dropdown">
+                                <button
+                                  class="border-0 p-0 bg-transparent d-flex align-items-center body-medium sb black80"
+                                  type="button" id="dropdownMenuClickableInside" data-bs-toggle="dropdown"
+                                  data-bs-auto-close="outside" aria-expanded="false">
+                                  <svg width="10" height="11" viewBox="0 0 10 11" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                      d="M7.42338 1.28385C7.55253 1.15013 7.70701 1.04348 7.87782 0.970107C8.04862 0.896734 8.23233 0.858114 8.41822 0.856498C8.60411 0.854883 8.78846 0.890305 8.96052 0.960698C9.13257 1.03109 9.28889 1.13505 9.42034 1.2665C9.55179 1.39795 9.65574 1.55426 9.72613 1.72631C9.79653 1.89837 9.83195 2.08272 9.83033 2.26861C9.82872 2.4545 9.7901 2.63821 9.71673 2.80902C9.64335 2.97982 9.5367 3.1343 9.40298 3.26345L8.84788 3.81855L6.86828 1.83895L7.42338 1.28385ZM5.87848 2.82875L0.0131836 8.69405V10.6736H1.99278L7.85878 4.80835L5.87778 2.82875H5.87848Z"
+                                      fill="#383637"></path>
+                                  </svg>
+                                </button>
+                                <div id="dealSearchSelect" class="dropdown-menu more-options p-0 dropdown-menu-right"
+                                  aria-labelledby="dropdownMenuClickableInside">
+                                  <p class="body-small reg black90 p-2 text-center mb-0 blue20bg">Order No</p>
+                                  <div class="px-2 py-3">
+                                    <form>
+                                      <input type="text"
+                                        class="p-2 border-0 border-bottom body-tiny reg black90 w-100 h-auto"
+                                        placeholder="AA1">
+                                    </form>
+                                  </div>
+                                  <div class="filterBTN bg-light p-2 m-0 d-flex justify-content-between">
+                                    <button
+                                      class="body-normal med primary border-0 bg-transparent p-0 filterCancel">Cancel</button>
+                                    <button class="body-normal med grey0 border-0 rounded p-2">Save</button>
+                                  </div>
+                                </div>
+                              </div>
+                              <button
+                                class="border-0 p-0 bg-transparent d-flex align-items-center body-medium sb black80 ms-2"
+                                type="button">
+                                <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                                  xmlns="http://www.w3.org/2000/svg">
+                                  <path
+                                    d="M3.57967 2.85677V7.52344C3.57967 7.83286 3.70259 8.1296 3.92138 8.34839C4.14017 8.56719 4.43692 8.6901 4.74634 8.6901H8.24634M3.57967 2.85677V1.6901C3.57967 1.38068 3.70259 1.08394 3.92138 0.865146C4.14017 0.646354 4.43692 0.523438 4.74634 0.523438H7.42151C7.5762 0.523471 7.72455 0.58495 7.83392 0.694354L10.4088 3.26919C10.5182 3.37856 10.5796 3.52691 10.5797 3.6816V7.52344C10.5797 7.83286 10.4568 8.1296 10.238 8.34839C10.0192 8.56719 9.72242 8.6901 9.41301 8.6901H8.24634M3.57967 2.85677H2.413C2.10359 2.85677 1.80684 2.97969 1.58805 3.19848C1.36925 3.41727 1.24634 3.71402 1.24634 4.02344V9.85677C1.24634 10.1662 1.36925 10.4629 1.58805 10.6817C1.80684 10.9005 2.10359 11.0234 2.413 11.0234H7.07967C7.38909 11.0234 7.68584 10.9005 7.90463 10.6817C8.12342 10.4629 8.24634 10.1662 8.24634 9.85677V8.6901"
+                                    stroke="#646364" stroke-linecap="round" stroke-linejoin="round"></path>
+                                </svg>
+                              </button>
+                            </div>
+                          </div>
+                        </td>
+                        <td class="list-info-item body-normal black80 m-0">
+                          <div class="d-flex align-items-center w-100 flex-wrap">
+                            <a href="/purchase/view-purchase-order.html" class="m-0 black20">Direct</a>
+                          </div>
+                        </td>
+                        <td class="list-info-item body-normal black80 m-0">
+                          <div class="d-flex align-items-center w-100 flex-wrap">
+                            <a href="/purchase/view-purchase-order.html" class="m-0 black20">1234</a>
+                            <div class="ms-3 d-flex align-items-center list-info-itemControl">
+                              <div class="dropdown">
+                                <button
+                                  class="border-0 p-0 bg-transparent d-flex align-items-center body-medium sb black80"
+                                  type="button" id="dropdownMenuClickableInside" data-bs-toggle="dropdown"
+                                  data-bs-auto-close="outside" aria-expanded="false">
+                                  <svg width="10" height="11" viewBox="0 0 10 11" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                      d="M7.42338 1.28385C7.55253 1.15013 7.70701 1.04348 7.87782 0.970107C8.04862 0.896734 8.23233 0.858114 8.41822 0.856498C8.60411 0.854883 8.78846 0.890305 8.96052 0.960698C9.13257 1.03109 9.28889 1.13505 9.42034 1.2665C9.55179 1.39795 9.65574 1.55426 9.72613 1.72631C9.79653 1.89837 9.83195 2.08272 9.83033 2.26861C9.82872 2.4545 9.7901 2.63821 9.71673 2.80902C9.64335 2.97982 9.5367 3.1343 9.40298 3.26345L8.84788 3.81855L6.86828 1.83895L7.42338 1.28385ZM5.87848 2.82875L0.0131836 8.69405V10.6736H1.99278L7.85878 4.80835L5.87778 2.82875H5.87848Z"
+                                      fill="#383637"></path>
+                                  </svg>
+                                </button>
+                                <div id="dealSearchSelect" class="dropdown-menu more-options p-0 dropdown-menu-right"
+                                  aria-labelledby="dropdownMenuClickableInside">
+                                  <p class="body-small reg black90 p-2 text-center mb-0 blue20bg">Quote</p>
+                                  <div class="px-2 py-3">
+                                    <form>
+                                      <input type="text"
+                                        class="p-2 border-0 border-bottom body-tiny reg black90 w-100 h-auto"
+                                        placeholder="1234">
+                                    </form>
+                                  </div>
+                                  <div class="filterBTN bg-light p-2 m-0 d-flex justify-content-between">
+                                    <button
+                                      class="body-normal med primary border-0 bg-transparent p-0 filterCancel">Cancel</button>
+                                    <button class="body-normal med grey0 border-0 rounded p-2">Save</button>
+                                  </div>
+                                </div>
+                              </div>
+                              <button
+                                class="border-0 p-0 bg-transparent d-flex align-items-center body-medium sb black80 ms-2"
+                                type="button">
+                                <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                                  xmlns="http://www.w3.org/2000/svg">
+                                  <path
+                                    d="M3.57967 2.85677V7.52344C3.57967 7.83286 3.70259 8.1296 3.92138 8.34839C4.14017 8.56719 4.43692 8.6901 4.74634 8.6901H8.24634M3.57967 2.85677V1.6901C3.57967 1.38068 3.70259 1.08394 3.92138 0.865146C4.14017 0.646354 4.43692 0.523438 4.74634 0.523438H7.42151C7.5762 0.523471 7.72455 0.58495 7.83392 0.694354L10.4088 3.26919C10.5182 3.37856 10.5796 3.52691 10.5797 3.6816V7.52344C10.5797 7.83286 10.4568 8.1296 10.238 8.34839C10.0192 8.56719 9.72242 8.6901 9.41301 8.6901H8.24634M3.57967 2.85677H2.413C2.10359 2.85677 1.80684 2.97969 1.58805 3.19848C1.36925 3.41727 1.24634 3.71402 1.24634 4.02344V9.85677C1.24634 10.1662 1.36925 10.4629 1.58805 10.6817C1.80684 10.9005 2.10359 11.0234 2.413 11.0234H7.07967C7.38909 11.0234 7.68584 10.9005 7.90463 10.6817C8.12342 10.4629 8.24634 10.1662 8.24634 9.85677V8.6901"
+                                    stroke="#646364" stroke-linecap="round" stroke-linejoin="round"></path>
+                                </svg>
+                              </button>
+                            </div>
+                          </div>
+                        </td>
+                        <td class="list-info-item body-normal black80 m-0">
+                          <div class="d-flex align-items-center w-100 flex-wrap">
+                            <a href="/purchase/view-purchase-order.html" class="m-0 black20">02-01-2023</a>
+                            <div class="ms-3 d-flex align-items-center list-info-itemControl">
+                              <div class="dropdown">
+                                <button
+                                  class="border-0 p-0 bg-transparent d-flex align-items-center body-medium sb black80"
+                                  type="button" id="dropdownMenuClickableInside" data-bs-toggle="dropdown"
+                                  data-bs-auto-close="outside" aria-expanded="false">
+                                  <svg width="10" height="11" viewBox="0 0 10 11" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                      d="M7.42338 1.28385C7.55253 1.15013 7.70701 1.04348 7.87782 0.970107C8.04862 0.896734 8.23233 0.858114 8.41822 0.856498C8.60411 0.854883 8.78846 0.890305 8.96052 0.960698C9.13257 1.03109 9.28889 1.13505 9.42034 1.2665C9.55179 1.39795 9.65574 1.55426 9.72613 1.72631C9.79653 1.89837 9.83195 2.08272 9.83033 2.26861C9.82872 2.4545 9.7901 2.63821 9.71673 2.80902C9.64335 2.97982 9.5367 3.1343 9.40298 3.26345L8.84788 3.81855L6.86828 1.83895L7.42338 1.28385ZM5.87848 2.82875L0.0131836 8.69405V10.6736H1.99278L7.85878 4.80835L5.87778 2.82875H5.87848Z"
+                                      fill="#383637"></path>
+                                  </svg>
+                                </button>
+                                <div id="dealSearchSelect" class="dropdown-menu more-options p-0 dropdown-menu-right"
+                                  aria-labelledby="dropdownMenuClickableInside">
+                                  <p class="body-small reg black90 p-2 text-center mb-0 blue20bg">Events</p>
+                                  <div class="px-2 py-0">
+                                    <div class="datepicker"></div>
+                                  </div>
+                                  <div class="filterBTN bg-light p-2 m-0 d-flex justify-content-between">
+                                    <button
+                                      class="body-normal med primary border-0 bg-transparent p-0 filterCancel">Cancel</button>
+                                    <button class="body-normal med grey0 border-0 rounded p-2">Save</button>
+                                  </div>
+                                </div>
+                              </div>
+                              <button
+                                class="border-0 p-0 bg-transparent d-flex align-items-center body-medium sb black80 ms-2"
+                                type="button">
+                                <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                                  xmlns="http://www.w3.org/2000/svg">
+                                  <path
+                                    d="M3.57967 2.85677V7.52344C3.57967 7.83286 3.70259 8.1296 3.92138 8.34839C4.14017 8.56719 4.43692 8.6901 4.74634 8.6901H8.24634M3.57967 2.85677V1.6901C3.57967 1.38068 3.70259 1.08394 3.92138 0.865146C4.14017 0.646354 4.43692 0.523438 4.74634 0.523438H7.42151C7.5762 0.523471 7.72455 0.58495 7.83392 0.694354L10.4088 3.26919C10.5182 3.37856 10.5796 3.52691 10.5797 3.6816V7.52344C10.5797 7.83286 10.4568 8.1296 10.238 8.34839C10.0192 8.56719 9.72242 8.6901 9.41301 8.6901H8.24634M3.57967 2.85677H2.413C2.10359 2.85677 1.80684 2.97969 1.58805 3.19848C1.36925 3.41727 1.24634 3.71402 1.24634 4.02344V9.85677C1.24634 10.1662 1.36925 10.4629 1.58805 10.6817C1.80684 10.9005 2.10359 11.0234 2.413 11.0234H7.07967C7.38909 11.0234 7.68584 10.9005 7.90463 10.6817C8.12342 10.4629 8.24634 10.1662 8.24634 9.85677V8.6901"
+                                    stroke="#646364" stroke-linecap="round" stroke-linejoin="round"></path>
+                                </svg>
+                              </button>
+                            </div>
+                          </div>
+                        </td>
+                        <td class="list-info-item body-normal black80 m-0">
+                          <div class="d-flex align-items-center w-100 flex-wrap">
+                            <a href="/purchase/view-purchase-order.html" class="m-0 black20">Delivered</a>
+                          </div>
+                        </td>
+                        <td class="list-info-item body-normal black80 m-0">
+                          <div class="d-flex align-items-center w-100 flex-wrap">
+                            <a href="/purchase/view-purchase-order.html" class="m-0 black20">Delivered</a>
+                          </div>
+                        </td>
+                        <td class="list-info-item body-normal black80 m-0">
+                          <div class="d-flex align-items-center">
+                            <div class="me-3">
+                              <button
+                                class="salesExpandedAction body-tiny border-0 p-0 bg-transparent d-flex flex-column align-items-center justify-content-center"
+                                type="button">
+                                <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                                  xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M0 12V7H1V10.3L10.3 1H7V0H12V5H11V1.7L1.7 11H5V12H0Z" fill="#4E4D4D" />
+                                </svg>
+                                <span class="salesExpandedActionText mt-2"> Expand</span>
+                              </button>
+                              <div class="expandedDiv bg-white table-responsive border">
+                                <table class="table w-100 list-view-table m-0">
+                                  <thead class="list-info-head-row">
+                                    <th class="list-info-head body-small med black90 m-0 p-2" scope="col">#</th>
+                                    <th class="list-info-head body-small med black90 m-0 p-2" scope="col">SKU</th>
+                                    <th class="list-info-head body-small med black90 m-0 p-2" scope="col">Name</th>
+                                    <th class="list-info-head body-small med black90 m-0 p-2" scope="col">Price</th>
+                                    <th class="list-info-head body-small med black90 m-0 p-2" scope="col">Qty</th>
+                                    <th class="list-info-head body-small med black90 m-0 p-2" scope="col">Total</th>
+                                    <th class="list-info-head body-small med black90 m-0 p-2" scope="col">PO Status
+                                    </th>
+                                  </thead>
+                                  <tbody class="position-relative">
+                                    <tr class="list-info-row position-relative">
+                                      <td class="list-info-item">
+                                        <img src="/assets/images/placeholder.png" alt="" height="30px">
+                                      </td>
+                                      <td class="list-info-item body-normal black80 m-0 p-1">
+                                        <p class="d-flex body-small align-items-center w-100 flex-wrap m-0">
+                                          AR2498242
+                                        </p>
+                                      </td>
+                                      <td class="list-info-item body-normal black80 m-0 p-1">
+                                        <p class="d-flex body-small align-items-center w-100 flex-wrap m-0">
+                                          AR2498242
+                                        </p>
+                                      </td>
+                                      <td class="list-info-item body-normal black80 m-0 p-1">
+                                        <p class="d-flex body-small align-items-center w-100 flex-wrap m-0">
+                                          AR2498242
+                                        </p>
+                                      </td>
+                                      <td class="list-info-item body-normal black80 m-0 p-1">
+                                        <p class="d-flex body-small align-items-center w-100 flex-wrap m-0">
+                                          AR2498242
+                                        </p>
+                                      </td>
+                                      <td class="list-info-item body-normal black80 m-0 p-1">
+                                        <p class="d-flex body-small align-items-center w-100 flex-wrap m-0">
+                                          AR2498242
+                                        </p>
+                                      </td>
+                                      <td class="list-info-item body-normal black80 m-0 p-1">
+                                        <p class="d-flex body-small align-items-center w-100 flex-wrap m-0">
+                                          AR2498242
+                                        </p>
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </div>
+                            </div>
+                            <div class="dropdown dropstart more-option-toggle text-end">
+                              <button class="border-0 p-0 bg-transparent" type="button" id="more-option1"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <svg width="12" height="12" viewBox="0 0 11 6" fill="none"
+                                  xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M9.41992 1.00049L5.41992 5.00049L1.41992 1.00049" stroke="#646364"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+
+                              </button>
+                              <ul class="dropdown-menu more-options p-0" aria-labelledby="more-option1">
+                                <li>
+                                  <button class="dropdown-item body-normal reg black80 p-2" data-bs-target="#delete"
+                                    data-bs-toggle="modal">
+                                    Delete
+                                  </button>
+                                </li>
+                              </ul>
+                            </div>
+
+
                         </td>
                       </tr>
                     </tbody>
@@ -1071,6 +1786,7 @@
                     </div>
                   </div>
                 </div>
+
               </div>
             </div>
           </div>

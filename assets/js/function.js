@@ -228,14 +228,23 @@ for (let i = 0; i < selectInputs.length; i++) {
 
 function expand() {
   let triggerbtns = document.querySelectorAll(".salesExpandedAction");
-  let triggerbtnTexts = document.querySelectorAll(".salesExpandedActionText");
 
-  for (var i = 0; i < triggerbtns.length; i++) {
-    triggerbtn = triggerbtns[i];
-    triggerbtn.addEventListener("click", (btn) => {
+  triggerbtns.forEach((btn) => {
+    let triggerbtnText = btn.querySelector(".salesExpandedActionText");
+    let expandedDiv = btn.nextElementSibling;
+
+    btn.addEventListener("click", () => {
       btn.classList.toggle("active");
+
+      if (btn.classList.contains("active")) {
+        triggerbtnText.innerHTML = "Collapse";
+      } else {
+        triggerbtnText.innerHTML = "Expand";
+      }
+
+      expandedDiv.classList.toggle("active");
     });
-  }
+  });
 }
 
 expand();

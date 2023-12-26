@@ -1,1035 +1,1058 @@
-
-.crmNavList a{
-    border-top: 2px solid transparent;
-    border-bottom: 2px solid transparent;
+.crmNavList a {
+  border-top: 2px solid transparent;
+  border-bottom: 2px solid transparent;
 }
 
-.crmNavList a:hover, .crmNavList a.active{
-    color: #1D9CD3;
-    border-bottom: 3px solid #1D9CD3;
+.crmNavList a:hover,
+.crmNavList a.active {
+  color: #1d9cd3;
+  border-bottom: 3px solid #1d9cd3;
 }
 
-.alert-orange{
-    width: 6px;
-    height: 6px;
-    background-color: #F7941E;
-    border-radius: 50%;
-    position: absolute;
-    right: 0;
-    top: 5px;
+.alert-orange {
+  width: 6px;
+  height: 6px;
+  background-color: #f7941e;
+  border-radius: 50%;
+  position: absolute;
+  right: 0;
+  top: 5px;
 }
 
-.crmTopFilter{
-    appearance: none;
-    outline: 0px;
-    background-image: url(/assets/images/downArrow.png);
-    background-repeat: no-repeat;
-    background-position: right center;
+.crmTopFilter {
+  appearance: none;
+  outline: 0px;
+  background-image: url(/assets/images/downArrow.png);
+  background-repeat: no-repeat;
+  background-position: right center;
 }
 
-.deal-setting{
-    width: 303px;
-    background-color: #fff;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.24);
+.deal-setting {
+  width: 303px;
+  background-color: #fff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.24);
 }
 
-.tags-filter{
-    width: 213px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.24);
+.tags-filter {
+  width: 213px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.24);
 }
 
-.filterBTN{
-    margin-left: -1rem;
-    margin-right: -1rem;
+.filterBTN {
+  margin-left: -1rem;
+  margin-right: -1rem;
 }
 
-.filterBTN button{
-    background-color: #1D9CD3;
+.filterBTN button {
+  background-color: #1d9cd3;
 }
 
-.settings-toggle button{
-    border: none;
-    border-bottom: 2px solid transparent;
+.settings-toggle button {
+  border: none;
+  border-bottom: 2px solid transparent;
 }
 
-.settings-toggle button:hover, .settings-toggle button.active{
-    border-bottom: 2px solid #1D9CD3;
+.settings-toggle button:hover,
+.settings-toggle button.active {
+  border-bottom: 2px solid #1d9cd3;
 }
 
-.settings-toggle button:hover svg path, .settings-toggle button.active svg path{
-    stroke: #1D9CD3;
+.settings-toggle button:hover svg path,
+.settings-toggle button.active svg path {
+  stroke: #1d9cd3;
 }
 
-.crmTabTrigger button{
-    width: 36px;
-    height: 36px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: transparent;
-    border-radius: 6px;
-    transition: 0.3s;
+.crmTabTrigger button {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  border-radius: 6px;
+  transition: 0.3s;
 }
 
-.crmTabTrigger button:hover, .crmTabTrigger button.active{
-    background-color: #D5F0FC;
+.crmTabTrigger button:hover,
+.crmTabTrigger button.active {
+  background-color: #d5f0fc;
 }
 
-#pills-List-tab:hover svg path, #pills-Pipeline-tab:hover svg path, #pills-List-tab.active svg path, #pills-Pipeline-tab.active svg path{
-    fill: #1D9CD3;
+#pills-List-tab:hover svg path,
+#pills-Pipeline-tab:hover svg path,
+#pills-List-tab.active svg path,
+#pills-Pipeline-tab.active svg path {
+  fill: #1d9cd3;
 }
 
-#pills-Timeline-tab:hover svg path, #pills-Timeline-tab.active svg path{
-    stroke: #1D9CD3;
+#pills-Timeline-tab:hover svg path,
+#pills-Timeline-tab.active svg path {
+  stroke: #1d9cd3;
 }
 
-select.crmTopFilter::after{
-    content: url(/assets/images/arrow-down.png);
+select.crmTopFilter::after {
+  content: url(/assets/images/arrow-down.png);
 }
 
-.ownerAvatar{
-    font-size: 10px;
-    line-height: 10px;
-    width: 20px;
-    height: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #EFFAFF;
-    background-color: #053549;
-    border-radius: 100%;
-    position: relative;
+.ownerAvatar {
+  font-size: 10px;
+  line-height: 10px;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #effaff;
+  background-color: #053549;
+  border-radius: 100%;
+  position: relative;
 }
 
-.ownerAvatar::after{
-    content: "";
-    width: 5px;
-    height: 5px;
-    background-color: #16A34A;
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    z-index: 1;
-    border-radius: 100%;
+.ownerAvatar::after {
+  content: "";
+  width: 5px;
+  height: 5px;
+  background-color: #16a34a;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  border-radius: 100%;
 }
 
-.addDealsBTN{
-    width: 36px;
-    height: 36px;
-    background-color: #1D9CD3;
+.addDealsBTN {
+  width: 36px;
+  height: 36px;
+  background-color: #1d9cd3;
 }
 
 /* .additionalCostField{
     display: none;
 } */
 
-
 /* List View */
 
-.table-responsive-lg.mapping{
-    background: #EFFAFF;
+.table-responsive-lg.mapping {
+  background: #effaff;
 }
 
-.list-view-table{
-    min-width: 1000px;
-    border-radius: 8px 8px 0px 0px;
-    overflow: visible;
-    vertical-align: middle!important;
+.list-view-table {
+  min-width: 1000px;
+  border-radius: 8px 8px 0px 0px;
+  overflow: visible;
+  vertical-align: middle !important;
 }
 
-.list-info-head-row{
-    background: #EFFAFF;
-    border: 1px solid #EFFAFF;
+.list-info-head-row {
+  background: #effaff;
+  border: 1px solid #effaff;
 }
 
-.list-info-head{
-    padding: 15px 10px!important;
+.list-info-head {
+  padding: 15px 10px !important;
 }
 
-.list-info-row{
-    border: 1px solid #E9E9E9;
-    border-top: 0px;
-    position: relative;
-    cursor: pointer;
+.list-info-row {
+  border: 1px solid #e9e9e9;
+  border-top: 0px;
+  position: relative;
+  cursor: pointer;
 }
 
 .list-info-item {
-    padding: 8px 10px!important;
-    position: relative;
+  padding: 8px 10px !important;
+  position: relative;
 }
 
-.list-info-itemControl{
-    visibility: hidden;
+.list-info-itemControl {
+  visibility: hidden;
 }
 
-.list-info-item:hover .list-info-itemControl, .box-contentsItemLabel:hover .list-info-itemControl{
-    visibility: visible;
+.list-info-item:hover .list-info-itemControl,
+.box-contentsItemLabel:hover .list-info-itemControl {
+  visibility: visible;
 }
 
-.list-info-item.inputWidth{
-    width: 40px;
+.list-info-item.inputWidth {
+  width: 40px;
 }
-.list-info-item.narrowWidth{
-    width: 150px;
-}
-
-.list-view-info.pagination{
-    min-width: 1000px;
-    height: 55px;
-    padding: 15px 13px;
-    border: 1px solid #E9E9E9;
-    border-top: 0px;
+.list-info-item.narrowWidth {
+  width: 150px;
 }
 
-.list-view-info.pagination .previous, .list-view-info.pagination .next{
-    cursor: pointer;
+.list-view-info.pagination {
+  min-width: 1000px;
+  height: 55px;
+  padding: 15px 13px;
+  border: 1px solid #e9e9e9;
+  border-top: 0px;
 }
 
+.list-view-info.pagination .previous,
+.list-view-info.pagination .next {
+  cursor: pointer;
+}
 
 /* Grid View */
 
-.grid-view-boxes{
-    grid-gap: 40px;
+.grid-view-boxes {
+  grid-gap: 40px;
 }
 
-.grid-view-boxes.summeryBox{
-    margin-bottom: 40px;
+.grid-view-boxes.summeryBox {
+  margin-bottom: 40px;
 }
 
-.grid-view-boxes .box{
-    position: relative;
-    min-width: 235px;
-    height: fit-content;
+.grid-view-boxes .box {
+  position: relative;
+  min-width: 235px;
+  height: fit-content;
 }
 
-.grid-view-boxes.results .box:hover{
-    border-bottom-left-radius: 0px!important;
-    border-bottom-right-radius: 0px!important;
+.grid-view-boxes.results .box:hover {
+  border-bottom-left-radius: 0px !important;
+  border-bottom-right-radius: 0px !important;
 }
 
-.deals-info-container{
-    display: flex;
-    grid-gap: 12px;
-    padding: 10px 8px;
-    background: #FFFFFF;
-    border-radius: 8px;
-    position: relative;
+.deals-info-container {
+  display: flex;
+  grid-gap: 12px;
+  padding: 10px 8px;
+  background: #ffffff;
+  border-radius: 8px;
+  position: relative;
 }
 
-.grid-view-boxes .box.deals-info-summery{
-    background-color: #75D0F7;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
-    padding: 10px;
-    height: 95px;
+.grid-view-boxes .box.deals-info-summery {
+  background-color: #75d0f7;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  height: 95px;
 }
 
-.deals-info-summeryBox{
-    grid-gap: 12px;
-    width: fit-content;
+.deals-info-summeryBox {
+  grid-gap: 12px;
+  width: fit-content;
 }
 
-.lostWin input{
-    position: absolute;
-    width: 100%;
-    height: 17px;
-    cursor: pointer;
-    opacity: 0;
+.lostWin input {
+  position: absolute;
+  width: 100%;
+  height: 17px;
+  cursor: pointer;
+  opacity: 0;
 }
 
-.lostWinToggleSection{
-    display: none;
-    position: absolute;
-    width: 235px;
-    background: #fff;
-    bottom: -30px;
+.lostWinToggleSection {
+  display: none;
+  position: absolute;
+  width: 235px;
+  background: #fff;
+  bottom: -30px;
 }
 
-.lostWinLabel{
-    display: none;
-    width: fit-content;
+.lostWinLabel {
+  display: none;
+  width: fit-content;
 }
 
-.box:hover .lostWinToggleSection{
-    display: block;
+.box:hover .lostWinToggleSection {
+  display: block;
 }
 
-.boxSchedule{
-    display: none;
-    height: 62px;
-    width: 235px;
-    position: absolute;
-    bottom: -58px;
-    background-color: #fff;
-    z-index: 5;
+.boxSchedule {
+  display: none;
+  height: 62px;
+  width: 235px;
+  position: absolute;
+  bottom: -58px;
+  background-color: #fff;
+  z-index: 5;
 }
 
-.boxSchedule.active{
-    display: flex;
+.boxSchedule.active {
+  display: flex;
 }
 
-.calendarIcon.active path{
-    stroke: #1D9CD3;
+.calendarIcon.active path {
+  stroke: #1d9cd3;
 }
 
-.grid-more-option-toggle{
-    position: absolute;
-    right: 24px;
-    top: 20px;
-    cursor: pointer;
-    z-index: 999;
+.grid-more-option-toggle {
+  position: absolute;
+  right: 24px;
+  top: 20px;
+  cursor: pointer;
+  z-index: 999;
 }
 
-#grid-box-select{
-    position: absolute;
-    right: 20px;
-    bottom: 20px;
+#grid-box-select {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
 }
 
-.box-contents .type{
-    padding-left: 8px;
-    border-left: 1px solid #007AFF;
+.box-contents .type {
+  padding-left: 8px;
+  border-left: 1px solid #007aff;
 }
 
-.table .box{
-    min-width: 235px;
+.table .box {
+  min-width: 235px;
 }
 
-.won{
-    padding: 4px 10px;
-    background: #86EFAC;
-    border-radius: 13px;
-    position: absolute;
-    right: 8px;
-    top: 10px;
+.won {
+  padding: 4px 10px;
+  background: #86efac;
+  border-radius: 13px;
+  position: absolute;
+  right: 8px;
+  top: 10px;
 }
 
 /* Bulk Editor Panel */
 
-.bulkeditCont{
-    width: 189px;
-    height: 80%;
-    background-color: #FFFFFF;
-    box-shadow: 2px 2px 15px 4px rgba(205, 207, 208, 0.5);
-    position: fixed;
-    top: 86px;
-    right: 40px;
-    z-index: 999;
-    overflow-y: auto;
+.bulkeditCont {
+  width: 189px;
+  height: 80%;
+  background-color: #ffffff;
+  box-shadow: 2px 2px 15px 4px rgba(205, 207, 208, 0.5);
+  position: fixed;
+  top: 86px;
+  right: 40px;
+  z-index: 999;
+  overflow-y: auto;
 }
 
-.bulkSrcPanel{
-    padding: 15px;
-    background: #F8FBFC;
+.bulkSrcPanel {
+  padding: 15px;
+  background: #f8fbfc;
 }
 
-.edit-options{
-    padding: 5px 15px;
+.edit-options {
+  padding: 5px 15px;
 }
 
-.bulkOption{
-    width: 100%;
-    height: 40px;
-    padding: 0px 10px;
-    border: 1px solid #CDCFD0;
-    border-radius: 6px;
+.bulkOption {
+  width: 100%;
+  height: 40px;
+  padding: 0px 10px;
+  border: 1px solid #cdcfd0;
+  border-radius: 6px;
 }
 
-
-.bulkClose{
-    width: 10px;
-    position: absolute;
-    right: 10px;
-    top: 10px;
-    cursor: pointer;
+.bulkClose {
+  width: 10px;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  cursor: pointer;
 }
 
-.search-input-box{
-    max-width: 640px;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: start;
-    grid-gap: 10px;
-    padding: 0px 15px;
-    border: 1px solid #CDCFD0;
-    border-radius: 6px;
-    background-color: #FFFFFF;
+.search-input-box {
+  max-width: 640px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  grid-gap: 10px;
+  padding: 0px 15px;
+  border: 1px solid #cdcfd0;
+  border-radius: 6px;
+  background-color: #ffffff;
 }
 
-.search-input{
-    border: none;
-    padding: 15px 0px;
-    width: 100%;
-    color: #4E4D4D;
+.search-input {
+  border: none;
+  padding: 15px 0px;
+  width: 100%;
+  color: #4e4d4d;
 }
 
-.search-input::placeholder{
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 17px;
-    color: #A7A6A6;
+.search-input::placeholder {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #a7a6a6;
 }
 
-.search-input:focus-visible{
-    outline: none;
+.search-input:focus-visible {
+  outline: none;
 }
 
-
-.day{
-    color: #C73C10;
-    background-color: #F8E2C7;
-    border-radius: 2px;
-    position: absolute;
-    padding: 2px;
-    top: 10px;
-    right: 8px;
+.day {
+  color: #c73c10;
+  background-color: #f8e2c7;
+  border-radius: 2px;
+  position: absolute;
+  padding: 2px;
+  top: 10px;
+  right: 8px;
 }
 
-.blueAlert{
-    position: absolute;
-    right: 8px;
-    bottom: 10px;
+.blueAlert {
+  position: absolute;
+  right: 8px;
+  bottom: 10px;
 }
 
-.timelineViewHead .box{
-    padding: 10px;
-    padding-top: 35px;
-    background-color: #EFFAFF;
+.timelineViewHead .box {
+  padding: 10px;
+  padding-top: 35px;
+  background-color: #effaff;
 }
 
-.equation .total{
-    color: #16A34A;
+.equation .total {
+  color: #16a34a;
 }
 
-
-.dwnldSampleFilesCol{
-    background-color: #EFFAFF;
+.dwnldSampleFilesCol {
+  background-color: #effaff;
 }
 
-.stepsCount{
-    background-color: #EFFAFF;
-    height: 150px;
+.stepsCount {
+  background-color: #effaff;
+  height: 150px;
 }
 
-.stepCont{
-    width: 170px;
+.stepCont {
+  width: 170px;
 }
 
-.step{
-    width: 30px;
-    height: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #CDCFD0;
-    border-radius: 100%;
+.step {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #cdcfd0;
+  border-radius: 100%;
 }
 
-.step.active{
-    background-color: #4ADE80;
+.step.active {
+  background-color: #4ade80;
 }
 
-.step::after{
-    content: "";
-    width: 100px;
-    height: 2px;
-    background-color: #CDCFD0;
-    position: absolute;
-    left: 50px;
+.step::after {
+  content: "";
+  width: 100px;
+  height: 2px;
+  background-color: #cdcfd0;
+  position: absolute;
+  left: 50px;
 }
 
-.step.active::after{
-    background-color: #4ADE80;
+.step.active::after {
+  background-color: #4ade80;
 }
 
-.stepCont.last{
-    width: auto;
+.stepCont.last {
+  width: auto;
 }
 
-.stepCont.last .step::after{
-    display: none;
+.stepCont.last .step::after {
+  display: none;
 }
 
-.upload{
-    border: 1px dashed #dee2e6;
+.upload {
+  border: 1px dashed #dee2e6;
 }
 
-#input-file-now{
-    opacity: 0;
-    cursor: pointer;
+#input-file-now {
+  opacity: 0;
+  cursor: pointer;
 }
 
-.pipelineStage{
-    width: fit-content;
+.pipelineStage {
+  width: fit-content;
 }
 
-.editDealOptions button{
-    color: #4E4D4D;
-    border: 2px solid transparent;
+.editDealOptions button {
+  color: #4e4d4d;
+  border: 2px solid transparent;
 }
 
-.editDealOptions button.active{
-    color: #1D9CD3;
-    border-bottom: 2px solid #1D9CD3;
+.editDealOptions button.active {
+  color: #1d9cd3;
+  border-bottom: 2px solid #1d9cd3;
 }
 
-.accordion .editActionAccord .accordion-button{
-    width: fit-content;
-    position: absolute;
-    right: 0;
-    top: 0;
+.accordion .editActionAccord .accordion-button {
+  width: fit-content;
+  position: absolute;
+  right: 0;
+  top: 0;
 }
 
-.accordion .editActionAccord .accordion-button.collapsed{
-    width: 100%;
-    position: relative;
+.accordion .editActionAccord .accordion-button.collapsed {
+  width: 100%;
+  position: relative;
 }
 
-.collapsedItem{
-    display: none;
+.collapsedItem {
+  display: none;
 }
-.accordion .editActionAccord .accordion-button.collapsed .collapsedItem{
-    display: flex;
-}
-
-.activityType{
-    width: 120px;
-    background-color: #EFFAFF;
-    padding: 50px 34px;
+.accordion .editActionAccord .accordion-button.collapsed .collapsedItem {
+  display: flex;
 }
 
-.dealAddElementOption{
-    display: none;
+.activityType {
+  width: 120px;
+  background-color: #effaff;
+  padding: 50px 34px;
 }
 
-.tagColorPalatte{
-    background-color: #F5FCFF;
+.dealAddElementOption {
+  display: none;
 }
 
-.tagColorPalatte .color{
-    width: 53px;
-    height: 74px;
-    background-color: #000;
+.tagColorPalatte {
+  background-color: #f5fcff;
 }
 
-#addDeal .modal-dialog{
-    max-width: 672px;
+.tagColorPalatte .color {
+  width: 53px;
+  height: 74px;
+  background-color: #000;
 }
 
-#addDeal input[type="text"]{
-    min-height: 39px;
+#addDeal .modal-dialog {
+  max-width: 672px;
 }
 
-#mergeDeal .modal-dialog{
-    max-width: 600px;
+#addDeal input[type="text"] {
+  min-height: 39px;
 }
 
-#merge_Deals .enterDeals .chosen-container{
-    text-align: center;
-    background-color: #EFFAFF;
+#mergeDeal .modal-dialog {
+  max-width: 600px;
 }
 
-#merge_Deals .enterDeals .chosen-container .chosen-single{
-    height: auto!important;
-    border-bottom: none!important;
-    font-size: 12px;
-    line-height: 15px;
-    font-weight: 400;
-    color: #646364!important;
-    padding: 0.5rem!important;
+#merge_Deals .enterDeals .chosen-container {
+  text-align: center;
+  background-color: #effaff;
 }
 
-#merge_Deals .enterDeals .chosen-container .chosen-single span{
-    margin: auto;
+#merge_Deals .enterDeals .chosen-container .chosen-single {
+  height: auto !important;
+  border-bottom: none !important;
+  font-size: 12px;
+  line-height: 15px;
+  font-weight: 400;
+  color: #646364 !important;
+  padding: 0.5rem !important;
 }
 
-#merge_Deals .enterDeals .chosen-container .chosen-single > div b{
-    background-position-y: 12px!important;
-}
-.quhInput input{
-    max-width: 35px;
+#merge_Deals .enterDeals .chosen-container .chosen-single span {
+  margin: auto;
 }
 
-.otherInput input{
-    max-width: 119px;
+#merge_Deals .enterDeals .chosen-container .chosen-single > div b {
+  background-position-y: 12px !important;
+}
+.quhInput input {
+  max-width: 35px;
 }
 
-.createQuoteTable{
-    min-width: 1032px;
+.otherInput input {
+  max-width: 119px;
 }
 
-.addQuoteTotal{
-    max-width: 300px;
+.createQuoteTable {
+  min-width: 1032px;
 }
 
-.addQuoteTotal .inputCont{
-    max-width: 300px;
+.addQuoteTotal {
+  max-width: 300px;
 }
 
-.addQuoteTotal .inputCont input{
-    width: inherit;
+.addQuoteTotal .inputCont {
+  max-width: 300px;
 }
 
-.quoteDetailsContainer{
-    display: none;
-}
-.quoteDetailsContainer.active{
-    display: block;
+.addQuoteTotal .inputCont input {
+  width: inherit;
 }
 
-.quoteDetailsTable{
-    min-width: 768px;
+.quoteDetailsContainer {
+  display: none;
+}
+.quoteDetailsContainer.active {
+  display: block;
+}
+
+.quoteDetailsTable {
+  min-width: 768px;
 }
 
 /* Dashboard */
 
-
-
-
-#wonDeals, #activities{
-    border-color: #4ADE80!important;
+#wonDeals,
+#activities {
+  border-color: #4ade80 !important;
 }
 
-#wonDeals .text-success, #activities .text-success{
-    color: #4ADE80!important;
+#wonDeals .text-success,
+#activities .text-success {
+  color: #4ade80 !important;
 }
 
-#lostDeals{
-    border-color: #C73C10!important;
+#lostDeals {
+  border-color: #c73c10 !important;
 }
 
-.lostDealTitle{
-    background-color: #FFDFDF;
+.lostDealTitle {
+  background-color: #ffdfdf;
 }
 
-.activitiesTitle{
-    background-color: #FDF2E6;
+.activitiesTitle {
+  background-color: #fdf2e6;
 }
-
 
 #activitiesSwitch.form-check-input {
-    background-color: #86EFAC;
-    border-color: #86EFAC;
-    box-shadow: none;
+  background-color: #86efac;
+  border-color: #86efac;
+  box-shadow: none;
 }
 
-.activitiesBar{
-    height: 4px;
-    background-color: #CDCFD0;
+.activitiesBar {
+  height: 4px;
+  background-color: #cdcfd0;
 }
 
-.goalsDetails button.active::before{
-    content: url(/assets/images/tickGreen.svg);
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translate(0, -50%);
+.goalsDetails button.active::before {
+  content: url(/assets/images/tickGreen.svg);
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translate(0, -50%);
 }
 
-#addGoals .addGoalsDropDowns{
-    max-height: 400px;
-    overflow-y: auto;
+#addGoals .addGoalsDropDowns {
+  max-height: 400px;
+  overflow-y: auto;
 }
 
-.tasksType{
-    min-width: 130px;
-    padding: 65px 25px;
+.tasksType {
+  min-width: 130px;
+  padding: 65px 25px;
 }
 
-.tasksType.overdue{
-    background-color: #FFDFDF;
+.tasksType.overdue {
+  background-color: #ffdfdf;
 }
-
 
 .difficulty-levels {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    grid-gap: 20px;
-  }
-  
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  grid-gap: 20px;
+}
+
 .editDealPipeline.difficulty-levels {
-    grid-gap: 120px;
-  }
-  
-  .pipelineCircle {
-    width: 14px;
-    height: 14px;
-    border: 2px solid #fff;
-    background-color: #919090;
-    outline: 2px solid #919090;
-    cursor: pointer;
-    z-index: 999;
-  }
-
-  .editDealPipeline .pipelineCircle {
-    width: 50px;
-    height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 10px solid #fff;
-    background-color: #919090;
-    outline: none;
-    cursor: pointer;
-    z-index: 999;
-  }
-  
-  
-  .pipelineStageLine {
-    height: 2px;
-    background-color: #919090;
-    position: relative;
-  }
-  
-  .stageLine {
-    height: 100%;
-    background-color: #16A34A;
-    position: absolute;
-    top: 0;
-    left: 0;
-    transition: width 0.5s ease-in-out;
-  }
-  
-#notificationContainer .notficationBar{
-    width: 372px;
-    height: 500px;
-    overflow-y: auto;
+  grid-gap: 120px;
 }
 
-.blueUserBadge{
-    width: 25px;
-    height: 25px;
+.pipelineCircle {
+  width: 14px;
+  height: 14px;
+  border: 2px solid #fff;
+  background-color: #919090;
+  outline: 2px solid #919090;
+  cursor: pointer;
+  z-index: 999;
 }
 
-.dashboardToggle{
-    width: 38px;
-    height: 20px;
-    position: relative;
+.editDealPipeline .pipelineCircle {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 10px solid #fff;
+  background-color: #919090;
+  outline: none;
+  cursor: pointer;
+  z-index: 999;
 }
 
-.dashToggler{
-    border-radius: 20px;
-    background-color: #1D9CD3;
-    padding: 4px;
-    width: 100%;
-    height: 100%;
+.pipelineStageLine {
+  height: 2px;
+  background-color: #919090;
+  position: relative;
 }
 
-
-.dashToggleText{
-    font-weight: 500;
-    font-size: 7px;
-    position: absolute;
-    top: 50%;
-    right: 6px;
-    transform: translate(0px, -50%);
+.stageLine {
+  height: 100%;
+  background-color: #16a34a;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: width 0.5s ease-in-out;
 }
 
-.dToggleCircle{
-    width: 10px;
-    height: 10px;
-    background-color: #fff;
-    border-radius: 100%;
-    position: absolute;
-    left: 4px;
-    top: 50%;
-    transform: translate(0px, -50%);
+#notificationContainer .notficationBar {
+  width: 372px;
+  height: 500px;
+  overflow-y: auto;
 }
 
-.dashCheckBox{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    z-index: 1;
-    opacity: 0;
+.blueUserBadge {
+  width: 25px;
+  height: 25px;
 }
 
-.calendarDropDown{
-    inset: 0px 0px auto auto!important; 
-    transform: translate(-24px, 257px)!important;
-    width: 212px;
+.dashboardToggle {
+  width: 38px;
+  height: 20px;
+  position: relative;
 }
 
-.zabuto-calendar__navigation__item--header__title{
-    color: #231F20;
-    text-transform: uppercase;
+.dashToggler {
+  border-radius: 20px;
+  background-color: #1d9cd3;
+  padding: 4px;
+  width: 100%;
+  height: 100%;
 }
 
-.zabuto-calendar__day, .zabuto-calendar__days-of-week__item, .date-today{
-    color: #231F20;
-    font-size: 12px;
-    line-height: 15px;
+.dashToggleText {
+  font-weight: 500;
+  font-size: 7px;
+  position: absolute;
+  top: 50%;
+  right: 6px;
+  transform: translate(0px, -50%);
 }
 
-.redWeekend tbody td:nth-child(1).zabuto-calendar__day, .zabuto-calendar__days-of-week > th:nth-child(1){
-    color: red;
+.dToggleCircle {
+  width: 10px;
+  height: 10px;
+  background-color: #fff;
+  border-radius: 100%;
+  position: absolute;
+  left: 4px;
+  top: 50%;
+  transform: translate(0px, -50%);
 }
 
-#newFilter .modal-dialog{
-    max-width: 1100px!important;
+.dashCheckBox {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  opacity: 0;
 }
 
-.addProductFieldCont{
-    grid-gap: 25px;
+.calendarDropDown {
+  inset: 0px 0px auto auto !important;
+  transform: translate(-24px, 257px) !important;
+  width: 212px;
 }
 
-.addProductFieldCont .fieldcol{
-    width: 128px;
+.zabuto-calendar__navigation__item--header__title {
+  color: #231f20;
+  text-transform: uppercase;
 }
 
-
-.dropdown-menu{
-    z-index: 1001;
+.zabuto-calendar__day,
+.zabuto-calendar__days-of-week__item,
+.date-today {
+  color: #231f20;
+  font-size: 12px;
+  line-height: 15px;
 }
 
-.productEditInput{
-    display: none;
+.redWeekend tbody td:nth-child(1).zabuto-calendar__day,
+.zabuto-calendar__days-of-week > th:nth-child(1) {
+  color: red;
 }
 
-.addValue.activated{
-    display: none!important;
+#newFilter .modal-dialog {
+  max-width: 1100px !important;
 }
 
-#addPricePop .modal-content, #addVariationPop .modal-content{
-    max-width: 184px;
+.addProductFieldCont {
+  grid-gap: 25px;
 }
 
-.editDealsTAB button.active{
-    color: #1d9cd3;
+.addProductFieldCont .fieldcol {
+  width: 128px;
 }
 
-.contactTabBTN button{
-    background-color: transparent;
-}
-.contactTabBTN button.active{
-    color: #fff;
-    background-color: #1d9cd3;
+.dropdown-menu {
+  z-index: 1001;
 }
 
+.productEditInput {
+  display: none;
+}
 
+.addValue.activated {
+  display: none !important;
+}
+
+#addPricePop .modal-content,
+#addVariationPop .modal-content {
+  max-width: 184px;
+}
+
+.editDealsTAB button.active {
+  color: #1d9cd3;
+}
+
+.contactTabBTN button {
+  background-color: transparent;
+}
+.contactTabBTN button.active {
+  color: #fff;
+  background-color: #1d9cd3;
+}
 
 /* Settings */
 
-.settingsNav button{
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 17px;
-    color: #4E4D4D;
-    width: 100%;
-    text-align: left;
-    background: transparent;
+.settingsNav button {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #4e4d4d;
+  width: 100%;
+  text-align: left;
+  background: transparent;
 }
 
-.settingsNav button.active, .settingsNav button:hover{
-    color: #1D9CD3;
-    background: #F4F4F4;
+.settingsNav button.active,
+.settingsNav button:hover {
+  color: #1d9cd3;
+  background: #f4f4f4;
 }
-.settingsNav button.active path, .settingsNav button:hover path{
-    fill: transparent!important;
-    background: #F4F4F4;
-    stroke: #1D9CD3;
-}
-
-.typeSymbol{
-    background: #F5FCFF;
-border-radius: 6px;
-grid-gap: 26px;
+.settingsNav button.active path,
+.settingsNav button:hover path {
+  fill: transparent !important;
+  background: #f4f4f4;
+  stroke: #1d9cd3;
 }
 
-.typeSymbol button{
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: transparent;
+.typeSymbol {
+  background: #f5fcff;
+  border-radius: 6px;
+  grid-gap: 26px;
 }
 
-.typeSymbol button.active, .typeSymbol button:hover{
-    background-color: #75D0F6;
+.typeSymbol button {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
 }
 
-.typeSymbol button.active path, .typeSymbol button:hover path {
-    stroke: #fff;
+.typeSymbol button.active,
+.typeSymbol button:hover {
+  background-color: #75d0f6;
 }
 
-
-.asTimeline{
-    position: relative;
-    overflow: hidden;
+.typeSymbol button.active path,
+.typeSymbol button:hover path {
+  stroke: #fff;
 }
 
-.projectsTab > div{
-    grid-gap: 10px;
+.asTimeline {
+  position: relative;
+  overflow: hidden;
 }
 
-.projectsTab .projectTabBTN button{
-    color: #021E29;
-    background-color: transparent;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 57px;
+.projectsTab > div {
+  grid-gap: 10px;
+}
+
+.projectsTab .projectTabBTN button {
+  color: #021e29;
+  background-color: transparent;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 57px;
 }
 
 .asTable .time {
-    width: 72px;
-    flex-grow: 0;
-    flex-basis: auto;
+  width: 72px;
+  flex-grow: 0;
+  flex-basis: auto;
 }
 
-.asTable .asUser{
-    flex-grow: 1;
+.asTable .asUser {
+  flex-grow: 1;
 }
 
-.asTable .time button, .asTable .users button{
-    width: 30px;
-    height: 30px;
-    background-color: #fff;
-    z-index: 2;
+.asTable .time button,
+.asTable .users button {
+  width: 30px;
+  height: 30px;
+  background-color: #fff;
+  z-index: 2;
 }
 
-.projectsTab button.active{
-    color: #1D9CD3;
-    background: #E9E9E9;
+.projectsTab button.active {
+  color: #1d9cd3;
+  background: #e9e9e9;
 }
-.projectsTab button.active path{
-    stroke: #1D9CD3;
-}
-
-.activitySteam .timelineVert{
-    position: absolute;
-    width: 1px;
-    height: 100%;
-    background-color: #000;
-    top: 0;
-    left: 55px;
-    z-index: 1;
-}
-.activitySteam .timelineHorz{
-    position: absolute;
-    width: 100%;
-    height: 1px;
-    background-color: #000;
-    top: 0;
-    left: 55px;
-    z-index: 1;
+.projectsTab button.active path {
+  stroke: #1d9cd3;
 }
 
-.highlightProgress{
-    height: 30px;
-    background-color: #E9E9E9;
+.activitySteam .timelineVert {
+  position: absolute;
+  width: 1px;
+  height: 100%;
+  background-color: #000;
+  top: 0;
+  left: 55px;
+  z-index: 1;
+}
+.activitySteam .timelineHorz {
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: #000;
+  top: 0;
+  left: 55px;
+  z-index: 1;
 }
 
+.highlightProgress {
+  height: 30px;
+  background-color: #e9e9e9;
+}
 
-.noteBox{
-    width: 225px;
-    height: 213px;
-    flex-shrink: 0;
+.noteBox {
+  width: 225px;
+  height: 213px;
+  flex-shrink: 0;
 }
 
 .insightsdropdown .insightsdropdownCont {
-    position: absolute;
-    width: 235px;
-    display: none;
-    z-index: 1;
-  }
-  
-  .insightsdropdown .ownerAvatar:hover + .insightsdropdownCont {
-    display: block;
-  }
-  
-
-.uploadImageInput{
-    width: 60px;
-    height: 60px;
-    left: 0;
-    border-radius: 100%;
-    opacity: 0;
-    cursor: pointer;
+  position: absolute;
+  width: 235px;
+  display: none;
+  z-index: 1;
 }
 
-.changeTag.active, .createTag.inactive {
-    display: block;
+.insightsdropdown .ownerAvatar:hover + .insightsdropdownCont {
+  display: block;
 }
 
-.changeTag.inactive, .createTag.inactive {
-    display: none;
+.uploadImageInput {
+  width: 60px;
+  height: 60px;
+  left: 0;
+  border-radius: 100%;
+  opacity: 0;
+  cursor: pointer;
 }
 
-#backToChangeTag{
-    top: 50%;
-    transform: translate(0, -50%);
+.changeTag.active,
+.createTag.inactive {
+  display: block;
 }
 
-.postMessageAttachFile{
-    width: 85px;
-    opacity: 0;
-    cursor: pointer;
+.changeTag.inactive,
+.createTag.inactive {
+  display: none;
 }
 
-.tasksRightColumn{
-    background-color: #F2F4F5;
+#backToChangeTag {
+  top: 50%;
+  transform: translate(0, -50%);
 }
 
-.viewTaskTabs button{
-    background: transparent;
-}
-.viewTaskTabs button.active{
-    color: #fff;
-    background: #1D9CD3;
+.postMessageAttachFile {
+  width: 85px;
+  opacity: 0;
+  cursor: pointer;
 }
 
-.deleteProject{
-    background: #EFFAFF;
+.tasksRightColumn {
+  background-color: #f2f4f5;
 }
 
-.taskColumn{
-    height: 24px;
+.viewTaskTabs button {
+  background: transparent;
+}
+.viewTaskTabs button.active {
+  color: #fff;
+  background: #1d9cd3;
 }
 
-.taskMoreOptions{
-    display: none;
+.deleteProject {
+  background: #effaff;
 }
 
-.taskColumn:hover .taskMoreOptions{
-    display: block;
+.taskColumn {
+  height: 24px;
 }
 
-.copyTaskInfo, .moveTaskInfo{
-    position: absolute;
-    z-index: 2;
-    background-color: #fff;
-    top: 30px;
-    display: none;
+.taskMoreOptions {
+  display: none;
 }
 
-.taskCompleteCont{
-    display: none;
+.taskColumn:hover .taskMoreOptions {
+  display: block;
 }
 
-.taskContainer:hover .taskCompleteCont{
-    display: block;
+.copyTaskInfo,
+.moveTaskInfo {
+  position: absolute;
+  z-index: 2;
+  background-color: #fff;
+  top: 30px;
+  display: none;
+}
+
+.taskCompleteCont {
+  display: none;
+}
+
+.taskContainer:hover .taskCompleteCont {
+  display: block;
+}
+
+.salesExpandedAction {
+  width: 42px;
+}
+
+.expandedDiv {
+  display: none;
+  position: absolute;
+  width: 100%;
+  min-width: 950px;
+  right: calc(100% - 75px);
+  top: 50px;
+  z-index: 999;
+}
+
+.expandedDiv.active {
+  display: block;
 }
 
 @media (max-width: 800px) {
-    .crmNavList a:hover, .crmNavList a.active {
-        padding: 5px 0px;
-    }
+  .crmNavList a:hover,
+  .crmNavList a.active {
+    padding: 5px 0px;
+  }
 }
 
 @media (max-width: 768px) {
-    .steps {
-        transform: scale(0.8);
-    }
-
+  .steps {
+    transform: scale(0.8);
+  }
 }
 
 @media (max-width: 500px) {
-    .steps {
-        transform: scale(0.6);
-    }
+  .steps {
+    transform: scale(0.6);
+  }
 }
