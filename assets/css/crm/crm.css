@@ -1,14 +1,3 @@
-.crmNavList a {
-  border-top: 2px solid transparent;
-  border-bottom: 2px solid transparent;
-}
-
-.crmNavList a:hover,
-.crmNavList a.active {
-  color: #1d9cd3;
-  border-bottom: 3px solid #1d9cd3;
-}
-
 .alert-orange {
   width: 6px;
   height: 6px;

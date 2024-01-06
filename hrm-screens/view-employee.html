@@ -27,31 +27,151 @@
             <div class="left-col d-flex align-items-center justify-content-center">
                 <img src="../assets/images/logo.png" alt="" class="logo">
             </div>
-            <div class="user-control d-flex align-items-center justify-content-between w-100 ps-3 pe-4">
-                <div id="headerMenu" class="header-menu">
-                    <a href="/hrm-screens/employee-list.html"><button
-                            class="heading-five med active">Employee</button></a>
-                    <a href="/hrm-screens/role-access-list.html"><button class="heading-five med">Role
-                            Access</button></a>
-                </div>
+            <div class="crm-navItems w-100 border-bottom d-flex align-items-center justify-content-between w-100 px-4">
+                <ul class="crmNavList list-unstyled align-items-center bg-white flex-wrap p-2 p-md-0 m-0">
+                    <li class="h-100 d-flex align-items-center me-2">
+                        <svg width="16" height="21" viewBox="0 0 16 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M8 16.5095C6.88333 16.5095 5.80833 16.7053 4.775 17.097C3.74167 17.4887 2.775 18.0678 1.875 18.8345V19.0595H14.125V18.8345C13.225 18.0678 12.2583 17.4887 11.225 17.097C10.1917 16.7053 9.11667 16.5095 8 16.5095ZM8 15.0095C9.23333 15.0095 10.3958 15.2137 11.4875 15.622C12.5792 16.0303 13.5833 16.5845 14.5 17.2845V2.05951H1.5V17.2845C2.41667 16.5845 3.42083 16.0303 4.5125 15.622C5.60417 15.2137 6.76667 15.0095 8 15.0095ZM8.05 11.5345C7.50833 11.5345 7.04792 11.3449 6.66875 10.9658C6.28958 10.5866 6.1 10.1262 6.1 9.58451C6.1 9.04284 6.28958 8.58243 6.66875 8.20326C7.04792 7.82409 7.50833 7.63451 8.05 7.63451C8.59167 7.63451 9.05208 7.82409 9.43125 8.20326C9.81042 8.58243 10 9.04284 10 9.58451C10 10.1262 9.81042 10.5866 9.43125 10.9658C9.05208 11.3449 8.59167 11.5345 8.05 11.5345ZM1.5 20.5595C1.1 20.5595 0.75 20.4095 0.45 20.1095C0.15 19.8095 0 19.4595 0 19.0595V2.05951C0 1.65951 0.15 1.30951 0.45 1.00951C0.75 0.709509 1.1 0.559509 1.5 0.559509H14.5C14.9 0.559509 15.25 0.709509 15.55 1.00951C15.85 1.30951 16 1.65951 16 2.05951V19.0595C16 19.4595 15.85 19.8095 15.55 20.1095C15.25 20.4095 14.9 20.5595 14.5 20.5595H1.5ZM8.05 13.0345C9.01667 13.0345 9.83333 12.7012 10.5 12.0345C11.1667 11.3678 11.5 10.5512 11.5 9.58451C11.5 8.61784 11.1667 7.80118 10.5 7.13451C9.83333 6.46784 9.01667 6.13451 8.05 6.13451C7.08333 6.13451 6.26667 6.46784 5.6 7.13451C4.93333 7.80118 4.6 8.61784 4.6 9.58451C4.6 10.5512 4.93333 11.3678 5.6 12.0345C6.26667 12.7012 7.08333 13.0345 8.05 13.0345Z"
+                                fill="#1D9CD3" />
+                        </svg>
+
+
+                    </li>
+                    <li class="h-100 d-flex align-items-center"><a href="/hrm-screens/employee-list.html"
+                            class="body-normal reg black80 h-100 d-flex align-items-center mx-2">Employee</a>
+                    </li>
+                    <li class="h-100 d-flex align-items-center"><a href="/hrm-screens/role-access-list.html"
+                            class="body-normal reg black80 h-100 d-flex align-items-center mx-2">Role Access</a>
+                    </li>
+                    <li class="h-100 d-flex align-items-center"><a href="/hrm-screens/view-employee.html"
+                            class="body-normal reg black80 h-100 d-flex align-items-center mx-2 active">My Profile</a>
+                    </li>
+                </ul>
                 <div class="d-flex align-items-center ms-auto">
-                    <div id="hamBar" class="hamburger me-4" onclick="ham()">
-                        <div class="ham ham1"></div>
-                        <div class="ham ham2"></div>
-                        <div class="ham ham3"></div>
-                    </div>
-                    <div class="notificationIcon me-3">
-                        <img src="../assets/images/notification-bell.svg" alt="" width="24px" class="notification-bell">
-                        <div class="notification-alert"></div>
+
+                    <button id="crmHamBurger"
+                        class="mx-3 p-0 border-0 bg-transparent align-items-center justify-content-center flex-column">
+                        <div class="bar one"></div>
+                        <div class="bar two"></div>
+                        <div class="bar three"></div>
+                    </button>
+
+
+
+
+
+
+                    <div id="headerSearchIcon" class="dropdown more-option-toggle text-end">
+                        <button id="dropdownMenuClickableInside" class="border-0 bg-transparent p-0" type="button"
+                            data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+                            <svg width="21" height="21" viewBox="0 0 18 18" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M14.0259 12.8475L17.5951 16.4158L16.4159 17.595L12.8476 14.0258C11.5199 15.0902 9.86842 15.6691 8.16675 15.6667C4.02675 15.6667 0.666748 12.3067 0.666748 8.16667C0.666748 4.02667 4.02675 0.666672 8.16675 0.666672C12.3067 0.666672 15.6667 4.02667 15.6667 8.16667C15.6692 9.86834 15.0903 11.5198 14.0259 12.8475ZM12.3542 12.2292C13.4118 11.1416 14.0025 9.6837 14.0001 8.16667C14.0001 4.94334 11.3892 2.33334 8.16675 2.33334C4.94341 2.33334 2.33341 4.94334 2.33341 8.16667C2.33341 11.3892 4.94341 14 8.16675 14C9.68377 14.0024 11.1417 13.4118 12.2292 12.3542L12.3542 12.2292Z"
+                                    fill="#646364" />
+                            </svg>
+                        </button>
+                        <div class="dropdown-menu p-2 border-0" aria-labelledby="dropdownMenuClickableInside">
+                            <div id="headerSearch" class="search-input-box px-2">
+                                <img src="../assets/images/search-icon.svg" alt="">
+                                <input type="text" class="search-input py-1 h-auto" placeholder="Search">
+                            </div>
+                        </div>
                     </div>
 
-                    <div class="userDropdown">
-                        <div class="user-dropdown-element d-flex align-items-center">
-                            <div class="user-profile-active">
-                                <img src="../assets/images/user.png" alt="" width="35px" class="user-img">
-                                <div class="user-active"></div>
+
+                    <a href="/crm/settings.html">
+                        <button class="border-0 bg-transparent p-0 mx-3">
+                            <svg width="21" height="20" viewBox="0 0 21 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M9.84118 15.3889H11.3967L11.6745 13.8889C12.0449 13.7778 12.3597 13.6389 12.619 13.4722C12.8782 13.3056 13.119 13.1111 13.3412 12.8889L15.0634 13.4167L15.7856 11.9167L14.4801 11.0833C14.5541 10.6944 14.5912 10.3333 14.5912 10C14.5912 9.66667 14.5541 9.30556 14.4801 8.91667L15.7856 8.08333L15.0634 6.58333L13.3412 7.11111C13.119 6.88889 12.8782 6.69444 12.619 6.52778C12.3597 6.36111 12.0449 6.22222 11.6745 6.11111L11.3967 4.61111H9.84118L9.5634 6.11111C9.19303 6.22222 8.87822 6.36111 8.61896 6.52778C8.3597 6.69444 8.11896 6.88889 7.89674 7.11111L6.17451 6.58333L5.45229 8.08333L6.75785 8.91667C6.68377 9.30556 6.64674 9.66667 6.64674 10C6.64674 10.3333 6.68377 10.6944 6.75785 11.0833L5.45229 11.9167L6.17451 13.4167L7.89674 12.8889C8.11896 13.1111 8.3597 13.3056 8.61896 13.4722C8.87822 13.6389 9.19303 13.7778 9.5634 13.8889L9.84118 15.3889ZM10.619 12.3611C9.95229 12.3611 9.39211 12.1343 8.9384 11.6806C8.4847 11.2269 8.25785 10.6667 8.25785 10C8.25785 9.33333 8.4847 8.77315 8.9384 8.31944C9.39211 7.86574 9.95229 7.63889 10.619 7.63889C11.2856 7.63889 11.8458 7.86574 12.2995 8.31944C12.7532 8.77315 12.9801 9.33333 12.9801 10C12.9801 10.6667 12.7532 11.2269 12.2995 11.6806C11.8458 12.1343 11.2856 12.3611 10.619 12.3611ZM2.28562 20C1.84118 20 1.45229 19.8333 1.11896 19.5C0.785624 19.1667 0.618958 18.7778 0.618958 18.3333V1.66667C0.618958 1.22222 0.785624 0.833333 1.11896 0.5C1.45229 0.166667 1.84118 0 2.28562 0H18.9523C19.3967 0 19.7856 0.166667 20.119 0.5C20.4523 0.833333 20.619 1.22222 20.619 1.66667V18.3333C20.619 18.7778 20.4523 19.1667 20.119 19.5C19.7856 19.8333 19.3967 20 18.9523 20H2.28562ZM2.28562 18.3333H18.9523V1.66667H2.28562V18.3333Z"
+                                    fill="#646364" />
+                            </svg>
+                        </button>
+                    </a>
+                    <div id="notificationContainer" class="dropdown more-option-toggle text-end">
+                        <button id="dropdownMenuClickableInside" class="border-0 bg-transparent p-0 position-relative"
+                            type="button" id="notficationBar" data-bs-toggle="dropdown" data-bs-auto-close="outside"
+                            aria-expanded="false">
+                            <svg width="21" height="21" viewBox="0 0 30 34" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_107_520)">
+                                    <path
+                                        d="M29.5108 26.8299C28.5465 25.9702 27.7022 24.9847 27.0008 23.8999C26.235 22.4024 25.776 20.7671 25.6508 19.0899V14.1499C25.6574 11.5155 24.7018 8.96938 22.9635 6.98988C21.2252 5.01037 18.8239 3.73376 16.2108 3.3999V2.1099C16.2108 1.75584 16.0701 1.41628 15.8198 1.16591C15.5694 0.915554 15.2298 0.774902 14.8758 0.774902C14.5217 0.774902 14.1822 0.915554 13.9318 1.16591C13.6814 1.41628 13.5408 1.75584 13.5408 2.1099V3.4199C10.951 3.77783 8.57875 5.06216 6.86331 7.03501C5.14787 9.00786 4.20551 11.5355 4.21078 14.1499V19.0899C4.08554 20.7671 3.62656 22.4024 2.86078 23.8999C2.17166 24.9823 1.34098 25.9676 0.390781 26.8299C0.284113 26.9236 0.198623 27.039 0.139999 27.1683C0.0813747 27.2976 0.050961 27.4379 0.0507812 27.5799V28.9399C0.0507812 29.2051 0.156138 29.4595 0.343674 29.647C0.531211 29.8345 0.785565 29.9399 1.05078 29.9399H28.8508C29.116 29.9399 29.3704 29.8345 29.5579 29.647C29.7454 29.4595 29.8508 29.2051 29.8508 28.9399V27.5799C29.8506 27.4379 29.8202 27.2976 29.7616 27.1683C29.7029 27.039 29.6174 26.9236 29.5108 26.8299ZM2.13078 27.9399C3.06119 27.0411 3.88038 26.0339 4.57078 24.9399C5.53539 23.1314 6.09821 21.1359 6.22078 19.0899V14.1499C6.18112 12.9779 6.37771 11.81 6.79883 10.7156C7.21995 9.62116 7.85699 8.62269 8.67203 7.7796C9.48706 6.93652 10.4634 6.26607 11.543 5.80818C12.6225 5.35028 13.7831 5.11431 14.9558 5.11431C16.1284 5.11431 17.2891 5.35028 18.3686 5.80818C19.4481 6.26607 20.4245 6.93652 21.2395 7.7796C22.0546 8.62269 22.6916 9.62116 23.1127 10.7156C23.5339 11.81 23.7304 12.9779 23.6908 14.1499V19.0899C23.8134 21.1359 24.3762 23.1314 25.3408 24.9399C26.0312 26.0339 26.8504 27.0411 27.7808 27.9399H2.13078Z"
+                                        fill="#646364" />
+                                    <path
+                                        d="M15.0003 33.28C15.6302 33.2655 16.2348 33.0287 16.7069 32.6114C17.1791 32.1942 17.4884 31.6234 17.5803 31H12.3203C12.4148 31.6403 12.7386 32.2245 13.2316 32.6439C13.7246 33.0633 14.3531 33.2894 15.0003 33.28V33.28Z"
+                                        fill="#646364" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_107_520">
+                                        <rect width="30" height="34" fill="#646364" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                            <span class="alert-orange"></span>
+                        </button>
+                        <div class="dropdown-menu notficationBar p-3" aria-labelledby="dropdownMenuClickableInside">
+                            <div class="notificationHeader d-flex align-items-center justify-content-between">
+                                <p class="body-medium med blue130 mb-0">Notification</p>
+                                <button class="filterCancel p-0 border-0 bg-transparent">
+                                    <svg width="11" height="11" viewBox="0 0 11 11" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M1.12805 10.4648L0.128052 9.46484L4.12805 5.46484L0.128052 1.46484L1.12805 0.464844L5.12805 4.46484L9.12805 0.464844L10.1281 1.46484L6.12805 5.46484L10.1281 9.46484L9.12805 10.4648L5.12805 6.46484L1.12805 10.4648Z"
+                                            fill="#021E29" />
+                                    </svg>
+                                </button>
                             </div>
-                            <p class="m-0 ms-2 body-medium med grey0">Melisah M.</p>
+                            <div class="notifications py-2">
+                                <div class="d-flex align-items-start py-4 border-bottom">
+                                    <div
+                                        class="blueUserBadge blue120bg rounded-circle d-flex align-items-center justify-content-center">
+                                        <p class="blue20 body-tiny reg mb-0">SM</p>
+                                    </div>
+                                    <div class="ms-3">
+                                        <p class="body-small reg black80 mb-0">Reminder: Milestone-Milestone 3 is due 17
+                                            Mar 2023</p>
+                                        <p class="body-tiny reg black50 mb-0">about 13 hours ago</p>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-start py-4 border-bottom">
+                                    <div
+                                        class="blueUserBadge blue120bg rounded-circle d-flex align-items-center justify-content-center">
+                                        <p class="blue20 body-tiny reg mb-0">SM</p>
+                                    </div>
+                                    <div class="ms-3">
+                                        <p class="body-small reg black80 mb-0">Reminder: Milestone-Milestone 3 is due 17
+                                            Mar 2023</p>
+                                        <p class="body-tiny reg black50 mb-0">about 13 hours ago</p>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-start py-4 border-bottom">
+                                    <div
+                                        class="blueUserBadge blue120bg rounded-circle d-flex align-items-center justify-content-center">
+                                        <p class="blue20 body-tiny reg mb-0">SM</p>
+                                    </div>
+                                    <div class="ms-3">
+                                        <p class="body-small reg black80 mb-0">Reminder: Milestone-Milestone 3 is due 17
+                                            Mar 2023</p>
+                                        <p class="body-tiny reg black50 mb-0">about 13 hours ago</p>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-start py-4 border-bottom">
+                                    <div
+                                        class="blueUserBadge blue120bg rounded-circle d-flex align-items-center justify-content-center">
+                                        <p class="blue20 body-tiny reg mb-0">SM</p>
+                                    </div>
+                                    <div class="ms-3">
+                                        <p class="body-small reg black80 mb-0">Reminder: Milestone-Milestone 3 is due 17
+                                            Mar 2023</p>
+                                        <p class="body-tiny reg black50 mb-0">about 13 hours ago</p>
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
                 </div>
@@ -133,7 +253,8 @@
                         </button>
                         <ul class="dropdown-menu more-options p-0 rounded-0" aria-labelledby="more-option1">
                             <li>
-                                <a class="dropdown-item body-normal reg black80 p-2 w-100" href="/crm/more-import.html">
+                                <a class="dropdown-item body-normal reg black80 p-2 w-100"
+                                    href="/hrm-screens/view-employee.html">
                                     <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path
@@ -145,7 +266,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a class="dropdown-item body-normal reg black80 p-2 w-100" href="/crm/more-import.html">
+                                <a class="dropdown-item body-normal reg black80 p-2 w-100" href="#">
                                     <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path
