@@ -870,23 +870,36 @@
                         <div class="deals px-2 py-3 mt-4 border rounded">
                             <div class="border-bottom d-flex align-items-center justify-content-between pb-3">
                                 <p class="body-normal med black20 mb-0">Deals</p>
-                                <div>
-                                    <button>
-                                        Person
+                                <div class="d-flex align-items-center">
+                                    <button
+                                        class="border-0 bg-transparent p-0 d-flex align-items-center justify-content-between"
+                                        data-bs-toggle="modal" data-bs-target="dealsViewPopup">
+                                        <svg width="25" height="24" viewBox="0 0 25 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M14.9787 14.1213C15.5414 13.5587 15.8574 12.7956 15.8574 12C15.8574 11.2044 15.5414 10.4413 14.9787 9.87868C14.4161 9.31607 13.6531 9 12.8574 9C12.0618 9 11.2987 9.31607 10.7361 9.87868C10.1735 10.4413 9.85742 11.2044 9.85742 12C9.85742 12.7956 10.1735 13.5587 10.7361 14.1213C11.2987 14.6839 12.0618 15 12.8574 15C13.6531 15 14.4161 14.6839 14.9787 14.1213Z"
+                                                stroke="#383638" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path
+                                                d="M3.31543 12C4.58943 7.943 8.38043 5 12.8574 5C17.3354 5 21.1254 7.943 22.3994 12C21.1254 16.057 17.3354 19 12.8574 19C8.38043 19 4.58943 16.057 3.31543 12Z"
+                                                stroke="#383638" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+
+                                    </button>
+                                    <button
+                                        class="border-0 bg-transparent p-0 d-flex align-items-center justify-content-between ms-2"
+                                        data-bs-toggle="modal" data-bs-target="#addDealPopup">
+                                        <svg width="21" height="21" viewBox="0 0 21 21" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M10.9756 7.07092V10.0709M10.9756 10.0709V13.0709M10.9756 10.0709H13.9756M10.9756 10.0709H7.97559M19.9756 10.0709C19.9756 11.2528 19.7428 12.4231 19.2905 13.5151C18.8382 14.607 18.1753 15.5992 17.3395 16.4349C16.5038 17.2706 15.5117 17.9335 14.4197 18.3858C13.3278 18.8381 12.1575 19.0709 10.9756 19.0709C9.79369 19.0709 8.62337 18.8381 7.53144 18.3858C6.4395 17.9335 5.44735 17.2706 4.61162 16.4349C3.7759 15.5992 3.11296 14.607 2.66067 13.5151C2.20838 12.4231 1.97559 11.2528 1.97559 10.0709C1.97559 7.68397 2.9238 5.39479 4.61162 3.70696C6.29945 2.01913 8.58864 1.07092 10.9756 1.07092C13.3625 1.07092 15.6517 2.01913 17.3395 3.70696C19.0274 5.39479 19.9756 7.68397 19.9756 10.0709Z"
+                                                stroke="#383637" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+
                                     </button>
                                 </div>
-                                <button
-                                    class="border-0 bg-transparent p-0 d-flex align-items-center justify-content-between"
-                                    data-bs-toggle="modal" data-bs-target="#addDealPopup">
-                                    <svg width="21" height="21" viewBox="0 0 21 21" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M10.9756 7.07092V10.0709M10.9756 10.0709V13.0709M10.9756 10.0709H13.9756M10.9756 10.0709H7.97559M19.9756 10.0709C19.9756 11.2528 19.7428 12.4231 19.2905 13.5151C18.8382 14.607 18.1753 15.5992 17.3395 16.4349C16.5038 17.2706 15.5117 17.9335 14.4197 18.3858C13.3278 18.8381 12.1575 19.0709 10.9756 19.0709C9.79369 19.0709 8.62337 18.8381 7.53144 18.3858C6.4395 17.9335 5.44735 17.2706 4.61162 16.4349C3.7759 15.5992 3.11296 14.607 2.66067 13.5151C2.20838 12.4231 1.97559 11.2528 1.97559 10.0709C1.97559 7.68397 2.9238 5.39479 4.61162 3.70696C6.29945 2.01913 8.58864 1.07092 10.9756 1.07092C13.3625 1.07092 15.6517 2.01913 17.3395 3.70696C19.0274 5.39479 19.9756 7.68397 19.9756 10.0709Z"
-                                            stroke="#383637" stroke-width="2" stroke-linecap="round"
-                                            stroke-linejoin="round" />
-                                    </svg>
-
-                                </button>
                             </div>
                             <div class="py-2">
                                 <div class="personRow d-flex align-items-center justify-content-between py-3">

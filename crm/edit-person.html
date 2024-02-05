@@ -954,18 +954,36 @@
                         <div class="deals px-2 py-3 mt-4 border rounded">
                             <div class="border-bottom d-flex align-items-center justify-content-between pb-3">
                                 <p class="body-normal med black20 mb-0">Deals</p>
-                                <button
-                                    class="border-0 bg-transparent p-0 d-flex align-items-center justify-content-between"
-                                    data-bs-toggle="modal" data-bs-target="#addDealPopup">
-                                    <svg width="21" height="21" viewBox="0 0 21 21" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M10.9756 7.07092V10.0709M10.9756 10.0709V13.0709M10.9756 10.0709H13.9756M10.9756 10.0709H7.97559M19.9756 10.0709C19.9756 11.2528 19.7428 12.4231 19.2905 13.5151C18.8382 14.607 18.1753 15.5992 17.3395 16.4349C16.5038 17.2706 15.5117 17.9335 14.4197 18.3858C13.3278 18.8381 12.1575 19.0709 10.9756 19.0709C9.79369 19.0709 8.62337 18.8381 7.53144 18.3858C6.4395 17.9335 5.44735 17.2706 4.61162 16.4349C3.7759 15.5992 3.11296 14.607 2.66067 13.5151C2.20838 12.4231 1.97559 11.2528 1.97559 10.0709C1.97559 7.68397 2.9238 5.39479 4.61162 3.70696C6.29945 2.01913 8.58864 1.07092 10.9756 1.07092C13.3625 1.07092 15.6517 2.01913 17.3395 3.70696C19.0274 5.39479 19.9756 7.68397 19.9756 10.0709Z"
-                                            stroke="#383637" stroke-width="2" stroke-linecap="round"
-                                            stroke-linejoin="round" />
-                                    </svg>
+                                <div class="d-flex align-items-center">
+                                    <button
+                                        class="border-0 bg-transparent p-0 d-flex align-items-center justify-content-between"
+                                        data-bs-toggle="modal" data-bs-target="#dealsViewPopup">
+                                        <svg width="25" height="24" viewBox="0 0 25 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M14.9787 14.1213C15.5414 13.5587 15.8574 12.7956 15.8574 12C15.8574 11.2044 15.5414 10.4413 14.9787 9.87868C14.4161 9.31607 13.6531 9 12.8574 9C12.0618 9 11.2987 9.31607 10.7361 9.87868C10.1735 10.4413 9.85742 11.2044 9.85742 12C9.85742 12.7956 10.1735 13.5587 10.7361 14.1213C11.2987 14.6839 12.0618 15 12.8574 15C13.6531 15 14.4161 14.6839 14.9787 14.1213Z"
+                                                stroke="#383638" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path
+                                                d="M3.31543 12C4.58943 7.943 8.38043 5 12.8574 5C17.3354 5 21.1254 7.943 22.3994 12C21.1254 16.057 17.3354 19 12.8574 19C8.38043 19 4.58943 16.057 3.31543 12Z"
+                                                stroke="#383638" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
 
-                                </button>
+                                    </button>
+                                    <button
+                                        class="border-0 bg-transparent p-0 d-flex align-items-center justify-content-between ms-2"
+                                        data-bs-toggle="modal" data-bs-target="#addDealPopup">
+                                        <svg width="21" height="21" viewBox="0 0 21 21" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M10.9756 7.07092V10.0709M10.9756 10.0709V13.0709M10.9756 10.0709H13.9756M10.9756 10.0709H7.97559M19.9756 10.0709C19.9756 11.2528 19.7428 12.4231 19.2905 13.5151C18.8382 14.607 18.1753 15.5992 17.3395 16.4349C16.5038 17.2706 15.5117 17.9335 14.4197 18.3858C13.3278 18.8381 12.1575 19.0709 10.9756 19.0709C9.79369 19.0709 8.62337 18.8381 7.53144 18.3858C6.4395 17.9335 5.44735 17.2706 4.61162 16.4349C3.7759 15.5992 3.11296 14.607 2.66067 13.5151C2.20838 12.4231 1.97559 11.2528 1.97559 10.0709C1.97559 7.68397 2.9238 5.39479 4.61162 3.70696C6.29945 2.01913 8.58864 1.07092 10.9756 1.07092C13.3625 1.07092 15.6517 2.01913 17.3395 3.70696C19.0274 5.39479 19.9756 7.68397 19.9756 10.0709Z"
+                                                stroke="#383637" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+
+                                    </button>
+                                </div>
                             </div>
                             <div class="py-2">
                                 <div class="personRow d-flex align-items-center justify-content-between py-3">
@@ -1064,8 +1082,8 @@
                     </div>
                     <div class="col-md-7">
                         <div class="h-100 p-2 border rounded">
-                            <div class="editDealOptions border-bottom d-flex align-items-center" id="pills-tab"
-                                role="tablist">
+                            <div class="editDealOptions border-bottom d-flex align-items-center flex-wrap"
+                                id="pills-tab" role="tablist">
                                 <div role="presentation">
                                     <button class="p-2 pt-0 mx-3 bg-transparent body-normal sb active"
                                         id="pills-ALL-tab" data-bs-toggle="pill" data-bs-target="#pills-ALL"
@@ -4096,6 +4114,116 @@
         </div>
     </div>
 
+    <div class="modal fade" id="dealsViewPopup" tabindex="-1" aria-labelledby="dealsViewPopup" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered rounded" style="max-width: 1028px!important;">
+            <div class="modal-content p-4 border-0 rounded position-relative">
+                <div class="d-flex align-items-center justify-content-between pb-3 mb-3 border-bottom">
+                    <div class="d-flex align-items-center">
+                        <p class="body-medium med black20 mb-0">Deals</p>
+                    </div>
+                    <div class="text-end">
+                        <button class="border-0 bg-transparent" data-bs-dismiss="modal">
+                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M1.4 14L0 12.6L5.6 7L0 1.4L1.4 0L7 5.6L12.6 0L14 1.4L8.4 7L14 12.6L12.6 14L7 8.4L1.4 14Z"
+                                    fill="#383637" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-2 d-flex align-items-center">
+                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <rect width="18" height="18" fill="url(#pattern0)" />
+                            <defs>
+                                <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                    <use xlink:href="#image0_6450_30378" transform="scale(0.0078125)" />
+                                </pattern>
+                                <image id="image0_6450_30378" width="128" height="128"
+                                    xlink:href="data:image/png;base64,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" />
+                            </defs>
+                        </svg>
+                        <p class="body-large med black20 mb-0 ms-2">Apple</p>
+                    </div>
+                    <div class="col-md-10 d-flex flex-wrap align-items-center justify-content-between py-2">
+                        <p class="body-medium reg black80 mb-0 d-flex align-items-center">
+                            Total deal Value: <span class="ms-2">₹ 4,321,668.00</span>
+                        </p>
+                        <p class="body-medium reg text-success mb-0 d-flex align-items-center">
+                            Won deals: <span class="ms-2">₹ 4,321,668.00</span>
+                        </p>
+                        <p class="body-medium reg text-danger mb-0 d-flex align-items-center">
+                            Total deal Value: <span class="ms-2">₹ 4,321,668.00</span>
+                        </p>
+                    </div>
+                    <div class="col-12 mt-4">
+                        <div class=" table-responsive">
+                            <table class="table w-100 list-view-table m-0">
+                                <thead class="list-info-head-row">
+                                    <tr>
+                                        <th class="list-info-head body-medium med black90 m-0" scope="col">
+                                            Deal name
+                                            <img src="/assets/images/downArrow.png" alt="" class="ms-2">
+                                        </th>
+                                        <th class="list-info-head body-medium med black90 m-0" scope="col">Stage
+                                            <img src="/assets/images/downArrow.png" alt="" class="ms-2">
+                                        </th>
+                                        <th class="list-info-head body-medium med black90 m-0" scope="col">Close date
+                                            <img src="/assets/images/downArrow.png" alt="" class="ms-2">
+                                        </th>
+                                        <th class="list-info-head body-medium med black90 m-0" scope="col">Owner
+                                            <img src="/assets/images/downArrow.png" alt="" class="ms-2">
+                                        </th>
+                                        <th class="list-info-head body-medium med black90 m-0" scope="col">Value
+                                            <img src="/assets/images/downArrow.png" alt="" class="ms-2">
+                                        </th>
+                                        <th class="list-info-head body-medium med black90 m-0" scope="col">Contact
+                                            person
+                                            <img src="/assets/images/downArrow.png" alt="" class="ms-2">
+                                        </th>
+                                        <th class="list-info-head body-medium med black90 m-0" scope="col">Organization
+                                            <img src="/assets/images/downArrow.png" alt="" class="ms-2">
+                                        </th>
+                                        <th class="list-info-head body-medium med black90 m-0" scope="col">Tags
+                                            <img src="/assets/images/downArrow.png" alt="" class="ms-2">
+                                        </th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="list-info-row">
+                                        <td class="list-info-item name-col body-normal black80 m-0">
+                                            <p class="m-0">Desktop Order</p>
+                                        </td>
+                                        <td class="list-info-item body-normal black80 m-0">Contact</td>
+                                        <td class="list-info-item body-normal black80 m-0">18th Dec, 2022</td>
+                                        <td class="list-info-item body-normal black80 m-0">
+                                            <div class="d-flex align-items-center">
+                                                <div class="ownerAvatar me-2">SM</div>
+                                                Melinda Rashid
+                                            </div>
+                                        </td>
+                                        <td class="list-info-item body-normal black80 m-0">500,000</td>
+                                        <td class="list-info-item body-normal black80 m-0">
+                                            <div class="d-flex align-items-center">
+                                                <div class="ownerAvatar me-2">SM</div>
+                                                Melinda Rashid
+                                            </div>
+                                        </td>
+                                        <td class="list-info-item body-normal black80 m-0">500,000</td>
+                                        <td class="list-info-item body-normal black80 m-0">Tag 1</td>
+                                        <td class="listDealsRow position-absolute h-100 end-0" style="width: 97%;"></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="/assets/js/popper.min.js"></script>
